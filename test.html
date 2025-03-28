@@ -1,191 +1,60 @@
-<div style="display: flex; gap: 10px; margin: 30px;">
-<div
-class="container second"
-style="
-width: 180px;
-height: 130px;
-background-color: white;
-border-radius: 8px;
-box-shadow: 0px 4px 8px rgba(34, 42, 53, 0.05),
-  0px 0px 0px 1px rgba(34, 42, 53, 0.08),
-  0px 1px 5px -4px rgba(19, 19, 22, 0.7);
-margin-right: 10px;
-display: flex;
-align-items: center; 
-justify-content: center;
-"
->
-<img src="assets/images/download-black.svg" style="width: 20px; height:20px; margin-right: 8px;">
-<p
-style="
-  font-size: 12px;
+<style>
+#progress-container {
+  width: 90%;
+  background-color: teal;
+  border-radius: 10px;
+  height: 20px;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+#progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: #4caf50;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 20px;
+  color: white;
+  margin-left: 10px;
+  font-size: 9px;
   font-weight: bold;
-  color: #898989;
-  margin: 0;
-"
->
-PSP
-</p>
-</div>
-<div
-class="container second"
-style="
-width: 180px;
-height: 130px;
-background-color: white;
-border-radius: 8px;
-box-shadow: 0px 4px 8px rgba(34, 42, 53, 0.05),
-  0px 0px 0px 1px rgba(34, 42, 53, 0.08),
-  0px 1px 5px -4px rgba(19, 19, 22, 0.7);
-margin-right: 10px;
-display: flex;
-align-items: center; 
-justify-content: center;
-"
->
-<img src="assets/images/download-green.svg" style="width: 20px; height:20px; margin-right: 8px;">
-<p
-style="
-  font-size: 12px;
-  font-weight: bold;
-  color: #898989;
-  margin: 0;
-"
->
-PSP
-</p>
+}
+</style>
+
+<div id="progress-container">
+  <div id="progress-bar"> &nbsp;&nbsp;0%</div>
 </div>
 
-<div
-  class="container second"
-  style="
-    width: 180px;
-    height: 130px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(34, 42, 53, 0.05),
-      0px 0px 0px 1px rgba(34, 42, 53, 0.08),
-      0px 1px 5px -4px rgba(19, 19, 22, 0.7);
-    margin-right: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  "
->
-  <img
-    src="assets/images/download-black.svg"
-    style="width: 40px; height: 40px; margin-bottom: 8px;"
-  >
-  <p
-    style="
-      font-size: 23px;
-      font-weight: bold;
-      color: #898989;
-      margin: 0;
-    "
-  >
-    PSP
-  </p>
-</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const draggable = document.querySelector(".dragging");
+    const dropTarget = document.querySelector(".target");
+    const loading = document.querySelector(".loading");
+    const arrow = document.querySelector(".arrow");
+    const progressBar = document.getElementById("progress-bar");
+    const all = document.querySelector(".all"); // The element with the 'all' class
+    const first = document.querySelector(".first");
+    const second = document.querySelector(".second");
+    const third = document.querySelector(".third");
+    let isDragging = false;
+    let startX = 0;
 
-<div
-  class="container second"
-  style="
-    width: 180px;
-    height: 130px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(34, 42, 53, 0.05),
-      0px 0px 0px 1px rgba(34, 42, 53, 0.08),
-      0px 1px 5px -4px rgba(19, 19, 22, 0.7);
-    margin-right: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  "
->
-  <img
-    src="assets/images/download-green.svg"
-    style="width: 40px; height: 40px; margin-bottom: 8px;"
-  >
-  <p
-    style="
-      font-size: 23px;
-      font-weight: bold;
-      color: #898989;
-      margin: 0;
-    "
-  >
-    PSP
-  </p>
-</div>
-<div
-  class="container second"
-  style="
-    width: 180px;
-    height: 130px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(34, 42, 53, 0.05),
-      0px 0px 0px 1px rgba(34, 42, 53, 0.08),
-      0px 1px 5px -4px rgba(19, 19, 22, 0.7);
-    margin-right: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  "
->
-<p
-style="
-  font-size: 23px;
-  font-weight: bold;
-  color: #898989;
-  margin: 0;
-"
->
-PSP
-</p>
-  <img
-    src="assets/images/download-black.svg"
-    style="width: 40px; height: 40px; margin-bottom: 8px;"
-  >
+    function move() {
+        let width = 0;
+        const id = setInterval(function () {
+            if (width >= 100) {
+                clearInterval(id); // Stop progress at 100%
+                // Wait for 0.5 seconds after progress reaches 100% before triggering the next animation
+                setTimeout(triggerNextPhase, 500);
+            } else {
+                width++;
+                progressBar.style.width = width + "%"; // Change the width of the progress bar
+                progressBar.innerHTML = width + "%"; // Update the text to show the percentage
+            }
+        }, 30); // 30ms interval to complete 100% in 3 seconds
+    }
 
-</div>
-
-<div
-  class="container second"
-  style="
-    width: 180px;
-    height: 130px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(34, 42, 53, 0.05),
-      0px 0px 0px 1px rgba(34, 42, 53, 0.08),
-      0px 1px 5px -4px rgba(19, 19, 22, 0.7);
-    margin-right: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  "
->
-<p
-style="
-  font-size: 23px;
-  font-weight: bold;
-  color: #898989;
-  margin: 0;
-"
->
-PSP
-</p>
-  <img
-    src="assets/images/download-green.svg"
-    style="width: 40px; height: 40px; margin-bottom: 8px;"
-  >
-
-</div>
-</div>
+  });
+  
+</script>
