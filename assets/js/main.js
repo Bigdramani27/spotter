@@ -173,3 +173,31 @@ hamburgerButton.addEventListener('click', () => {
   }
 });
 
+const modal = document.getElementById('modal');
+const modalOverlay = document.getElementById('modalOverlay');
+const openModalBtn = document.getElementById('openModalBtn');
+const closeModalBtn = document.getElementById('closeModalBtn');
+
+// Open the modal when the button is clicked
+const openModalBtns = document.querySelectorAll('#openModalBtn'); 
+
+// Open modal for all matching elements
+openModalBtns.forEach(btn => {
+btn.addEventListener('click', function() {
+modal.style.display = 'block';
+modalOverlay.style.display = 'block';
+});
+});
+// Close the modal when the close button is clicked
+closeModalBtn.addEventListener('click', function() {
+    modal.style.display = 'none';
+    modalOverlay.style.display = 'none';
+});
+
+// Close the modal if the user clicks outside of it
+modalOverlay.addEventListener('click', function(event) {
+  if (event.target === modalOverlay) { 
+      modal.style.display = 'none';
+      modalOverlay.style.display = 'none';
+  }
+});

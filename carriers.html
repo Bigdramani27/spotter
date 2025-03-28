@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spotter- Safety App</title>
+    <title>Spotter- For Carriers</title>
     <link
       as="font"
       crossorigin="anonymous"
@@ -37,10 +37,10 @@
       as="font"
       type="font/woff2"
     />
-    <link rel="preload" href="assets/css/dcb8094dada0d31b.css" as="style" />
-    <link rel="stylesheet" href="assets/css/dcb8094dada0d31b.css" data-n-g="" />
-    <link rel="preload" href="assets/css/ffa4e731c689a1fc.css" as="style" />
-    <link rel="stylesheet" href="assets/css/ffa4e731c689a1fc.css" />
+    <link rel="preload" href="assets/css/main.css" as="style" />
+    <link rel="stylesheet" href="assets/css/main.css" data-n-g="" />
+    <link rel="preload" href="assets/css/header.css" as="style" />
+    <link rel="stylesheet" href="assets/css/header.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="apple-touch-icon" href="assets/favicon.ico" />
     <link rel="icon" type="image/png" href="assets/favicon.ico" />
@@ -54,6 +54,48 @@
         --font-inter: "__Inter_d65c78", "__Inter_Fallback_d65c78";
         --font-cal: "__calFont_e64b80", "__calFont_Fallback_e64b80";
       }
+      .animate1 svg {
+  transform: translateY(0px) rotate(0deg);
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+.animate1:hover svg {
+  transform: translateY(0) rotate(360deg);
+}
+
+.animate1:hover svg {
+  transform: translateY(0) rotate(360deg);
+}
+.animate2 svg {
+  transform: translateY(0); 
+  transition: transform 0.3s ease-out;
+}
+
+.animate2:hover svg {
+  animation: dropBounce 0.5s ease-out;
+}
+
+@keyframes dropBounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px); 
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate3 svg {
+  transform: translateY(0px) rotate(0deg);
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+.animate3:hover svg {
+  transform: translateY(0) rotate(360deg);
+}
+
     </style>
   </head>
   <body>
@@ -281,7 +323,7 @@
                         ><a
                           class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hover:bg-[#f5f5f5]"
                           data-radix-collection-item=""
-                          href=""
+                          href="carriers.html"
                           ><div
                             class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#DCDCDC]"
                           >
@@ -511,7 +553,7 @@
                         <a
                           class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hover:bg-[#f5f5f5]"
                           data-radix-collection-item=""
-                          href="safety_app.html"
+                          href="sentinel.html"
                           ><div
                             class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#DCDCDC]"
                           >
@@ -780,7 +822,7 @@
           <div class="flex items-center justify-center">
             <a
               class="mr-4 hidden text-sm font-medium lg:flex opacity-100"
-              href=""
+              href="https://safetyapp.spotter.ai/login"
               >Sign in</a
             >
             <div>
@@ -862,8 +904,202 @@
       </div>
     </div>
     <main class="text-primary-700 text-standard font-matter leading-normal">
-  
+      <section class="mx-3 md:mx-0">
+        <div
+          class="mx-auto w-full relative max-w-[1200px] gap-8 rounded-xl px-1 shadow-fade bg-white mb-1 overflow-hidden py-0 pt-12 md:px-0 md:py-0 md:pt-12 lg:py-20 lg:pl-12"
+        >
+          <div
+            class="absolute -bottom-20 -top-20 right-0 z-[1] hidden lg:block"
+          >
+            <div class="relative h-[calc(100%+10rem)] w-[800px]">
+              <div
+                class="absolute inset-0 bg-gradient-to-r from-white via-white/20 to-transparent"
+              ></div>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-white/90 via-white/10 to-white/0"
+              ></div>
+              <div
+                class="absolute inset-0 bg-gradient-to-b from-white/90 via-white/10 to-white/5"
+              ></div>
+            </div>
+          </div>
+          <div
+            class="grid w-full grid-cols-1 items-center justify-start gap-4 py-0 md:gap-[6%] lg:grid-cols-[45%_auto] lg:items-start"
+          >
+            <div
+              class="animate-move-up z-[3] w-full flex-col items-center p-4 text-center lg:items-start lg:text-left"
+            >
+              <div
+                class="flex flex-col pb-3.5 items-center text-center lg:items-start lg:text-left"
+              >
+                <h1
+                  class="font-cal text-[40px] leading-none md:text-[65px] lg:text-[60px] xl:text-[69px] pb-3"
+                >
+                  <span
+                    data-br=":r6:"
+                    data-brr="1"
+                    style="
+                      display: inline-block;
+                      vertical-align: top;
+                      text-decoration: inherit;
+                      text-wrap: balance;
+                    "
+                    >Disruptor</span
+                  >
+                </h1>
+                <p
+                  class="max-w-md text-base text-[#898989] lg:max-w-2xl lg:text-lg"
+                >
+                Centralize and manage all your trucking operations effortlessly with our all-in-one transportation management system.
+                </p>
+              </div>
+              <div class="w-full md:w-auto lg:w-[90%]" style="margin-top: 30px;">
+                <div class="HeroSection-module--buttons--2f755">
+                  <a
+                  id="openModalBtn"
+                    class="Button-module--button--3b10c Button-module--primary--379ca Button-module--large--57ca4 HeroSection-module--button--95276" style="margin-right:8px"
+                    aria-label=""
+                    ><span>Book Demo</span></a
+                  ><a
+                    class="Button-module--button--3b10c Button-module--primaryOutlined--c12e0 Button-module--large--57ca4 HeroSection-module--button--95276"
+                    aria-label=""
+                    href="sentinel_pricing.html"
+                    ><span>Contact Sales</span></a
+                  >
+                  
+                </div>
+              </div>
+            </div>
+            <div
+              class="relative top-4 z-[2] mx-auto origin-top-left self-center justify-self-center md:top-0"
+            >
+              <svg style="width: 300px; height:300px" viewBox="0 0 377 377" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><defs><radialGradient id="eVy279fXcpn2-fill" cx="0" cy="0" r="1" spreadMethod="pad" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-275.087052 1.032238 -2.297289 -612.217675 428.210999 82.000397)"><stop id="eVy279fXcpn2-fill-0" offset="4.36479%" stop-color="#434344"></stop><stop id="eVy279fXcpn2-fill-1" offset="73.5805%" stop-color="rgba(217,217,217,0.122883)"></stop><stop id="eVy279fXcpn2-fill-2" offset="90.0814%" stop-color="rgba(217,217,217,0)"></stop></radialGradient></defs><path id="eVy279fXcpn2" d="M93.1146,25.4792C114.354,13.2165,137.801,5.25728,162.117,2.05607s49.024-1.581755,72.713,4.7659c23.69,6.34763,45.898,17.29923,65.355,32.22933c19.457,14.9302,35.783,33.5466,48.046,54.7862L186.494,187.217L93.1146,25.4792Z" transform="matrix(0.00877 -0.999962 0.999962 0.00877 -0.526003 373.442907)" fill="url(#eVy279fXcpn2-fill)" fill-rule="evenodd"></path><path id="eVy279fXcpn3" d="M348.04,92.2849l1.634,2.8303-156.46,89.1778-.835-1.448L348.04,92.2849Z" transform="matrix(0.011068 -0.999939 0.999939 0.011068 0.475481 373.881383)" fill="#202021"></path><circle r="10" transform="translate(189.748001 189.276993)" fill="#89898a"></circle><circle id="eVy279fXcpn5" r="147.643591" transform="translate(189.998001 189.526993)" fill="none" stroke="#89898a" stroke-width="0.5" opacity="0.631491"></circle><circle id="eVy279fXcpn6" r="159" transform="translate(190.5 189.5)" fill="none" stroke="#89898a" stroke-width="0.5" opacity="0"></circle><circle id="eVy279fXcpn7" r="63.569375" transform="translate(189.75 188.75)" opacity="1" fill="none" stroke="#89898a" stroke-width="0.5"></circle><circle r="14.75" transform="translate(189.748001 189.276993)" fill="none" stroke="#89898a" stroke-width="0.5"></circle><circle r="159.5" transform="translate(189.748001 189.276993)" fill="none" stroke="#202021"></circle><g id="eVy279fXcpn10" transform="matrix(0 0 0 0 208.659004 50.4667)" opacity="0"><circle r="11.5409" transform="translate(205.658997 48.466702)" opacity="0.3" fill="#63cb7b"></circle><circle r="6.0509" transform="translate(205.658997 48.466702)" fill="#45cd63"></circle></g><g id="eVy279fXcpn13" transform="matrix(0 0 0 0 288.045014 247.811005)" opacity="0"><circle r="11.5409" transform="translate(285.045013 245.811005)" opacity="0.3" fill="#ee6359"></circle><circle r="6.0509" transform="translate(285.045013 245.811005)" fill="#ee6359"></circle></g><g id="eVy279fXcpn16" transform="matrix(0.721667 0 0 0.721667 29.625032 55.013316)" opacity="0.721667"><circle r="11.5409" transform="translate(95.658798 190.466995)" opacity="0.3" fill="#63cb7b"></circle><circle r="6.0509" transform="translate(95.658798 190.466995)" fill="#45cd63"></circle></g>
+               </svg>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section class="mx-3 md:mx-0">
+        <div
+          class="mx-auto w-full relative max-w-[1200px] gap-8 overflow-clip rounded-xl px-1 py-6 md:px-1 md:py-20 !bg-transparent"
+        >
+          <div
+            class="flex-col pb-3.5 items-center text-center hidden lg:flex"
+          >
+            <div>
+              <span class="my-3 flex items-center justify-center mb-4"
+                ><span
+                  class="shadow-fade inline-flex items-center justify-start gap-1 rounded-full px-3.5 py-1 bg-white"
+                  ><p class="text-xs text-[#242424]">Key benefits</p></span
+                ></span
+              >
+            </div>
+            <h1
+              class="font-cal !leading-xs md:!leading-h1 text-[32px] lg:text-5xl pb-3"
+            >
+              <span
+                style="
+                  display: inline-block;
+                  vertical-align: top;
+                  text-decoration: inherit;
+                  text-wrap: balance;
+                "
+                >Made for Carriers</span
+              >
+            </h1>
+            <p
+              class="max-w-md text-base text-[#898989] lg:max-w-2xl lg:text-lg"
+            >
+            Centralize and manage all your trucking operations effortlessly with our all-in-one transportation management system
+            </p>
+          </div>
+          <div class="gap- flex flex-col pt-2.5">
+            <div class="relative my-5 w-full">
+              <div
+                class="flex flex-col gap-7 lg:grid lg:grid-cols-2 lg:items-center lg:gap-8"
+              >
+                <div class="lg:col-span-1 lg:order-2 lg:pl-10">
+                  <div
+                    class="flex flex-col pb-3.5 items-center text-center lg:items-start lg:text-left"
+                  >
+                      <p
+                        class="
+                        text-md mb-1.5 font-semibold
+                        "
+                        >Maximize Efficiency with Powerful Email
+                        Features</p
+                      >
+                  
+                    <p
+                      class="max-w-md text-base text-[#898989] lg:max-w-2xl lg:text-lg"
+                    >
+                      Simplify your workflow and enhance communication with
+                      these easy-to-use features: send emails instantly with
+                      just one click, customize and load your inquiries
+                      effortlessly, and sync all your correspondence directly
+                      with Gmail. <br>
+                    </p>
+                    <hr style="width:100%;
+                    border-top: 1px solid #898989;
+                    margin: 20px auto;">
+                    <p
+                    class="
+                    text-md mb-1.5 font-semibold
+                    "
+                    >Maximize Efficiency with Powerful Email
+                    Features</p
+                  >
+              
+                <p
+                  class="max-w-md text-base text-[#898989] lg:max-w-2xl lg:text-lg"
+                >
+                  Simplify your workflow and enhance communication with
+                  these easy-to-use features: send emails instantly with
+                  just one click, customize and load your inquiries
+                  effortlessly, and sync all your correspondence directly
+                  with Gmail. <br>
+                </p>
+                <hr style="width:100%;
+                border-top: 1px solid #898989;
+                margin: 20px auto;">
+                <p
+                class="
+                text-md mb-1.5 font-semibold
+                "
+                >Maximize Efficiency with Powerful Email
+                Features</p
+              >
+          
+            <p
+              class="max-w-md text-base text-[#898989] lg:max-w-2xl lg:text-lg"
+            >
+              Simplify your workflow and enhance communication with
+              these easy-to-use features: send emails instantly with
+              just one click, customize and load your inquiries
+              effortlessly, and sync all your correspondence directly
+              with Gmail. <br>
+            </p>
+                  </div>
+                </div>
+                <div
+                  class="transform rounded-xl border border-gray-200 bg-[#FAFAFA] p-1"
+                >
+                  <div
+                    class="grid w-fit grid-cols-1 overflow-clip rounded-xl border border-gray-200 pb-2"
+                  >
+                    <img src="assets/images/replace.png"
+                     
+                      style="width: 800px"
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+      </section>
       <section class="mx-3 md:mx-0">
         <div
           class="mx-auto w-full relative max-w-[1200px] gap-8 overflow-clip rounded-xl py-6 md:py-20 !bg-transparent px-1 md:px-1"
@@ -875,18 +1111,20 @@
                   class="shadow-fade inline-flex items-center justify-start gap-1 rounded-full px-3.5 py-1 bg-white"
                   ><span
                     class="flex h-4 w-auto items-center justify-center py-[1.33px] transition-transform duration-300 [&amp;_svg]:h-full [&amp;_svg]:w-auto [&amp;_svg]:shrink-0"
-                    ><img
-                      alt="Benefits"
-                      loading="lazy"
-                      width="100"
-                      height="100"
-                      decoding="async"
-                      data-nimg="1"
-                      class="h-5 w-5"
-                      style="color: transparent"
-                      src="https://www.datocms-assets.com/77432/1729632030-luggage.svg"
-                  /></span>
-                  <p class="text-xs text-[#242424]">Steps</p></span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      class="h-4 w-4"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z"
+                        clip-rule="evenodd"
+                      ></path></svg
+                  ></span>
+                  <p class="text-xs text-[#242424]">How it works</p></span
                 ></span
               >
             </div>
@@ -902,137 +1140,74 @@
                   text-decoration: inherit;
                   text-wrap: balance;
                 "
-                >Predict & Prevent Safety Incidents with AI</span
+                >Whats included in the Disruptor?</span
               >
             </h1>
             <p
               class="max-w-md text-base text-[#898989] lg:max-w-2xl lg:text-lg"
             >
-              Use AI to proactively predict and prevent safety incidents.
-              Through a 4-step process, identify risks, analyze patterns, and
-              implement preventive measures for a safer environment
+              Streamline driver compliance and safety with real-time monitoring,
+              risk assessments, and proactive screening to ensure a safer and
+              more efficient fleet.
             </p>
           </div>
           <div
-            class="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4"
+            class="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3"
           >
             <div
-              class="shadow-fade grid grid-cols-1 grid-rows-[auto_1fr] overflow-hidden rounded-2xl bg-white"
+              class="shadow-fade grid grid-cols-1 grid-rows-[auto_1fr] overflow-hidden rounded-2xl bg-white animate1"
             >
-              <div class="px-[20px] py-[20px]">
-                <span
-                  class="mb-3 inline-block rounded-md bg-gray-200 px-2 py-1 font-mono text-sm font-bold text-gray-500"
-                  >01</span
-                >
-                <p class="text-md mb-1.5 font-semibold">Upload Driver's CDL</p>
-                <p
-                  class="text-content-subtle max-w-[300px] text-[#898989] text-[16px]"
-                >
-                  We'll handle all the cross-referencing, so you don't have
-                </p>
+              <div class="px-[20px] py-[20px] ">
+                <svg fill="none" style="width: 50px; height:50px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 64"><path d="M13 6.875v10m32-10v10M9 57.125v-2c0-5.523 4.477-10 10-10s10 4.476 10 9.999v2.001m0 0h24a4 4 0 0 0 4-4v-32a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v32a4 4 0 0 0 4 4h24Zm6-19.25h12m-12 6.75h12m-12-13.75h12m-22.344 1.248c-.252 3.39-2.822 6.156-5.643 6.156-2.822 0-5.397-2.765-5.644-6.156-.256-3.527 2.245-6.157 5.644-6.157 3.398 0 5.9 2.694 5.643 6.157Z" stroke="#000" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
               </div>
-              <div class="flex min-h-[200px] justify-center">
-                <div class="grid h-full w-full max-w-[600px]">
-                  <dotlottie-player
-                    src="https://lottie.host/428be5bf-1fca-4dde-bce3-a2d715f05e63/JeJp1FvLyr.lottie"
-                    background="transparent"
-                    speed="1"
-                    style="width: 300px; height: 250px"
-                    loop
-                    autoplay
-                  ></dotlottie-player>
-                </div>
+              <div class="px-[20px] " style="margin-bottom:25px;">
+               
+                  <p class="text-md mb-1.5 font-semibold">Anonymous user identification</p>
+                  <p
+                    class="text-content-subtle max-w-[300px] text-[#898989] text-[16px]"
+                  >
+                  Every visitor to your website is assigned a permanent visitor ID that can be used to identify visitors conceal their identity via proxies or other techniques.
+                  </p>
+                
               </div>
             </div>
             <div
-              class="shadow-fade grid grid-cols-1 grid-rows-[auto_1fr] overflow-hidden rounded-2xl bg-white"
-            >
-              <div class="px-[20px] py-[20px]">
-                <span
-                  class="mb-3 inline-block rounded-md bg-gray-200 px-2 py-1 font-mono text-sm font-bold text-gray-500"
-                  >02</span
-                >
-                <p class="text-md mb-1.5 font-semibold">Upload Driver's MVR</p>
+            class="shadow-fade grid grid-cols-1 grid-rows-[auto_1fr] overflow-hidden rounded-2xl bg-white animate2"
+          >
+            <div class="px-[20px] py-[20px]">
+              <svg fill="none" style="width:50px; height:50px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 64"><path d="M1.333 23.781v1.357a22.08 22.08 0 0 0 3.89 12.515L18.996 57.67c.11.16.344.16.454 0l13.773-20.017a22.079 22.079 0 0 0 3.89-12.515v-1.356A17.782 17.782 0 0 0 19.33 6h-.216A17.781 17.781 0 0 0 1.334 23.781Z" stroke="#000" stroke-width="1.4"></path><circle cx="19.223" cy="22.549" stroke="#000" stroke-width="1.4" r="7.141"></circle></svg>
+            </div>
+            <div class="px-[20px] " style="margin-bottom:25px;">
+             
+                <p class="text-md mb-1.5 font-semibold">Geolocation</p>
                 <p
                   class="text-content-subtle max-w-[300px] text-[#898989] text-[16px]"
                 >
-                  Want to block off weekends? Set up any buffers? We make that
-                  easy.
+                Every identification API request will provide the geolocation of the current visitor, including geoposition, city, country, time zone, and ISP information.
                 </p>
-              </div>
-              <div class="flex min-h-[200px] justify-center">
-                <div class="grid h-full w-full max-w-[600px]">
-                  <dotlottie-player
-                    src="https://lottie.host/9162e9d8-14f1-46a5-921e-80bdf0c31ac1/ULYD3Y6O3E.lottie"
-                    background="transparent"
-                    speed="1"
-                    style="width: 300px; height: 250px"
-                    loop
-                    autoplay
-                  ></dotlottie-player>
-                </div>
-              </div>
+              
             </div>
-            <div
-              class="shadow-fade grid grid-cols-1 grid-rows-[auto_1fr] overflow-hidden rounded-2xl bg-white"
-            >
-              <div class="px-[20px] py-[20px]">
-                <span
-                  class="mb-3 inline-block rounded-md bg-gray-200 px-2 py-1 font-mono text-sm font-bold text-gray-500"
-                  >03</span
-                >
-                <p class="text-md mb-1.5 font-semibold">Upload Driver's PSP</p>
-                <p
-                  class="text-content-subtle max-w-[300px] text-[#898989] text-[16px]"
-                >
-                  It could be a video chat, phone call, or a walk in the park!
-                </p>
-              </div>
-              <div class="flex min-h-[200px] justify-center">
-                <div class="grid h-full w-full max-w-[600px]">
-                  <dotlottie-player
-                    src="https://lottie.host/b0d10aa9-a20e-4e48-aa11-9a3e04ae3fcc/lgQEEw5Iv5.lottie"
-                    background="transparent"
-                    speed="1"
-                    style="width: 300px; height: 250px"
-                    loop
-                    autoplay
-                  ></dotlottie-player>
-                </div>
-              </div>
-            </div>
-            <div
-              class="shadow-fade grid grid-cols-1 grid-rows-[auto_1fr] overflow-hidden rounded-2xl bg-white"
-            >
-              <div class="px-[20px] py-[20px]">
-                <span
-                  class="mb-3 inline-block rounded-md bg-gray-200 px-2 py-1 font-mono text-sm font-bold text-gray-500"
-                  >04</span
-                >
-                <p class="text-md mb-1.5 font-semibold">Driver's Score</p>
-                <p
-                  class="text-content-subtle max-w-[300px] text-[#898989] text-[16px]"
-                >
-                  It could be a video chat, phone call, or a walk in the park!
-                </p>
-              </div>
-              <div class="flex min-h-[200px] justify-center">
-                <div class="grid h-full w-full max-w-[600px]">
-                  <dotlottie-player
-                    src="https://lottie.host/f649ac6f-6cfb-4aa3-a2be-9204500a06de/vSxNsRbGcO.lottie"
-                    background="transparent"
-                    speed="1"
-                    style="width: 300px; height: 250px"
-                    loop
-                    autoplay
-                  ></dotlottie-player>
-                </div>
-              </div>
-            </div>
+          </div>
+          <div
+          class="shadow-fade grid grid-cols-1 grid-rows-[auto_1fr] overflow-hidden rounded-2xl bg-white animate3"
+        >
+          <div class="px-[20px] py-[20px]">
+            <svg fill="none"style="width:50px; height:50px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 64"><rect x="1.928" y="8.738" width="57.738" height="46.524" rx="1.333" stroke="#000" stroke-width="1.333"></rect><path stroke="#000" stroke-width="1.333" d="M1.667 16.455h57.505"></path><path d="M15.684 44.03H45.65m-3.943 0-1.506-18.072a.789.789 0 0 0-.915-.712l-8.49 1.414a.789.789 0 0 1-.258 0l-8.49-1.415a.789.789 0 0 0-.915.713L19.627 44.03h22.08Z" stroke="#000" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          </div>
+          <div class="px-[20px] " style="margin-bottom:25px;">
+           
+              <p class="text-md mb-1.5 font-semibold">Incognito mode detection</p>
+              <p
+                class="text-content-subtle max-w-[300px] text-[#898989] text-[16px]"
+              >
+              Fingerprint tracks whether visitors are using incognito mode, and accurately identifies users across incognito browsing sessions.
+              </p>
+            
+          </div>
+        </div>
           </div>
         </div>
       </section>
-    
       <section class="mx-3 md:mx-0">
         <div
           class="mx-auto relative max-w-[1200px] gap-8 overflow-clip rounded-xl px-1 md:py-20 !bg-transparent text-black mt-12 flex h-full w-full flex-col py-14 md:px-0"
@@ -1288,7 +1463,7 @@
                   <li class="pt-4 text-[17px]">
                     <a
                       class="flex items-start text-[16px] hover:opacity-50"
-                      href="safety_app.html"
+                      href="sentinel.html"
                       >Safety</a
                     >
                   </li>
