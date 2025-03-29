@@ -1,60 +1,20 @@
 <style>
-#progress-container {
-  width: 90%;
-  background-color: teal;
+.card {
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
   border-radius: 10px;
-  height: 20px;
-  margin-top: 20px;
-  margin-right: 10px;
+
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-#progress-bar {
-  height: 100%;
-  width: 0%;
-  background-color: #4caf50;
-  border-radius: 10px;
-  text-align: center;
-  line-height: 20px;
-  color: white;
-  margin-left: 10px;
-  font-size: 9px;
-  font-weight: bold;
+.card:hover {
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
 }
+
+
 </style>
 
-<div id="progress-container">
-  <div id="progress-bar"> &nbsp;&nbsp;0%</div>
+<div class="card">
 </div>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-    const draggable = document.querySelector(".dragging");
-    const dropTarget = document.querySelector(".target");
-    const loading = document.querySelector(".loading");
-    const arrow = document.querySelector(".arrow");
-    const progressBar = document.getElementById("progress-bar");
-    const all = document.querySelector(".all"); // The element with the 'all' class
-    const first = document.querySelector(".first");
-    const second = document.querySelector(".second");
-    const third = document.querySelector(".third");
-    let isDragging = false;
-    let startX = 0;
-
-    function move() {
-        let width = 0;
-        const id = setInterval(function () {
-            if (width >= 100) {
-                clearInterval(id); // Stop progress at 100%
-                // Wait for 0.5 seconds after progress reaches 100% before triggering the next animation
-                setTimeout(triggerNextPhase, 500);
-            } else {
-                width++;
-                progressBar.style.width = width + "%"; // Change the width of the progress bar
-                progressBar.innerHTML = width + "%"; // Update the text to show the percentage
-            }
-        }, 30); // 30ms interval to complete 100% in 3 seconds
-    }
-
-  });
-  
-</script>
