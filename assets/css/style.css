@@ -21483,12 +21483,12 @@ html[dir=rtl] .search-results .clear-all-link {
     }
 }
 
-.AccuracySection-module--root--38813 .AccuracySection-module--fingerprintIdentificationMobile--ac908 {
+.AccuracySection-module--root--38813 .AccuracySection-module--spotterIdentificationMobile--ac908 {
     display: none
 }
 
 @media(max-width: 860px) {
-    .AccuracySection-module--root--38813 .AccuracySection-module--fingerprintIdentificationMobile--ac908 {
+    .AccuracySection-module--root--38813 .AccuracySection-module--spotterIdentificationMobile--ac908 {
         display:block;
         margin-left: -12px;
         z-index: 9
@@ -21544,7 +21544,7 @@ html[dir=rtl] .search-results .clear-all-link {
     }
 }
 
-.FingerprintWorkflowAnimation-module--carousel--b8f39 {
+.spotterWorkflowAnimation-module--carousel--b8f39 {
     align-items: center;
     display: flex;
     height: 201px;
@@ -21558,13 +21558,13 @@ html[dir=rtl] .search-results .clear-all-link {
 }
 
 @media(max-width: 860px) {
-    .FingerprintWorkflowAnimation-module--carousel--b8f39 {
+    .spotterWorkflowAnimation-module--carousel--b8f39 {
         -webkit-mask:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);
         mask: linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)
     }
 }
 
-.FingerprintWorkflowAnimation-module--carousel--b8f39 .FingerprintWorkflowAnimation-module--dotsBackground--93070 {
+.spotterWorkflowAnimation-module--carousel--b8f39 .spotterWorkflowAnimation-module--dotsBackground--93070 {
     height: 100%;
     left: 0;
     position: absolute;
@@ -21572,12 +21572,12 @@ html[dir=rtl] .search-results .clear-all-link {
     width: 100%;
     z-index: -1
 }
-.FingerprintWorkflowAnimation-module--carouselInner--89377 {
+.spotterWorkflowAnimation-module--carouselInner--89377 {
     display: flex;
     gap: 48px;
     width: 100%
 }
-.FingerprintWorkflowAnimation-module--card--4fadf {
+.spotterWorkflowAnimation-module--card--4fadf {
     align-items: center;
     box-sizing: border-box;
     display: flex;
@@ -21586,12 +21586,12 @@ html[dir=rtl] .search-results .clear-all-link {
     position: relative
 }
 
-.FingerprintWorkflowAnimation-module--card--4fadf .FingerprintWorkflowAnimation-module--arrow--cae54 {
+.spotterWorkflowAnimation-module--card--4fadf .spotterWorkflowAnimation-module--arrow--cae54 {
     position: absolute;
     right: -34px;
     top: calc(50% - 12px)
 }
-.FingerprintWall-module--fingerprintWall--3683f {
+.spotterWall-module--spotterWall--3683f {
     background: #fafaf8;
     border: 1px solid #d9d9d6;
     border-radius: 16px;
@@ -21600,9 +21600,9 @@ html[dir=rtl] .search-results .clear-all-link {
     width: 167px
 }
 
-.FingerprintWall-module--fingerprintWall--3683f .FingerprintWall-module--fingerprintWallInner--9760f {
+.spotterWall-module--spotterWall--3683f .spotterWall-module--spotterWallInner--9760f {
     align-items: center;
-    animation: FingerprintWall-module--gradientRotate--80a91 4s linear infinite;
+    animation: spotterWall-module--gradientRotate--80a91 4s linear infinite;
     background: linear-gradient(126deg, rgba(0, 128, 128, .21) 13.2%, hsla(180, 100%, 25%, .21) 41.14%, hsla(180, 100%, 25%, .21) 62.96%, rgba(0, 128, 128, .21) 84.6%), #fff;
     border: 1px solid #008080;
     border-radius: 8px;

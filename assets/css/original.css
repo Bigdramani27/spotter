@@ -828,19 +828,19 @@
     background-color: var(--gray-1)
 }
 
-.ClerkLikeChatBubble-module--root--3f262 .ClerkLikeChatBubble-module--inner--77686:hover .ClerkLikeChatBubble-module--fingerprint--c7861 path {
+.ClerkLikeChatBubble-module--root--3f262 .ClerkLikeChatBubble-module--inner--77686:hover .ClerkLikeChatBubble-module--spotter--c7861 path {
     fill: #008080
 }
 
-.ClerkLikeChatBubble-module--root--3f262 .ClerkLikeChatBubble-module--fingerprint--c7861 path {
+.ClerkLikeChatBubble-module--root--3f262 .ClerkLikeChatBubble-module--spotter--c7861 path {
     transition: fill .25s linear
 }
 
-.ClerkLikeChatBubble-module--root--3f262 .ClerkLikeChatBubble-module--fingerprint--c7861.ClerkLikeChatBubble-module--isOpen--80a0b path {
+.ClerkLikeChatBubble-module--root--3f262 .ClerkLikeChatBubble-module--spotter--c7861.ClerkLikeChatBubble-module--isOpen--80a0b path {
     fill: #008080
 }
 
-.ClerkLikeChatBubble-module--root--3f262 .ClerkLikeChatBubble-module--fingerprint--c7861.ClerkLikeChatBubble-module--isClosed--1fb61 path {
+.ClerkLikeChatBubble-module--root--3f262 .ClerkLikeChatBubble-module--spotter--c7861.ClerkLikeChatBubble-module--isClosed--1fb61 path {
     fill: var(--gray-7)
 }
 
@@ -14613,20 +14613,20 @@
     }
 }
 
-.WhyFingerprintSection-module--root--58489 {
+.WhyspotterSection-module--root--58489 {
     border-bottom: 1px dashed var(--dash-gray);
     border-top: 1px dashed var(--dash-gray);
     position: relative
 }
 
 @media(max-width: 768px) {
-    .WhyFingerprintSection-module--root--58489 {
+    .WhyspotterSection-module--root--58489 {
         background:var(--button-background-gray)
     }
 }
 
 @media(min-width: 861px) {
-    .WhyFingerprintSection-module--root--58489:before {
+    .WhyspotterSection-module--root--58489:before {
         background:linear-gradient(8deg,var(--button-background-gray) 50%,transparent 50%);
         bottom: 0;
         content: "";
@@ -14638,7 +14638,7 @@
         z-index: -10
     }
 
-    .WhyFingerprintSection-module--root--58489:after {
+    .WhyspotterSection-module--root--58489:after {
         background: linear-gradient(8deg,transparent calc(50% - .5px),var(--dash-gray) calc(50% - .5px),var(--dash-gray) calc(50% + .5px),transparent calc(50% + .5px));
         bottom: 0;
         content: "";
@@ -14652,7 +14652,7 @@
     }
 }
 
-.WhyFingerprintSection-module--root--58489 .WhyFingerprintSection-module--container--ec167 {
+.WhyspotterSection-module--root--58489 .WhyspotterSection-module--container--ec167 {
     border-left: 1px dashed var(--dash-gray);
     border-right: 1px dashed var(--dash-gray);
     display: grid;
@@ -14663,19 +14663,19 @@
 }
 
 @media(max-width: 860px) {
-    .WhyFingerprintSection-module--root--58489 .WhyFingerprintSection-module--container--ec167 {
+    .WhyspotterSection-module--root--58489 .WhyspotterSection-module--container--ec167 {
         padding-bottom:0!important
     }
 }
 
-.WhyFingerprintSection-module--root--58489 .WhyFingerprintSection-module--titleSection--f4a44 {
+.WhyspotterSection-module--root--58489 .WhyspotterSection-module--titleSection--f4a44 {
     display: flex;
     flex-direction: column;
     justify-content: space-between
 }
 
 @media(min-width: 861px) {
-    .WhyFingerprintSection-module--root--58489 .WhyFingerprintSection-module--titleSection--f4a44 {
+    .WhyspotterSection-module--root--58489 .WhyspotterSection-module--titleSection--f4a44 {
         background-color:#fff;
         border: 1px solid var(--dash-gray);
         border-radius: 12px;
@@ -14685,29 +14685,29 @@
 }
 
 @media(max-width: 860px) {
-    .WhyFingerprintSection-module--root--58489 .WhyFingerprintSection-module--titleSection--f4a44 {
+    .WhyspotterSection-module--root--58489 .WhyspotterSection-module--titleSection--f4a44 {
         grid-column:1/14;
         padding: 56px 32px 32px
     }
 }
 
 @media(max-width: 640px) {
-    .WhyFingerprintSection-module--root--58489 .WhyFingerprintSection-module--titleSection--f4a44 {
+    .WhyspotterSection-module--root--58489 .WhyspotterSection-module--titleSection--f4a44 {
         padding-bottom:0
     }
 }
 
-.WhyFingerprintSection-module--root--58489 .WhyFingerprintSection-module--titleSection--f4a44 .WhyFingerprintSection-module--titleWrapper--ae38c {
+.WhyspotterSection-module--root--58489 .WhyspotterSection-module--titleSection--f4a44 .WhyspotterSection-module--titleWrapper--ae38c {
     padding: 32px 0 0 32px
 }
 
 @media(max-width: 860px) {
-    .WhyFingerprintSection-module--root--58489 .WhyFingerprintSection-module--titleSection--f4a44 .WhyFingerprintSection-module--titleWrapper--ae38c {
+    .WhyspotterSection-module--root--58489 .WhyspotterSection-module--titleSection--f4a44 .WhyspotterSection-module--titleWrapper--ae38c {
         padding:0 0 32px
     }
 }
 
-.WhyFingerprintSection-module--root--58489 .WhyFingerprintSection-module--titleSection--f4a44 .WhyFingerprintSection-module--title--2f043 {
+.WhyspotterSection-module--root--58489 .WhyspotterSection-module--titleSection--f4a44 .WhyspotterSection-module--title--2f043 {
     font-family: var(--ff-inter);
     font-size: 36px;
     font-weight: 500;
@@ -14718,21 +14718,21 @@
     z-index: 2
 }
 
-.WhyFingerprintSection-module--root--58489 .WhyFingerprintSection-module--titleSection--f4a44 .WhyFingerprintSection-module--title--2f043 mark {
+.WhyspotterSection-module--root--58489 .WhyspotterSection-module--titleSection--f4a44 .WhyspotterSection-module--title--2f043 mark {
     all: unset;
     color: #008080;
     font-weight: 600
 }
 
 @media(max-width: 640px) {
-    .WhyFingerprintSection-module--root--58489 .WhyFingerprintSection-module--titleSection--f4a44 .WhyFingerprintSection-module--title--2f043 {
+    .WhyspotterSection-module--root--58489 .WhyspotterSection-module--titleSection--f4a44 .WhyspotterSection-module--title--2f043 {
         font-size:24px;
         letter-spacing: -.48px;
         line-height: 28px
     }
 }
 
-.WhyFingerprintSection-module--root--58489 .WhyFingerprintSection-module--titleSection--f4a44 .WhyFingerprintSection-module--subTitle--92f44 {
+.WhyspotterSection-module--root--58489 .WhyspotterSection-module--titleSection--f4a44 .WhyspotterSection-module--subTitle--92f44 {
     color: var(--font-gray-dark);
     font-family: var(--ff-inter);
     font-size: 16px;
@@ -14743,7 +14743,7 @@
     z-index: 2
 }
 
-.WhyFingerprintSection-module--root--58489 .WhyFingerprintSection-module--mainCard--22925 {
+.WhyspotterSection-module--root--58489 .WhyspotterSection-module--mainCard--22925 {
     background: linear-gradient(135deg,#fef4f1,#fff 25%);
     display: flex;
     flex-direction: row;
@@ -14753,14 +14753,14 @@
 }
 
 @media(max-width: 860px) {
-    .WhyFingerprintSection-module--root--58489 .WhyFingerprintSection-module--mainCard--22925 {
+    .WhyspotterSection-module--root--58489 .WhyspotterSection-module--mainCard--22925 {
         display:grid;
         grid-column: 1/13;
         margin-bottom: 8px
     }
 }
 
-.WhyFingerprintSection-module--root--58489 .WhyFingerprintSection-module--descriptionSection--cd685 {
+.WhyspotterSection-module--root--58489 .WhyspotterSection-module--descriptionSection--cd685 {
     display: flex;
     flex-direction: column;
     height: 1;
@@ -14769,20 +14769,20 @@
 }
 
 @media(min-width: 861px) {
-    .WhyFingerprintSection-module--root--58489 .WhyFingerprintSection-module--descriptionSection--cd685 {
+    .WhyspotterSection-module--root--58489 .WhyspotterSection-module--descriptionSection--cd685 {
         grid-column:8/14
     }
 }
 
 @media(max-width: 860px) {
-    .WhyFingerprintSection-module--root--58489 .WhyFingerprintSection-module--descriptionSection--cd685 {
+    .WhyspotterSection-module--root--58489 .WhyspotterSection-module--descriptionSection--cd685 {
         grid-column:1/13;
         margin: 0;
         padding-bottom: 16px
     }
 }
 
-.WhyFingerprintSection-module--card--2184e,.WhyFingerprintSection-module--mainCard--22925 {
+.WhyspotterSection-module--card--2184e,.WhyspotterSection-module--mainCard--22925 {
     background: #fff;
     border: 1px solid var(--dash-gray);
     border-radius: 12px;
@@ -14791,12 +14791,12 @@
 }
 
 @media(max-width: 860px) {
-    .WhyFingerprintSection-module--card--2184e,.WhyFingerprintSection-module--mainCard--22925 {
+    .WhyspotterSection-module--card--2184e,.WhyspotterSection-module--mainCard--22925 {
         border-radius:8px
     }
 }
 
-.WhyFingerprintSection-module--card--2184e .WhyFingerprintSection-module--content--72295,.WhyFingerprintSection-module--mainCard--22925 .WhyFingerprintSection-module--content--72295 {
+.WhyspotterSection-module--card--2184e .WhyspotterSection-module--content--72295,.WhyspotterSection-module--mainCard--22925 .WhyspotterSection-module--content--72295 {
     display: flex;
     flex-direction: column;
     padding: 24px;
@@ -14804,48 +14804,48 @@
 }
 
 @media(max-width: 860px) {
-    .WhyFingerprintSection-module--card--2184e .WhyFingerprintSection-module--content--72295,.WhyFingerprintSection-module--mainCard--22925 .WhyFingerprintSection-module--content--72295 {
+    .WhyspotterSection-module--card--2184e .WhyspotterSection-module--content--72295,.WhyspotterSection-module--mainCard--22925 .WhyspotterSection-module--content--72295 {
         flex-direction:column;
         padding: 16px 12px;
         row-gap: 4px
     }
 }
 
-.WhyFingerprintSection-module--card--2184e .WhyFingerprintSection-module--content--72295 svg,.WhyFingerprintSection-module--mainCard--22925 .WhyFingerprintSection-module--content--72295 svg {
+.WhyspotterSection-module--card--2184e .WhyspotterSection-module--content--72295 svg,.WhyspotterSection-module--mainCard--22925 .WhyspotterSection-module--content--72295 svg {
     flex-shrink: 0
 }
 
 @media(max-width: 860px) {
-    .WhyFingerprintSection-module--card--2184e .WhyFingerprintSection-module--content--72295 svg,.WhyFingerprintSection-module--mainCard--22925 .WhyFingerprintSection-module--content--72295 svg {
+    .WhyspotterSection-module--card--2184e .WhyspotterSection-module--content--72295 svg,.WhyspotterSection-module--mainCard--22925 .WhyspotterSection-module--content--72295 svg {
         margin-left:-3px
     }
 }
 
-.WhyFingerprintSection-module--mainCardContent--10285 {
+.WhyspotterSection-module--mainCardContent--10285 {
     align-items: flex-end;
     display: flex;
     padding: 16px 50px 24px 24px
 }
 
 @media(max-width: 860px) {
-    .WhyFingerprintSection-module--mainCardContent--10285 {
+    .WhyspotterSection-module--mainCardContent--10285 {
         padding:8px 12px 16px
     }
 }
 
-.WhyFingerprintSection-module--mainCardContent--10285 .WhyFingerprintSection-module--descriptionContainer--f6402 {
+.WhyspotterSection-module--mainCardContent--10285 .WhyspotterSection-module--descriptionContainer--f6402 {
     display: flex;
     flex-direction: column;
     row-gap: 12px
 }
 
-.WhyFingerprintSection-module--animationBackground--a3799 {
+.WhyspotterSection-module--animationBackground--a3799 {
     position: absolute;
     top: 24px;
     z-index: 0
 }
 
-.WhyFingerprintSection-module--checkoutAnimationContainer--c9813 {
+.WhyspotterSection-module--checkoutAnimationContainer--c9813 {
     align-items: flex-end;
     display: flex;
     justify-content: center;
@@ -14855,46 +14855,46 @@
 }
 
 @media(max-width: 860px) {
-    .WhyFingerprintSection-module--checkoutAnimationContainer--c9813 {
+    .WhyspotterSection-module--checkoutAnimationContainer--c9813 {
         justify-content:flex-start;
         max-width: 180px;
         padding-left: 12px;
         padding-top: 12px
     }
 
-    .WhyFingerprintSection-module--checkoutAnimationContainer--c9813 svg {
+    .WhyspotterSection-module--checkoutAnimationContainer--c9813 svg {
         height: auto;
         max-width: 200px
     }
 }
 
 @media(max-width: 1024px) {
-    .WhyFingerprintSection-module--checkoutAnimationContainer--c9813 svg {
+    .WhyspotterSection-module--checkoutAnimationContainer--c9813 svg {
         height:auto;
         max-width: 200px
     }
 }
 
-.WhyFingerprintSection-module--titleDescription--5d985 {
+.WhyspotterSection-module--titleDescription--5d985 {
     display: flex;
     flex-direction: column;
     row-gap: 4px
 }
 
 @media(max-width: 860px) {
-    .WhyFingerprintSection-module--titleDescription--5d985 {
+    .WhyspotterSection-module--titleDescription--5d985 {
         row-gap:4px
     }
 }
 
-.WhyFingerprintSection-module--titleDescription--5d985 .WhyFingerprintSection-module--title--2f043 {
+.WhyspotterSection-module--titleDescription--5d985 .WhyspotterSection-module--title--2f043 {
     font-family: var(--ff-inter);
     font-size: 16px;
     font-weight: 500;
     line-height: 24px
 }
 
-.WhyFingerprintSection-module--titleDescription--5d985 .WhyFingerprintSection-module--description--85d65 {
+.WhyspotterSection-module--titleDescription--5d985 .WhyspotterSection-module--description--85d65 {
     color: var(--font-gray-dark);
     font-family: var(--ff-inter);
     font-size: 14px;
@@ -14902,16 +14902,16 @@
     line-height: 20px
 }
 
-.WhyFingerprintSection-module--swiper--4df50 {
+.WhyspotterSection-module--swiper--4df50 {
     padding-bottom: 40px;
     padding-top: 12px
 }
 
-.WhyFingerprintSection-module--slide--416cc {
+.WhyspotterSection-module--slide--416cc {
     display: flex
 }
 
-.WhyFingerprintSection-module--grid--63498 {
+.WhyspotterSection-module--grid--63498 {
     -webkit-mask-image: linear-gradient(180deg,#000 0,#000 85%,transparent);
     mask-image: linear-gradient(180deg,#000 0,#000 85%,transparent);
     overflow: hidden;
@@ -14920,18 +14920,18 @@
 }
 
 @media(max-width: 640px) {
-    .WhyFingerprintSection-module--grid--63498 {
+    .WhyspotterSection-module--grid--63498 {
         display:none
     }
 }
 
 @media(min-width: 641px) {
-    .WhyFingerprintSection-module--grid--63498 {
+    .WhyspotterSection-module--grid--63498 {
         cursor:none
     }
 }
 
-.WhyFingerprintSection-module--grid--63498:before {
+.WhyspotterSection-module--grid--63498:before {
     border: 1px solid orange;
     border-radius: 50%;
     content: "";
@@ -14945,22 +14945,22 @@
 }
 
 @media(min-width: 641px) {
-    .WhyFingerprintSection-module--grid--63498:before {
+    .WhyspotterSection-module--grid--63498:before {
         opacity:0;
         transition: opacity .2s ease-in-out
     }
 }
 
-.WhyFingerprintSection-module--grid--63498:hover:before {
+.WhyspotterSection-module--grid--63498:hover:before {
     opacity: 1
 }
 
-.WhyFingerprintSection-module--grid--63498 .WhyFingerprintSection-module--radarSvg--fdc50 {
+.WhyspotterSection-module--grid--63498 .WhyspotterSection-module--radarSvg--fdc50 {
     opacity: .3;
     width: 100%
 }
 
-.WhyFingerprintSection-module--magnifier--a02ed {
+.WhyspotterSection-module--magnifier--a02ed {
     height: 100%;
     left: 0;
     -webkit-mask-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='128' fill='none' viewBox='0 0 128 128'%3E%3Ccircle cx='64' cy='64' r='64' fill='%23D9D9D9'/%3E%3C/svg%3E");
@@ -14979,17 +14979,17 @@
 }
 
 @media(min-width: 641px) {
-    .WhyFingerprintSection-module--magnifier--a02ed {
+    .WhyspotterSection-module--magnifier--a02ed {
         opacity:0;
         transition: opacity .2s ease-in-out
     }
 
-    .WhyFingerprintSection-module--grid--63498:hover .WhyFingerprintSection-module--magnifier--a02ed {
+    .WhyspotterSection-module--grid--63498:hover .WhyspotterSection-module--magnifier--a02ed {
         opacity: 1
     }
 }
 
-.WhyFingerprintSection-module--magnifier--a02ed .WhyFingerprintSection-module--magnifierGlass--c753f {
+.WhyspotterSection-module--magnifier--a02ed .WhyspotterSection-module--magnifierGlass--c753f {
     background-color: #f0f0ed;
     height: 100%;
     position: static;
@@ -14997,21 +14997,21 @@
     width: 100%
 }
 
-.WhyFingerprintSection-module--desktop--0a44e {
+.WhyspotterSection-module--desktop--0a44e {
     display: none
 }
 
 @media(min-width: 641px) {
-    .WhyFingerprintSection-module--desktop--0a44e {
+    .WhyspotterSection-module--desktop--0a44e {
         display:block
     }
 }
 
-.WhyFingerprintSection-module--titleWrapper--ae38c {
+.WhyspotterSection-module--titleWrapper--ae38c {
     grid-column: 1/15
 }
 
-.WhyFingerprintSection-module--titleWrapper--ae38c strong {
+.WhyspotterSection-module--titleWrapper--ae38c strong {
     font-weight: 500!important
 }
 
@@ -22119,12 +22119,12 @@
     }
 }
 
-.AccuracySection-module--root--38813 .AccuracySection-module--fingerprintIdentificationMobile--ac908 {
+.AccuracySection-module--root--38813 .AccuracySection-module--spotterIdentificationMobile--ac908 {
     display: none
 }
 
 @media(max-width: 860px) {
-    .AccuracySection-module--root--38813 .AccuracySection-module--fingerprintIdentificationMobile--ac908 {
+    .AccuracySection-module--root--38813 .AccuracySection-module--spotterIdentificationMobile--ac908 {
         display:block;
         margin-left: -12px;
         z-index: 9
@@ -22190,7 +22190,7 @@
     }
 }
 
-.FingerprintWorkflowAnimation-module--carousel--b8f39 {
+.spotterWorkflowAnimation-module--carousel--b8f39 {
     align-items: center;
     display: flex;
     height: 201px;
@@ -22204,13 +22204,13 @@
 }
 
 @media(max-width: 860px) {
-    .FingerprintWorkflowAnimation-module--carousel--b8f39 {
+    .spotterWorkflowAnimation-module--carousel--b8f39 {
         -webkit-mask:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);
         mask: linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)
     }
 }
 
-.FingerprintWorkflowAnimation-module--carousel--b8f39 .FingerprintWorkflowAnimation-module--dotsBackground--93070 {
+.spotterWorkflowAnimation-module--carousel--b8f39 .spotterWorkflowAnimation-module--dotsBackground--93070 {
     height: 100%;
     left: 0;
     position: absolute;
@@ -22219,13 +22219,13 @@
     z-index: -1
 }
 
-.FingerprintWorkflowAnimation-module--carouselInner--89377 {
+.spotterWorkflowAnimation-module--carouselInner--89377 {
     display: flex;
     gap: 48px;
     width: 100%
 }
 
-.FingerprintWorkflowAnimation-module--card--4fadf {
+.spotterWorkflowAnimation-module--card--4fadf {
     align-items: center;
     box-sizing: border-box;
     display: flex;
@@ -22234,7 +22234,7 @@
     position: relative
 }
 
-.FingerprintWorkflowAnimation-module--card--4fadf .FingerprintWorkflowAnimation-module--arrow--cae54 {
+.spotterWorkflowAnimation-module--card--4fadf .spotterWorkflowAnimation-module--arrow--cae54 {
     position: absolute;
     right: -34px;
     top: calc(50% - 12px)
@@ -22366,7 +22366,7 @@
     color: #484946
 }
 
-.FingerprintWall-module--fingerprintWall--3683f {
+.spotterWall-module--spotterWall--3683f {
     background: #fafaf8;
     border: 1px solid var(--gray-4);
     border-radius: 16px;
@@ -22375,9 +22375,9 @@
     width: 167px
 }
 
-.FingerprintWall-module--fingerprintWall--3683f .FingerprintWall-module--fingerprintWallInner--9760f {
+.spotterWall-module--spotterWall--3683f .spotterWall-module--spotterWallInner--9760f {
     align-items: center;
-    animation: FingerprintWall-module--gradientRotate--80a91 4s linear infinite;
+    animation: spotterWall-module--gradientRotate--80a91 4s linear infinite;
     background: linear-gradient(126deg,rgba(190,64,15,.21) 13.2%,hsla(15,98%,77%,.21) 41.14%,hsla(15,98%,77%,.21) 62.96%,rgba(190,64,15,.21) 84.6%),#fff;
     border: 1px solid #008080;
     border-radius: 8px;
@@ -22389,7 +22389,7 @@
     position: relative
 }
 
-.FingerprintWall-module--circle--add00 {
+.spotterWall-module--circle--add00 {
     background: linear-gradient(-180deg,#f35b22 25%,#b4400f 75%);
     border: 0.5px solid var(--orange-6);
     border-radius: 50%;
@@ -22397,31 +22397,31 @@
     width: 4px
 }
 
-.FingerprintWall-module--circle--add00:first-child {
+.spotterWall-module--circle--add00:first-child {
     left: 4px;
     position: absolute;
     top: 4px
 }
 
-.FingerprintWall-module--circle--add00:nth-child(2) {
+.spotterWall-module--circle--add00:nth-child(2) {
     position: absolute;
     right: 4px;
     top: 4px
 }
 
-.FingerprintWall-module--circle--add00:nth-child(3) {
+.spotterWall-module--circle--add00:nth-child(3) {
     bottom: 4px;
     left: 4px;
     position: absolute
 }
 
-.FingerprintWall-module--circle--add00:nth-child(4) {
+.spotterWall-module--circle--add00:nth-child(4) {
     bottom: 4px;
     position: absolute;
     right: 4px
 }
 
-@keyframes FingerprintWall-module--gradientRotate--80a91 {
+@keyframes spotterWall-module--gradientRotate--80a91 {
     0% {
         background: linear-gradient(126deg,rgba(190,64,15,.21) 13.2%,hsla(15,98%,77%,.21) 41.14%,hsla(15,98%,77%,.21) 62.96%,rgba(190,64,15,.21) 84.6%),#fff
     }
@@ -29709,14 +29709,14 @@
     }
 }
 
-.SdksMobileSection-module--sdkAnimationWrapper--e7282 .SdksMobileSection-module--sdks--fd3a0 .SdksMobileSection-module--fingerprintDot--a8651 {
+.SdksMobileSection-module--sdkAnimationWrapper--e7282 .SdksMobileSection-module--sdks--fd3a0 .SdksMobileSection-module--spotterDot--a8651 {
     bottom: 0;
     position: absolute;
     right: calc(50% - 92px)
 }
 
 @media(max-width: 550px) {
-    .SdksMobileSection-module--sdkAnimationWrapper--e7282 .SdksMobileSection-module--sdks--fd3a0 .SdksMobileSection-module--fingerprintDot--a8651 {
+    .SdksMobileSection-module--sdkAnimationWrapper--e7282 .SdksMobileSection-module--sdks--fd3a0 .SdksMobileSection-module--spotterDot--a8651 {
         height:90px;
         right: calc(50% - 45px);
         width: 90px
@@ -33243,7 +33243,7 @@
     width: 100%
 }
 
-.PricingCardsSection-module--fingerprintLicenseCard--203a4 {
+.PricingCardsSection-module--spotterLicenseCard--203a4 {
     align-items: center;
     background: var(--white);
     border: 1px solid #e8e8e8;
@@ -33257,7 +33257,7 @@
 }
 
 @media(max-width: 860px) {
-    .PricingCardsSection-module--fingerprintLicenseCard--203a4 {
+    .PricingCardsSection-module--spotterLicenseCard--203a4 {
         align-items:flex-start;
         flex-direction: column;
         margin-top: 24px;
@@ -33266,7 +33266,7 @@
     }
 }
 
-.PricingCardsSection-module--fingerprintLicenseCard--203a4 .PricingCardsSection-module--titleSection--7f0ea {
+.PricingCardsSection-module--spotterLicenseCard--203a4 .PricingCardsSection-module--titleSection--7f0ea {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -33275,12 +33275,12 @@
 }
 
 @media(max-width: 860px) {
-    .PricingCardsSection-module--fingerprintLicenseCard--203a4 .PricingCardsSection-module--titleSection--7f0ea {
+    .PricingCardsSection-module--spotterLicenseCard--203a4 .PricingCardsSection-module--titleSection--7f0ea {
         max-width:unset
     }
 }
 
-.PricingCardsSection-module--fingerprintLicenseCard--203a4 .PricingCardsSection-module--titleSection--7f0ea .PricingCardsSection-module--title--04815 {
+.PricingCardsSection-module--spotterLicenseCard--203a4 .PricingCardsSection-module--titleSection--7f0ea .PricingCardsSection-module--title--04815 {
     font-family: var(--ff-inter);
     font-size: 28px;
     font-weight: 600;
@@ -33288,13 +33288,13 @@
 }
 
 @media(max-width: 640px) {
-    .PricingCardsSection-module--fingerprintLicenseCard--203a4 .PricingCardsSection-module--titleSection--7f0ea .PricingCardsSection-module--title--04815 {
+    .PricingCardsSection-module--spotterLicenseCard--203a4 .PricingCardsSection-module--titleSection--7f0ea .PricingCardsSection-module--title--04815 {
         font-size:20px;
         line-height: 150%
     }
 }
 
-.PricingCardsSection-module--fingerprintLicenseCard--203a4 .PricingCardsSection-module--titleSection--7f0ea .PricingCardsSection-module--description--f2330 {
+.PricingCardsSection-module--spotterLicenseCard--203a4 .PricingCardsSection-module--titleSection--7f0ea .PricingCardsSection-module--description--f2330 {
     font-family: var(--ff-inter);
     font-size: 14px;
     font-weight: 400;
@@ -33302,12 +33302,12 @@
     line-height: 160%
 }
 
-.PricingCardsSection-module--fingerprintLicenseCard--203a4 .PricingCardsSection-module--titleSection--7f0ea .PricingCardsSection-module--description--f2330 mark {
+.PricingCardsSection-module--spotterLicenseCard--203a4 .PricingCardsSection-module--titleSection--7f0ea .PricingCardsSection-module--description--f2330 mark {
     all: unset;
     color: #008080;
 }
 
-.PricingCardsSection-module--fingerprintLicenseCard--203a4 .PricingCardsSection-module--cta--4d127 {
+.PricingCardsSection-module--spotterLicenseCard--203a4 .PricingCardsSection-module--cta--4d127 {
     font-size: 14px;
     padding: 10px 16px
 }
@@ -37086,19 +37086,19 @@
     text-decoration: underline
 }
 
-.FingerprintDevice-module--diagram--56254 {
+.spotterDevice-module--diagram--56254 {
     align-items: center;
     display: grid;
     grid-template-columns: 1fr 256px
 }
 
 @media(max-width: 640px) {
-    .FingerprintDevice-module--diagram--56254 {
+    .spotterDevice-module--diagram--56254 {
         grid-template-columns:1fr 173px
     }
 }
 
-.FingerprintDevice-module--diagram--56254 .FingerprintDevice-module--signals--8bb44 {
+.spotterDevice-module--diagram--56254 .spotterDevice-module--signals--8bb44 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4,1fr);
@@ -37111,13 +37111,13 @@
 }
 
 @media(max-width: 640px) {
-    .FingerprintDevice-module--diagram--56254 .FingerprintDevice-module--signals--8bb44 {
+    .spotterDevice-module--diagram--56254 .spotterDevice-module--signals--8bb44 {
         left:12px;
         top: 10px
     }
 }
 
-.FingerprintDevice-module--diagram--56254 .FingerprintDevice-module--signals--8bb44 .FingerprintDevice-module--marquee--ff365 {
+.spotterDevice-module--diagram--56254 .spotterDevice-module--signals--8bb44 .spotterDevice-module--marquee--ff365 {
     height: 28px;
     overflow: hidden;
     position: relative;
@@ -37125,12 +37125,12 @@
 }
 
 @media(max-width: 640px) {
-    .FingerprintDevice-module--diagram--56254 .FingerprintDevice-module--signals--8bb44 .FingerprintDevice-module--marquee--ff365 {
+    .spotterDevice-module--diagram--56254 .spotterDevice-module--signals--8bb44 .spotterDevice-module--marquee--ff365 {
         height:18px
     }
 }
 
-.FingerprintDevice-module--diagram--56254 .FingerprintDevice-module--signals--8bb44 .FingerprintDevice-module--marquee--ff365:before {
+.spotterDevice-module--diagram--56254 .spotterDevice-module--signals--8bb44 .spotterDevice-module--marquee--ff365:before {
     background: linear-gradient(90deg,#fff,transparent);
     bottom: 0;
     content: "";
@@ -37142,87 +37142,87 @@
 }
 
 @media(max-width: 640px) {
-    .FingerprintDevice-module--diagram--56254 .FingerprintDevice-module--signals--8bb44 .FingerprintDevice-module--marquee--ff365:before {
+    .spotterDevice-module--diagram--56254 .spotterDevice-module--signals--8bb44 .spotterDevice-module--marquee--ff365:before {
         width:50px
     }
 }
 
-.FingerprintDevice-module--diagram--56254 .FingerprintDevice-module--signals--8bb44 .FingerprintDevice-module--marquee--ff365 .FingerprintDevice-module--signalRowContainer--0db78 {
+.spotterDevice-module--diagram--56254 .spotterDevice-module--signals--8bb44 .spotterDevice-module--marquee--ff365 .spotterDevice-module--signalRowContainer--0db78 {
     display: flex;
     width: 300%
 }
 
-.FingerprintDevice-module--diagram--56254 .FingerprintDevice-module--signals--8bb44 .FingerprintDevice-module--marquee--ff365:first-child .FingerprintDevice-module--signalRowContainer--0db78 {
-    animation: FingerprintDevice-module--marqueeFirst--3445b 10s linear infinite
+.spotterDevice-module--diagram--56254 .spotterDevice-module--signals--8bb44 .spotterDevice-module--marquee--ff365:first-child .spotterDevice-module--signalRowContainer--0db78 {
+    animation: spotterDevice-module--marqueeFirst--3445b 10s linear infinite
 }
 
-.FingerprintDevice-module--diagram--56254 .FingerprintDevice-module--signals--8bb44 .FingerprintDevice-module--marquee--ff365:first-child .FingerprintDevice-module--signalRowContainer--0db78 .FingerprintDevice-module--signal--71640:first-child {
+.spotterDevice-module--diagram--56254 .spotterDevice-module--signals--8bb44 .spotterDevice-module--marquee--ff365:first-child .spotterDevice-module--signalRowContainer--0db78 .spotterDevice-module--signal--71640:first-child {
     color: #5353ce
 }
 
-.FingerprintDevice-module--diagram--56254 .FingerprintDevice-module--signals--8bb44 .FingerprintDevice-module--marquee--ff365:first-child .FingerprintDevice-module--signalRowContainer--0db78 .FingerprintDevice-module--signal--71640:nth-child(2) {
+.spotterDevice-module--diagram--56254 .spotterDevice-module--signals--8bb44 .spotterDevice-module--marquee--ff365:first-child .spotterDevice-module--signalRowContainer--0db78 .spotterDevice-module--signal--71640:nth-child(2) {
     color: #05a2c2
 }
 
-.FingerprintDevice-module--diagram--56254 .FingerprintDevice-module--signals--8bb44 .FingerprintDevice-module--marquee--ff365:first-child .FingerprintDevice-module--signalRowContainer--0db78 .FingerprintDevice-module--signal--71640:nth-child(3) {
+.spotterDevice-module--diagram--56254 .spotterDevice-module--signals--8bb44 .spotterDevice-module--marquee--ff365:first-child .spotterDevice-module--signalRowContainer--0db78 .spotterDevice-module--signal--71640:nth-child(3) {
     color: #067a6f
 }
 
-.FingerprintDevice-module--diagram--56254 .FingerprintDevice-module--signals--8bb44 .FingerprintDevice-module--marquee--ff365:nth-child(2) .FingerprintDevice-module--signalRowContainer--0db78 {
-    animation: FingerprintDevice-module--marqueeSecond--a4e53 11s linear infinite
+.spotterDevice-module--diagram--56254 .spotterDevice-module--signals--8bb44 .spotterDevice-module--marquee--ff365:nth-child(2) .spotterDevice-module--signalRowContainer--0db78 {
+    animation: spotterDevice-module--marqueeSecond--a4e53 11s linear infinite
 }
 
-.FingerprintDevice-module--diagram--56254 .FingerprintDevice-module--signals--8bb44 .FingerprintDevice-module--marquee--ff365:nth-child(2) .FingerprintDevice-module--signalRowContainer--0db78 .FingerprintDevice-module--signal--71640:first-child {
+.spotterDevice-module--diagram--56254 .spotterDevice-module--signals--8bb44 .spotterDevice-module--marquee--ff365:nth-child(2) .spotterDevice-module--signalRowContainer--0db78 .spotterDevice-module--signal--71640:first-child {
     color: #6b6b6b
 }
 
-.FingerprintDevice-module--diagram--56254 .FingerprintDevice-module--signals--8bb44 .FingerprintDevice-module--marquee--ff365:nth-child(2) .FingerprintDevice-module--signalRowContainer--0db78 .FingerprintDevice-module--signal--71640:nth-child(2) {
+.spotterDevice-module--diagram--56254 .spotterDevice-module--signals--8bb44 .spotterDevice-module--marquee--ff365:nth-child(2) .spotterDevice-module--signalRowContainer--0db78 .spotterDevice-module--signal--71640:nth-child(2) {
     color: #b14117
 }
 
-.FingerprintDevice-module--diagram--56254 .FingerprintDevice-module--signals--8bb44 .FingerprintDevice-module--marquee--ff365:nth-child(2) .FingerprintDevice-module--signalRowContainer--0db78 .FingerprintDevice-module--signal--71640:nth-child(3) {
+.spotterDevice-module--diagram--56254 .spotterDevice-module--signals--8bb44 .spotterDevice-module--marquee--ff365:nth-child(2) .spotterDevice-module--signalRowContainer--0db78 .spotterDevice-module--signal--71640:nth-child(3) {
     color: #5353ce
 }
 
-.FingerprintDevice-module--diagram--56254 .FingerprintDevice-module--signals--8bb44 .FingerprintDevice-module--marquee--ff365:nth-child(3) .FingerprintDevice-module--signalRowContainer--0db78 {
-    animation: FingerprintDevice-module--marqueeThird--301e4 9s linear infinite
+.spotterDevice-module--diagram--56254 .spotterDevice-module--signals--8bb44 .spotterDevice-module--marquee--ff365:nth-child(3) .spotterDevice-module--signalRowContainer--0db78 {
+    animation: spotterDevice-module--marqueeThird--301e4 9s linear infinite
 }
 
-.FingerprintDevice-module--diagram--56254 .FingerprintDevice-module--signals--8bb44 .FingerprintDevice-module--marquee--ff365:nth-child(3) .FingerprintDevice-module--signalRowContainer--0db78 .FingerprintDevice-module--signal--71640:first-child {
+.spotterDevice-module--diagram--56254 .spotterDevice-module--signals--8bb44 .spotterDevice-module--marquee--ff365:nth-child(3) .spotterDevice-module--signalRowContainer--0db78 .spotterDevice-module--signal--71640:first-child {
     color: #6b6b6b
 }
 
-.FingerprintDevice-module--diagram--56254 .FingerprintDevice-module--signals--8bb44 .FingerprintDevice-module--marquee--ff365:nth-child(3) .FingerprintDevice-module--signalRowContainer--0db78 .FingerprintDevice-module--signal--71640:nth-child(2) {
+.spotterDevice-module--diagram--56254 .spotterDevice-module--signals--8bb44 .spotterDevice-module--marquee--ff365:nth-child(3) .spotterDevice-module--signalRowContainer--0db78 .spotterDevice-module--signal--71640:nth-child(2) {
     color: #0e9888
 }
 
-.FingerprintDevice-module--diagram--56254 .FingerprintDevice-module--signals--8bb44 .FingerprintDevice-module--marquee--ff365:nth-child(3) .FingerprintDevice-module--signalRowContainer--0db78 .FingerprintDevice-module--signal--71640:nth-child(3) {
+.spotterDevice-module--diagram--56254 .spotterDevice-module--signals--8bb44 .spotterDevice-module--marquee--ff365:nth-child(3) .spotterDevice-module--signalRowContainer--0db78 .spotterDevice-module--signal--71640:nth-child(3) {
     color: #b14117
 }
 
-.FingerprintDevice-module--diagram--56254 .FingerprintDevice-module--signals--8bb44 .FingerprintDevice-module--marquee--ff365:nth-child(4) .FingerprintDevice-module--signalRowContainer--0db78 {
-    animation: FingerprintDevice-module--marqueeFourth--f8f99 12s linear infinite
+.spotterDevice-module--diagram--56254 .spotterDevice-module--signals--8bb44 .spotterDevice-module--marquee--ff365:nth-child(4) .spotterDevice-module--signalRowContainer--0db78 {
+    animation: spotterDevice-module--marqueeFourth--f8f99 12s linear infinite
 }
 
-.FingerprintDevice-module--diagram--56254 .FingerprintDevice-module--signals--8bb44 .FingerprintDevice-module--marquee--ff365:nth-child(4) .FingerprintDevice-module--signalRowContainer--0db78 .FingerprintDevice-module--signal--71640:first-child {
+.spotterDevice-module--diagram--56254 .spotterDevice-module--signals--8bb44 .spotterDevice-module--marquee--ff365:nth-child(4) .spotterDevice-module--signalRowContainer--0db78 .spotterDevice-module--signal--71640:first-child {
     color: #b14117
 }
 
-.FingerprintDevice-module--diagram--56254 .FingerprintDevice-module--signals--8bb44 .FingerprintDevice-module--marquee--ff365:nth-child(4) .FingerprintDevice-module--signalRowContainer--0db78 .FingerprintDevice-module--signal--71640:nth-child(2) {
+.spotterDevice-module--diagram--56254 .spotterDevice-module--signals--8bb44 .spotterDevice-module--marquee--ff365:nth-child(4) .spotterDevice-module--signalRowContainer--0db78 .spotterDevice-module--signal--71640:nth-child(2) {
     color: #6b6b6b
 }
 
-.FingerprintDevice-module--diagram--56254 .FingerprintDevice-module--signals--8bb44 .FingerprintDevice-module--marquee--ff365:nth-child(4) .FingerprintDevice-module--signalRowContainer--0db78 .FingerprintDevice-module--signal--71640:nth-child(3) {
+.spotterDevice-module--diagram--56254 .spotterDevice-module--signals--8bb44 .spotterDevice-module--marquee--ff365:nth-child(4) .spotterDevice-module--signalRowContainer--0db78 .spotterDevice-module--signal--71640:nth-child(3) {
     color: #067a6f
 }
 
-.FingerprintDevice-module--diagram--56254 .FingerprintDevice-module--signals--8bb44 .FingerprintDevice-module--marquee--ff365 .FingerprintDevice-module--signalRow--5cab1 {
+.spotterDevice-module--diagram--56254 .spotterDevice-module--signals--8bb44 .spotterDevice-module--marquee--ff365 .spotterDevice-module--signalRow--5cab1 {
     display: flex;
     flex: 1 1;
     width: 50%
 }
 
-.FingerprintDevice-module--diagram--56254 .FingerprintDevice-module--signals--8bb44 .FingerprintDevice-module--marquee--ff365 .FingerprintDevice-module--signalRow--5cab1 .FingerprintDevice-module--signalRowElement--a2173 {
+.spotterDevice-module--diagram--56254 .spotterDevice-module--signals--8bb44 .spotterDevice-module--marquee--ff365 .spotterDevice-module--signalRow--5cab1 .spotterDevice-module--signalRowElement--a2173 {
     -moz-column-gap: 8px;
     column-gap: 8px;
     display: flex;
@@ -37230,13 +37230,13 @@
 }
 
 @media(max-width: 640px) {
-    .FingerprintDevice-module--diagram--56254 .FingerprintDevice-module--signals--8bb44 .FingerprintDevice-module--marquee--ff365 .FingerprintDevice-module--signalRow--5cab1 .FingerprintDevice-module--signalRowElement--a2173 {
+    .spotterDevice-module--diagram--56254 .spotterDevice-module--signals--8bb44 .spotterDevice-module--marquee--ff365 .spotterDevice-module--signalRow--5cab1 .spotterDevice-module--signalRowElement--a2173 {
         -moz-column-gap:2px;
         column-gap: 2px
     }
 }
 
-.FingerprintDevice-module--diagram--56254 .FingerprintDevice-module--signals--8bb44 .FingerprintDevice-module--marquee--ff365 .FingerprintDevice-module--signalRow--5cab1 .FingerprintDevice-module--signalRowElement--a2173 .FingerprintDevice-module--signal--71640 {
+.spotterDevice-module--diagram--56254 .spotterDevice-module--signals--8bb44 .spotterDevice-module--marquee--ff365 .spotterDevice-module--signalRow--5cab1 .spotterDevice-module--signalRowElement--a2173 .spotterDevice-module--signal--71640 {
     background: #f6f6f6;
     border: .5px solid #d0d0d0;
     border-radius: 6px;
@@ -37252,7 +37252,7 @@
 }
 
 @media(max-width: 640px) {
-    .FingerprintDevice-module--diagram--56254 .FingerprintDevice-module--signals--8bb44 .FingerprintDevice-module--marquee--ff365 .FingerprintDevice-module--signalRow--5cab1 .FingerprintDevice-module--signalRowElement--a2173 .FingerprintDevice-module--signal--71640 {
+    .spotterDevice-module--diagram--56254 .spotterDevice-module--signals--8bb44 .spotterDevice-module--marquee--ff365 .spotterDevice-module--signalRow--5cab1 .spotterDevice-module--signalRowElement--a2173 .spotterDevice-module--signal--71640 {
         border-radius:3px;
         font-size: 6px;
         max-width: 105px;
@@ -37260,14 +37260,14 @@
     }
 }
 
-.FingerprintDevice-module--diagram--56254 .FingerprintDevice-module--fpIcon--62483 {
+.spotterDevice-module--diagram--56254 .spotterDevice-module--fpIcon--62483 {
     position: relative;
     right: 21px;
     width: 100%;
     z-index: 2
 }
 
-@keyframes FingerprintDevice-module--marqueeFirst--3445b {
+@keyframes spotterDevice-module--marqueeFirst--3445b {
     0% {
         transform: translateX(-50%)
     }
@@ -37277,7 +37277,7 @@
     }
 }
 
-@keyframes FingerprintDevice-module--marqueeSecond--a4e53 {
+@keyframes spotterDevice-module--marqueeSecond--a4e53 {
     0% {
         transform: translateX(-40%)
     }
@@ -37287,7 +37287,7 @@
     }
 }
 
-@keyframes FingerprintDevice-module--marqueeThird--301e4 {
+@keyframes spotterDevice-module--marqueeThird--301e4 {
     0% {
         transform: translateX(-60%)
     }
@@ -37297,7 +37297,7 @@
     }
 }
 
-@keyframes FingerprintDevice-module--marqueeFourth--f8f99 {
+@keyframes spotterDevice-module--marqueeFourth--f8f99 {
     0% {
         transform: translateX(-50%)
     }
@@ -37989,14 +37989,14 @@
     }
 }
 
-.WhyFingerprintSection-module--container--37bf3 {
+.WhyspotterSection-module--container--37bf3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     position: relative
 }
 
 @media(max-width: 1024px) {
-    .WhyFingerprintSection-module--container--37bf3 {
+    .WhyspotterSection-module--container--37bf3 {
         display:flex;
         flex-direction: column;
         padding-bottom: 64px;
@@ -38005,7 +38005,7 @@
     }
 }
 
-.WhyFingerprintSection-module--container--37bf3 .WhyFingerprintSection-module--title--33684 {
+.WhyspotterSection-module--container--37bf3 .WhyspotterSection-module--title--33684 {
     font-family: var(--ff-inter);
     font-size: 44px;
     font-weight: 600;
@@ -38015,23 +38015,23 @@
 }
 
 @media(max-width: 1024px) {
-    .WhyFingerprintSection-module--container--37bf3 .WhyFingerprintSection-module--title--33684 {
+    .WhyspotterSection-module--container--37bf3 .WhyspotterSection-module--title--33684 {
         margin-top:0
     }
 }
 
 @media(max-width: 640px) {
-    .WhyFingerprintSection-module--container--37bf3 .WhyFingerprintSection-module--title--33684 {
+    .WhyspotterSection-module--container--37bf3 .WhyspotterSection-module--title--33684 {
         font-size:24px;
         letter-spacing: normal
     }
 }
 
-.WhyFingerprintSection-module--container--37bf3 .WhyFingerprintSection-module--cards--d9fd0 {
+.WhyspotterSection-module--container--37bf3 .WhyspotterSection-module--cards--d9fd0 {
     display: flex
 }
 
-.WhyFingerprintSection-module--container--37bf3 .WhyFingerprintSection-module--cards--d9fd0 .WhyFingerprintSection-module--scrollBarBackground--42a37 {
+.WhyspotterSection-module--container--37bf3 .WhyspotterSection-module--cards--d9fd0 .WhyspotterSection-module--scrollBarBackground--42a37 {
     background: #d0d0d0;
     margin-left: 16px;
     margin-right: 32px;
@@ -38039,7 +38039,7 @@
     width: 1px
 }
 
-.WhyFingerprintSection-module--container--37bf3 .WhyFingerprintSection-module--cards--d9fd0 .WhyFingerprintSection-module--scrollBarBackground--42a37 .WhyFingerprintSection-module--scrollBar--ccb87 {
+.WhyspotterSection-module--container--37bf3 .WhyspotterSection-module--cards--d9fd0 .WhyspotterSection-module--scrollBarBackground--42a37 .WhyspotterSection-module--scrollBar--ccb87 {
     background: #008080;
     height: 100%;
     left: 0;
@@ -38050,12 +38050,12 @@
 }
 
 @media(max-width: 1024px) {
-    .WhyFingerprintSection-module--container--37bf3 .WhyFingerprintSection-module--cards--d9fd0 .WhyFingerprintSection-module--scrollBarBackground--42a37 {
+    .WhyspotterSection-module--container--37bf3 .WhyspotterSection-module--cards--d9fd0 .WhyspotterSection-module--scrollBarBackground--42a37 {
         display:none
     }
 }
 
-.WhyFingerprintSection-module--container--37bf3 .WhyFingerprintSection-module--cards--d9fd0 .WhyFingerprintSection-module--cardsSection--ab7b9 {
+.WhyspotterSection-module--container--37bf3 .WhyspotterSection-module--cards--d9fd0 .WhyspotterSection-module--cardsSection--ab7b9 {
     display: flex;
     flex-direction: column;
     margin: 96px 0;
@@ -38063,32 +38063,32 @@
 }
 
 @media(max-width: 1024px) {
-    .WhyFingerprintSection-module--container--37bf3 .WhyFingerprintSection-module--cards--d9fd0 .WhyFingerprintSection-module--cardsSection--ab7b9 {
+    .WhyspotterSection-module--container--37bf3 .WhyspotterSection-module--cards--d9fd0 .WhyspotterSection-module--cardsSection--ab7b9 {
         margin:0;
         row-gap: 24px
     }
 }
 
-.WhyFingerprintSection-module--container--37bf3 .WhyFingerprintSection-module--cards--d9fd0 .WhyFingerprintSection-module--cardsSection--ab7b9 .WhyFingerprintSection-module--card--75287 {
+.WhyspotterSection-module--container--37bf3 .WhyspotterSection-module--cards--d9fd0 .WhyspotterSection-module--cardsSection--ab7b9 .WhyspotterSection-module--card--75287 {
     display: flex;
     flex-direction: column;
     row-gap: 8px
 }
 
 @media(min-width: 641px) {
-    .WhyFingerprintSection-module--container--37bf3 .WhyFingerprintSection-module--cards--d9fd0 .WhyFingerprintSection-module--cardsSection--ab7b9 .WhyFingerprintSection-module--card--75287 {
+    .WhyspotterSection-module--container--37bf3 .WhyspotterSection-module--cards--d9fd0 .WhyspotterSection-module--cardsSection--ab7b9 .WhyspotterSection-module--card--75287 {
         padding-right:16px
     }
 }
 
 @media(max-width: 640px) {
-    .WhyFingerprintSection-module--container--37bf3 .WhyFingerprintSection-module--cards--d9fd0 .WhyFingerprintSection-module--cardsSection--ab7b9 .WhyFingerprintSection-module--card--75287 {
+    .WhyspotterSection-module--container--37bf3 .WhyspotterSection-module--cards--d9fd0 .WhyspotterSection-module--cardsSection--ab7b9 .WhyspotterSection-module--card--75287 {
         flex-direction:column;
         row-gap: 4px
     }
 }
 
-.WhyFingerprintSection-module--container--37bf3 .WhyFingerprintSection-module--cards--d9fd0 .WhyFingerprintSection-module--cardsSection--ab7b9 .WhyFingerprintSection-module--card--75287 .WhyFingerprintSection-module--cardTitle--817e6 {
+.WhyspotterSection-module--container--37bf3 .WhyspotterSection-module--cards--d9fd0 .WhyspotterSection-module--cardsSection--ab7b9 .WhyspotterSection-module--card--75287 .WhyspotterSection-module--cardTitle--817e6 {
     font-family: var(--ff-inter);
     font-size: 20px;
     font-weight: 500;
@@ -38096,13 +38096,13 @@
 }
 
 @media(max-width: 640px) {
-    .WhyFingerprintSection-module--container--37bf3 .WhyFingerprintSection-module--cards--d9fd0 .WhyFingerprintSection-module--cardsSection--ab7b9 .WhyFingerprintSection-module--card--75287 .WhyFingerprintSection-module--cardTitle--817e6 {
+    .WhyspotterSection-module--container--37bf3 .WhyspotterSection-module--cards--d9fd0 .WhyspotterSection-module--cardsSection--ab7b9 .WhyspotterSection-module--card--75287 .WhyspotterSection-module--cardTitle--817e6 {
         font-size:16px;
         line-height: 155%
     }
 }
 
-.WhyFingerprintSection-module--container--37bf3 .WhyFingerprintSection-module--cards--d9fd0 .WhyFingerprintSection-module--cardsSection--ab7b9 .WhyFingerprintSection-module--card--75287 .WhyFingerprintSection-module--cardDescription--355ff {
+.WhyspotterSection-module--container--37bf3 .WhyspotterSection-module--cards--d9fd0 .WhyspotterSection-module--cardsSection--ab7b9 .WhyspotterSection-module--card--75287 .WhyspotterSection-module--cardDescription--355ff {
     color: var(--dark-grey);
     font-family: var(--ff-inter);
     font-size: 16px;
@@ -38111,13 +38111,13 @@
     line-height: 160%
 }
 
-.WhyFingerprintSection-module--container--37bf3 .WhyFingerprintSection-module--cards--d9fd0 .WhyFingerprintSection-module--cardsSection--ab7b9 .WhyFingerprintSection-module--card--75287 .WhyFingerprintSection-module--cardDescription--355ff a {
+.WhyspotterSection-module--container--37bf3 .WhyspotterSection-module--cards--d9fd0 .WhyspotterSection-module--cardsSection--ab7b9 .WhyspotterSection-module--card--75287 .WhyspotterSection-module--cardDescription--355ff a {
     color: #008080;
     text-decoration: underline
 }
 
 @media(max-width: 640px) {
-    .WhyFingerprintSection-module--container--37bf3 .WhyFingerprintSection-module--cards--d9fd0 .WhyFingerprintSection-module--cardsSection--ab7b9 .WhyFingerprintSection-module--card--75287 .WhyFingerprintSection-module--cardDescription--355ff {
+    .WhyspotterSection-module--container--37bf3 .WhyspotterSection-module--cards--d9fd0 .WhyspotterSection-module--cardsSection--ab7b9 .WhyspotterSection-module--card--75287 .WhyspotterSection-module--cardDescription--355ff {
         font-size:14px
     }
 }
@@ -47655,7 +47655,7 @@
     }
 
     .ProLayersSection-module--cards--b1389 .ProLayersSection-module--orangeTitle--f9a42:after {
-        content: " - FingerprintJS"
+        content: " - spotterJS"
     }
 }
 
@@ -49687,7 +49687,7 @@
     }
 }
 
-.WhyFingerprintSection-module--root--b45f3 {
+.WhyspotterSection-module--root--b45f3 {
     background: var(--button-background-gray);
     border-bottom: 1px dashed var(--dash-gray);
     border-top: 1px dashed var(--dash-gray);
@@ -49695,13 +49695,13 @@
 }
 
 @media(max-width: 860px) {
-    .WhyFingerprintSection-module--root--b45f3 {
+    .WhyspotterSection-module--root--b45f3 {
         background:var(--white);
         border-bottom: unset
     }
 }
 
-.WhyFingerprintSection-module--root--b45f3 .WhyFingerprintSection-module--container--af239 {
+.WhyspotterSection-module--root--b45f3 .WhyspotterSection-module--container--af239 {
     border-left: 1px dashed var(--dash-gray);
     border-right: 1px dashed var(--dash-gray);
     display: grid;
@@ -49710,13 +49710,13 @@
 }
 
 @media(max-width: 640px) {
-    .WhyFingerprintSection-module--root--b45f3 .WhyFingerprintSection-module--container--af239 {
+    .WhyspotterSection-module--root--b45f3 .WhyspotterSection-module--container--af239 {
         border:unset;
         grid-column: 1/15;
         padding: 0
     }
 
-    .WhyFingerprintSection-module--root--b45f3 .WhyFingerprintSection-module--container--af239:after {
+    .WhyspotterSection-module--root--b45f3 .WhyspotterSection-module--container--af239:after {
         border-right: 1px dashed var(--dash-gray);
         content: "";
         height: 100%;
@@ -49724,7 +49724,7 @@
         right: 20px
     }
 
-    .WhyFingerprintSection-module--root--b45f3 .WhyFingerprintSection-module--container--af239:before {
+    .WhyspotterSection-module--root--b45f3 .WhyspotterSection-module--container--af239:before {
         border-bottom: 1px dashed var(--dash-gray);
         border-left: 1px dashed var(--dash-gray);
         content: "";
@@ -49735,7 +49735,7 @@
     }
 }
 
-.WhyFingerprintSection-module--root--b45f3 .WhyFingerprintSection-module--titleSection--333dd {
+.WhyspotterSection-module--root--b45f3 .WhyspotterSection-module--titleSection--333dd {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -49743,7 +49743,7 @@
 }
 
 @media(min-width: 861px) {
-    .WhyFingerprintSection-module--root--b45f3 .WhyFingerprintSection-module--titleSection--333dd {
+    .WhyspotterSection-module--root--b45f3 .WhyspotterSection-module--titleSection--333dd {
         background-color:#fff;
         border: 1px solid var(--dash-gray);
         border-radius: 12px;
@@ -49753,29 +49753,29 @@
 }
 
 @media(max-width: 860px) {
-    .WhyFingerprintSection-module--root--b45f3 .WhyFingerprintSection-module--titleSection--333dd {
+    .WhyspotterSection-module--root--b45f3 .WhyspotterSection-module--titleSection--333dd {
         grid-column:1/14;
         padding: 56px 24px 24px
     }
 }
 
 @media(max-width: 640px) {
-    .WhyFingerprintSection-module--root--b45f3 .WhyFingerprintSection-module--titleSection--333dd {
+    .WhyspotterSection-module--root--b45f3 .WhyspotterSection-module--titleSection--333dd {
         padding-bottom:0
     }
 }
 
-.WhyFingerprintSection-module--root--b45f3 .WhyFingerprintSection-module--titleSection--333dd .WhyFingerprintSection-module--titleWrapper--2c46f {
+.WhyspotterSection-module--root--b45f3 .WhyspotterSection-module--titleSection--333dd .WhyspotterSection-module--titleWrapper--2c46f {
     padding: 32px 0 0 32px
 }
 
 @media(max-width: 860px) {
-    .WhyFingerprintSection-module--root--b45f3 .WhyFingerprintSection-module--titleSection--333dd .WhyFingerprintSection-module--titleWrapper--2c46f {
+    .WhyspotterSection-module--root--b45f3 .WhyspotterSection-module--titleSection--333dd .WhyspotterSection-module--titleWrapper--2c46f {
         padding:0 0 32px
     }
 }
 
-.WhyFingerprintSection-module--root--b45f3 .WhyFingerprintSection-module--titleSection--333dd .WhyFingerprintSection-module--title--0766d {
+.WhyspotterSection-module--root--b45f3 .WhyspotterSection-module--titleSection--333dd .WhyspotterSection-module--title--0766d {
     font-family: var(--ff-inter);
     font-size: 36px;
     font-weight: 500;
@@ -49786,21 +49786,21 @@
     z-index: 2
 }
 
-.WhyFingerprintSection-module--root--b45f3 .WhyFingerprintSection-module--titleSection--333dd .WhyFingerprintSection-module--title--0766d mark {
+.WhyspotterSection-module--root--b45f3 .WhyspotterSection-module--titleSection--333dd .WhyspotterSection-module--title--0766d mark {
     all: unset;
     color: #008080;
     font-weight: 600
 }
 
 @media(max-width: 640px) {
-    .WhyFingerprintSection-module--root--b45f3 .WhyFingerprintSection-module--titleSection--333dd .WhyFingerprintSection-module--title--0766d {
+    .WhyspotterSection-module--root--b45f3 .WhyspotterSection-module--titleSection--333dd .WhyspotterSection-module--title--0766d {
         font-size:24px;
         letter-spacing: -.48px;
         line-height: 28px
     }
 }
 
-.WhyFingerprintSection-module--root--b45f3 .WhyFingerprintSection-module--titleSection--333dd .WhyFingerprintSection-module--subTitle--e2d12 {
+.WhyspotterSection-module--root--b45f3 .WhyspotterSection-module--titleSection--333dd .WhyspotterSection-module--subTitle--e2d12 {
     color: var(--font-gray-dark);
     font-family: var(--ff-inter);
     font-size: 16px;
@@ -49811,20 +49811,20 @@
     z-index: 2
 }
 
-.WhyFingerprintSection-module--root--b45f3 .WhyFingerprintSection-module--descriptionSection--be056 {
+.WhyspotterSection-module--root--b45f3 .WhyspotterSection-module--descriptionSection--be056 {
     display: flex;
     flex-direction: column;
     height: 1
 }
 
 @media(min-width: 861px) {
-    .WhyFingerprintSection-module--root--b45f3 .WhyFingerprintSection-module--descriptionSection--be056 {
+    .WhyspotterSection-module--root--b45f3 .WhyspotterSection-module--descriptionSection--be056 {
         grid-column:8/14
     }
 }
 
 @media(max-width: 860px) {
-    .WhyFingerprintSection-module--root--b45f3 .WhyFingerprintSection-module--descriptionSection--be056 {
+    .WhyspotterSection-module--root--b45f3 .WhyspotterSection-module--descriptionSection--be056 {
         grid-column:1/14;
         margin: 0 12px;
         padding-bottom: 16px
@@ -49832,7 +49832,7 @@
 }
 
 @media(max-width: 640px) {
-    .WhyFingerprintSection-module--root--b45f3 .WhyFingerprintSection-module--descriptionSection--be056 {
+    .WhyspotterSection-module--root--b45f3 .WhyspotterSection-module--descriptionSection--be056 {
         flex-direction:row;
         margin: 0;
         padding: 0;
@@ -49841,18 +49841,18 @@
     }
 }
 
-.WhyFingerprintSection-module--root--b45f3 .WhyFingerprintSection-module--descriptionSection--be056 .WhyFingerprintSection-module--card--796c6 {
+.WhyspotterSection-module--root--b45f3 .WhyspotterSection-module--descriptionSection--be056 .WhyspotterSection-module--card--796c6 {
     background: hsla(60,17%,98%,.4);
     border-left: 1px dashed var(--dash-gray);
     overflow: hidden
 }
 
-.WhyFingerprintSection-module--root--b45f3 .WhyFingerprintSection-module--descriptionSection--be056 .WhyFingerprintSection-module--card--796c6:not(:last-child) {
+.WhyspotterSection-module--root--b45f3 .WhyspotterSection-module--descriptionSection--be056 .WhyspotterSection-module--card--796c6:not(:last-child) {
     border-bottom: 1px dashed var(--dash-gray)
 }
 
 @media(max-width: 640px) {
-    .WhyFingerprintSection-module--root--b45f3 .WhyFingerprintSection-module--descriptionSection--be056 .WhyFingerprintSection-module--card--796c6 {
+    .WhyspotterSection-module--root--b45f3 .WhyspotterSection-module--descriptionSection--be056 .WhyspotterSection-module--card--796c6 {
         background:linear-gradient(0deg,#fdfdfc,#fdfdfc),#f0f0ed;
         border: 1px solid var(--dash-gray);
         border-radius: 8px;
@@ -49860,7 +49860,7 @@
     }
 }
 
-.WhyFingerprintSection-module--root--b45f3 .WhyFingerprintSection-module--descriptionSection--be056 .WhyFingerprintSection-module--card--796c6 .WhyFingerprintSection-module--content--be500 {
+.WhyspotterSection-module--root--b45f3 .WhyspotterSection-module--descriptionSection--be056 .WhyspotterSection-module--card--796c6 .WhyspotterSection-module--content--be500 {
     -moz-column-gap: 16px;
     column-gap: 16px;
     display: flex;
@@ -49868,43 +49868,43 @@
 }
 
 @media(max-width: 860px) {
-    .WhyFingerprintSection-module--root--b45f3 .WhyFingerprintSection-module--descriptionSection--be056 .WhyFingerprintSection-module--card--796c6 .WhyFingerprintSection-module--content--be500 {
+    .WhyspotterSection-module--root--b45f3 .WhyspotterSection-module--descriptionSection--be056 .WhyspotterSection-module--card--796c6 .WhyspotterSection-module--content--be500 {
         flex-direction:column;
         padding: 16px 12px;
         row-gap: 4px
     }
 }
 
-.WhyFingerprintSection-module--root--b45f3 .WhyFingerprintSection-module--descriptionSection--be056 .WhyFingerprintSection-module--card--796c6 .WhyFingerprintSection-module--content--be500 svg {
+.WhyspotterSection-module--root--b45f3 .WhyspotterSection-module--descriptionSection--be056 .WhyspotterSection-module--card--796c6 .WhyspotterSection-module--content--be500 svg {
     flex-shrink: 0
 }
 
 @media(max-width: 860px) {
-    .WhyFingerprintSection-module--root--b45f3 .WhyFingerprintSection-module--descriptionSection--be056 .WhyFingerprintSection-module--card--796c6 .WhyFingerprintSection-module--content--be500 svg {
+    .WhyspotterSection-module--root--b45f3 .WhyspotterSection-module--descriptionSection--be056 .WhyspotterSection-module--card--796c6 .WhyspotterSection-module--content--be500 svg {
         margin-left:-3px
     }
 }
 
-.WhyFingerprintSection-module--root--b45f3 .WhyFingerprintSection-module--descriptionSection--be056 .WhyFingerprintSection-module--card--796c6 .WhyFingerprintSection-module--content--be500 .WhyFingerprintSection-module--titleDescription--98e29 {
+.WhyspotterSection-module--root--b45f3 .WhyspotterSection-module--descriptionSection--be056 .WhyspotterSection-module--card--796c6 .WhyspotterSection-module--content--be500 .WhyspotterSection-module--titleDescription--98e29 {
     display: flex;
     flex-direction: column;
     row-gap: 8px
 }
 
 @media(max-width: 860px) {
-    .WhyFingerprintSection-module--root--b45f3 .WhyFingerprintSection-module--descriptionSection--be056 .WhyFingerprintSection-module--card--796c6 .WhyFingerprintSection-module--content--be500 .WhyFingerprintSection-module--titleDescription--98e29 {
+    .WhyspotterSection-module--root--b45f3 .WhyspotterSection-module--descriptionSection--be056 .WhyspotterSection-module--card--796c6 .WhyspotterSection-module--content--be500 .WhyspotterSection-module--titleDescription--98e29 {
         row-gap:4px
     }
 }
 
-.WhyFingerprintSection-module--root--b45f3 .WhyFingerprintSection-module--descriptionSection--be056 .WhyFingerprintSection-module--card--796c6 .WhyFingerprintSection-module--content--be500 .WhyFingerprintSection-module--titleDescription--98e29 .WhyFingerprintSection-module--title--0766d {
+.WhyspotterSection-module--root--b45f3 .WhyspotterSection-module--descriptionSection--be056 .WhyspotterSection-module--card--796c6 .WhyspotterSection-module--content--be500 .WhyspotterSection-module--titleDescription--98e29 .WhyspotterSection-module--title--0766d {
     font-family: var(--ff-inter);
     font-size: 16px;
     font-weight: 500;
     line-height: 24px
 }
 
-.WhyFingerprintSection-module--root--b45f3 .WhyFingerprintSection-module--descriptionSection--be056 .WhyFingerprintSection-module--card--796c6 .WhyFingerprintSection-module--content--be500 .WhyFingerprintSection-module--titleDescription--98e29 .WhyFingerprintSection-module--description--66684 {
+.WhyspotterSection-module--root--b45f3 .WhyspotterSection-module--descriptionSection--be056 .WhyspotterSection-module--card--796c6 .WhyspotterSection-module--content--be500 .WhyspotterSection-module--titleDescription--98e29 .WhyspotterSection-module--description--66684 {
     color: var(--font-gray-dark);
     font-family: var(--ff-inter);
     font-size: 14px;
@@ -49912,42 +49912,42 @@
     line-height: 20px
 }
 
-.WhyFingerprintSection-module--root--b45f3 .WhyFingerprintSection-module--descriptionSection--be056 .WhyFingerprintSection-module--card--796c6:nth-child(2) {
+.WhyspotterSection-module--root--b45f3 .WhyspotterSection-module--descriptionSection--be056 .WhyspotterSection-module--card--796c6:nth-child(2) {
     flex: 1 1
 }
 
-.WhyFingerprintSection-module--root--b45f3 .WhyFingerprintSection-module--descriptionSection--be056 .WhyFingerprintSection-module--card--796c6:nth-child(2) .WhyFingerprintSection-module--content--be500 {
+.WhyspotterSection-module--root--b45f3 .WhyspotterSection-module--descriptionSection--be056 .WhyspotterSection-module--card--796c6:nth-child(2) .WhyspotterSection-module--content--be500 {
     padding: 0 24px 32px
 }
 
 @media(max-width: 860px) {
-    .WhyFingerprintSection-module--root--b45f3 .WhyFingerprintSection-module--descriptionSection--be056 .WhyFingerprintSection-module--card--796c6:nth-child(2) .WhyFingerprintSection-module--content--be500 {
+    .WhyspotterSection-module--root--b45f3 .WhyspotterSection-module--descriptionSection--be056 .WhyspotterSection-module--card--796c6:nth-child(2) .WhyspotterSection-module--content--be500 {
         padding:16px 12px
     }
 }
 
-.WhyFingerprintSection-module--swiper--14707 {
+.WhyspotterSection-module--swiper--14707 {
     padding-bottom: 40px;
     padding-top: 12px
 }
 
 @media(max-width: 860px) {
-    .WhyFingerprintSection-module--swiper--14707 {
+    .WhyspotterSection-module--swiper--14707 {
         padding-bottom:12px
     }
 }
 
-.WhyFingerprintSection-module--slide--3c1c4 {
+.WhyspotterSection-module--slide--3c1c4 {
     display: flex
 }
 
 @media(max-width: 420px) {
-    .WhyFingerprintSection-module--slide--3c1c4 {
+    .WhyspotterSection-module--slide--3c1c4 {
         width:280px!important
     }
 }
 
-.WhyFingerprintSection-module--grid--c2803 {
+.WhyspotterSection-module--grid--c2803 {
     -webkit-mask-image: linear-gradient(180deg,#000 0,#000 85%,transparent);
     mask-image: linear-gradient(180deg,#000 0,#000 85%,transparent);
     overflow: hidden;
@@ -49956,18 +49956,18 @@
 }
 
 @media(max-width: 640px) {
-    .WhyFingerprintSection-module--grid--c2803 {
+    .WhyspotterSection-module--grid--c2803 {
         display:none
     }
 }
 
 @media(min-width: 641px) {
-    .WhyFingerprintSection-module--grid--c2803 {
+    .WhyspotterSection-module--grid--c2803 {
         cursor:none
     }
 }
 
-.WhyFingerprintSection-module--grid--c2803:before {
+.WhyspotterSection-module--grid--c2803:before {
     border: 1px solid orange;
     border-radius: 50%;
     content: "";
@@ -49981,22 +49981,22 @@
 }
 
 @media(min-width: 641px) {
-    .WhyFingerprintSection-module--grid--c2803:before {
+    .WhyspotterSection-module--grid--c2803:before {
         opacity:0;
         transition: opacity .2s ease-in-out
     }
 }
 
-.WhyFingerprintSection-module--grid--c2803:hover:before {
+.WhyspotterSection-module--grid--c2803:hover:before {
     opacity: 1
 }
 
-.WhyFingerprintSection-module--grid--c2803 .WhyFingerprintSection-module--radarSvg--220fe {
+.WhyspotterSection-module--grid--c2803 .WhyspotterSection-module--radarSvg--220fe {
     opacity: .3;
     width: 100%
 }
 
-.WhyFingerprintSection-module--magnifier--55db1 {
+.WhyspotterSection-module--magnifier--55db1 {
     height: 100%;
     left: 0;
     -webkit-mask-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='128' fill='none' viewBox='0 0 128 128'%3E%3Ccircle cx='64' cy='64' r='64' fill='%23D9D9D9'/%3E%3C/svg%3E");
@@ -50015,17 +50015,17 @@
 }
 
 @media(min-width: 641px) {
-    .WhyFingerprintSection-module--magnifier--55db1 {
+    .WhyspotterSection-module--magnifier--55db1 {
         opacity:0;
         transition: opacity .2s ease-in-out
     }
 
-    .WhyFingerprintSection-module--grid--c2803:hover .WhyFingerprintSection-module--magnifier--55db1 {
+    .WhyspotterSection-module--grid--c2803:hover .WhyspotterSection-module--magnifier--55db1 {
         opacity: 1
     }
 }
 
-.WhyFingerprintSection-module--magnifier--55db1 .WhyFingerprintSection-module--magnifierGlass--f19b3 {
+.WhyspotterSection-module--magnifier--55db1 .WhyspotterSection-module--magnifierGlass--f19b3 {
     background-color: #f0f0ed;
     height: 100%;
     position: static;
@@ -50033,12 +50033,12 @@
     width: 100%
 }
 
-.WhyFingerprintSection-module--desktop--7eb48 {
+.WhyspotterSection-module--desktop--7eb48 {
     display: none
 }
 
 @media(min-width: 641px) {
-    .WhyFingerprintSection-module--desktop--7eb48 {
+    .WhyspotterSection-module--desktop--7eb48 {
         display:block
     }
 }
@@ -50094,7 +50094,7 @@
     }
 }
 
-.WhyFingerprintSection-module--root--c34e3 {
+.WhyspotterSection-module--root--c34e3 {
     background: var(--button-background-gray);
     border-bottom: 1px dashed var(--dash-gray);
     border-top: 1px dashed var(--dash-gray);
@@ -50102,12 +50102,12 @@
 }
 
 @media(max-width: 860px) {
-    .WhyFingerprintSection-module--root--c34e3 {
+    .WhyspotterSection-module--root--c34e3 {
         border-bottom:unset
     }
 }
 
-.WhyFingerprintSection-module--root--c34e3 .WhyFingerprintSection-module--container--3c96c {
+.WhyspotterSection-module--root--c34e3 .WhyspotterSection-module--container--3c96c {
     border-left: 1px dashed var(--dash-gray);
     border-right: 1px dashed var(--dash-gray);
     display: grid;
@@ -50116,13 +50116,13 @@
 }
 
 @media(max-width: 640px) {
-    .WhyFingerprintSection-module--root--c34e3 .WhyFingerprintSection-module--container--3c96c {
+    .WhyspotterSection-module--root--c34e3 .WhyspotterSection-module--container--3c96c {
         border:unset;
         grid-column: 1/15;
         padding: 0
     }
 
-    .WhyFingerprintSection-module--root--c34e3 .WhyFingerprintSection-module--container--3c96c:after {
+    .WhyspotterSection-module--root--c34e3 .WhyspotterSection-module--container--3c96c:after {
         border-right: 1px dashed var(--dash-gray);
         content: "";
         height: 100%;
@@ -50130,7 +50130,7 @@
         right: 20px
     }
 
-    .WhyFingerprintSection-module--root--c34e3 .WhyFingerprintSection-module--container--3c96c:before {
+    .WhyspotterSection-module--root--c34e3 .WhyspotterSection-module--container--3c96c:before {
         border-bottom: 1px dashed var(--dash-gray);
         border-left: 1px dashed var(--dash-gray);
         content: "";
@@ -50141,7 +50141,7 @@
     }
 }
 
-.WhyFingerprintSection-module--root--c34e3 .WhyFingerprintSection-module--titleSection--272a3 {
+.WhyspotterSection-module--root--c34e3 .WhyspotterSection-module--titleSection--272a3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -50149,7 +50149,7 @@
 }
 
 @media(min-width: 861px) {
-    .WhyFingerprintSection-module--root--c34e3 .WhyFingerprintSection-module--titleSection--272a3 {
+    .WhyspotterSection-module--root--c34e3 .WhyspotterSection-module--titleSection--272a3 {
         background-color:#fff;
         border: 1px solid var(--dash-gray);
         border-radius: 12px;
@@ -50159,29 +50159,29 @@
 }
 
 @media(max-width: 860px) {
-    .WhyFingerprintSection-module--root--c34e3 .WhyFingerprintSection-module--titleSection--272a3 {
+    .WhyspotterSection-module--root--c34e3 .WhyspotterSection-module--titleSection--272a3 {
         grid-column:1/14;
         padding: 56px 24px 24px
     }
 }
 
 @media(max-width: 640px) {
-    .WhyFingerprintSection-module--root--c34e3 .WhyFingerprintSection-module--titleSection--272a3 {
+    .WhyspotterSection-module--root--c34e3 .WhyspotterSection-module--titleSection--272a3 {
         padding-bottom:0
     }
 }
 
-.WhyFingerprintSection-module--root--c34e3 .WhyFingerprintSection-module--titleSection--272a3 .WhyFingerprintSection-module--titleWrapper--332e2 {
+.WhyspotterSection-module--root--c34e3 .WhyspotterSection-module--titleSection--272a3 .WhyspotterSection-module--titleWrapper--332e2 {
     padding: 32px 0 0 32px
 }
 
 @media(max-width: 860px) {
-    .WhyFingerprintSection-module--root--c34e3 .WhyFingerprintSection-module--titleSection--272a3 .WhyFingerprintSection-module--titleWrapper--332e2 {
+    .WhyspotterSection-module--root--c34e3 .WhyspotterSection-module--titleSection--272a3 .WhyspotterSection-module--titleWrapper--332e2 {
         padding:0 0 32px
     }
 }
 
-.WhyFingerprintSection-module--root--c34e3 .WhyFingerprintSection-module--titleSection--272a3 .WhyFingerprintSection-module--title--b90fb {
+.WhyspotterSection-module--root--c34e3 .WhyspotterSection-module--titleSection--272a3 .WhyspotterSection-module--title--b90fb {
     font-family: var(--ff-inter);
     font-size: 36px;
     font-weight: 500;
@@ -50192,21 +50192,21 @@
     z-index: 2
 }
 
-.WhyFingerprintSection-module--root--c34e3 .WhyFingerprintSection-module--titleSection--272a3 .WhyFingerprintSection-module--title--b90fb mark {
+.WhyspotterSection-module--root--c34e3 .WhyspotterSection-module--titleSection--272a3 .WhyspotterSection-module--title--b90fb mark {
     all: unset;
     color: #008080;
     font-weight: 600
 }
 
 @media(max-width: 640px) {
-    .WhyFingerprintSection-module--root--c34e3 .WhyFingerprintSection-module--titleSection--272a3 .WhyFingerprintSection-module--title--b90fb {
+    .WhyspotterSection-module--root--c34e3 .WhyspotterSection-module--titleSection--272a3 .WhyspotterSection-module--title--b90fb {
         font-size:24px;
         letter-spacing: -.48px;
         line-height: 28px
     }
 }
 
-.WhyFingerprintSection-module--root--c34e3 .WhyFingerprintSection-module--titleSection--272a3 .WhyFingerprintSection-module--subTitle--12d46 {
+.WhyspotterSection-module--root--c34e3 .WhyspotterSection-module--titleSection--272a3 .WhyspotterSection-module--subTitle--12d46 {
     color: var(--font-gray-dark);
     font-family: var(--ff-inter);
     font-size: 16px;
@@ -50217,20 +50217,20 @@
     z-index: 2
 }
 
-.WhyFingerprintSection-module--root--c34e3 .WhyFingerprintSection-module--descriptionSection--96b89 {
+.WhyspotterSection-module--root--c34e3 .WhyspotterSection-module--descriptionSection--96b89 {
     display: flex;
     flex-direction: column;
     height: 1
 }
 
 @media(min-width: 861px) {
-    .WhyFingerprintSection-module--root--c34e3 .WhyFingerprintSection-module--descriptionSection--96b89 {
+    .WhyspotterSection-module--root--c34e3 .WhyspotterSection-module--descriptionSection--96b89 {
         grid-column:8/14
     }
 }
 
 @media(max-width: 860px) {
-    .WhyFingerprintSection-module--root--c34e3 .WhyFingerprintSection-module--descriptionSection--96b89 {
+    .WhyspotterSection-module--root--c34e3 .WhyspotterSection-module--descriptionSection--96b89 {
         grid-column:1/14;
         margin: 0 12px;
         padding-bottom: 16px
@@ -50238,7 +50238,7 @@
 }
 
 @media(max-width: 640px) {
-    .WhyFingerprintSection-module--root--c34e3 .WhyFingerprintSection-module--descriptionSection--96b89 {
+    .WhyspotterSection-module--root--c34e3 .WhyspotterSection-module--descriptionSection--96b89 {
         flex-direction:row;
         margin: 0;
         padding: 0;
@@ -50247,18 +50247,18 @@
     }
 }
 
-.WhyFingerprintSection-module--root--c34e3 .WhyFingerprintSection-module--descriptionSection--96b89 .WhyFingerprintSection-module--card--85d59 {
+.WhyspotterSection-module--root--c34e3 .WhyspotterSection-module--descriptionSection--96b89 .WhyspotterSection-module--card--85d59 {
     background: hsla(60,17%,98%,.4);
     border-left: 1px dashed var(--dash-gray);
     overflow: hidden
 }
 
-.WhyFingerprintSection-module--root--c34e3 .WhyFingerprintSection-module--descriptionSection--96b89 .WhyFingerprintSection-module--card--85d59:not(:last-child) {
+.WhyspotterSection-module--root--c34e3 .WhyspotterSection-module--descriptionSection--96b89 .WhyspotterSection-module--card--85d59:not(:last-child) {
     border-bottom: 1px dashed var(--dash-gray)
 }
 
 @media(max-width: 640px) {
-    .WhyFingerprintSection-module--root--c34e3 .WhyFingerprintSection-module--descriptionSection--96b89 .WhyFingerprintSection-module--card--85d59 {
+    .WhyspotterSection-module--root--c34e3 .WhyspotterSection-module--descriptionSection--96b89 .WhyspotterSection-module--card--85d59 {
         background:linear-gradient(0deg,#fdfdfc,#fdfdfc),#f0f0ed;
         border: 1px solid var(--dash-gray);
         border-radius: 8px;
@@ -50266,7 +50266,7 @@
     }
 }
 
-.WhyFingerprintSection-module--root--c34e3 .WhyFingerprintSection-module--descriptionSection--96b89 .WhyFingerprintSection-module--card--85d59 .WhyFingerprintSection-module--content--bec56 {
+.WhyspotterSection-module--root--c34e3 .WhyspotterSection-module--descriptionSection--96b89 .WhyspotterSection-module--card--85d59 .WhyspotterSection-module--content--bec56 {
     -moz-column-gap: 16px;
     column-gap: 16px;
     display: flex;
@@ -50274,43 +50274,43 @@
 }
 
 @media(max-width: 860px) {
-    .WhyFingerprintSection-module--root--c34e3 .WhyFingerprintSection-module--descriptionSection--96b89 .WhyFingerprintSection-module--card--85d59 .WhyFingerprintSection-module--content--bec56 {
+    .WhyspotterSection-module--root--c34e3 .WhyspotterSection-module--descriptionSection--96b89 .WhyspotterSection-module--card--85d59 .WhyspotterSection-module--content--bec56 {
         flex-direction:column;
         padding: 16px 12px;
         row-gap: 4px
     }
 }
 
-.WhyFingerprintSection-module--root--c34e3 .WhyFingerprintSection-module--descriptionSection--96b89 .WhyFingerprintSection-module--card--85d59 .WhyFingerprintSection-module--content--bec56 svg {
+.WhyspotterSection-module--root--c34e3 .WhyspotterSection-module--descriptionSection--96b89 .WhyspotterSection-module--card--85d59 .WhyspotterSection-module--content--bec56 svg {
     flex-shrink: 0
 }
 
 @media(max-width: 860px) {
-    .WhyFingerprintSection-module--root--c34e3 .WhyFingerprintSection-module--descriptionSection--96b89 .WhyFingerprintSection-module--card--85d59 .WhyFingerprintSection-module--content--bec56 svg {
+    .WhyspotterSection-module--root--c34e3 .WhyspotterSection-module--descriptionSection--96b89 .WhyspotterSection-module--card--85d59 .WhyspotterSection-module--content--bec56 svg {
         margin-left:-3px
     }
 }
 
-.WhyFingerprintSection-module--root--c34e3 .WhyFingerprintSection-module--descriptionSection--96b89 .WhyFingerprintSection-module--card--85d59 .WhyFingerprintSection-module--content--bec56 .WhyFingerprintSection-module--titleDescription--4d388 {
+.WhyspotterSection-module--root--c34e3 .WhyspotterSection-module--descriptionSection--96b89 .WhyspotterSection-module--card--85d59 .WhyspotterSection-module--content--bec56 .WhyspotterSection-module--titleDescription--4d388 {
     display: flex;
     flex-direction: column;
     row-gap: 8px
 }
 
 @media(max-width: 860px) {
-    .WhyFingerprintSection-module--root--c34e3 .WhyFingerprintSection-module--descriptionSection--96b89 .WhyFingerprintSection-module--card--85d59 .WhyFingerprintSection-module--content--bec56 .WhyFingerprintSection-module--titleDescription--4d388 {
+    .WhyspotterSection-module--root--c34e3 .WhyspotterSection-module--descriptionSection--96b89 .WhyspotterSection-module--card--85d59 .WhyspotterSection-module--content--bec56 .WhyspotterSection-module--titleDescription--4d388 {
         row-gap:4px
     }
 }
 
-.WhyFingerprintSection-module--root--c34e3 .WhyFingerprintSection-module--descriptionSection--96b89 .WhyFingerprintSection-module--card--85d59 .WhyFingerprintSection-module--content--bec56 .WhyFingerprintSection-module--titleDescription--4d388 .WhyFingerprintSection-module--title--b90fb {
+.WhyspotterSection-module--root--c34e3 .WhyspotterSection-module--descriptionSection--96b89 .WhyspotterSection-module--card--85d59 .WhyspotterSection-module--content--bec56 .WhyspotterSection-module--titleDescription--4d388 .WhyspotterSection-module--title--b90fb {
     font-family: var(--ff-inter);
     font-size: 16px;
     font-weight: 500;
     line-height: 24px
 }
 
-.WhyFingerprintSection-module--root--c34e3 .WhyFingerprintSection-module--descriptionSection--96b89 .WhyFingerprintSection-module--card--85d59 .WhyFingerprintSection-module--content--bec56 .WhyFingerprintSection-module--titleDescription--4d388 .WhyFingerprintSection-module--description--b3f82 {
+.WhyspotterSection-module--root--c34e3 .WhyspotterSection-module--descriptionSection--96b89 .WhyspotterSection-module--card--85d59 .WhyspotterSection-module--content--bec56 .WhyspotterSection-module--titleDescription--4d388 .WhyspotterSection-module--description--b3f82 {
     color: var(--font-gray-dark);
     font-family: var(--ff-inter);
     font-size: 14px;
@@ -50318,42 +50318,42 @@
     line-height: 20px
 }
 
-.WhyFingerprintSection-module--root--c34e3 .WhyFingerprintSection-module--descriptionSection--96b89 .WhyFingerprintSection-module--card--85d59:nth-child(2) {
+.WhyspotterSection-module--root--c34e3 .WhyspotterSection-module--descriptionSection--96b89 .WhyspotterSection-module--card--85d59:nth-child(2) {
     flex: 1 1
 }
 
-.WhyFingerprintSection-module--root--c34e3 .WhyFingerprintSection-module--descriptionSection--96b89 .WhyFingerprintSection-module--card--85d59:nth-child(2) .WhyFingerprintSection-module--content--bec56 {
+.WhyspotterSection-module--root--c34e3 .WhyspotterSection-module--descriptionSection--96b89 .WhyspotterSection-module--card--85d59:nth-child(2) .WhyspotterSection-module--content--bec56 {
     padding: 0 24px 32px
 }
 
 @media(max-width: 860px) {
-    .WhyFingerprintSection-module--root--c34e3 .WhyFingerprintSection-module--descriptionSection--96b89 .WhyFingerprintSection-module--card--85d59:nth-child(2) .WhyFingerprintSection-module--content--bec56 {
+    .WhyspotterSection-module--root--c34e3 .WhyspotterSection-module--descriptionSection--96b89 .WhyspotterSection-module--card--85d59:nth-child(2) .WhyspotterSection-module--content--bec56 {
         padding:16px 12px
     }
 }
 
-.WhyFingerprintSection-module--swiper--f0a5c {
+.WhyspotterSection-module--swiper--f0a5c {
     padding-bottom: 40px;
     padding-top: 12px
 }
 
 @media(max-width: 860px) {
-    .WhyFingerprintSection-module--swiper--f0a5c {
+    .WhyspotterSection-module--swiper--f0a5c {
         padding-bottom:12px
     }
 }
 
-.WhyFingerprintSection-module--slide--b1b69 {
+.WhyspotterSection-module--slide--b1b69 {
     display: flex
 }
 
 @media(max-width: 420px) {
-    .WhyFingerprintSection-module--slide--b1b69 {
+    .WhyspotterSection-module--slide--b1b69 {
         width:280px!important
     }
 }
 
-.WhyFingerprintSection-module--grid--f719f {
+.WhyspotterSection-module--grid--f719f {
     -webkit-mask-image: linear-gradient(180deg,#000 0,#000 85%,transparent);
     mask-image: linear-gradient(180deg,#000 0,#000 85%,transparent);
     overflow: hidden;
@@ -50362,18 +50362,18 @@
 }
 
 @media(max-width: 640px) {
-    .WhyFingerprintSection-module--grid--f719f {
+    .WhyspotterSection-module--grid--f719f {
         display:none
     }
 }
 
 @media(min-width: 641px) {
-    .WhyFingerprintSection-module--grid--f719f {
+    .WhyspotterSection-module--grid--f719f {
         cursor:none
     }
 }
 
-.WhyFingerprintSection-module--grid--f719f:before {
+.WhyspotterSection-module--grid--f719f:before {
     border: 1px solid orange;
     border-radius: 50%;
     content: "";
@@ -50387,22 +50387,22 @@
 }
 
 @media(min-width: 641px) {
-    .WhyFingerprintSection-module--grid--f719f:before {
+    .WhyspotterSection-module--grid--f719f:before {
         opacity:0;
         transition: opacity .2s ease-in-out
     }
 }
 
-.WhyFingerprintSection-module--grid--f719f:hover:before {
+.WhyspotterSection-module--grid--f719f:hover:before {
     opacity: 1
 }
 
-.WhyFingerprintSection-module--grid--f719f .WhyFingerprintSection-module--radarSvg--56353 {
+.WhyspotterSection-module--grid--f719f .WhyspotterSection-module--radarSvg--56353 {
     opacity: .3;
     width: 100%
 }
 
-.WhyFingerprintSection-module--magnifier--1fe9e {
+.WhyspotterSection-module--magnifier--1fe9e {
     height: 100%;
     left: 0;
     -webkit-mask-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='128' fill='none' viewBox='0 0 128 128'%3E%3Ccircle cx='64' cy='64' r='64' fill='%23D9D9D9'/%3E%3C/svg%3E");
@@ -50421,17 +50421,17 @@
 }
 
 @media(min-width: 641px) {
-    .WhyFingerprintSection-module--magnifier--1fe9e {
+    .WhyspotterSection-module--magnifier--1fe9e {
         opacity:0;
         transition: opacity .2s ease-in-out
     }
 
-    .WhyFingerprintSection-module--grid--f719f:hover .WhyFingerprintSection-module--magnifier--1fe9e {
+    .WhyspotterSection-module--grid--f719f:hover .WhyspotterSection-module--magnifier--1fe9e {
         opacity: 1
     }
 }
 
-.WhyFingerprintSection-module--magnifier--1fe9e .WhyFingerprintSection-module--magnifierGlass--118f5 {
+.WhyspotterSection-module--magnifier--1fe9e .WhyspotterSection-module--magnifierGlass--118f5 {
     background-color: #f0f0ed;
     height: 100%;
     position: static;
@@ -50439,12 +50439,12 @@
     width: 100%
 }
 
-.WhyFingerprintSection-module--desktop--b82a4 {
+.WhyspotterSection-module--desktop--b82a4 {
     display: none
 }
 
 @media(min-width: 641px) {
-    .WhyFingerprintSection-module--desktop--b82a4 {
+    .WhyspotterSection-module--desktop--b82a4 {
         display:block
     }
 }
@@ -51926,20 +51926,20 @@
     position: absolute
 }
 
-.WhyFingerprintSection-module--root--e8593 {
+.WhyspotterSection-module--root--e8593 {
     border-bottom: 1px dashed var(--dash-gray);
     border-top: 1px dashed var(--dash-gray);
     position: relative
 }
 
 @media(max-width: 768px) {
-    .WhyFingerprintSection-module--root--e8593 {
+    .WhyspotterSection-module--root--e8593 {
         background:var(--button-background-gray)
     }
 }
 
 @media(min-width: 861px) {
-    .WhyFingerprintSection-module--root--e8593:before {
+    .WhyspotterSection-module--root--e8593:before {
         background:linear-gradient(8deg,var(--button-background-gray) 50%,transparent 50%);
         bottom: 0;
         content: "";
@@ -51951,7 +51951,7 @@
         z-index: -10
     }
 
-    .WhyFingerprintSection-module--root--e8593:after {
+    .WhyspotterSection-module--root--e8593:after {
         background: linear-gradient(8deg,transparent calc(50% - .5px),var(--dash-gray) calc(50% - .5px),var(--dash-gray) calc(50% + .5px),transparent calc(50% + .5px));
         bottom: 0;
         content: "";
@@ -51965,7 +51965,7 @@
     }
 }
 
-.WhyFingerprintSection-module--root--e8593 .WhyFingerprintSection-module--container--fc8f4 {
+.WhyspotterSection-module--root--e8593 .WhyspotterSection-module--container--fc8f4 {
     border-left: 1px dashed var(--dash-gray);
     border-right: 1px dashed var(--dash-gray);
     display: grid;
@@ -51975,13 +51975,13 @@
 }
 
 @media(max-width: 640px) {
-    .WhyFingerprintSection-module--root--e8593 .WhyFingerprintSection-module--container--fc8f4 {
+    .WhyspotterSection-module--root--e8593 .WhyspotterSection-module--container--fc8f4 {
         border:unset;
         grid-column: 1/15;
         padding: 0
     }
 
-    .WhyFingerprintSection-module--root--e8593 .WhyFingerprintSection-module--container--fc8f4:after {
+    .WhyspotterSection-module--root--e8593 .WhyspotterSection-module--container--fc8f4:after {
         border-right: 1px dashed var(--dash-gray);
         content: "";
         height: 100%;
@@ -51990,7 +51990,7 @@
         z-index: -10
     }
 
-    .WhyFingerprintSection-module--root--e8593 .WhyFingerprintSection-module--container--fc8f4:before {
+    .WhyspotterSection-module--root--e8593 .WhyspotterSection-module--container--fc8f4:before {
         border-bottom: 1px dashed var(--dash-gray);
         border-left: 1px dashed var(--dash-gray);
         content: "";
@@ -52002,14 +52002,14 @@
     }
 }
 
-.WhyFingerprintSection-module--root--e8593 .WhyFingerprintSection-module--titleSection--b9b4c {
+.WhyspotterSection-module--root--e8593 .WhyspotterSection-module--titleSection--b9b4c {
     display: flex;
     flex-direction: column;
     justify-content: space-between
 }
 
 @media(min-width: 861px) {
-    .WhyFingerprintSection-module--root--e8593 .WhyFingerprintSection-module--titleSection--b9b4c {
+    .WhyspotterSection-module--root--e8593 .WhyspotterSection-module--titleSection--b9b4c {
         background-color:#fff;
         border: 1px solid var(--dash-gray);
         border-radius: 12px;
@@ -52019,29 +52019,29 @@
 }
 
 @media(max-width: 860px) {
-    .WhyFingerprintSection-module--root--e8593 .WhyFingerprintSection-module--titleSection--b9b4c {
+    .WhyspotterSection-module--root--e8593 .WhyspotterSection-module--titleSection--b9b4c {
         grid-column:1/14;
         padding: 56px 32px 32px
     }
 }
 
 @media(max-width: 640px) {
-    .WhyFingerprintSection-module--root--e8593 .WhyFingerprintSection-module--titleSection--b9b4c {
+    .WhyspotterSection-module--root--e8593 .WhyspotterSection-module--titleSection--b9b4c {
         padding-bottom:0
     }
 }
 
-.WhyFingerprintSection-module--root--e8593 .WhyFingerprintSection-module--titleSection--b9b4c .WhyFingerprintSection-module--titleWrapper--5b798 {
+.WhyspotterSection-module--root--e8593 .WhyspotterSection-module--titleSection--b9b4c .WhyspotterSection-module--titleWrapper--5b798 {
     padding: 32px 0 0 32px
 }
 
 @media(max-width: 860px) {
-    .WhyFingerprintSection-module--root--e8593 .WhyFingerprintSection-module--titleSection--b9b4c .WhyFingerprintSection-module--titleWrapper--5b798 {
+    .WhyspotterSection-module--root--e8593 .WhyspotterSection-module--titleSection--b9b4c .WhyspotterSection-module--titleWrapper--5b798 {
         padding:0 0 32px
     }
 }
 
-.WhyFingerprintSection-module--root--e8593 .WhyFingerprintSection-module--titleSection--b9b4c .WhyFingerprintSection-module--title--6fff3 {
+.WhyspotterSection-module--root--e8593 .WhyspotterSection-module--titleSection--b9b4c .WhyspotterSection-module--title--6fff3 {
     font-family: var(--ff-inter);
     font-size: 36px;
     font-weight: 500;
@@ -52052,21 +52052,21 @@
     z-index: 2
 }
 
-.WhyFingerprintSection-module--root--e8593 .WhyFingerprintSection-module--titleSection--b9b4c .WhyFingerprintSection-module--title--6fff3 mark {
+.WhyspotterSection-module--root--e8593 .WhyspotterSection-module--titleSection--b9b4c .WhyspotterSection-module--title--6fff3 mark {
     all: unset;
     color: rgb(0, 128, 128);
     font-weight: 600
 }
 
 @media(max-width: 640px) {
-    .WhyFingerprintSection-module--root--e8593 .WhyFingerprintSection-module--titleSection--b9b4c .WhyFingerprintSection-module--title--6fff3 {
+    .WhyspotterSection-module--root--e8593 .WhyspotterSection-module--titleSection--b9b4c .WhyspotterSection-module--title--6fff3 {
         font-size:24px;
         letter-spacing: -.48px;
         line-height: 28px
     }
 }
 
-.WhyFingerprintSection-module--root--e8593 .WhyFingerprintSection-module--titleSection--b9b4c .WhyFingerprintSection-module--subTitle--84af1 {
+.WhyspotterSection-module--root--e8593 .WhyspotterSection-module--titleSection--b9b4c .WhyspotterSection-module--subTitle--84af1 {
     color: var(--font-gray-dark);
     font-family: var(--ff-inter);
     font-size: 16px;
@@ -52077,7 +52077,7 @@
     z-index: 2
 }
 
-.WhyFingerprintSection-module--root--e8593 .WhyFingerprintSection-module--descriptionSection--f3c1c {
+.WhyspotterSection-module--root--e8593 .WhyspotterSection-module--descriptionSection--f3c1c {
     display: flex;
     flex-direction: column;
     height: 1;
@@ -52086,13 +52086,13 @@
 }
 
 @media(min-width: 861px) {
-    .WhyFingerprintSection-module--root--e8593 .WhyFingerprintSection-module--descriptionSection--f3c1c {
+    .WhyspotterSection-module--root--e8593 .WhyspotterSection-module--descriptionSection--f3c1c {
         grid-column:8/14
     }
 }
 
 @media(max-width: 860px) {
-    .WhyFingerprintSection-module--root--e8593 .WhyFingerprintSection-module--descriptionSection--f3c1c {
+    .WhyspotterSection-module--root--e8593 .WhyspotterSection-module--descriptionSection--f3c1c {
         grid-column:1/14;
         margin: 0 12px;
         padding-bottom: 16px
@@ -52100,7 +52100,7 @@
 }
 
 @media(max-width: 640px) {
-    .WhyFingerprintSection-module--root--e8593 .WhyFingerprintSection-module--descriptionSection--f3c1c {
+    .WhyspotterSection-module--root--e8593 .WhyspotterSection-module--descriptionSection--f3c1c {
         flex-direction:row;
         margin: 0;
         padding: 0;
@@ -52109,7 +52109,7 @@
     }
 }
 
-.WhyFingerprintSection-module--root--e8593 .WhyFingerprintSection-module--descriptionSection--f3c1c .WhyFingerprintSection-module--card--52e01 {
+.WhyspotterSection-module--root--e8593 .WhyspotterSection-module--descriptionSection--f3c1c .WhyspotterSection-module--card--52e01 {
     background: #fff;
     border: 1px solid var(--dash-gray);
     border-radius: 12px;
@@ -52118,13 +52118,13 @@
 }
 
 @media(max-width: 860px) {
-    .WhyFingerprintSection-module--root--e8593 .WhyFingerprintSection-module--descriptionSection--f3c1c .WhyFingerprintSection-module--card--52e01 {
+    .WhyspotterSection-module--root--e8593 .WhyspotterSection-module--descriptionSection--f3c1c .WhyspotterSection-module--card--52e01 {
         background:#f6f6f4;
         border-radius: 8px
     }
 }
 
-.WhyFingerprintSection-module--root--e8593 .WhyFingerprintSection-module--descriptionSection--f3c1c .WhyFingerprintSection-module--card--52e01 .WhyFingerprintSection-module--content--1fade {
+.WhyspotterSection-module--root--e8593 .WhyspotterSection-module--descriptionSection--f3c1c .WhyspotterSection-module--card--52e01 .WhyspotterSection-module--content--1fade {
     -moz-column-gap: 16px;
     column-gap: 16px;
     display: flex;
@@ -52132,43 +52132,43 @@
 }
 
 @media(max-width: 860px) {
-    .WhyFingerprintSection-module--root--e8593 .WhyFingerprintSection-module--descriptionSection--f3c1c .WhyFingerprintSection-module--card--52e01 .WhyFingerprintSection-module--content--1fade {
+    .WhyspotterSection-module--root--e8593 .WhyspotterSection-module--descriptionSection--f3c1c .WhyspotterSection-module--card--52e01 .WhyspotterSection-module--content--1fade {
         flex-direction:column;
         padding: 16px 12px;
         row-gap: 4px
     }
 }
 
-.WhyFingerprintSection-module--root--e8593 .WhyFingerprintSection-module--descriptionSection--f3c1c .WhyFingerprintSection-module--card--52e01 .WhyFingerprintSection-module--content--1fade svg {
+.WhyspotterSection-module--root--e8593 .WhyspotterSection-module--descriptionSection--f3c1c .WhyspotterSection-module--card--52e01 .WhyspotterSection-module--content--1fade svg {
     flex-shrink: 0
 }
 
 @media(max-width: 860px) {
-    .WhyFingerprintSection-module--root--e8593 .WhyFingerprintSection-module--descriptionSection--f3c1c .WhyFingerprintSection-module--card--52e01 .WhyFingerprintSection-module--content--1fade svg {
+    .WhyspotterSection-module--root--e8593 .WhyspotterSection-module--descriptionSection--f3c1c .WhyspotterSection-module--card--52e01 .WhyspotterSection-module--content--1fade svg {
         margin-left:-3px
     }
 }
 
-.WhyFingerprintSection-module--root--e8593 .WhyFingerprintSection-module--descriptionSection--f3c1c .WhyFingerprintSection-module--card--52e01 .WhyFingerprintSection-module--content--1fade .WhyFingerprintSection-module--titleDescription--c5d71 {
+.WhyspotterSection-module--root--e8593 .WhyspotterSection-module--descriptionSection--f3c1c .WhyspotterSection-module--card--52e01 .WhyspotterSection-module--content--1fade .WhyspotterSection-module--titleDescription--c5d71 {
     display: flex;
     flex-direction: column;
     row-gap: 8px
 }
 
 @media(max-width: 860px) {
-    .WhyFingerprintSection-module--root--e8593 .WhyFingerprintSection-module--descriptionSection--f3c1c .WhyFingerprintSection-module--card--52e01 .WhyFingerprintSection-module--content--1fade .WhyFingerprintSection-module--titleDescription--c5d71 {
+    .WhyspotterSection-module--root--e8593 .WhyspotterSection-module--descriptionSection--f3c1c .WhyspotterSection-module--card--52e01 .WhyspotterSection-module--content--1fade .WhyspotterSection-module--titleDescription--c5d71 {
         row-gap:4px
     }
 }
 
-.WhyFingerprintSection-module--root--e8593 .WhyFingerprintSection-module--descriptionSection--f3c1c .WhyFingerprintSection-module--card--52e01 .WhyFingerprintSection-module--content--1fade .WhyFingerprintSection-module--titleDescription--c5d71 .WhyFingerprintSection-module--title--6fff3 {
+.WhyspotterSection-module--root--e8593 .WhyspotterSection-module--descriptionSection--f3c1c .WhyspotterSection-module--card--52e01 .WhyspotterSection-module--content--1fade .WhyspotterSection-module--titleDescription--c5d71 .WhyspotterSection-module--title--6fff3 {
     font-family: var(--ff-inter);
     font-size: 16px;
     font-weight: 500;
     line-height: 24px
 }
 
-.WhyFingerprintSection-module--root--e8593 .WhyFingerprintSection-module--descriptionSection--f3c1c .WhyFingerprintSection-module--card--52e01 .WhyFingerprintSection-module--content--1fade .WhyFingerprintSection-module--titleDescription--c5d71 .WhyFingerprintSection-module--description--9b694 {
+.WhyspotterSection-module--root--e8593 .WhyspotterSection-module--descriptionSection--f3c1c .WhyspotterSection-module--card--52e01 .WhyspotterSection-module--content--1fade .WhyspotterSection-module--titleDescription--c5d71 .WhyspotterSection-module--description--9b694 {
     color: var(--font-gray-dark);
     font-family: var(--ff-inter);
     font-size: 14px;
@@ -52176,30 +52176,30 @@
     line-height: 20px
 }
 
-.WhyFingerprintSection-module--root--e8593 .WhyFingerprintSection-module--descriptionSection--f3c1c .WhyFingerprintSection-module--card--52e01:nth-child(2) {
+.WhyspotterSection-module--root--e8593 .WhyspotterSection-module--descriptionSection--f3c1c .WhyspotterSection-module--card--52e01:nth-child(2) {
     flex: 1 1
 }
 
-.WhyFingerprintSection-module--root--e8593 .WhyFingerprintSection-module--descriptionSection--f3c1c .WhyFingerprintSection-module--card--52e01:nth-child(2) .WhyFingerprintSection-module--content--1fade {
+.WhyspotterSection-module--root--e8593 .WhyspotterSection-module--descriptionSection--f3c1c .WhyspotterSection-module--card--52e01:nth-child(2) .WhyspotterSection-module--content--1fade {
     padding: 0 24px 32px
 }
 
 @media(max-width: 860px) {
-    .WhyFingerprintSection-module--root--e8593 .WhyFingerprintSection-module--descriptionSection--f3c1c .WhyFingerprintSection-module--card--52e01:nth-child(2) .WhyFingerprintSection-module--content--1fade {
+    .WhyspotterSection-module--root--e8593 .WhyspotterSection-module--descriptionSection--f3c1c .WhyspotterSection-module--card--52e01:nth-child(2) .WhyspotterSection-module--content--1fade {
         padding:16px 12px
     }
 }
 
-.WhyFingerprintSection-module--swiper--4bc8b {
+.WhyspotterSection-module--swiper--4bc8b {
     padding-bottom: 40px;
     padding-top: 12px
 }
 
-.WhyFingerprintSection-module--slide--6e4a5 {
+.WhyspotterSection-module--slide--6e4a5 {
     display: flex
 }
 
-.WhyFingerprintSection-module--grid--e5035 {
+.WhyspotterSection-module--grid--e5035 {
     -webkit-mask-image: linear-gradient(180deg,#000 0,#000 85%,transparent);
     mask-image: linear-gradient(180deg,#000 0,#000 85%,transparent);
     overflow: hidden;
@@ -52208,18 +52208,18 @@
 }
 
 @media(max-width: 640px) {
-    .WhyFingerprintSection-module--grid--e5035 {
+    .WhyspotterSection-module--grid--e5035 {
         display:none
     }
 }
 
 @media(min-width: 641px) {
-    .WhyFingerprintSection-module--grid--e5035 {
+    .WhyspotterSection-module--grid--e5035 {
         cursor:none
     }
 }
 
-.WhyFingerprintSection-module--grid--e5035:before {
+.WhyspotterSection-module--grid--e5035:before {
     content: "";
     position: absolute;
     top: calc(var(--y) - 65px);
@@ -52235,22 +52235,22 @@
   }
   
 @media(min-width: 641px) {
-    .WhyFingerprintSection-module--grid--e5035:before {
+    .WhyspotterSection-module--grid--e5035:before {
         opacity:0;
         transition: opacity .2s ease-in-out
     }
 }
 
-.WhyFingerprintSection-module--grid--e5035:hover:before {
+.WhyspotterSection-module--grid--e5035:hover:before {
     opacity: 1
 }
 
-.WhyFingerprintSection-module--grid--e5035 .WhyFingerprintSection-module--radarSvg--0993c {
+.WhyspotterSection-module--grid--e5035 .WhyspotterSection-module--radarSvg--0993c {
     opacity: .3;
     width: 100%
 }
 
-.WhyFingerprintSection-module--magnifier--702c1 {
+.WhyspotterSection-module--magnifier--702c1 {
     height: 100%;
     left: 0;
     -webkit-mask-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='128' fill='none' viewBox='0 0 128 128'%3E%3Ccircle cx='64' cy='64' r='64' fill='%23D9D9D9'/%3E%3C/svg%3E");
@@ -52269,17 +52269,17 @@
   }
 
 @media(min-width: 641px) {
-    .WhyFingerprintSection-module--magnifier--702c1 {
+    .WhyspotterSection-module--magnifier--702c1 {
         opacity:0;
         transition: opacity .2s ease-in-out
     }
 
-    .WhyFingerprintSection-module--grid--e5035:hover .WhyFingerprintSection-module--magnifier--702c1 {
+    .WhyspotterSection-module--grid--e5035:hover .WhyspotterSection-module--magnifier--702c1 {
         opacity: 1
     }
 }
 
-.WhyFingerprintSection-module--magnifier--702c1 .WhyFingerprintSection-module--magnifierGlass--67fb2 {
+.WhyspotterSection-module--magnifier--702c1 .WhyspotterSection-module--magnifierGlass--67fb2 {
     background-color: #f0f0ed;
     height: 100%;
     position: static;
@@ -52287,12 +52287,12 @@
     width: 100%
 }
 
-.WhyFingerprintSection-module--desktop--c2d63 {
+.WhyspotterSection-module--desktop--c2d63 {
     display: none
 }
 
 @media(min-width: 641px) {
-    .WhyFingerprintSection-module--desktop--c2d63 {
+    .WhyspotterSection-module--desktop--c2d63 {
         display:block
     }
 }
@@ -52896,7 +52896,7 @@
     transition-timing-function: ease
 }
 
-.AccuracyChart-module--chart--5e9ea .AccuracyChart-module--fingerprint--9044b {
+.AccuracyChart-module--chart--5e9ea .AccuracyChart-module--spotter--9044b {
     left: 0;
     position: absolute;
     top: 13px;
