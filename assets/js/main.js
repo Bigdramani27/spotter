@@ -95,6 +95,50 @@ window.addEventListener("scroll", function () {
     hideDialog2();
   });
 
+  
+  const displayElement3 = document.querySelector(".display3");
+  const dialogElement3 = document.querySelector(".dialog3");
+
+  let isHovered3 = false; 
+
+  // Function to show dialog
+  function showDialog3() {
+    isHovered3 = true;
+    dialogElement3.style.opacity = "1";
+    dialogElement3.style.visibility = "visible";
+  }
+
+  // Function to hide dialog
+  function hideDialog3() {
+    isHovered3 = false;
+    setTimeout(() => {
+      if (!isHovered3) {
+        // Only hide if still not hovered
+        dialogElement3.style.opacity = "0";
+        dialogElement3.style.visibility = "hidden";
+      }
+    }, 100); 
+  }
+
+  // When mouse enters display, show dialog
+  displayElement3.addEventListener("mouseenter", showDialog3);
+
+  // When mouse enters dialog, keep it open
+  dialogElement3.addEventListener("mouseenter", () => {
+    isHovered3 = true; 
+  });
+
+  // When mouse leaves both elements, hide dialog
+  displayElement3.addEventListener("mouseleave", () => {
+    isHovered3 = false;
+    hideDialog3();
+  });
+
+  dialogElement3.addEventListener("mouseleave", () => {
+    isHovered3 = false;
+    hideDialog3();
+  });
+
   document.addEventListener("DOMContentLoaded", function () {
     const slides = document.querySelectorAll(".absolute.grid.h-full");
     let currentIndex = 0;

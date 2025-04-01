@@ -20339,6 +20339,13 @@ html[dir=rtl] .search-results .clear-all-link {
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
   }
 
+  
+  .dialog3{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+
  .ham{
     display: none; opacity: 0; height: 0px; min-height: 100vh
  }
@@ -21588,7 +21595,7 @@ html[dir=rtl] .search-results .clear-all-link {
     background: #fafaf8;
     border: 1px solid #d9d9d6;
     border-radius: 16px;
-    height: 138px;
+    height: 118px;
     padding: 8px;
     width: 167px
 }
