@@ -4042,13 +4042,13 @@ a [data-rmiz-content=found] [data-zoom],a [data-rmiz-content=found] [role=img],a
     border-color: rgb(var(--gray-100))!important
 }
 
-.border-\[\#2AB673\] {
+.border-\[\#008080\] {
     --tw-border-opacity: 1;
-    border-color: rgb(42 182 115/var(--tw-border-opacity))
+    border-color: rgb(0 128 128/var(--tw-border-opacity))
 }
 
-.border-\[\#2AB673\]\/30 {
-    border-color: rgba(42,182,115,.3)
+.border-\[\#008080\]\/30 {
+    border-color: rgba(0,128,128,.3)
 }
 
 .border-\[\#2BDADA\]\/30 {
@@ -4234,13 +4234,13 @@ a [data-rmiz-content=found] [data-zoom],a [data-rmiz-content=found] [role=img],a
     background-color: rgb(17 120 102/var(--tw-bg-opacity))
 }
 
-.bg-\[\#2AB673\] {
+.bg-\[\#008080\] {
     --tw-bg-opacity: 1;
-    background-color: rgb(42 182 115/var(--tw-bg-opacity))
+    background-color: rgb(0 128 128/var(--tw-bg-opacity))
 }
 
-.bg-\[\#2AB673\]\/10 {
-    background-color: rgba(42,182,115,.1)
+.bg-\[\#008080\]\/10 {
+    background-color: rgba(0,128,128,.1)
 }
 
 .bg-\[\#2BDADA\] {
@@ -4428,7 +4428,7 @@ a [data-rmiz-content=found] [data-zoom],a [data-rmiz-content=found] [role=img],a
 }
 
 .bg-green-400\/20 {
-    background-color: rgba(74,222,128,.2)
+    background-color: rgba(0,128,128,.2)
 }
 
 .bg-green-600 {
@@ -5148,9 +5148,9 @@ a [data-rmiz-content=found] [data-zoom],a [data-rmiz-content=found] [role=img],a
     color: rgb(var(--gray-900))!important
 }
 
-.text-\[\#2AB673\] {
+.text-\[\#008080\] {
     --tw-text-opacity: 1;
-    color: rgb(42 182 115/var(--tw-text-opacity))
+    color: rgb(0 128 128/var(--tw-text-opacity))
 }
 
 .text-\[\#2BDADA\] {
@@ -5295,7 +5295,7 @@ a [data-rmiz-content=found] [data-zoom],a [data-rmiz-content=found] [role=img],a
 
 .text-green-700 {
     --tw-text-opacity: 1;
-    color: rgb(21 128 61/var(--tw-text-opacity))
+    color: rgb(0 128 128/var(--tw-text-opacity))
 }
 
 .text-inherit {
@@ -6397,7 +6397,7 @@ input[type=checkbox] {
 
 .disabled\:bg-green-700:disabled {
     --tw-bg-opacity: 1;
-    background-color: rgb(21 128 61/var(--tw-bg-opacity))
+    background-color: rgb(0 128 128/var(--tw-bg-opacity))
 }
 
 .disabled\:bg-orange-700:disabled {
@@ -6690,7 +6690,7 @@ input[type=checkbox] {
 }
 
 .dark\:bg-green-400\/20:is(.dark *) {
-    background-color: rgba(74,222,128,.2)
+    background-color: rgba(0,128,128,.2)
 }
 
 .dark\:bg-green-500:is(.dark *) {
@@ -6910,7 +6910,7 @@ input[type=checkbox] {
 }
 
 .dark\:text-green-400\/80:is(.dark *) {
-    color: rgba(74,222,128,.8)
+    color: rgba(0,128,128,.8)
 }
 
 .dark\:text-green-500:is(.dark *) {
