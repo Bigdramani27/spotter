@@ -219,24 +219,40 @@ hamburgerButton.addEventListener('click', () => {
 
 const modal = document.getElementById('modal');
 const modalOverlay = document.getElementById('modalOverlay');
-const openModalBtn = document.getElementById('openModalBtn');
 const closeModalBtn = document.getElementById('closeModalBtn');
+
 
 // Open the modal when the button is clicked
 const openModalBtns = document.querySelectorAll('#openModalBtn'); 
 
 // Open modal for all matching elements
+const serviceTypeSelect = document.querySelector('select');
+
+// Open the modal when the button is clicked
 openModalBtns.forEach(btn => {
-btn.addEventListener('click', function() {
-modal.style.display = 'block';
-modalOverlay.style.display = 'block';
+    btn.addEventListener('click', function(event) {
+        event.preventDefault(); 
+        
+        modal.style.display = 'block';
+        modalOverlay.style.display = 'block';
+
+
+        if (btn.classList.contains('enable')) {
+            serviceTypeSelect.disabled = false;
+            serviceTypeSelect.value = ""; 
+        } else if (btn.classList.contains('disable')) {
+
+            serviceTypeSelect.disabled = true;
+            serviceTypeSelect.value = "Sentinel"; 
+        }
+    });
 });
-});
-// Close the modal when the close button is clicked
+
 closeModalBtn.addEventListener('click', function() {
-    modal.style.display = 'none';
-    modalOverlay.style.display = 'none';
+  modal.style.display = 'none';
+  modalOverlay.style.display = 'none';
 });
+// Close the modal when the user clicks cancel button is clicked
 
 // Close the modal if the user clicks outside of it
 modalOverlay.addEventListener('click', function(event) {

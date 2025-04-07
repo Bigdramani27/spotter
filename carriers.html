@@ -21,7 +21,7 @@
     <link
       as="font"
       crossorigin="anonymous"
-      href="assets/fonts/cal-sans/CalSans-SemiBold.woff2"
+      href="assets/fonts/spotter-bold/semiBold.woff2"
       rel="preload"
       type="font/woff2"
     />
@@ -51,8 +51,8 @@
     ></script>
     <style id="__jsx-2714316418">
       :root {
-        --font-inter: "__Inter_d65c78", "__Inter_Fallback_d65c78";
-        --font-cal: "__calFont_e64b80", "__calFont_Fallback_e64b80";
+        --font-inter: "secondaryFont", "secondaryFont_Fallback";
+        --font-cal: "mainFont", "mainFont_Fallback";
       }
       .animate1 svg {
   transform: translateY(0px) rotate(0deg);
@@ -107,7 +107,7 @@
           <div class="flex cursor-pointer rtl:relative rtl:top-3">
             <a href="index.html" class="dLVeol" href="/"><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 944.7 623.7" xml:space="preserve"
-                height="20">
+                height="25">
                 <style type="text/css">
                   .st0 {
                     fill: #008080 important;
@@ -128,7 +128,7 @@
                   <circle class="st2" cx="794.7" cy="472.7" r="147.4"></circle>
                 </g>
               </svg><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px" y="0px" viewBox="0 0 2146.4 576" xml:space="preserve" color="white" class="logo" height="20">
+                x="0px" y="0px" viewBox="0 0 2146.4 576" xml:space="preserve" color="white" class="logo" height="25">
                 <style type="text/css">
                   .st0 {
                     fill: #008080 !important;
@@ -642,6 +642,7 @@
       </div>
     </div>
     <main class="text-primary-700 text-standard font-matter leading-normal">
+      <div class="calendar-grid">
       <section class="mx-3 md:mx-0">
         <div
           class="mx-auto w-full relative max-w-[1200px] gap-8 rounded-xl px-1 shadow-fade bg-white mb-1 overflow-hidden py-0 pt-12 md:px-0 md:py-0 md:pt-12 lg:py-20 lg:pl-12"
@@ -946,6 +947,69 @@
           </div>
         </div>
       </section>
+      </div>
+      <section class="mx-3 md:mx-0">
+
+        <div id="modalOverlay" class="modal-overlay"></div>
+        <!-- Modal -->
+        <div id="modal" class="modal">
+          <!-- Close button -->
+          <button id="closeModalBtn" class="close-btn">&times;</button>
+  
+          <div class="modal-info">
+            <form id="schedule">
+            <h2 style="font-size: 28px; color:#008080;">Schedule a Demo</h2>
+            <p class="max-w-md text-base text-[#898989] lg:max-w-2xl lg:text-lg let">Let us show you how Spotter can help
+              your business</p>
+            <div class="input-row">
+              <div class="input-column">
+                <label>Full Name</label>
+                <input type="text" class="form-control" placeholder="Enter Full Name" required>
+              </div>
+              <div class="input-column">
+                <label>Email </label>
+                <input type="email" class="form-control" placeholder="Enter Email" required>
+              </div>
+            </div>
+            <div class="input-row">
+              <div class="input-column">
+                <label>Company Name </label>
+                <input type="text" class="form-control" placeholder="Enter Company Name" required>
+              </div>
+              <div class="input-column">
+                <label>Phone </label>
+                <input type="tel" class="form-control" placeholder="Enter Phone" required pattern="^\d{10,11}$" title="Phone number must be 10 to 11 digits" maxlength="11">
+              </div>
+            </div>
+            <div class="input-row">
+              <div class="input-column">
+                <label>MC Number (Optional)</label>
+                <input type="text" class="form-control" placeholder="Enter MC Number">
+              </div>
+              <div class="input-column">
+                <label>Service Type</label>
+                <select class="form-control">
+                  <option value="" disabled selected>Please select one</option>
+                  <option value="Disruptor">Disruptor</option>
+                  <option value="Lens">Lens</option>
+                  <option value="Sentinel">Sentinel</option>
+                  <option value="Scope">Scope</option>
+                </select>
+              </div>
+            </div>
+            <label style="padding-top:10px;  padding-bottom: 10px;">Additional Information (Optional)</label>
+            <textarea class="textarea-control" placeholder="Write here... (optional)"></textarea>
+            <div style="margin-top:10px">
+              <button type="submit"
+                class="Button-module--button--3b10c Button-module--primary--379ca Button-module--large--57ca4 HeroSection-module--button--95276"
+                aria-label=""><span>Book Demo</span></button>
+  
+            </div>
+            </form>
+          </div>
+        </div>
+  
+      </section>
       <section class="mx-3 md:mx-0">
         <div
           class="mx-auto relative max-w-[1200px] gap-8 overflow-clip rounded-xl px-1 md:py-20 !bg-transparent text-black mt-12 flex h-full w-full flex-col py-14 md:px-0"
@@ -965,7 +1029,7 @@
                       y="0px"
                       viewBox="0 0 944.7 623.7"
                       xml:space="preserve"
-                      height="20"
+                      height="25"
                     >
                       <style type="text/css">
                         .st0 {
@@ -1014,7 +1078,7 @@
                       xml:space="preserve"
                       color="white"
                       class="logo"
-                      height="20"
+                      height="25"
                     >
                       <style type="text/css">
                         .st0 {
@@ -1121,13 +1185,13 @@
                 class="mt-2 max-w-[350px] pr-4 text-base transition-opacity ease-in-out"
               >
               <h1 class="text-[17px] font-semibold" style="padding-top:10px;">Headquarters</h1>
-              2100 Safety Drive, Suite 400<br>
-              Chicago, IL 60606 USA
+              251 Little Falls<br>
+              Dr. Wilmington, DE 19808  
               </p>
               <p class="mt-4 lg:block">
                 Need Help?
 
-                <a href="" class="text-[#0561A2] underline">Contact Us</a>
+                <a href="contact-us.html" class="text-[#0561A2] underline">Contact Us</a>
               </p>
             </div>
             <div class="w-full md:flex md:w-auto md:justify-end">
@@ -1259,9 +1323,9 @@
                     >
                   </li>
                   <li class="pt-4 text-[17px]">
-                    <a
+                     <a
                       class="flex items-start text-[16px] hover:opacity-50"
-                      href="\"
+                      href="contact-us.html"
                       >Support</a
                     >
                   </li>
