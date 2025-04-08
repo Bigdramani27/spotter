@@ -20356,22 +20356,15 @@ html[dir=rtl] .search-results .clear-all-link {
  }
 
  .Section-module--section--6eb85 {
-    padding: 112px 0;
     z-index: var(--z-sections)
 }
 
-@media screen and (max-width: 1024px) {
-    .Section-module--section--6eb85 {
-        padding:56px 0
-    }
-}
 
 .Section-module--section--6eb85.Section-module--content--2545e,.Section-module--section--6eb85.Section-module--header--cdba9 {
     flex: 1 1
 }
 
 .HeroSection-module--root--36363 {
-    padding-bottom: 96px;
     padding-top: 96px
 }
 
@@ -20593,7 +20586,7 @@ html[dir=rtl] .search-results .clear-all-link {
 
 .Button-module--button--3b10c.Button-module--darkGray--1ebac {
     background-color: var(--dark-gray);
-    border: 1px solid var(--dark-gray);
+    border: 1px solid #e4e5e1;
     box-shadow: inset 0 1px 0 hsla(0,0%,100%,.2),0 1px 2px 0 rgba(24,25,22,.06);
     color: var(--base-white)
 }
@@ -20604,7 +20597,7 @@ html[dir=rtl] .search-results .clear-all-link {
 
 .Button-module--button--3b10c.Button-module--tertiary--95e3b {
     background-color: var(--gray-1);
-    border: 1px solid var(--gray-4);
+    border: 1px solid #e4e5e1;
     box-shadow: 0 2px 1px 0 rgba(24,25,22,.02),inset 0 -1px 0 rgba(24,25,22,.1)
 }
 
@@ -22075,11 +22068,11 @@ html[dir=rtl] .search-results .clear-all-link {
     position: absolute;
     top: 13px;
     width: 100%;
-    z-index: 1;
+    z-index: 9;
   }
   .AccuracyChart-module--chart--5e9ea .AccuracyChart-module--days--4391d {
     border-bottom: 1px solid #e4e5e1;
-    color: #484946;
+    color: #898989;
     font-size: 10px;
     font-weight: 400;
     line-height: 145%;
@@ -22106,7 +22099,7 @@ html[dir=rtl] .search-results .clear-all-link {
     .AccuracyChart-module--valuesSection--5f797
     .AccuracyChart-module--companyValue--33c20
     .AccuracyChart-module--company--715c3 {
-    color: #c1c1be;
+    color: #898989;
     font-size: 11px;
     font-weight: 400;
     line-height: 145%;
@@ -22126,9 +22119,9 @@ html[dir=rtl] .search-results .clear-all-link {
     .AccuracyChart-module--valuesSection--5f797
     .AccuracyChart-module--companyValue--33c20
     .AccuracyChart-module--finValue--6c97d {
-    background: rgba(137, 137, 137, 0.2);
-    border: 0.6px solid #898989;
-    color: #898989;
+    background: rgb(0,128,128,0.2);
+    border: 0.6px solid rgb(0,128,128);
+    color: #008080;
     font-family: var(--ff-inter);
     font-size: 10px;
     font-weight: 500;
@@ -22138,9 +22131,9 @@ html[dir=rtl] .search-results .clear-all-link {
     .AccuracyChart-module--valuesSection--5f797
     .AccuracyChart-module--companyValue--33c20
     .AccuracyChart-module--comValue--b5ee0 {
-    background: rgb(0,128,128,0.2);
-    border: 0.6px solid rgb(0,128,128);
-    color: #008080;
+        background: rgba(137, 137, 137, 0.2);
+        border: 0.6px solid #898989;
+        color: #898989;
     font-size: 10px;
     font-weight: 500;
     line-height: 145%;
@@ -22317,5 +22310,5 @@ html[dir=rtl] .search-results .clear-all-link {
     opacity: 1;
   }
   .black{
-    color:black !important
+    color:#8c8c89 !important
   }

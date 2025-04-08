@@ -55,24 +55,27 @@
 
     tealBall.setAttribute('cx', tealPoint.x);
     tealBall.setAttribute('cy', tealPoint.y);
+    
   };
 
   // Show balls when hovered
-  document.querySelector('svg').addEventListener('mouseenter', () => {
+  document.querySelector('.AccuracyChart-module--spotter--9044b').addEventListener('mouseenter', () => {
     isHovered = true;
     redBall.style.visibility = 'visible';
     tealBall.style.visibility = 'visible';
+    console.log("show")
   });
 
   // Hide balls when mouse leaves the graph
-  document.querySelector('svg').addEventListener('mouseleave', () => {
+  document.querySelector('.AccuracyChart-module--spotter--9044b').addEventListener('mouseleave', () => {
     isHovered = false;
     redBall.style.visibility = 'hidden';
     tealBall.style.visibility = 'hidden';
+    console.log("left")
   });
 
   // Update ball position based on mouse movement
-  document.querySelector('svg').addEventListener('mousemove', updateBallPosition);
+  document.querySelector('.AccuracyChart-module--spotter--9044b').addEventListener('mousemove', updateBallPosition);
 });
 
 </script>
