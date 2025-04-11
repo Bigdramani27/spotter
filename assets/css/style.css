@@ -20631,15 +20631,13 @@ html[dir=rtl] .search-results .clear-all-link {
 }
 
 .Button-module--button--3b10c.Button-module--large--57ca4 {
-    font-family: var(--ff-inter);
     font-size: 14px;
     font-weight: 500;
     line-height: 140%;
-    padding: 10px 20px
+    padding: 8px 20px
 }
 
 .Button-module--button--3b10c.Button-module--medium--5a71a {
-    font-family: var(--ff-inter);
     font-size: 14px;
     font-weight: 500;
     line-height: 140%;
@@ -20647,7 +20645,7 @@ html[dir=rtl] .search-results .clear-all-link {
 }
 
 .Button-module--button--3b10c.Button-module--small--f04c2 {
-    font-family: var(--ff-inter);
+
     font-size: 12px;
     font-weight: 500;
     line-height: 130%;

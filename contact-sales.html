@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Spotter- Contact Us</title>
+  <title>Spotter- Book Demo</title>
   <link as="font" crossorigin="anonymous" href="assets/fonts/matter/Matter-SemiBold.woff" rel="preload"
     type="font/woff" />
   <link as="font" crossorigin="anonymous" href="assets/fonts/matter/Matter-Regular.woff" rel="preload"
@@ -41,6 +41,168 @@
       width: 100% !important;
       margin-bottom: 100px;
     }
+
+    .book-container {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+    }
+
+    .book-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .book-group label {
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+
+    .book-group input, select, textarea {
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+    }
+  .book-field:focus {
+  border-color: #008080 !important;
+  outline: none !important;
+  }
+
+   .book-group textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    .full-width {
+      grid-column: 1 / -1;
+    }
+
+    .submit-section {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .submit-btn {
+      background-color: #4a3aff;
+      color: #fff;
+      padding: 10px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background-color: #382ccc;
+    }
+
+    .privacy-text {
+      font-size: 12px;
+      color: #555;
+      margin-top: 10px;
+    }
+
+    .privacy-text a {
+      color: #008080;
+      text-decoration: none;
+    }
+    select {
+  padding: 10px 40px 10px 10px; 
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  appearance: none; 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8"><path fill="none" stroke="%23333" stroke-width="2" d="M1 1l5 5 5-5"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px 8px;
+}
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 5))}
+}
+
+.slider {
+	height: 100px;
+	overflow:hidden;
+
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+	
+	.slide-track {
+		animation: scroll 40s linear infinite;
+		display: flex;
+		width: calc(250px * 10);
+	}
+	
+	.slide {
+		height: 50px;
+		width: 80px;
+    margin: 0 20px;
+	}
+}
+
+.custom-divider {
+    height: 3px;
+    background-color: #e0ddd9;
+    margin: 2rem 0;
+    width: 100%;
+  }
+  .final-card {
+    background-color: rgb(137,137,137, .1);
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    max-width: 600px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  }
+
+  .final-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .final-logo {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+  }
+
+  .final-text {
+    font-size: 16px;
+    color: #111;
+    line-height: 1.5;
+  }
+
+  .final-author {
+    margin-top: 0.5rem;
+    font-size: 14px;
+    color: #333;
+  }
   </style>
 </head>
 
@@ -572,7 +734,7 @@
             in</a>
           <div>
             <a class="px-3 py-2 text-sm font-medium border border-[transparent] dark:text-black bg-neutral-900 dark:bg-white hover:bg-neutral-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-neutral-900 hover:opacity-90 transition-all duration-150 ease-in-out group relative hidden overflow-hidden whitespace-nowrap rounded-xl lg:flex items-center justify-center bg-gradient-to-b from-[#2c2c30] to-[#1d1d20] text-white before:shadow-[0px_2px_0.4px_0px_rgba(255,_255,_255,_0.16)_inset] before:pointer-events-none before:absolute before:inset-0 before:rounded-xl enable"
-              href="contact-sales.html"><span>Book Demo</span></a>
+              id="openModalBtn" href="#"><span>Book Demo</span></a>
           </div>
           <button class="p-2 hover:cursor-pointer lg:hidden harmburger" aria-label="Open menu">
             <div class="relative h-4 w-4">
@@ -615,41 +777,200 @@
     <div class="calendar-grid">
       <section class="mx-3 md:mx-0">
         <div
-          class="mx-auto w-full relative max-w-[1200px] gap-8 rounded-xl px-1 shadow-fade bg-white mb-1 overflow-hidden py-0 pt-12 md:px-0 md:py-0 md:pt-12 justify-center">
-          <div class="grid w-full grid-cols-1 items-center py-0 justify-center lg:grid-cols-1">
-            <div class="animate-move-up z-[3] w-full flex-col items-center pt-4 text-center lg:items-center">
-              <div class="flex flex-col pb-3.5 items-center text-center">
-                <div>
-                  <span class="my-3 flex items-center justify-center mb-4"><span
-                      class="shadow-fade inline-flex items-center justify-start gap-1 rounded-full px-3.5 py-1 bg-[#F5F5F5]">
-                      <p class="text-xs text-[#242424]">Contact Us</p>
-                    </span></span>
-                </div>
-                <h1 class="font-cal text-[40px] leading-none md:text-[65px] lg:text-[60px] xl:text-[69px] pb-3">
-                  <span data-br=":R2b1kul6:" data-brr="1" style="
-                        display: inline-block;
-                        vertical-align: top;
-                        text-decoration: inherit;
-                        text-wrap: balance;
-                      ">Reach Out to Spotter Support</span>
+          class="mx-auto w-full relative max-w-[1200px] gap-8 rounded-xl px-1 mb-1 overflow-hidden py-0 pt-12 md:px-0 md:py-0 md:pt-12 lg:py-20 lg:pl-12" 
+        >
+          <div
+            class="absolute -bottom-20 -top-20 right-0 z-[1] hidden lg:block"
+          >
+            <div class="relative h-[calc(100%+10rem)] w-[800px]">
+              <div
+                class="absolute inset-0 bg-gradient-to-r from-white via-white/20 to-transparent"
+              ></div>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-white/90 via-white/10 to-white/0"
+              ></div>
+              <div
+                class="absolute inset-0 bg-gradient-to-b from-white/90 via-white/10 to-white/5"
+              ></div>
+            </div>
+          </div>
+          <div
+            class="grid w-full grid-cols-1 items-center justify-start gap-4 py-0 md:gap-[6%] lg:grid-cols-[45%_auto] lg:items-start" 
+          >
+            <div
+              class="animate-move-up z-[3] w-full flex-col items-center p-4 text-center lg:items-start lg:text-left" 
+            >
+              <div
+                class="flex flex-col pb-3.5 items-center text-center lg:items-start lg:text-left"
+              >
+                <h1
+                  class="font-cal text-[45px] leading-none pb-3"
+                >
+                  <span
+                    data-br=":r6:"
+                    data-brr="1"
+                    style="
+                      display: inline-block;
+                      vertical-align: top;
+                      text-decoration: inherit;
+                      text-wrap: balance;
+                    "
+                    >Join 2.2 million teams using Zapier to automate their work in minutesptor</span
+                  >
                 </h1>
-                <p class="max-w-md text-base text-[#898989] lg:max-w-2xl lg:text-lg">
-                  We will get back to you as soon as possible
+                <p
+                  class="max-w-md text-base text-[#898989] lg:max-w-2xl lg:text-lg"
+                >
+                Centralize and manage all your trucking operations effortlessly with our all-in-one transportation management system.
                 </p>
-
+              </div>
+              <h1
+              class=" text-[16px] font-normal text-[#898989] " style="margin-top: 40px; margin-bottom: 25px;"
+            >
+              Loved by Teams At
+            </h1>
+            <div class="slider">
+              <div class="slide-track">
+                <div class="slide">
+                  <img src="assets/trusted/wer.png"  alt="" />
+                </div>
+                <div class="slide">
+                  <img src="assets/trusted/sch.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="assets/trusted/pep.jpg" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="assets/trusted/fedx.png" style=" height: 40px !important;" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="assets/trusted/ch.png" style=" width: 150px !important; height: 30px !important;" alt=""  />
+                </div>
+                <div class="slide">
+                  <img src="assets/trusted/wer.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="assets/trusted/sch.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="assets/trusted/pep.jpg" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="assets/trusted/fedx.png" style=" height: 30px !important;" alt="" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="assets/trusted/ch.png" style=" width: 150px !important; height: 30px !important;" alt=""  />
+                </div>
+                <div class="slide">
+                  <img src="assets/trusted/wer.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="assets/trusted/sch.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="assets/trusted/pep.jpg" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="assets/trusted/fedx.png" style=" height: 30px !important;" alt="" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="assets/trusted/ch.png" style=" width: 150px !important; height: 30px !important;" alt=""  />
+                </div>
               </div>
             </div>
-            <div style="margin-left: 120px; margin-right:160px;">
-              <form class="form-container">
-                <label>Work Email</label>
-                <input type="text" placeholder="Enter Full Name" class="form-control1">
-                <label style="padding-top:10px;  padding-bottom: 10px;">Please describe your request</label>
-                <textarea class="textarea-control1" placeholder="Write details here..."></textarea>
-                <button type="submit" style="margin-top: 20px;"
-                  class="Button-module--button--3b10c Button-module--primary--379ca Button-module--large--57ca4 HeroSection-module--button--95276"
-                  aria-label=""><span>Send Message</span></button>
-
-              </form>
+            <div class="custom-divider"></div>
+            <div class="final">
+              <div class="final-card">
+                <div class="final-content">
+                  <img src="assets/trusted/transfedx.png"  class="final-logo" />
+                  <div>
+                    <div class="final-text">
+                      "Automating our Salesforce sync frees up valuable time, allowing us to focus on strategic initiatives."
+                    </div>
+                    <div class="final-author">
+                      — Micaela W. at Lucidchart
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            </div>
+            <div
+              class="relative top-4 z-[2] mx-auto origin-top-left self-center justify-self-center md:top-0" style="margin-right:10px"
+            >
+            <form class="book-container">
+              <div class="form-grid">
+                <div class="book-group">
+                  <label>First name *</label>
+                  <input type="text" class="book-field" required>
+                </div>
+                <div class="book-group">
+                  <label>Last name *</label>
+                  <input type="text" class="book-field" required>
+                </div>
+          
+                <div class="book-group">
+                  <label>Work email *</label>
+                  <input type="email"class="book-field"  required>
+                </div>
+                <div class="book-group">
+                  <label>Phone number</label>
+                  <input type="tel" class="book-field" pattern="^\d{10,11}$" title="Phone number must be 10 to 11 digits" maxlength="11" required>
+                </div>
+          
+                <div class="book-group full-width">
+                  <label>Company name *</label>
+                  <input type="text" required class="book-field">
+                </div>
+          
+                <div class="book-group">
+                  <label>Role *</label>
+                  <select required class="book-field">
+                    <option value="" disabled selected>Please select one</option>
+                    <option value="Disruptor">Disruptor</option>
+                    <option value="Lens">Lens</option>
+                    <option value="Sentinel">Sentinel</option>
+                    <option value="Scope">Scope</option>
+                  </select>
+                </div>
+                <div class="book-group">
+                  <label>Job level *</label>
+                  <select required  required class="book-field">
+                    <option value="" disabled selected>Please select one</option>
+                    <option value="Disruptor">Disruptor</option>
+                    <option value="Lens">Lens</option>
+                    <option value="Sentinel">Sentinel</option>
+                    <option value="Scope">Scope</option>
+                  </select>
+                </div>
+          
+                <div class="book-group full-width">
+                  <label>What are you interested in learning about? *</label>
+                  <select  required class="book-field" required>
+                    <option value="" disabled selected>Please select one</option>
+                    <option value="Disruptor">Disruptor</option>
+                    <option value="Lens">Lens</option>
+                    <option value="Sentinel">Sentinel</option>
+                    <option value="Scope">Scope</option>
+                  </select>
+                </div>
+          
+                <div class="book-group full-width">
+                  <label>What else would you like to discuss? *</label>
+                  <textarea required  required class="book-field"></textarea>
+                </div>
+              </div>
+          
+              <div class="submit-section">
+                <button type="submit"
+                class="Button-module--button--3b10c Button-module--primary--379ca Button-module--large--57ca4 HeroSection-module--button--95276"
+                aria-label=""><span>Submit</span></button>
+                <p class="privacy-text">
+                  By clicking submit below, you agree to Zapier’s <a href="#">Privacy Policy</a> and to receive marketing emails and phone calls (if a phone number was provided) from Zapier. You may unsubscribe at any time.
+                </p>
+              </div>
+            </form>
             </div>
           </div>
         </div>
