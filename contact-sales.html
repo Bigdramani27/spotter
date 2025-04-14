@@ -63,7 +63,6 @@
     }
 
     .book-group label {
-      font-size: 14px;
       margin-bottom: 4px;
     }
 
@@ -107,16 +106,6 @@
       background-color: #382ccc;
     }
 
-    .privacy-text {
-      font-size: 12px;
-      color: #555;
-      margin-top: 10px;
-    }
-
-    .privacy-text a {
-      color: #008080;
-      text-decoration: none;
-    }
     select {
   padding: 10px 40px 10px 10px; 
   font-size: 14px;
@@ -138,7 +127,8 @@
 }
 
 .slider {
-	height: 100px;
+	height: 80px;
+  margin: auto;
 	overflow:hidden;
 
 	&::after {
@@ -160,9 +150,17 @@
 	
 	.slide {
 		height: 50px;
-		width: 80px;
-    margin: 0 20px;
+		width: 100px;
+    align-items: center; 
+    justify-content: center; 
 	}
+
+  .slide img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+}
 }
 
 .custom-divider {
@@ -814,6 +812,7 @@
                       vertical-align: top;
                       text-decoration: inherit;
                       text-wrap: balance;
+                      line-height:50px !important;
                     "
                     >Join 2.2 million teams using Zapier to automate their work in minutesptor</span
                   >
@@ -831,50 +830,50 @@
             </h1>
             <div class="slider">
               <div class="slide-track">
-                <div class="slide">
-                  <img src="assets/trusted/wer.png"  alt="" />
+                <div class="slide" style="margin: 0 20px;">
+                  <img src="assets/trusted/wer.png" height="80" width="150" alt="" />
                 </div>
-                <div class="slide">
-                  <img src="assets/trusted/sch.png" height="100" width="250" alt="" />
+                <div class="slide"  style=" margin: 0 20px;">
+                  <img src="assets/trusted/sch.png" height="80" width="150" alt="" />
                 </div>
-                <div class="slide">
-                  <img src="assets/trusted/pep.jpg" height="100" width="250" alt="" />
+                <div class="slide" style=" margin: 0 20px;">
+                  <img src="assets/trusted/pep.jpg" height="80" width="150" alt="" />
                 </div>
-                <div class="slide">
-                  <img src="assets/trusted/fedx.png" style=" height: 40px !important;" alt="" />
+                <div class="slide"  style=" margin-left:20px;">
+                  <img src="assets/trusted/fedx.png"  style="height: 35px !important;" alt=""/>
                 </div>
-                <div class="slide">
-                  <img src="assets/trusted/ch.png" style=" width: 150px !important; height: 30px !important;" alt=""  />
+                <div class="slide"  style="  margin: 0 20 px;">
+                  <img src="assets/trusted/ch.png" height="80" width="150" alt="" />
                 </div>
-                <div class="slide">
-                  <img src="assets/trusted/wer.png" height="100" width="250" alt="" />
+                <div class="slide" style=" margin: 0 20px;">
+                  <img src="assets/trusted/wer.png" height="80" width="150" alt="" />
                 </div>
-                <div class="slide">
-                  <img src="assets/trusted/sch.png" height="100" width="250" alt="" />
+                <div class="slide" style=" margin: 0 20px;">
+                  <img src="assets/trusted/sch.png" height="80" width="150" alt="" />
                 </div>
-                <div class="slide">
-                  <img src="assets/trusted/pep.jpg" height="100" width="250" alt="" />
+                <div class="slide" style=" margin: 0 20px;">
+                  <img src="assets/trusted/pep.jpg" height="80" width="150" alt="" />
                 </div>
-                <div class="slide">
-                  <img src="assets/trusted/fedx.png" style=" height: 30px !important;" alt="" alt="" />
+                <div class="slide"  style=" margin-left:20px;">
+                  <img src="assets/trusted/fedx.png"  style="height: 35px !important;" alt=""/>
                 </div>
-                <div class="slide">
-                  <img src="assets/trusted/ch.png" style=" width: 150px !important; height: 30px !important;" alt=""  />
+                <div class="slide" style=" margin: 0 20px;">
+                  <img src="assets/trusted/ch.png" height="80" width="150" alt="" />
                 </div>
-                <div class="slide">
-                  <img src="assets/trusted/wer.png" height="100" width="250" alt="" />
+                <div class="slide" style=" margin: 0 20px;">
+                  <img src="assets/trusted/wer.png" height="80" width="150" alt="" />
                 </div>
-                <div class="slide">
-                  <img src="assets/trusted/sch.png" height="100" width="250" alt="" />
+                <div class="slide" style=" margin: 0 20px;">
+                  <img src="assets/trusted/sch.png" height="80" width="150" alt="" />
                 </div>
-                <div class="slide">
-                  <img src="assets/trusted/pep.jpg" height="100" width="250" alt="" />
+                <div class="slide" style=" margin: 0 20px;">
+                  <img src="assets/trusted/pep.jpg" height="80" width="150" alt="" />
                 </div>
-                <div class="slide">
-                  <img src="assets/trusted/fedx.png" style=" height: 30px !important;" alt="" alt="" />
+                <div class="slide"  style=" margin-left:20px;">
+                  <img src="assets/trusted/fedx.png"  style="height: 35px !important;" alt=""/>
                 </div>
-                <div class="slide">
-                  <img src="assets/trusted/ch.png" style=" width: 150px !important; height: 30px !important;" alt=""  />
+                <div class="slide" style=" margin: 0 20px;">
+                  <img src="assets/trusted/ch.png" height="80" width="150" alt="" />
                 </div>
               </div>
             </div>
@@ -902,30 +901,30 @@
             <form class="book-container">
               <div class="form-grid">
                 <div class="book-group">
-                  <label>First name *</label>
+                  <label class="text-[16px] text-[#898989] ">First name *</label>
                   <input type="text" class="book-field" required>
                 </div>
                 <div class="book-group">
-                  <label>Last name *</label>
+                  <label class="text-[16px]">Last name *</label>
                   <input type="text" class="book-field" required>
                 </div>
           
                 <div class="book-group">
-                  <label>Work email *</label>
+                  <label  class="text-[16px]">Work email *</label>
                   <input type="email"class="book-field"  required>
                 </div>
                 <div class="book-group">
-                  <label>Phone number</label>
+                  <label class="text-[16px]">Phone number</label>
                   <input type="tel" class="book-field" pattern="^\d{10,11}$" title="Phone number must be 10 to 11 digits" maxlength="11" required>
                 </div>
           
                 <div class="book-group full-width">
-                  <label>Company name *</label>
+                  <label class="text-[16px]">Company name *</label>
                   <input type="text" required class="book-field">
                 </div>
           
                 <div class="book-group">
-                  <label>Role *</label>
+                  <label class="text-[16px]">Role *</label>
                   <select required class="book-field">
                     <option value="" disabled selected>Please select one</option>
                     <option value="Disruptor">Disruptor</option>
@@ -935,7 +934,7 @@
                   </select>
                 </div>
                 <div class="book-group">
-                  <label>Job level *</label>
+                  <label class="text-[16px]">Job level *</label>
                   <select required  required class="book-field">
                     <option value="" disabled selected>Please select one</option>
                     <option value="Disruptor">Disruptor</option>
@@ -946,7 +945,7 @@
                 </div>
           
                 <div class="book-group full-width">
-                  <label>What are you interested in learning about? *</label>
+                  <label class="text-[16px]">What are you interested in learning about? *</label>
                   <select  required class="book-field" required>
                     <option value="" disabled selected>Please select one</option>
                     <option value="Disruptor">Disruptor</option>
@@ -957,7 +956,7 @@
                 </div>
           
                 <div class="book-group full-width">
-                  <label>What else would you like to discuss? *</label>
+                  <label class="text-[16px]">What else would you like to discuss? *</label>
                   <textarea required  required class="book-field"></textarea>
                 </div>
               </div>
@@ -966,8 +965,8 @@
                 <button type="submit"
                 class="Button-module--button--3b10c Button-module--primary--379ca Button-module--large--57ca4 HeroSection-module--button--95276"
                 aria-label=""><span>Submit</span></button>
-                <p class="privacy-text">
-                  By clicking submit below, you agree to Zapier’s <a href="#">Privacy Policy</a> and to receive marketing emails and phone calls (if a phone number was provided) from Zapier. You may unsubscribe at any time.
+                <p class=" text-[13px] text-[#898989]" style="margin-top: 10px;">
+                  By clicking submit below, you agree to Zapier’s <a href="#" style="color: #008080;">Privacy Policy</a> and to receive marketing emails and phone calls (if a phone number was provided) from Zapier. You may unsubscribe at any time.
                 </p>
               </div>
             </form>

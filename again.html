@@ -1,48 +1,87 @@
-<style>
-  .final-card {
-    background-color: #f9f9f9;
-    padding: 1.5rem 2rem;
-    border-radius: 10px;
-    max-width: 600px;
-    font-family: Arial, sans-serif;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Infinite Logo Carousel</title>
+  <style>
 
-  .final-content {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-  }
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 5))}
+}
 
-  .final-logo {
-    width: 32px;
-    height: 32px;
-    flex-shrink: 0;
-  }
+.slider {
+	height: 80px;
+  margin: auto;
+	overflow:hidden;
+	position: relative;
+	width: 960px;
 
-  .final-text {
-    font-size: 16px;
-    color: #111;
-    line-height: 1.5;
-  }
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
 
-  .final-author {
-    margin-top: 0.5rem;
-    font-size: 14px;
-    color: #333;
-  }
-</style>
+	&::before {
+		left: 0;
+		top: 0;
+	}
+	
+	.slide-track {
+		animation: scroll 40s linear infinite;
+		display: flex;
+		width: calc(250px * 10);
+	}
+	
+	.slide {
+    align-items: center; 
+    justify-content: center; 
+	}
 
-<div class="final-card">
-  <div class="final-content">
-    <img src="assets/trusted/sch.png" alt="Lucidchart Logo" class="final-logo" />
-    <div>
-      <div class="final-text">
-        "Automating our Salesforce sync frees up valuable time, allowing us to focus on strategic initiatives."
-      </div>
-      <div class="final-author">
-        — Micaela W. at Lucidchart
-      </div>
-    </div>
-  </div>
+  .slide img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+}
+}
+  </style>
+</head>
+<body>
+
+<div class="slider">
+	<div class="slide-track">
+		<div class="slide">
+			<img src="assets/trusted/wer.png" height="80" width="150" alt="" />
+		</div>
+		<div class="slide">
+			<img src="assets/trusted/sch.png" height="80" width="150" alt="" />
+		</div>
+		<div class="slide">
+			<img src="assets/trusted/pep.jpg" height="80" width="150" alt="" />
+		</div>
+		<div class="slide">
+			<img src="assets/trusted/fedx.png" height="80" width="150" alt="" />
+		</div>
+		<div class="slide">
+			<img src="assets/trusted/ch.png" height="80" width="150" alt="" />
+		</div>
+    <div class="slide">
+			<img src="assets/trusted/wer.png" height="80" width="150" alt="" />
+		</div>
+		<div class="slide">
+			<img src="assets/trusted/sch.png" height="80" width="150" alt="" />
+		</div>
+		<div class="slide">
+			<img src="assets/trusted/pep.jpg" height="80" width="150" alt="" />
+		</div>
+		<div class="slide">
+			<img src="assets/trusted/fedx.png" height="80" width="150" alt="" />
+		</div>
+		<div class="slide">
+			<img src="assets/trusted/ch.png" height="80" width="150" alt="" />
+		</div>
+	</div>
 </div>

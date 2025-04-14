@@ -21402,7 +21402,7 @@ html[dir=rtl] .search-results .clear-all-link {
 
 .AccuracySection-module--root--38813 .AccuracySection-module--loginMainPerkCardContent--f6f06 {
     max-width: 512px;
-    padding: 34px 24px
+    padding: 14px 24px
 }
 
 @media(max-width: 860px) {
@@ -21489,7 +21489,15 @@ html[dir=rtl] .search-results .clear-all-link {
 
 .AccuracySection-module--root--38813 .AccuracySection-module--perkCard--50e67 {
     flex: 1 1;
-    padding: 24px 30px 30px 24px
+    padding: 1px 30px 10px 24px
+}
+
+.rich{
+    margin-top: 34px
+}
+
+.subtract{
+    margin-bottom: -60px;
 }
 
 .AccuracySection-module--root--38813 .AccuracySection-module--perkCard--50e67+.AccuracySection-module--perkCard--50e67 {
