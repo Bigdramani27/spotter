@@ -732,7 +732,7 @@
             in</a>
           <div>
             <a class="px-3 py-2 text-sm font-medium border border-[transparent] dark:text-black bg-neutral-900 dark:bg-white hover:bg-neutral-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-neutral-900 hover:opacity-90 transition-all duration-150 ease-in-out group relative hidden overflow-hidden whitespace-nowrap rounded-xl lg:flex items-center justify-center bg-gradient-to-b from-[#2c2c30] to-[#1d1d20] text-white before:shadow-[0px_2px_0.4px_0px_rgba(255,_255,_255,_0.16)_inset] before:pointer-events-none before:absolute before:inset-0 before:rounded-xl enable"
-              id="openModalBtn" href="#"><span>Book Demo</span></a>
+               href="#"><span>Book Demo</span></a>
           </div>
           <button class="p-2 hover:cursor-pointer lg:hidden harmburger" aria-label="Open menu">
             <div class="relative h-4 w-4">
@@ -901,51 +901,31 @@
             <form class="book-container">
               <div class="form-grid">
                 <div class="book-group">
-                  <label class="text-[16px] text-[#898989] ">First name *</label>
-                  <input type="text" class="book-field" required>
-                </div>
-                <div class="book-group">
-                  <label class="text-[16px]">Last name *</label>
+                  <label class="text-[16px]">Name *</label>
                   <input type="text" class="book-field" required>
                 </div>
           
                 <div class="book-group">
-                  <label  class="text-[16px]">Work email *</label>
+                  <label  class="text-[16px]">Email *</label>
                   <input type="email"class="book-field"  required>
                 </div>
                 <div class="book-group">
-                  <label class="text-[16px]">Phone number</label>
+                  <label class="text-[16px]">Phone number *</label>
                   <input type="tel" class="book-field" pattern="^\d{10,11}$" title="Phone number must be 10 to 11 digits" maxlength="11" required>
+                </div>
+                <div class="book-group">
+                  <label class="text-[16px]">MC Number (Optional)</label>
+                  <input type="text" class="book-field" >
                 </div>
           
                 <div class="book-group full-width">
                   <label class="text-[16px]">Company name *</label>
                   <input type="text" required class="book-field">
                 </div>
-          
-                <div class="book-group">
-                  <label class="text-[16px]">Role *</label>
-                  <select required class="book-field">
-                    <option value="" disabled selected>Please select one</option>
-                    <option value="Disruptor">Disruptor</option>
-                    <option value="Lens">Lens</option>
-                    <option value="Sentinel">Sentinel</option>
-                    <option value="Scope">Scope</option>
-                  </select>
-                </div>
-                <div class="book-group">
-                  <label class="text-[16px]">Job level *</label>
-                  <select required  required class="book-field">
-                    <option value="" disabled selected>Please select one</option>
-                    <option value="Disruptor">Disruptor</option>
-                    <option value="Lens">Lens</option>
-                    <option value="Sentinel">Sentinel</option>
-                    <option value="Scope">Scope</option>
-                  </select>
-                </div>
+                
           
                 <div class="book-group full-width">
-                  <label class="text-[16px]">What are you interested in learning about? *</label>
+                  <label class="text-[16px]">Service Type *</label>
                   <select  required class="book-field" required>
                     <option value="" disabled selected>Please select one</option>
                     <option value="Disruptor">Disruptor</option>
@@ -956,8 +936,8 @@
                 </div>
           
                 <div class="book-group full-width">
-                  <label class="text-[16px]">What else would you like to discuss? *</label>
-                  <textarea required  required class="book-field"></textarea>
+                  <label class="text-[16px]">Additional Information (Optional)</label>
+                  <textarea class="book-field"></textarea>
                 </div>
               </div>
           
