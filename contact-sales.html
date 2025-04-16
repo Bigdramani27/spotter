@@ -54,7 +54,7 @@
     .form-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 16px;
+      gap: 0px 16px;
     }
 
     .book-group {
@@ -63,7 +63,7 @@
     }
 
     .book-group label {
-      margin-bottom: 4px;
+      margin-bottom: 2px;
     }
 
     .book-group input, select, textarea {
@@ -92,34 +92,29 @@
       text-align: center;
     }
 
-    .submit-btn {
-      background-color: #4a3aff;
-      color: #fff;
-      padding: 10px 24px;
-      font-size: 16px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
 
-    .submit-btn:hover {
-      background-color: #382ccc;
-    }
-
-    select {
-  padding: 10px 40px 10px 10px; 
-  font-size: 14px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 100%;
-  appearance: none; 
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8"><path fill="none" stroke="%23333" stroke-width="2" d="M1 1l5 5 5-5"/></svg>');
-  background-repeat: no-repeat;
-  background-position: right 10px center;
-  background-size: 12px 8px;
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 8px 16px;
+  padding-top: 6px;
 }
+
+.checkbox-grid label {
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox-grid input[type="checkbox"] {
+  width: 15px;
+  height: 14px;
+  cursor: pointer;
+  accent-color: #008080; 
+}
+
+
 
 @keyframes scroll {
 	0% { transform: translateX(0); }
@@ -814,13 +809,13 @@
                       text-wrap: balance;
                       line-height:50px !important;
                     "
-                    >Join 2.2 million teams using Zapier to automate their work in minutesptor</span
+                    >Streamline your operations with Spotter Labs — the fastest way to automate your trucking workflows</span
                   >
                 </h1>
                 <p
                   class="max-w-md text-base text-[#898989] lg:max-w-2xl lg:text-lg"
                 >
-                Centralize and manage all your trucking operations effortlessly with our all-in-one transportation management system.
+                Run leaner, scale faster, and gain full control over your fleet’s performance with automation designed for modern trucking businesses
                 </p>
               </div>
               <h1
@@ -884,10 +879,12 @@
                   <img src="assets/trusted/transfedx.png"  class="final-logo" />
                   <div>
                     <div class="final-text">
-                      "Automating our Salesforce sync frees up valuable time, allowing us to focus on strategic initiatives."
+                      "I think Spotter has a very good chance of
+                      creating a new category around being both great
+                      and well designed"
                     </div>
                     <div class="final-author">
-                      — Micaela W. at Lucidchart
+                      — Keith Rauch
                     </div>
                   </div>
                 </div>
@@ -923,18 +920,17 @@
                   <input type="text" required class="book-field">
                 </div>
                 
-          
+
                 <div class="book-group full-width">
-                  <label class="text-[16px]">Service Type *</label>
-                  <select  required class="book-field" required>
-                    <option value="" disabled selected>Please select one</option>
-                    <option value="Disruptor">Disruptor</option>
-                    <option value="Lens">Lens</option>
-                    <option value="Sentinel">Sentinel</option>
-                    <option value="Scope">Scope</option>
-                  </select>
+                  <label class="text-[16px]">Product Type *</label>
+                  <div class="checkbox-grid">
+                    <label><input type="checkbox" name="checkType" value="Disruptor"> Disruptor</label>
+                    <label><input type="checkbox" name="checkType" value="Lens"> Lens</label>
+                    <label><input type="checkbox" name="checkType" value="Sentinel"> Sentinel</label>
+                    <label><input type="checkbox" name="checkType" value="Scope"> Scope</label>
+                  </div>
                 </div>
-          
+                
                 <div class="book-group full-width">
                   <label class="text-[16px]">Additional Information (Optional)</label>
                   <textarea class="book-field"></textarea>
@@ -946,7 +942,7 @@
                 class="Button-module--button--3b10c Button-module--primary--379ca Button-module--large--57ca4 HeroSection-module--button--95276"
                 aria-label=""><span>Submit</span></button>
                 <p class=" text-[13px] text-[#898989]" style="margin-top: 10px;">
-                  By clicking submit below, you agree to Zapier’s <a href="#" style="color: #008080;">Privacy Policy</a> and to receive marketing emails and phone calls (if a phone number was provided) from Zapier. You may unsubscribe at any time.
+                  By clicking submit below, you agree to Spotter’s <a href="#" style="color: #008080;">Privacy Policy</a> and to receive marketing emails and phone calls (if a phone number was provided) from Spotter. You may unsubscribe at any time.
                 </p>
               </div>
             </form>
@@ -1136,6 +1132,18 @@
     </section>
   </main>
   <script src="assets/js/main.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (localStorage.getItem('fromSentinel') === 'true') {
+        const checkbox = document.querySelector('input[type="checkbox"][value="Sentinel"]');
+        if (checkbox) checkbox.checked = true;
+  
+        // Clear the flag so it doesn't keep checking it forever
+        localStorage.removeItem('fromSentinel');
+      }
+    });
+  </script>
+  
 </body>
 
 </html>

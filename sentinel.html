@@ -27,6 +27,11 @@
       --font-inter: "__Inter_d65c78", "__Inter_Fallback_d65c78";
       --font-cal: "mainFont", "mainFont_Fallback";
     }
+    @media screen and (min-width: 768px) {
+  .margin {
+    margin-bottom: 10px;
+  }
+}
     
   </style>
 </head>
@@ -613,7 +618,7 @@
         </p>
       </div>
       <div
-        class="Container-module--container--1d00d Container-module--large--1a58d Container-module--grid--0e170 AccuracySection-module--root--38813 subtract">
+        class="Container-module--container--1d00d Container-module--large--1a58d Container-module--grid--0e170 AccuracySection-module--root--38813">
         <div class="AccuracySection-module--loginMainPerk--14122">
           <div class="AccuracySection-module--loginMainPerkCardBorder--e1d08">
             <div class="AccuracySection-module--loginMainPerkCard--a99c1">
@@ -4594,11 +4599,12 @@
                     Just drag CDL into Sentinel and all reports are ran
                     automatically.
                   </p>
-                  <a href="sentinel-pricing.html" style="margin-top: 20px; margin-right:10px"
-              class="Button-module--button--3b10c Button-module--primary--379ca Button-module--large--57ca4 HeroSection-module--button--95276"
-              aria-label=""><span>Pricing Plan</span></a>
-              <a id="contact-sales" class="Button-module--button--3b10c Button-module--primaryOutlined--c12e0 Button-module--medium--5a71a" aria-label="" href="contact-sales.html"><span>Contact Sales</span></a>
-
+                  <div class="margin">       <a href="sentinel-pricing.html" style="margin-top: 20px; margin-right:10px"
+                    class="Button-module--button--3b10c Button-module--primary--379ca Button-module--large--57ca4 HeroSection-module--button--95276"
+                    aria-label=""><span>Pricing Plan</span></a>
+                    <a id="check" class="Button-module--button--3b10c Button-module--primaryOutlined--c12e0 Button-module--medium--5a71a" aria-label="" href="contact-sales.html"><span>Contact Sales</span></a>
+      </div>
+           
                 </div>
               </div>
             </div>
@@ -4681,7 +4687,7 @@
             <a
               class="Button-module--button--3b10c Button-module--tertiary--95e3b Button-module--small--f04c2"
               aria-label="" 
-              href="sentinel-pricing.html"
+              href="contact-sales.html"
               ><span>Learn More</span></a
             >
           </div>
@@ -5232,7 +5238,7 @@
           <article class="WhyspotterSection-module--card--52e01">
             <div class="WhyspotterSection-module--content--1fade">
               <div class="fit">
-      <img src="assets/images/filter.svg" style="width: 20px; height: 20px;" >
+      <img src="assets/images/filter.svg" style="width: 16px; height: 16px;" >
   </div>  
               <div
                 class="WhyspotterSection-module--titleDescription--c5d71"
@@ -5647,7 +5653,7 @@
             </div>
             <div class="WhyspotterSection-module--content--1fade">
               <div class="fit">
-                <img src="assets/images/gear.svg" style="width: 22px; height: 22px;">
+                <img src="assets/images/book.svg" style="width: 22px; height: 22px;">
             </div>
             
               <div
@@ -6458,6 +6464,9 @@
     document.querySelector('.AccuracyChart-module--spotter--9044b').addEventListener('mousemove', updateBallPosition);
   });
 
+  document.getElementById('check').addEventListener('click', function () {
+    localStorage.setItem('fromSentinel', 'true');
+  });
   </script>
 </body>
 
