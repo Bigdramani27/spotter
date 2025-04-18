@@ -1,87 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Infinite Logo Carousel</title>
-  <style>
-
-@keyframes scroll {
-	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-250px * 5))}
-}
-
-.slider {
-	height: 80px;
-  margin: auto;
-	overflow:hidden;
-	position: relative;
-	width: 960px;
-
-	&::after {
-		right: 0;
-		top: 0;
-		transform: rotateZ(180deg);
+<style>
+	.container {
+		width: 800px;
+		height: 400px;
+		background: linear-gradient(170deg, red 50%, blue 50%);
+		margin: auto;
 	}
 
-	&::before {
-		left: 0;
-		top: 0;
+	.first {
+		background-color: green; 
+		width: 400px;
+		height: 200px;
+		margin: auto;
+		padding: 60px;
+		color: white;
+		font-weight: bold;
+		text-align: center;
 	}
-	
-	.slide-track {
-		animation: scroll 40s linear infinite;
-		display: flex;
-		width: calc(250px * 10);
-	}
-	
-	.slide {
-    align-items: center; 
-    justify-content: center; 
-	}
+</style>
 
-  .slide img {
-  max-height: 100%;
-  max-width: 100%;
-  object-fit: contain;
-  display: block;
-}
-}
-  </style>
-</head>
-<body>
-
-<div class="slider">
-	<div class="slide-track">
-		<div class="slide">
-			<img src="assets/trusted/wer.png" height="80" width="150" alt="" />
-		</div>
-		<div class="slide">
-			<img src="assets/trusted/sch.png" height="80" width="150" alt="" />
-		</div>
-		<div class="slide">
-			<img src="assets/trusted/pep.jpg" height="80" width="150" alt="" />
-		</div>
-		<div class="slide">
-			<img src="assets/trusted/fedx.png" height="80" width="150" alt="" />
-		</div>
-		<div class="slide">
-			<img src="assets/trusted/ch.png" height="80" width="150" alt="" />
-		</div>
-    <div class="slide">
-			<img src="assets/trusted/wer.png" height="80" width="150" alt="" />
-		</div>
-		<div class="slide">
-			<img src="assets/trusted/sch.png" height="80" width="150" alt="" />
-		</div>
-		<div class="slide">
-			<img src="assets/trusted/pep.jpg" height="80" width="150" alt="" />
-		</div>
-		<div class="slide">
-			<img src="assets/trusted/fedx.png" height="80" width="150" alt="" />
-		</div>
-		<div class="slide">
-			<img src="assets/trusted/ch.png" height="80" width="150" alt="" />
-		</div>
+<div class="container">
+	<div class="first">
+   		This is the first thing 
 	</div>
 </div>

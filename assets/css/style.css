@@ -6105,7 +6105,8 @@ html[dir=rtl] .link :not(.ocr-icon)>.glyph-prepend::before {
 }
 
 .link__text {
-    padding-bottom: var(--root-spacing-3xs)
+    padding-bottom: var(--root-spacing-3xs);
+    
 }
 
 .link[disabled] {
@@ -6684,7 +6685,7 @@ html[dir=rtl] .block-feature__title::before {
 .card .card__content {
     padding: var(--card-padding);
     justify-content: space-between;
-    height: 250px !important;
+    height: 300px !important;
 }
 
 .card .card__content .tag {
@@ -20365,7 +20366,8 @@ html[dir=rtl] .search-results .clear-all-link {
 }
 
 .HeroSection-module--root--36363 {
-    padding-top: 96px
+    padding-top: 86px;
+    padding-bottom:52px;
 }
 
 @media(max-width: 640px) {
