@@ -207,6 +207,9 @@ hamburgerButton.addEventListener('click', () => {
       <span class="absolute left-0 top-[7px] h-[1.5px] w-4 transition-all duration-300 bg-black opacity-100"></span>
       <span class="absolute left-0 top-[14px] h-[1.5px] w-4 transform transition-all duration-300 bg-black rotate-0"></span>
     `;
+    ham.classList.add('pointer-events-none');
+
+
   } else {
     // Change to the "X" state (when clicked)
     hamburgerIconDiv.innerHTML = `
@@ -214,6 +217,7 @@ hamburgerButton.addEventListener('click', () => {
       <span class="absolute left-0 top-[7px] h-[1.5px] w-4 transition-all duration-300 bg-black opacity-0"></span>
       <span class="absolute left-0 top-[14px] h-[1.5px] w-4 transform transition-all duration-300 bg-black top-[7px] -rotate-45"></span>
     `;
+    ham.classList.remove('pointer-events-none');
   }
 });
 

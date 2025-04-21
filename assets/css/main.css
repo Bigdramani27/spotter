@@ -5751,6 +5751,7 @@ select {
   padding-top: var(--spotter-spacing-14);
   padding-bottom: var(--spotter-spacing-14);
 }
+
 .py-16 {
   padding-top: var(--spotter-spacing-16);
   padding-bottom: var(--spotter-spacing-16);
@@ -6202,8 +6203,8 @@ select {
   font-size: 22px;
 }
 .text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  font-size: 1rem;
+  line-height: 1.4rem;
 }
 .text-xs {
   font-size: 0.75rem;
@@ -10147,7 +10148,7 @@ article blockquote p {
     text-align: left;
   }
   .sm\:text-2xl {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     line-height: 2rem;
   }
   .sm\:text-4xl {
@@ -12747,4 +12748,48 @@ width: 100% !important;
   margin: 0 auto; 
   margin-bottom: 50px;
   margin-top: 50px;
+ 
+}
+.price-space{
+  margin-top: 20px; margin-right:10px
+}
+
+
+@media screen and (max-width: 320px) {
+  .price-space{
+    margin-top: 20px; 
+    margin-right:0px
+  }
+}
+
+.padding{
+  padding-bottom:20px;
+}
+.padding-30{
+  padding-top:30px;
+}
+@media screen and (max-width: 769px){
+  .py-14 {
+    padding-top: 0px;
+    padding-bottom: var(--spotter-spacing-14);
+  }
+  .py-20 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .md\:py-20 {
+    padding-top:  0px;
+    padding-bottom: 0px;
+  }
+  .padding{
+    padding-bottom: 0px !important;
+  }
+  .padding-30{
+    padding-top:0px !important;
+  }
+  .py-6 {
+    padding-top: 0px;
+    padding-bottom: var(--spotter-spacing-6);
+  }
+  
 }
