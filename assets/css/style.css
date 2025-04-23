@@ -7606,23 +7606,18 @@ html[dir=rtl] .card--style-quote .block-feature__badge .ocr-icon .glyph-append-l
 }
 
 .badge {
-    --badge-background-color: var(--theme-background-card-normal);
-    --badge-border-width: var(--root-border-xs);
-    --badge-border-radius: var(--root-radii-s);
-    --badge-border-color: var(--theme-border-card-fade);
-    background-color: var(--badge-background-color);
-    border-width: var(--badge-border-width);
-    border-radius: var(--badge-border-radius);
-    border-color: var(--badge-border-color);
-    border-style: solid;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    padding: 0;
     font-size: unset;
     width: var(--badge-width);
-    height: var(--badge-height)
+    height: var(--badge-height);
+    background: linear-gradient(301deg,rgba(72,73,70,.02) 9.55%,hsla(80,1%,43%,.02) 67.28%),var(--white);
+    border: 1px solid var(--gray-2);
+    border-radius: 6px;
+    box-shadow: 0 1px 2px 0 rgba(24,25,22,.4);
 }
+
 
 .badge .ocr-img {
     --image-display: flex;
