@@ -1,0 +1,2 @@
+ErrorDocument 404 https://spotter-demo-green.vercel.app/404.html
+

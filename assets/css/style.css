@@ -6683,7 +6683,7 @@ html[dir=rtl] .block-feature__title::before {
 .card .card__content {
     padding: var(--card-padding);
     justify-content: space-between;
-    height: 300px !important;
+    height: 250px !important;
 }
 
 @media screen and (max-width: 768px) {
