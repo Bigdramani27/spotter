@@ -21497,6 +21497,31 @@ html[dir=rtl] .search-results .clear-all-link {
     margin-top: 34px
 }
 
+.mobile-1{
+    display:none;
+}
+.mobile-2{
+    display:none;
+}
+@media(max-width: 860px){
+    .mobile-1{
+        display:block;
+        margin-top:24px;
+    }
+    .mobile-2{
+        display:block;
+    }
+    .mobile-3{
+        margin-bottom:24px;
+    }
+    .AccuracySection-module--loginMainPerkCardBorder--e1d08{
+        display:none;
+    }
+    .rich{
+        margin-top:0px;
+    }
+}
+
 
 .AccuracySection-module--root--38813 .AccuracySection-module--perkCard--50e67+.AccuracySection-module--perkCard--50e67 {
     border-top: 1px dashed var(--dash-gray)
@@ -21726,7 +21751,7 @@ html[dir=rtl] .search-results .clear-all-link {
     .WhyspotterSection-module--root--e8593
       .WhyspotterSection-module--titleSection--b9b4c {
       grid-column: 1/14;
-      padding: 56px 32px 32px;
+      padding: 6px 32px 32px;
     }
   }
   @media (max-width: 640px) {
