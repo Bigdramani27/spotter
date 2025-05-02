@@ -128,8 +128,8 @@ $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server 
 $mail->SMTPAuth   = true;
 $mail->SMTPSecure = 'tls';
 $mail->isHTML(true);                   //Enable SMTP authentication
-$mail->Username   = 'agidevirtualassist@gmail.com';                     //SMTP username
-$mail->Password   = 'uogbyfvthqkmvnla';                                     //SMTP password           //Enable implicit TLS encryption
+$mail->Username   = '';                     //SMTP username
+$mail->Password   = '';                                     //SMTP password           //Enable implicit TLS encryption
 $mail->Port       = 587; //587
 $mail->SMTPDebug  = SMTP::DEBUG_OFF;                              //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 //SMTP username
