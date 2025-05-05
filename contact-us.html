@@ -950,32 +950,6 @@
 
 
   </main>
-
-  <script>
-$(document).ready(function() {
-  $('#contact').submit(function(event) {
-    event.preventDefault();
-    $('#customLoader').addClass('active'); // Show loader
-
-    $.ajax({
-      type: 'POST',
-      url: 'action/contact.php',
-      dataType: 'json',
-      data: $(this).serialize(),
-      success: function(response) {
-        $('#customLoader').removeClass('active'); // Hide loader
-        alert("Success! We'll get back to you.");
-        location.reload();
-      },
-      error: function() {
-        $('#customLoader').removeClass('active'); // Hide loader
-        alert('Something went wrong. Please try again.');
-      }
-    });
-  });
-});
-
-  </script>
   <script src="assets/js/main.js"></script>
 </body>
 
