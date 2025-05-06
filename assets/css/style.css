@@ -6324,7 +6324,8 @@ html[dir=rtl] .block-feature__title::before {
 @media (min-width: 860px) {
     .block-feature__badge .badge {
         --badge-width:4rem;
-        --badge-height: 4rem
+        --badge-height: 4rem;
+         margin-bottom:15px;
     }
 
     .block-feature__badge .badge .ocr-icon {
@@ -6683,7 +6684,7 @@ html[dir=rtl] .block-feature__title::before {
 .card .card__content {
     padding: var(--card-padding);
     justify-content: space-between;
-    height: 250px !important;
+    height: 280px !important;
 }
 
 @media screen and (max-width: 768px) {
