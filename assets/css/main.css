@@ -859,6 +859,12 @@ select {
 .prose :where(tfoot td):not(:where([class~="not-prose"] *)) {
   vertical-align: top;
 }
+menu, ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color:white
+}
 .prose {
   --tw-prose-body: #374151;
   --tw-prose-headings: #111827;
@@ -8029,8 +8035,7 @@ article blockquote p {
   padding-bottom: var(--grid-gap-size);
 }
 .calendar-grid > * {
-  border-right: 1px solid var(--grid-border-color);
-  border-left: 1px solid var(--grid-border-color);
+
   grid-column: content;
   padding: 0 var(--grid-gap-size);
 }
@@ -11697,6 +11702,7 @@ article blockquote p {
   .lg\:py-0 {
     padding-top: var(--spotter-spacing-0);
     padding-bottom: var(--spotter-spacing-0);
+
   }
   .lg\:py-10 {
     padding-top: var(--spotter-spacing-10);

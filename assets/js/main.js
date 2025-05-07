@@ -1,14 +1,4 @@
-window.addEventListener("scroll", function () {
-    const stickyDiv = document.getElementById("sticky-div");
 
-    if (window.scrollY > 100) {
-      stickyDiv.classList.remove("before:opacity-0");
-      stickyDiv.classList.add("before:opacity-100", "before:border-0");
-    } else {
-      stickyDiv.classList.remove("before:opacity-100", "before:border-0");
-      stickyDiv.classList.add("before:opacity-0");
-    }
-  });
   const displayElement1 = document.querySelector(".display");
   const dialogElement1 = document.querySelector(".dialog");
 
