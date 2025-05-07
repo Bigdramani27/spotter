@@ -1,4 +1,12 @@
+window.addEventListener("scroll", function () {
+    const stickyDiv = document.getElementById("sticky-div");
 
+    if (window.scrollY > 100) {
+      stickyDiv.classList.remove("fixed");
+    } else {
+      stickyDiv.classList.add("fixed");
+    }
+  });
   const displayElement1 = document.querySelector(".display");
   const dialogElement1 = document.querySelector(".dialog");
 

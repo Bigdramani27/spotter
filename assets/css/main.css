@@ -5149,7 +5149,7 @@ menu, ol, ul {
 }
 .bg-black {
   --tw-bg-opacity: 1;
-  background-color: rgb(17 17 17 / var(--tw-bg-opacity));
+  background-color: #F6F8FA;
 }
 .bg-black\/0 {
   background-color: hsla(0, 0%, 7%, 0);
@@ -11308,7 +11308,7 @@ article blockquote p {
     margin-top: var(--spotter-spacing-0);
   }
   .lg\:mt-2 {
-    margin-top: var(--spotter-spacing-2);
+
   }
   .lg\:mt-20 {
     margin-top: var(--spotter-spacing-20);
