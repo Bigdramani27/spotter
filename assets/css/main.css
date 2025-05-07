@@ -1,71 +1,65 @@
 @font-face {
   font-family: Spotter Sans;
   font-display: swap;
-  src: url(../fonts/spotter-bold/semiBold.woff2) format("woff2");
+  src: url(../fonts/spotter-bold/Aristotelica-Display-Thin-trial.ttf) format("ttf");
 }
 @font-face {
   font-family: Matter;
-  src: url(../fonts/matter/Matter-Bold.woff) format("woff");
+  src: url(../fonts/spotter-bold/Aristotelica-Display-Bold-trial.ttf) format("ttf");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: Matter;
-  src: url(../fonts/matter/Matter-Light.woff) format("woff");
+  src: url(../fonts/spotter-bold/Aristotelica-Display-Light-trial.ttf) format("ttf");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: Matter;
-  src: url(../fonts/matter/Matter-Heavy.woff) format("woff");
+  src: url(../fonts/spotter-bold/Aristotelica-Display-DemiBold-trial.ttf) format("ttf");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: Matter;
-  src: url(../fonts/matter/Matter-Medium.woff) format("woff");
+  src: url(../fonts/matter/Matter-Medium.woff) format("ttf");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: Matter;
-  src: url(../fonts/matter/Matter-SemiBold.woff) format("woff");
+  src: url(../fonts/matter/Matter-SemiBold.woff) format("ttf");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: Matter;
-  src: url(../fonts/matter/Matter-Regular.woff) format("woff");
+  src: url(../fonts/matter/Matter-Regular.woff) format("ttf");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: DMMono;
-  src: url(../fonts/dm-mono/DMMono-Light.woff) format("woff");
+  src: url(../fonts/dm-mono/DMMono-Light.woff) format("ttf");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: DMMono;
-  src: url(../fonts/dm-mono/DMMono-Medium.woff) format("woff");
+  src: url(../fonts/dm-mono/DMMono-Medium.woff) format("ttf");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
-@font-face {
-  font-family: DMMono;
-  src: url(../fonts/dm-mono/DMMono-Regular.woff) format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
+
 
 /*
 ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
@@ -11308,7 +11302,8 @@ article blockquote p {
     margin-top: var(--spotter-spacing-0);
   }
   .lg\:mt-2 {
-
+    padding-top: var(--spotter-spacing-2);
+    padding-bottom: var(--spotter-spacing-2);
   }
   .lg\:mt-20 {
     margin-top: var(--spotter-spacing-20);
