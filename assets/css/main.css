@@ -12769,6 +12769,14 @@ width: 100% !important;
 .padding-30{
   padding-top:30px;
 }
+.pad-top-bottom{
+  padding-top:130px; 
+  padding-bottom: 40px;
+}
+.line-top{
+  border-top: 2px solid rgb(1, 99, 105);
+}
+
 @media screen and (max-width: 769px){
   .py-14 {
     padding-top: 0px;
@@ -12792,5 +12800,220 @@ width: 100% !important;
     padding-top: 0px;
     padding-bottom: var(--spotter-spacing-6);
   }
-  
+  .pad-top-bottom{
+    padding-top:0px; 
+    padding-bottom: 0px;
+  }
+  .line-top{
+    border-top: none;
+  }
+}
+.increase{
+  font-size: 18px;
+}
+
+.cJMWsw {
+  padding: 50px 0px;
+  background-color: rgb(4, 65, 82);
+}
+.dHdhyf {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gkdhVv {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  flex: 0 0 50%;
+}
+.ixizUJ {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cwYMZJ {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(248, 73, 96);
+  border-radius: 50%;
+}
+.bbTuuA {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(0, 128, 128);
+  border-radius: 50%;
+}
+.gEZvHk {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(202, 226, 228);
+  border-radius: 50%;
+}
+.cvcdEi {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 20px;
+  line-height: 1;
+}
+.rTbEA {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex: 0 0 50%;
+}
+
+.qLDmM {
+  padding: 40px;
+  font-size:16px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  -webkit-box-align: center;
+  align-items: center;
+  text-align: center;
+}
+qLDmM .left {
+  color: rgb(0, 128, 128);
+  font-size: 15px;
+  flex: 0 0 50%;
+  font-weight: bold;
+}
+
+.qLDmM .right {
+  color: rgb(111, 113, 115);
+  font-size: 20px;
+  flex: 0 0 50%;
+}
+.hwdWup {
+  background-color: rgb(5, 24, 48);
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+}
+.bTPBA-D {
+  width: 100%;
+  max-width: 1500px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.fEAUDx {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0px;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: 30px auto;
+  column-gap: 0px;
+}
+.TZola {
+  display: flex;
+  max-width: 60%;
+  flex-basis: 60%;
+  padding: 0px;
+  border-top: none;
+  flex-direction: column;
+  text-align: left;
+  margin-right: 12px;
+  column-gap: 0px;
+  -webkit-box-pack: unset;
+  justify-content: unset;
+}
+.dLVeol {
+  color: rgb(0, 128, 128);
+  justify-self: start;
+  gap: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  font-family: "Open Sans Regular";
+  font-size: 24px;
+}
+.ltETT {
+  width: 30px;
+}
+
+
+.bnqHyr {
+  display: flex;
+  max-width: 200%;
+  flex-basis: 200%;
+  padding: 0px;
+  border-top: none;
+  flex-direction: column;
+  text-align: left;
+  margin-right: 0px;
+  column-gap: 0px;
+  align-items: flex-end;
+  -webkit-box-pack: unset;
+  justify-content: unset;
+}
+.dTwJMV {
+  display: flex;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  gap: 30px;
+}
+.liMzgt {
+  width: 150px;
+  height: auto;
+}
+
+.kesxar {
+  z-index: 1;
+  width: 100%;
+  padding-right: 50px;
+  padding-left: 50px;
+  background-color: rgb(13, 30, 45);
+  position: relative;
+}
+.kcnlLR {
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 30px auto;
+  column-gap: 0px;
+}
+.ihdTjr {
+  color: rgb(128, 162, 170);
+  width: 100%;
+  text-align: center;
+  line-height: 24px;
+  font-size: 13px;
+  margin: 0px;
+}
+.ihdTjr a {
+  color: rgb(128, 162, 170);
+  cursor: pointer;
+}
+.cmmabZ {
+  color: rgb(128, 162, 170);
+  width: 100%;
+  text-align: center;
+  line-height: 24px;
+  font-size: 13px;
+  margin: 0px;
+  font-style: italic;
 }
