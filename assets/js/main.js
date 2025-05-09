@@ -1,7 +1,7 @@
 window.addEventListener("scroll", function () {
     const stickyDiv = document.getElementById("sticky-div");
 
-    if (window.scrollY > 100) {
+    if (window.scrollY > 80) {
       stickyDiv.classList.remove("fixed");
     } else {
       stickyDiv.classList.add("fixed");

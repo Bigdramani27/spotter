@@ -6125,9 +6125,10 @@ html[dir=rtl] .link :not(.ocr-icon)>.glyph-prepend::before {
 }
 
 .block-feature {
+     display: flex;
     --block-feature--spacing: var(--root-spacing-m);
     --block-feature--direction: column;
-    --block-feature-align-items: flex-start;
+    --block-feature-align-items: center;
     --block-feature-text-align: left;
     --block-feature-eyebrow-gap: var(--root-spacing-2xs);
     --block-feature-headings-gap: var(--root-spacing-2xs);
@@ -6562,13 +6563,7 @@ html[dir=rtl] .block-feature__title::before {
 }
 
 .block-slim {
-    --block-slim-justify: flex-start;
-    --block-slim-flex-direction: row;
-    --block-slim-gap: initial;
-    display: flex;
-    justify-content: var(--block-slim-justify);
-    flex-direction: var(--block-slim-flex-direction);
-    gap: var(--block-slim-gap)
+    display: flex; align-items: center; justify-content: center
 }
 
 .block-slim__button--fill {
@@ -6657,6 +6652,7 @@ html[dir=rtl] .block-feature__title::before {
     border-radius: var(--card-border-radius);
     height: 100%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+        
 }
 
 .card:active {
@@ -6666,7 +6662,8 @@ html[dir=rtl] .block-feature__title::before {
 
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0px 8px 10px rgba(255, 255, 255, 0.22)
+     border: 3px solid #F84960
+    
 }
 
 .card:focus {
@@ -6690,7 +6687,7 @@ html[dir=rtl] .block-feature__title::before {
 
 @media screen and (max-width: 768px) {
     .card .card__content {
-        height: 200px !important;
+        height: 260px !important;
     }
   }
 
@@ -20471,8 +20468,6 @@ html[dir=rtl] .search-results .clear-all-link {
 }
 
 .Container-module--container--1d00d.Container-module--grid--0e170 {
-    display: grid;
-    grid-template-columns: max(20px,50% - var(--contentWidth)/2) repeat(12,1fr) max(0px,50% - var(--contentWidth)/2);
     padding: unset
 }
 
@@ -21300,7 +21295,8 @@ html[dir=rtl] .search-results .clear-all-link {
     border: 1px solid #e4e5e1;
     border-radius: 16px;
     box-shadow: 0 1px 2px 0 rgba(24,25,22,.06);
-    padding: 8px
+    padding: 8px;
+    height:350px
 }
 
 @media(max-width: 860px) {
@@ -21394,7 +21390,9 @@ html[dir=rtl] .search-results .clear-all-link {
     background: hsla(60,17%,98%,.6);
     border-top: 1px dashed #e4e5e1;
     display: flex;
-    width: 100%
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 @media(max-width: 860px) {
@@ -21619,9 +21617,9 @@ html[dir=rtl] .search-results .clear-all-link {
 .spotterWall-module--spotterWall--3683f {
     background: #fafaf8;
     border-radius: 16px;
-    height: 118px;
+    height: 180px;
     padding: 8px;
-    width: 167px
+    width: 250px
 }
 
 .spotterWall-module--spotterWall--3683f .spotterWall-module--spotterWallInner--9760f {
