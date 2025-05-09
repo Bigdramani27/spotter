@@ -6809,7 +6809,7 @@ menu, ol, ul {
     var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .shadow-\[1px_1px_0px_0px_\#E1E2E3\2c inset_1px_1px_0px_0px_\#E1E2E3\] {
-  --tw-shadow: 1px 1px 0px 0px #e1e2e3, inset 1px 1px 0px 0px #e1e2e3;
+  
   --tw-shadow-colored: 1px 1px 0px 0px var(--tw-shadow-color),
     inset 1px 1px 0px 0px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
