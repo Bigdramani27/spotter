@@ -24,41 +24,7 @@
   font-style: normal;
   font-display: swap;
 }
-@font-face {
-  font-family: Matter;
-  src: url(../fonts/matter/Matter-Medium.woff) format("ttf");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: Matter;
-  src: url(../fonts/matter/Matter-SemiBold.woff) format("ttf");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: Matter;
-  src: url(../fonts/matter/Matter-Regular.woff) format("ttf");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: DMMono;
-  src: url(../fonts/dm-mono/DMMono-Light.woff) format("ttf");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: DMMono;
-  src: url(../fonts/dm-mono/DMMono-Medium.woff) format("ttf");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
+
 
 
 /*
@@ -3201,7 +3167,7 @@ menu, ol, ul {
   max-width: 1150px;
 }
 .max-w-\[1200px\] {
-  max-width: 1200px;
+  max-width: 1500px;
 }
 .max-w-\[120px\] {
   max-width: 120px;
