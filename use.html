@@ -344,7 +344,7 @@
 
           if (draggedEnough) {
             const expandedWidth = "700px";
-            const loadingWidth = "700px";
+           const loadingWidth = window.innerWidth > 2000 ? "1900px" : "700px";
 
             draggable.style.transition = "transform 1.5s ease-in-out, opacity 1.3s ease, width 1s ease";
             draggable.style.opacity = "0";

@@ -12641,6 +12641,17 @@ width: 100% !important;
 
 }
 
+@media (min-width: 2000px) {
+  .dragging{
+    width: 800px;
+  }
+  .target{
+    width: 700px;
+  }
+
+}
+
+
 
 .expanded .loading {
   width: 50%;
