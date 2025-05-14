@@ -12610,6 +12610,8 @@ width: 100% !important;
 .dragging {
   cursor: grab;
   transition: transform 0.3s ease-in-out;
+  opacity: 1; 
+  width: 400px
 }
 .loading {
   transition: transform 2.5s ease-in-out, opacity 2.3s ease,
@@ -12619,10 +12621,23 @@ width: 100% !important;
 
 .target {
   transition: opacity 0.5s ease;
+  width: 400px;
 }
 
 .arrow {
   transition: opacity 0.5s ease;
+}
+.arrow-button{
+  opacity: 1; width: 100px
+}
+
+@media (max-width: 1024px) {
+  .dragging{
+    width: 200px;
+  }
+  .target{
+    width: 200px;
+  }
 }
 
 .expanded .loading {
@@ -12714,7 +12729,7 @@ width: 100% !important;
  
 }
 .price-space{
-  margin-top: 20px; margin-right:40px
+  margin-top: 20px; margin-right:20px
 }
 
 
