@@ -12638,7 +12638,9 @@ width: 100% !important;
   .target{
     width: 200px;
   }
+
 }
+
 
 .expanded .loading {
   width: 50%;
@@ -12847,10 +12849,15 @@ width: 100% !important;
 }
 .cvcdEi {
   color: rgb(255, 255, 255);
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
   margin-left: 20px;
   line-height: 1;
+}
+@media (max-width: 1400px) {
+    .cvcdEi{
+     font-size:40px !important; 
+  }
 }
 .rTbEA {
   display: flex;
