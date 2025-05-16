@@ -5242,7 +5242,7 @@ menu, ol, ul {
   background-color: rgb(244 244 244 / var(--tw-bg-opacity));
 }
 .bg-primary-50\/95 {
-  background-color: hsla(0, 0%, 96%, 0.95);
+margin-top:10px
 }
 .bg-primary-500 {
   --tw-bg-opacity: 1;
@@ -12575,6 +12575,9 @@ gap: 20px !important;
 .modal {
   width: 90% !important; 
 }
+.bg-primary-50\/95 {
+margin-top:0px !important
+}
 }
 @media (max-width: 768px) {
 .modal {
@@ -12818,7 +12821,7 @@ width: 100% !important;
   }
 }
 .increase{
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .cJMWsw {

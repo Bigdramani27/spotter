@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -19,343 +18,1094 @@
     <link rel="apple-touch-icon" href="assets/favicon.ico" />
     <link rel="icon" type="image/png" href="assets/favicon.ico" />
     <link rel="icon" type="image/png" href="assets/favicon.ico" />
-    <style id="__jsx-2714316418"></style>
+    <style id="__jsx-2714316418">
+      .card:hover {
+        transform: translateY(-10px);
+        border: 3px solid #252526;
+      }
+      .hovering:hover{
+        background-color: rgb(111, 113, 115, 0.3);
+      }
+      
+    </style>
   </head>
-
-  <body>
-    <div class="border-b-0 before:hidden after:hidden">
-      <div
-        class="w-full px-4 md:px-[34px] fixed left-1/2 mx-auto mb-8 flex -translate-x-1/2 items-center justify-between lg:mt-2"
-        id="sticky-div"
-        style="border-bottom: 1px solid #6f7173"
-      >
-        <div class="flex cursor-pointer rtl:relative rtl:top-3">
-          <a href="index.html" class="dLVeol" href="/"
-            ><svg
-              id="Layer_1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px"
-              y="0px"
-              viewBox="0 0 944.7 623.7"
-              xml:space="preserve"
-              height="25"
-            >
-              <style type="text/css">
-                .st0 {
-                  fill: #008080 important;
-                }
-
-                .st1 {
-                  fill: #f84960 !important;
-                }
-
-                .st2 {
-                  fill: #bcddde !important;
-                }
-              </style>
-              <g id="dots_copy">
-                <circle class="st0" cx="150" cy="472.7" r="147.4"></circle>
-                <circle class="st1" cx="150" cy="150.8" r="147.4"></circle>
-                <circle class="st2" cx="472.3" cy="472.7" r="147.4"></circle>
-                <circle class="st2" cx="794.7" cy="472.7" r="147.4"></circle>
-              </g></svg
-            ><svg
-              id="Layer_1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px"
-              y="0px"
-              viewBox="0 0 2146.4 576"
-              xml:space="preserve"
-              color="white"
-              class="logo"
-              height="25"
-            >
-              <style type="text/css">
-                .st5 {
-                  fill: white !important;
-                }
-              </style>
-              <g id="white_logo">
-                <path
-                  class="st5"
-                  d="M616.3,266c-5.5-41.1-24.3-75.5-55.4-102.9c-27.3-24-59.3-37.1-95.3-40.9c-18.1-1.9-36-0.5-53.7,3.7 c-45.7,10.7-81.1,35.9-106.2,75.5c-17.1,27.1-25,57.1-25.1,89c-0.1,83.3,0,166.7,0,250c0,1,0,2,0,3c0.3,3.5,0.9,7,2.5,10.2 c4.1,7.8,10.6,12.3,19.3,12.6c8.6,0.3,15.8-3,20.5-10.6c2.8-4.4,3.6-9.4,3.6-14.5c0-43.7,0-87.5,0-131.2v-4.4 c1.5,0.1,1.9,1,2.5,1.6c4.4,4.4,8.9,8.6,13.8,12.4c41.6,32.5,88.3,44.6,140.3,34.5c37-7.2,68.2-25.3,92.9-53.7 C609.5,361.7,623.2,316.7,616.3,266z M447.9,412.3c-68.3-0.3-122.7-56.5-122.7-122.9c0-66.3,53.3-123.8,123.6-123.4 c69.6,0,123.4,55.4,123.4,123.6C572.1,356.9,517.4,412.6,447.9,412.3z"
-                ></path>
-                <path
-                  class="st5"
-                  d="M1906,279c-0.3-5.5-0.4-11.1-1.1-16.6c-3.5-28.8-12.6-55.5-29.8-79c-29.3-40.2-69.1-60.6-118.8-62 c-13.3-0.4-26.4,1.5-39.4,4.4c-27.3,6.1-51.3,18.7-71.8,37.6c-30.4,28.1-47,63.4-52.2,104.2c-2.7,21.4-1.2,42.5,3.7,63.4 c8.1,34.3,24.8,63.4,51.2,86.8c26.5,23.6,58,36,93.2,39.2c19.5,1.7,38.8,0,57.9-4.5c28.7-6.7,53.2-20.4,72.6-43 c6.4-7.5,8.4-15.9,5.3-25.3c-3-9.1-12.8-14.4-21.8-13c-6.9,1.1-12.5,4.5-17.2,9.5c-9.3,9.7-20.1,17-32.5,22.4 c-14.7,6.4-30.2,8.6-46.1,9c-10.9,0.3-21.7-0.5-32.3-3.3c-50.1-13-80.2-53.9-87.7-97.9c-0.8-4.9-0.8-4.3,3.7-4.3 c40.1,0,80.2,0,120.4,0c39.5,0,79,0,118.5,0c1.2,0,2.5,0,3.8,0c8.6-0.5,15.7-5.7,18.3-13.6C1905.4,288.6,1906.3,283.9,1906,279z  M1640.7,263.3c-0.3-2,0.4-3.9,0.8-5.6c6.8-26.8,20.1-49.7,42-66.9c18.5-14.6,39.6-22.7,63.2-24.3c16.7-1.1,33,0.6,48.5,7.2 c32,13.7,52.6,37.6,63.4,70.4c2,6.1,3.3,12.4,3.9,19.2H1640.7z"
-                ></path>
-                <path
-                  class="st5"
-                  d="M981.2,253.1c-10-46.2-35.5-82-75.7-106.7c-38-23.3-79.4-30.1-123.3-21.5c-36.9,7.2-67.9,24.9-93.1,52.7 c-37,40.7-49.9,98-38.7,147.5c7.9,34.9,24.9,64.4,51.3,88.5c32.4,29.4,71,43.2,112.5,44.2c15.7-0.2,29.1-1.9,42.4-5.1 c42.9-10.5,76.7-34.1,100.8-70.8C983.3,342.4,991.2,299.2,981.2,253.1z M816.1,412.2c-70.3,0.3-123.7-56.8-123.7-122.9 c0.1-66.9,53.8-123.5,124.1-123.4c70,0.2,122.8,55.8,122.8,123.6C939.3,356.4,885.7,412.7,816.1,412.2z"
-                ></path>
-                <path
-                  class="st5"
-                  d="M1026.5,174c0-44.9,0-89.7,0-134.6c0-9.1,3.2-16.5,11.1-21.5c12.9-8.1,30.5-0.9,33.9,13.4 c0.7,3.1,1.1,6.2,1.1,9.4c0,26.4,0,52.7,0,79c0,0.8,0,1.5,0,2.3c0,3.4-0.3,3.3,3.3,3.3c30,0,60.1,0,90.1,0c18.6,0,37.1-0.1,55.6,0 c5.7,0,11.3,1,16.1,4.7c7.2,5.5,9.5,13,8.1,21.7c-1,6.3-4.2,11.2-9.6,14.7c-3.4,2.2-7.2,3-11.1,3.4c-1.9,0.2-3.8,0.2-5.7,0.2 c-47.4,0-94.9,0-142.3,0c-5,0-4.5-0.6-4.5,4.4c0,40.5,0,80.9,0,121.4c0,13.9,0.8,27.8,4.1,41.3c4.1,17.1,10.9,33,22.8,46.3 c15.2,17.1,34.2,26.8,57,28.5c17,1.2,33.8,0.2,50.1-5.4c13.9-4.8,26.1-12.6,37.5-21.6c2.1-1.6,4.1-3.4,6.3-4.8 c9.1-5.8,21-4.2,27.9,3.7c3.9,4.4,5,9.8,4.4,15.6c-0.6,6.2-3.4,11.5-8,15.9c-20.7,20.1-44.9,33.5-73.4,38.9 c-18.1,3.4-36.2,4.9-54.6,2.4c-43.3-6-76.2-27.6-98-65.5c-9.2-16-14.5-33.4-18.1-51.5c-2.7-13.6-4-27.4-4-41.3 C1026.5,256.7,1026.5,215.3,1026.5,174L1026.5,174z"
-                ></path>
-                <path
-                  class="st5"
-                  d="M1316.3,175.3c0-45.1,0-90.3,0-135.4c0-5.9,1.1-11.5,4.9-16.3c5.3-6.8,12.4-10,20.9-8.8 c10,1.4,16.8,7,19.3,17.1c0.7,2.7,0.9,5.5,0.9,8.3c0,27,0,54,0,80.9c0,4.3-0.6,4.1,4,4.1c48.2,0,96.4,0,144.6,0 c6.1,0,12.1,1.1,17.1,5c6.7,5.4,8.9,12.5,7.7,20.9c-0.9,6.5-4,11.5-9.5,15.1c-3.4,2.2-7.2,3-11.1,3.4c-2,0.2-4,0.2-6.1,0.2 c-47.1,0-94.1,0-141.2,0c-0.6,0-1.2,0-1.9,0c-3.6,0-3.6,0-3.6,3.4c0,0.4,0,0.8,0,1.1c0,40.3,0,80.7,0,121c0,13.1,0.8,26.2,3.6,39.1 c4,18.1,11,34.8,23.4,48.8c15.1,17,34,26.7,56.7,28.3c17.7,1.2,35.3,0.2,52.2-6.1c13.1-4.9,24.8-12.4,35.7-21c2-1.6,3.9-3.3,6-4.6 c9.1-5.8,20.9-4.4,27.9,3.4c3.9,4.3,5,9.6,4.5,15.1c-0.5,6.4-3.3,11.8-7.9,16.3c-20,19.2-43.1,32.6-70.4,38.4 c-19,4-38.2,5.7-57.5,3.1c-43.3-5.9-76.2-27.5-98.1-65.4c-9.2-15.9-14.5-33.2-18-51.1c-3-14.9-4.1-30-4.1-45.1 C1316.3,255,1316.3,215.1,1316.3,175.3z"
-                ></path>
-                <path
-                  class="st5"
-                  d="M120.9,121.3c15,0,29.7,2,44,6.3c22.5,6.6,40.9,19.3,55.6,37.4c1.4,1.8,2.9,3.5,4.2,5.3 c5.3,7.2,6.8,15.1,3.7,23.6c-3.5,9.7-13.1,15-22.8,13.1c-7.4-1.5-13.2-5-17.8-11.1c-11.9-15.6-27.8-24.5-47-27.9 c-16.3-2.9-32.6-2.7-48.9,0.8c-6.8,1.5-13.3,4-19.4,7.4c-7.1,4-12.9,9.3-16.4,16.8c-5.8,12.5-4.8,31.1,8.6,43 c5.5,4.8,11.6,8.5,18.1,11.6c12.1,5.8,24.8,9.8,37.6,13.6c19,5.6,37.9,11.4,56.2,19c14.8,6.2,29,13.7,41.1,24.4 c21.7,19.2,29.2,43.5,24,71.7c-5.1,27.6-21.6,47.1-44.8,61.8c-13.7,8.6-28.9,13.7-44.7,16.8c-24.7,4.8-49.2,3.1-73.5-2.7 c-19.4-4.6-37.1-12.7-52.6-25.4c-9.1-7.4-16.4-16.5-22.5-26.3c-4.1-6.6-4.7-13.8-1.6-21c3.8-8.9,12.8-12.8,22.1-11.5 c6,0.8,11.4,3.2,16.1,7c1,0.8,1.9,1.7,2.6,2.7c10.9,16.5,26.8,26,45.5,31c14.7,3.9,29.8,4.7,45,3.9c14.7-0.8,28.2-5.1,40.6-13 c9.3-6,16.7-13.8,20.7-24.4c5.3-13.9,3-29.5-8.4-40.4c-5.5-5.3-11.9-9.4-18.6-12.8c-14.2-7.3-29.3-12.2-44.5-16.9 c-12.2-3.7-24.6-6.6-36.7-10.6c-13.8-4.6-27.2-10.1-39.4-18.1c-8.3-5.4-15.9-11.5-22.4-19.1c-13-15.4-18.6-33.4-17.8-53.2 c0.9-21.5,9.4-39.8,25.8-54c11.2-9.8,24-16.6,38.2-21C87.2,124,103.8,121.3,120.9,121.3z"
-                ></path>
-                <path
-                  class="st5"
-                  d="M1941.9,355.9c0-22.1-0.3-44.1,0.1-66.2c0.5-25.1,5-49.7,14.8-72.9c17-40.1,46.7-66.5,87.7-80.4 c19.1-6.5,38.8-10,58.9-10.8c6-0.3,12.1-0.9,18.1,0c6.4,1.1,12.1,3.4,16.1,8.8c9.7,13.1,2.7,32.9-13.1,35.9 c-2.8,0.5-5.5,0.8-8.3,0.9c-17.1,0.4-34,1.9-50.3,7.4c-16.5,5.5-31.4,13.6-44,25.8c-14.3,13.9-23.2,30.9-28.6,49.9 c-4.1,14.4-5.5,29.2-5.5,44.1c-0.1,43,0,86,0,129c0,6-1.3,11.7-5,16.7c-8.8,11.7-27.1,11.1-35.9-0.1c-3.8-4.8-5.1-10.3-5.1-16.2 c0-24,0-47.9,0-71.9C1941.9,355.9,1941.9,355.9,1941.9,355.9z"
-                ></path>
-              </g></svg
-          ></a>
-        </div>
-        <nav
-          aria-label="Main"
-          data-orientation="horizontal"
-          dir="ltr"
-          class="hidden lg:block"
+  <body style="background-color: 0f0f0f">
+    <div class="h-24 calendar-grid !border-b-0 ![--grid-gap-size:0px]">
+      <div class="border-b-0 before:hidden after:hidden">
+        <div
+          class="w-full max-w-[1440px] px-4 md:px-[34px] fixed left-1/2 top-0 z-50 mx-auto mb-8 flex -translate-x-1/2 items-center justify-between py-5 lg:mt-2 lg:max-w-[min(1150px,calc(100vw-24px))] lg:rounded-2xl lg:py-0 before:shadow-fade before:absolute before:inset-0 before:z-[-1] before:bg-white before:opacity-0 before:transition-opacity bg-primary-50/95 border-0 before:block before:border"
+          id="sticky-div"
         >
-          <div
-            class="font-matter rounded-4xl relative z-20 text-sm leading-[22px] text-black"
-          >
-            <div style="position: relative">
-              <ul
-                data-orientation="horizontal"
-                id="nav-items"
-                class="flex"
-                dir="ltr"
+          <div class="flex cursor-pointer rtl:relative rtl:top-3">
+            <a href="index.html" class="dLVeol" href="/"
+              ><svg
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 944.7 623.7"
+                xml:space="preserve"
+                height="25"
               >
-                <li
-                  class="relative -mx-2 flex flex-col justify-center [&amp;:first-child]:ml-0 [&amp;:nth-child(5)]:mr-0"
-                >
-                  <a
-                    class="flex items-start px-7 py-5 mix-blend-difference header_blend-layer__eFsy_ transition-opacity hover:opacity-80 increase"
-                    href="disruptor.html"
-                    >disruptor</a
-                  >
-                  <div></div>
-                </li>
-                <li
-                  class="relative -mx-2 flex flex-col justify-center [&amp;:first-child]:ml-0 [&amp;:nth-child(5)]:mr-0"
-                >
-                  <a
-                    class="flex items-start px-7 py-5 mix-blend-difference header_blend-layer__eFsy_ transition-opacity hover:opacity-80 increase"
-                    href="sentinel.html"
-                    >sentinel</a
-                  >
-                  <div></div>
-                </li>
-                <li
-                  class="relative -mx-2 flex flex-col justify-center [&amp;:first-child]:ml-0 [&amp;:nth-child(5)]:mr-0"
-                >
-                  <a
-                    class="flex items-start px-7 py-5 mix-blend-difference header_blend-layer__eFsy_ transition-opacity hover:opacity-80 increase"
-                    href="https://spotter.ai/lens"
-                    >lens</a
-                  >
-                  <div></div>
-                </li>
-                <li
-                  class="relative -mx-2 flex flex-col justify-center [&amp;:first-child]:ml-0 [&amp;:nth-child(5)]:mr-0"
-                >
-                  <a
-                    class="flex items-start px-7 py-5 mix-blend-difference header_blend-layer__eFsy_ transition-opacity hover:opacity-80 increase"
-                    href="scope.html"
-                    >scope</a
-                  >
-                  <div></div>
-                </li>
-                <li
-                  class="relative -mx-2 flex flex-col justify-center [&amp;:first-child]:ml-0 [&amp;:nth-child(5)]:mr-0"
-                >
-                  <a
-                    class="flex items-start px-7 py-5 mix-blend-difference header_blend-layer__eFsy_ transition-opacity hover:opacity-80 increase"
-                    href="https://spotter.ai"
-                    target="_blank"
-                    >driver app</a
-                  >
-                  <div></div>
-                </li>
-                <div style="margin-right: 130px"></div>
+                <style type="text/css">
+                  .st0 {
+                    fill: #008080 important;
+                  }
 
-                <li
-                  id="nav-pointer"
-                  class="rounded-4xl absolute -z-10 opacity-0"
-                ></li>
-              </ul>
-            </div>
+                  .st1 {
+                    fill: #f84960 !important;
+                  }
+
+                  .st2 {
+                    fill: #bcddde !important;
+                  }
+                </style>
+                <g id="dots_copy">
+                  <circle class="st0" cx="150" cy="472.7" r="147.4"></circle>
+                  <circle class="st1" cx="150" cy="150.8" r="147.4"></circle>
+                  <circle class="st2" cx="472.3" cy="472.7" r="147.4"></circle>
+                  <circle class="st2" cx="794.7" cy="472.7" r="147.4"></circle>
+                </g></svg
+              ><svg
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 2146.4 576"
+                xml:space="preserve"
+                color="white"
+                class="logo"
+                height="25"
+              >
+                <style type="text/css">
+                  .st5 {
+                    fill: white !important;
+                  }
+                </style>
+                <g id="white_logo">
+                  <path
+                    class="st5"
+                    d="M616.3,266c-5.5-41.1-24.3-75.5-55.4-102.9c-27.3-24-59.3-37.1-95.3-40.9c-18.1-1.9-36-0.5-53.7,3.7 c-45.7,10.7-81.1,35.9-106.2,75.5c-17.1,27.1-25,57.1-25.1,89c-0.1,83.3,0,166.7,0,250c0,1,0,2,0,3c0.3,3.5,0.9,7,2.5,10.2 c4.1,7.8,10.6,12.3,19.3,12.6c8.6,0.3,15.8-3,20.5-10.6c2.8-4.4,3.6-9.4,3.6-14.5c0-43.7,0-87.5,0-131.2v-4.4 c1.5,0.1,1.9,1,2.5,1.6c4.4,4.4,8.9,8.6,13.8,12.4c41.6,32.5,88.3,44.6,140.3,34.5c37-7.2,68.2-25.3,92.9-53.7 C609.5,361.7,623.2,316.7,616.3,266z M447.9,412.3c-68.3-0.3-122.7-56.5-122.7-122.9c0-66.3,53.3-123.8,123.6-123.4 c69.6,0,123.4,55.4,123.4,123.6C572.1,356.9,517.4,412.6,447.9,412.3z"
+                  ></path>
+                  <path
+                    class="st5"
+                    d="M1906,279c-0.3-5.5-0.4-11.1-1.1-16.6c-3.5-28.8-12.6-55.5-29.8-79c-29.3-40.2-69.1-60.6-118.8-62 c-13.3-0.4-26.4,1.5-39.4,4.4c-27.3,6.1-51.3,18.7-71.8,37.6c-30.4,28.1-47,63.4-52.2,104.2c-2.7,21.4-1.2,42.5,3.7,63.4 c8.1,34.3,24.8,63.4,51.2,86.8c26.5,23.6,58,36,93.2,39.2c19.5,1.7,38.8,0,57.9-4.5c28.7-6.7,53.2-20.4,72.6-43 c6.4-7.5,8.4-15.9,5.3-25.3c-3-9.1-12.8-14.4-21.8-13c-6.9,1.1-12.5,4.5-17.2,9.5c-9.3,9.7-20.1,17-32.5,22.4 c-14.7,6.4-30.2,8.6-46.1,9c-10.9,0.3-21.7-0.5-32.3-3.3c-50.1-13-80.2-53.9-87.7-97.9c-0.8-4.9-0.8-4.3,3.7-4.3 c40.1,0,80.2,0,120.4,0c39.5,0,79,0,118.5,0c1.2,0,2.5,0,3.8,0c8.6-0.5,15.7-5.7,18.3-13.6C1905.4,288.6,1906.3,283.9,1906,279z  M1640.7,263.3c-0.3-2,0.4-3.9,0.8-5.6c6.8-26.8,20.1-49.7,42-66.9c18.5-14.6,39.6-22.7,63.2-24.3c16.7-1.1,33,0.6,48.5,7.2 c32,13.7,52.6,37.6,63.4,70.4c2,6.1,3.3,12.4,3.9,19.2H1640.7z"
+                  ></path>
+                  <path
+                    class="st5"
+                    d="M981.2,253.1c-10-46.2-35.5-82-75.7-106.7c-38-23.3-79.4-30.1-123.3-21.5c-36.9,7.2-67.9,24.9-93.1,52.7 c-37,40.7-49.9,98-38.7,147.5c7.9,34.9,24.9,64.4,51.3,88.5c32.4,29.4,71,43.2,112.5,44.2c15.7-0.2,29.1-1.9,42.4-5.1 c42.9-10.5,76.7-34.1,100.8-70.8C983.3,342.4,991.2,299.2,981.2,253.1z M816.1,412.2c-70.3,0.3-123.7-56.8-123.7-122.9 c0.1-66.9,53.8-123.5,124.1-123.4c70,0.2,122.8,55.8,122.8,123.6C939.3,356.4,885.7,412.7,816.1,412.2z"
+                  ></path>
+                  <path
+                    class="st5"
+                    d="M1026.5,174c0-44.9,0-89.7,0-134.6c0-9.1,3.2-16.5,11.1-21.5c12.9-8.1,30.5-0.9,33.9,13.4 c0.7,3.1,1.1,6.2,1.1,9.4c0,26.4,0,52.7,0,79c0,0.8,0,1.5,0,2.3c0,3.4-0.3,3.3,3.3,3.3c30,0,60.1,0,90.1,0c18.6,0,37.1-0.1,55.6,0 c5.7,0,11.3,1,16.1,4.7c7.2,5.5,9.5,13,8.1,21.7c-1,6.3-4.2,11.2-9.6,14.7c-3.4,2.2-7.2,3-11.1,3.4c-1.9,0.2-3.8,0.2-5.7,0.2 c-47.4,0-94.9,0-142.3,0c-5,0-4.5-0.6-4.5,4.4c0,40.5,0,80.9,0,121.4c0,13.9,0.8,27.8,4.1,41.3c4.1,17.1,10.9,33,22.8,46.3 c15.2,17.1,34.2,26.8,57,28.5c17,1.2,33.8,0.2,50.1-5.4c13.9-4.8,26.1-12.6,37.5-21.6c2.1-1.6,4.1-3.4,6.3-4.8 c9.1-5.8,21-4.2,27.9,3.7c3.9,4.4,5,9.8,4.4,15.6c-0.6,6.2-3.4,11.5-8,15.9c-20.7,20.1-44.9,33.5-73.4,38.9 c-18.1,3.4-36.2,4.9-54.6,2.4c-43.3-6-76.2-27.6-98-65.5c-9.2-16-14.5-33.4-18.1-51.5c-2.7-13.6-4-27.4-4-41.3 C1026.5,256.7,1026.5,215.3,1026.5,174L1026.5,174z"
+                  ></path>
+                  <path
+                    class="st5"
+                    d="M1316.3,175.3c0-45.1,0-90.3,0-135.4c0-5.9,1.1-11.5,4.9-16.3c5.3-6.8,12.4-10,20.9-8.8 c10,1.4,16.8,7,19.3,17.1c0.7,2.7,0.9,5.5,0.9,8.3c0,27,0,54,0,80.9c0,4.3-0.6,4.1,4,4.1c48.2,0,96.4,0,144.6,0 c6.1,0,12.1,1.1,17.1,5c6.7,5.4,8.9,12.5,7.7,20.9c-0.9,6.5-4,11.5-9.5,15.1c-3.4,2.2-7.2,3-11.1,3.4c-2,0.2-4,0.2-6.1,0.2 c-47.1,0-94.1,0-141.2,0c-0.6,0-1.2,0-1.9,0c-3.6,0-3.6,0-3.6,3.4c0,0.4,0,0.8,0,1.1c0,40.3,0,80.7,0,121c0,13.1,0.8,26.2,3.6,39.1 c4,18.1,11,34.8,23.4,48.8c15.1,17,34,26.7,56.7,28.3c17.7,1.2,35.3,0.2,52.2-6.1c13.1-4.9,24.8-12.4,35.7-21c2-1.6,3.9-3.3,6-4.6 c9.1-5.8,20.9-4.4,27.9,3.4c3.9,4.3,5,9.6,4.5,15.1c-0.5,6.4-3.3,11.8-7.9,16.3c-20,19.2-43.1,32.6-70.4,38.4 c-19,4-38.2,5.7-57.5,3.1c-43.3-5.9-76.2-27.5-98.1-65.4c-9.2-15.9-14.5-33.2-18-51.1c-3-14.9-4.1-30-4.1-45.1 C1316.3,255,1316.3,215.1,1316.3,175.3z"
+                  ></path>
+                  <path
+                    class="st5"
+                    d="M120.9,121.3c15,0,29.7,2,44,6.3c22.5,6.6,40.9,19.3,55.6,37.4c1.4,1.8,2.9,3.5,4.2,5.3 c5.3,7.2,6.8,15.1,3.7,23.6c-3.5,9.7-13.1,15-22.8,13.1c-7.4-1.5-13.2-5-17.8-11.1c-11.9-15.6-27.8-24.5-47-27.9 c-16.3-2.9-32.6-2.7-48.9,0.8c-6.8,1.5-13.3,4-19.4,7.4c-7.1,4-12.9,9.3-16.4,16.8c-5.8,12.5-4.8,31.1,8.6,43 c5.5,4.8,11.6,8.5,18.1,11.6c12.1,5.8,24.8,9.8,37.6,13.6c19,5.6,37.9,11.4,56.2,19c14.8,6.2,29,13.7,41.1,24.4 c21.7,19.2,29.2,43.5,24,71.7c-5.1,27.6-21.6,47.1-44.8,61.8c-13.7,8.6-28.9,13.7-44.7,16.8c-24.7,4.8-49.2,3.1-73.5-2.7 c-19.4-4.6-37.1-12.7-52.6-25.4c-9.1-7.4-16.4-16.5-22.5-26.3c-4.1-6.6-4.7-13.8-1.6-21c3.8-8.9,12.8-12.8,22.1-11.5 c6,0.8,11.4,3.2,16.1,7c1,0.8,1.9,1.7,2.6,2.7c10.9,16.5,26.8,26,45.5,31c14.7,3.9,29.8,4.7,45,3.9c14.7-0.8,28.2-5.1,40.6-13 c9.3-6,16.7-13.8,20.7-24.4c5.3-13.9,3-29.5-8.4-40.4c-5.5-5.3-11.9-9.4-18.6-12.8c-14.2-7.3-29.3-12.2-44.5-16.9 c-12.2-3.7-24.6-6.6-36.7-10.6c-13.8-4.6-27.2-10.1-39.4-18.1c-8.3-5.4-15.9-11.5-22.4-19.1c-13-15.4-18.6-33.4-17.8-53.2 c0.9-21.5,9.4-39.8,25.8-54c11.2-9.8,24-16.6,38.2-21C87.2,124,103.8,121.3,120.9,121.3z"
+                  ></path>
+                  <path
+                    class="st5"
+                    d="M1941.9,355.9c0-22.1-0.3-44.1,0.1-66.2c0.5-25.1,5-49.7,14.8-72.9c17-40.1,46.7-66.5,87.7-80.4 c19.1-6.5,38.8-10,58.9-10.8c6-0.3,12.1-0.9,18.1,0c6.4,1.1,12.1,3.4,16.1,8.8c9.7,13.1,2.7,32.9-13.1,35.9 c-2.8,0.5-5.5,0.8-8.3,0.9c-17.1,0.4-34,1.9-50.3,7.4c-16.5,5.5-31.4,13.6-44,25.8c-14.3,13.9-23.2,30.9-28.6,49.9 c-4.1,14.4-5.5,29.2-5.5,44.1c-0.1,43,0,86,0,129c0,6-1.3,11.7-5,16.7c-8.8,11.7-27.1,11.1-35.9-0.1c-3.8-4.8-5.1-10.3-5.1-16.2 c0-24,0-47.9,0-71.9C1941.9,355.9,1941.9,355.9,1941.9,355.9z"
+                  ></path>
+                </g></svg
+            ></a>
           </div>
-        </nav>
-        <div class="flex items-center justify-center">
-          <a
-            class="mr-4 hidden lg:flex opacity-100 increase"
-            href="https://safetyapp.spotter.ai/login"
-            style="color: white"
-            >login
-          </a>
-          <div>
-            <a
-              class="px-3 py-2 font-medium border border-[transparent] bg-neutral-900 dark:bg-white h ease-in-out group relative hidden overflow-hidden whitespace-nowrap rounded-xl lg:flex items-center justify-center text-white before:pointer-events-none before:absolute increase"
-              style="
-                background-color: #f6f8fa;
-                width: 100px;
-                height: 35px;
-                color: #0f0f0f;
-              "
-              href="contact-sales.html"
-              ><span>sign up</span></a
-            >
-          </div>
-          <button
-            class="p-2 hover:cursor-pointer lg:hidden harmburger"
-            aria-label="Open menu"
-          >
-            <div class="relative h-4 w-4">
-              <span
-                class="absolute left-0 top-0 h-[1.5px] w-4 transform transition-all duration-300 bg-black rotate-0"
-              ></span
-              ><span
-                class="absolute left-0 top-[7px] h-[1.5px] w-4 transition-all duration-300 bg-black opacity-100"
-              ></span
-              ><span
-                class="absolute left-0 top-[14px] h-[1.5px] w-4 transform transition-all duration-300 bg-black rotate-0"
-              ></span>
-            </div>
-          </button>
-        </div>
-      </div>
-    </div>
-    <div
-      class="bg-primary-50 fixed inset-0 z-40 h-0 w-full opacity-0 lg:!hidden top-[72px] pointer-events-none ham"
-    >
-      <ul
-        id="mobile-links"
-        class="font-cal text-standard border-primary-700 flex flex-col overflow-y-auto border-t-2 pb-[290px] visible"
-      >
-        <a
-          class="border-primary-700 align-center leading-standard flex border-b-2 border-dashed px-4 py-4 md:px-[34px]"
-          href="index.html"
-          >home</a
-        ><a
-          class="border-primary-700 align-center leading-standard flex border-b-2 border-dashed px-4 py-4 md:px-[34px]"
-          href="disruptor.html"
-          >disruptor</a
-        ><a
-          class="border-primary-700 align-center leading-standard flex border-b-2 border-dashed px-4 py-4 md:px-[34px]"
-          href="https://spotter.ai/lens"
-          >lens</a
-        ><a
-          class="border-primary-700 align-center leading-standard flex border-b-2 border-dashed px-4 py-4 md:px-[34px]"
-          href="sentinel.html"
-          >sentinel</a
-        ><a
-          class="border-primary-700 align-center leading-standard flex border-b-2 border-dashed px-4 py-4 md:px-[34px]"
-          href="scope.html"
-          >scope</a
-        >
-        <a
-          class="border-primary-700 align-center leading-standard flex border-b-2 border-dashed px-4 py-4 md:px-[34px]"
-          href="scope.html"
-          >driver app</a
-        >
-      </ul>
-      <div
-        class="header_cta__BlqBL text-standard font-matter fixed bottom-0 mx-auto flex w-full flex-col items-center justify-center gap-4 bg-[transparent] px-4 py-6 md:pb-12"
-      >
-        <p class="">
-          Existing customer?
-          <a href="https://safetyapp.spotter.ai/login"
-            ><span class="font-bold">Sign In</span></a
-          >
-        </p>
-        <a
-          href="contact-us.html"
-          class="px-3 py-2 font-medium relative border border-[transparent] dark:text-black bg-neutral-900 dark:bg-white hover:bg-neutral-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-neutral-900 hover:opacity-90 transition-all duration-150 ease-in-out flex !h-20 w-full max-w-lg items-center justify-center overflow-hidden rounded-xl text-center text-xl bg-gradient-to-b from-[#2c2c30] to-[#1d1d20] text-white before:pointer-events-none before:absolute before:inset-0 before:rounded-xl before:shadow-[0px_2px_0.4px_0px_rgba(255,_255,_255,_0.16)_inset]"
-          >Book Demo</a
-        >
-      </div>
-    </div>
-
-    <main
-      class="text-primary-700 text-standard font-matter leading-normal"
-      style="background-color: #0f0f0f"
-    >
-      <div class="px-0 md:px-0">
-        <section
-          class="mx-3 md:mx-0"
-          style="
-            background: linear-gradient(
-              to bottom,
-              #0f0f0f 0%,
-              #111111 40%,
-              #141414 60%,
-              #1c1c1c 100%
-            );
-
-            padding-top: 40px;
-          "
-        >
-          <div
-            class="mx-auto w-full relative flow-charts gap-8 overflow-clip rounded-xl px-1 py-6 md:px-1 !bg-transparent"
+          <nav
+            aria-label="Main"
+            data-orientation="horizontal"
+            dir="ltr"
+            class="hidden lg:block"
           >
             <div
-              class="gap- flex flex-col pt-2.5"
-              style="margin-left: 5vw; margin-right: 5vw"
+              class="font-matter rounded-4xl relative z-20 text-sm leading-[22px] text-black"
             >
-              <div class="relative w-full" style="margin-bottom: -50px">
-                <div
-                  class="flex flex-col lg:grid lg:grid-cols-2 lg:items-center "
+              <div style="position: relative">
+                <ul
+                  data-orientation="horizontal"
+                  id="nav-items"
+                  class="flex"
+                  dir="ltr"
                 >
-                  <div class="lg:col-span-1 lg:order-2 lg:pl-10">
-                    <img
-                      src="assets/images/homepage2.png"
-                      style="height: 700px; margin-top:80px"
-                    />
-                  </div>
-                  <div
-                    class="flex flex-col pb-3.5 items-center text-center lg:items-start lg:text-left" style="margin-bottom: 30px;"
+                  <li
+                    class="relative -mx-2 flex flex-col justify-center [&amp;:first-child]:ml-0 [&amp;:nth-child(5)]:mr-0"
                   >
-                    <div class="sc-krNlru gkdhVv">
-                      <div direction="vertical" class="sc-aXZVg ixizUJ dots">
-                        <div class="sc-gEvEer cwYMZJ"></div>
-                        <div class="sc-gEvEer bbTuuA"></div>
-                        <div class="sc-gEvEer gEZvHk"></div>
-                      </div>
-                      <div class="sc-jaXxmE cvcdEi" >
-                          unleash the power <br />of Spotter
-                      </div>
-                    </div>
-
-                    <p
-                      class="max-w-md text-base lg:max-w-2xl lg:text-lg"
-                      style="padding-top: 20px; color: white; font-size: 20px;"
+                    <button
+                      class="group flex items-start px-7 pt-0.5 antialiased mix-blend-difference header_blend-layer__eFsy_ cursor-pointer transition-opacity hover:opacity-80 display increase"
+                      id="radix-:r0:-trigger-radix-:r1:"
                     >
-                      Where insight drives action and efficiency fuels results — all in one platform.
-                    </p>
-                    <div class="margin" style="margin-top: 50px;">
-                      <a
-                        href="sentinel-pricing.html"
-                        style="width: 150px; height: 50px; font-size:16px !important;  background-color:#252526 !important; border-color: #6F7173;"
-                        class="Button-module--button--3b10c Button-module--primary--379ca Button-module--large--57ca4 HeroSection-module--button--95276 price-space"
-                        aria-label=""
-                        ><span>Pricing Plan</span></a
+                      Solutions
+                      <div
+                        class="flex h-6 origin-center items-center justify-center transition-transform duration-200 group-hover:-scale-y-100"
                       >
-                      <a
-                        id="check"
-                        style="width: 150px; height: 50px; font-size:16px !important; color: #0f0f0f;"
-                        class="Button-module--button--3b10c Button-module--primaryOutlined--c12e0 Button-module--medium--5a71a"
-                        aria-label=""
-                        href="contact-sales.html"
-                        ><span>Contact Sales</span></a
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="lucide lucide-chevron-down stoke-2 ml-0.5 mt-px h-[18px] w-[18px]"
+                        >
+                          <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                      </div>
+                    </button>
+                    <div></div>
+                  </li>
+                  <li
+                    class="relative -mx-2 flex flex-col justify-center [&amp;:first-child]:ml-0 [&amp;:nth-child(5)]:mr-0"
+                  >
+                    <a
+                      class="flex items-start px-7 py-5 mix-blend-difference header_blend-layer__eFsy_ transition-opacity hover:opacity-80 increase"
+                      href="coming-soon.html"
+                      >Enterprise</a
+                    >
+                    <div></div>
+                  </li>
+                  <li
+                    class="relative -mx-2 flex flex-col justify-center [&amp;:first-child]:ml-0 [&amp;:nth-child(5)]:mr-0"
+                  >
+                    <button
+                      class="group flex items-start px-7 pt-0.5 antialiased mix-blend-difference header_blend-layer__eFsy_ cursor-pointer transition-opacity hover:opacity-80 display3 increase"
+                      id="radix-:r0:-trigger-radix-:r3:"
+                    >
+                      Resources
+                      <div
+                        class="flex h-6 origin-center items-center justify-center transition-transform duration-200 group-hover:-scale-y-100"
                       >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="lucide lucide-chevron-down stoke-2 ml-0.5 mt-px h-[18px] w-[18px]"
+                        >
+                          <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                      </div>
+                    </button>
+                    <div></div>
+                  </li>
+                  <li
+                    class="relative -mx-2 flex flex-col justify-center [&amp;:first-child]:ml-0 [&amp;:nth-child(5)]:mr-0"
+                  >
+                    <button
+                      class="group flex items-start px-7 pt-0.5 antialiased mix-blend-difference header_blend-layer__eFsy_ cursor-pointer transition-opacity hover:opacity-80 display2 increase"
+                      id="radix-:r0:-trigger-radix-:r3:"
+                    >
+                      Useful Links
+                      <div
+                        class="flex h-6 origin-center items-center justify-center transition-transform duration-200 group-hover:-scale-y-100"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="lucide lucide-chevron-down stoke-2 ml-0.5 mt-px h-[18px] w-[18px]"
+                        >
+                          <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                      </div>
+                    </button>
+                    <div></div>
+                  </li>
+
+                  <li
+                    id="nav-pointer"
+                    class="rounded-4xl absolute -z-10 opacity-0"
+                  ></li>
+                </ul>
+              </div>
+              <!--Show Nav headers-->
+              <!--first header-->
+              <div
+                class="w-full dialog"
+                style="
+                  --radix-navigation-menu-viewport-width: 575px;
+                  --radix-navigation-menu-viewport-height: 0px;
+                  opacity: 0;
+                  visibility: hidden;
+                "
+              >
+                <div
+                  id="radix-:r0:-content-radix-:r1:"
+                  aria-labelledby="radix-:r0:-trigger-radix-:r1:"
+                  data-orientation="horizontal"
+                  dir="ltr"
+                >
+                  <div
+                    class="absolute left-1/2 w-max max-w-[min(1000px,90vw)] -translate-x-1/2 pt-2"
+                  >
+                    <ul
+                      class="w-full overflow-hidden rounded-2xl border px-4 py-4 shadow-sm border-black/10 bg-white grid grid-flow-col grid-rows-4 gap-0 pt-10"
+                      style="
+                        opacity: 1;
+                        transform: none;
+                        background-color: #0f0f0f;
+                        border-color: #6f7173;
+                      "
+                    >
+                      <li
+                        class="group relative normal-case transition-all [&amp;:first-child>a]:pt-3 [&amp;:last-child>a]:pb-3 hover:[>a]:text-primary-700"
+                      >
+                        <span
+                          class="absolute -top-5 left-4 text-sm font-normal opacity-80"
+                          >By team size</span
+                        ><a
+                          class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hovering"
+                          data-radix-collection-item=""
+                          href="disruptor.html"
+                        >
+                          <div
+                            class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#0f0f0f]"
+                            style="background-color: #252526"
+                          >
+                            <img
+                              class="size-6"
+                              src="assets/icons/ship.png"
+                              width="24"
+                              height="24"
+                            />
+                          </div>
+                          <div
+                            class="flex min-h-[48px] flex-col justify-center"
+                          >
+                            <div
+                              class="text-[15px] font-medium leading-[1]"
+                              style="color: white"
+                            >
+                              For Carriers
+                            </div>
+                            <span
+                              class="mt-1 text-[15px] normal-case leading-[1.2] transition-all text-black/40"  style="color: #6f7173"
+                              >Streamlining logistics, empowering every
+                              carrier</span
+                            >
+                          </div>
+                        </a>
+                      </li>
+                      <li
+                        class="group relative normal-case transition-all [&amp;:first-child>a]:pt-3 [&amp;:last-child>a]:pb-3 hover:[>a]:text-primary-700"
+                      >
+                        <a
+                          class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hover:bg-[#f5f5f5]"
+                          data-radix-collection-item=""
+                          href="scope.html"
+                        >
+                          <div
+                            class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#DCDCDC]"
+                          >
+                            <img
+                              class="size-6"
+                              src="assets/icons/owner.png"
+                              width="24"
+                              height="24"
+                            />
+                          </div>
+                          <div
+                            class="flex min-h-[48px] flex-col justify-center"
+                          >
+                            <div class="text-[15px] font-medium leading-[1]">
+                              For Owner Operators
+                            </div>
+                            <span
+                              class="mt-1 text-[15px] normal-case leading-[1.2] transition-all text-black/40"
+                              >Drive your business, fuel your success.</span
+                            >
+                          </div>
+                        </a>
+                      </li>
+                      <li
+                        class="group relative normal-case transition-all [&amp;:first-child>a]:pt-3 [&amp;:last-child>a]:pb-3 hover:[>a]:text-primary-700"
+                      >
+                        <a
+                          class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hover:bg-[#f5f5f5]"
+                          data-radix-collection-item=""
+                          href="https://spotter.ai/lens"
+                          target="_blank"
+                        >
+                          <div
+                            class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#DCDCDC]"
+                          >
+                            <img
+                              class="size-6"
+                              src="assets/icons/broker.png"
+                              width="24"
+                              height="24"
+                            />
+                          </div>
+                          <div
+                            class="flex min-h-[48px] flex-col justify-center"
+                          >
+                            <div class="text-[15px] font-medium leading-[1]">
+                              For Brokers
+                            </div>
+                            <span
+                              class="mt-1 text-[15px] normal-case leading-[1.2] transition-all text-black/40"
+                              >Connecting opportunities, driving seamless
+                              transactions</span
+                            >
+                          </div>
+                        </a>
+                      </li>
+                      <li
+                        class="group relative normal-case transition-all [&amp;:first-child>a]:pt-3 [&amp;:last-child>a]:pb-3 hover:[>a]:text-primary-700"
+                      >
+                        <a
+                          class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hover:bg-[#f5f5f5]"
+                          data-radix-collection-item=""
+                          href="coming-soon.html"
+                        >
+                          <div
+                            class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#DCDCDC]"
+                          >
+                            <img
+                              class="size-6"
+                              src="assets/icons/dealership.png"
+                              width="24"
+                              height="24"
+                            />
+                          </div>
+                          <div
+                            class="flex min-h-[48px] flex-col justify-center"
+                          >
+                            <div class="text-[15px] font-medium leading-[1]">
+                              For Dealerships
+                            </div>
+                            <span
+                              class="mt-1 text-[15px] normal-case leading-[1.2] transition-all text-black/40"
+                              >Driving sales, delivering customer
+                              satisfaction.</span
+                            >
+                          </div>
+                        </a>
+                      </li>
+                      <li
+                        class="group relative normal-case transition-all [&amp;:first-child>a]:pt-3 [&amp;:last-child>a]:pb-3 hover:[>a]:text-primary-700"
+                      >
+                        <span
+                          class="absolute -top-5 left-4 text-sm font-normal opacity-80"
+                          >By use case</span
+                        ><a
+                          class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hover:bg-[#f5f5f5]"
+                          data-radix-collection-item=""
+                          href="scope.html"
+                        >
+                          <div
+                            class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#DCDCDC]"
+                          >
+                            <img
+                              class="size-6"
+                              src="assets/icons/owner.png"
+                              width="24"
+                              height="24"
+                            />
+                          </div>
+                          <div
+                            class="flex min-h-[48px] flex-col justify-center"
+                          >
+                            <div class="text-[15px] font-medium leading-[1]">
+                              Dispatch
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li
+                        class="group relative normal-case transition-all [&amp;:first-child>a]:pt-3 [&amp;:last-child>a]:pb-3 hover:[>a]:text-primary-700"
+                      >
+                        <a
+                          class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hover:bg-[#f5f5f5]"
+                          data-radix-collection-item=""
+                          href="https://spotter.ai/lens"
+                        >
+                          <div
+                            class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#DCDCDC]"
+                          >
+                            <img
+                              class="size-6"
+                              src="assets/icons/invoice.png"
+                              width="24"
+                              height="24"
+                            />
+                          </div>
+                          <div
+                            class="flex min-h-[48px] flex-col justify-center"
+                          >
+                            <div class="text-[15px] font-medium leading-[1]">
+                              Quoting
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li
+                        class="group relative normal-case transition-all [&amp;:first-child>a]:pt-3 [&amp;:last-child>a]:pb-3 hover:[>a]:text-primary-700"
+                      >
+                        <a
+                          class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hover:bg-[#f5f5f5]"
+                          data-radix-collection-item=""
+                          href="scope.html"
+                        >
+                          <div
+                            class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#DCDCDC]"
+                          >
+                            <img
+                              class="size-6"
+                              src="assets/icons/drivers.png"
+                              width="24"
+                              height="24"
+                            />
+                          </div>
+                          <div
+                            class="flex min-h-[48px] flex-col justify-center"
+                          >
+                            <div class="text-[15px] font-medium leading-[1]">
+                              Drivers
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li
+                        class="group relative normal-case transition-all [&amp;:first-child>a]:pt-3 [&amp;:last-child>a]:pb-3 hover:[>a]:text-primary-700"
+                      >
+                        <a
+                          class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hover:bg-[#f5f5f5]"
+                          data-radix-collection-item=""
+                          href="disruptor.html"
+                        >
+                          <div
+                            class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#DCDCDC]"
+                          >
+                            <img
+                              class="size-6"
+                              src="assets/icons/payroll.png"
+                              width="24"
+                              height="24"
+                            />
+                          </div>
+                          <div
+                            class="flex min-h-[48px] flex-col justify-center"
+                          >
+                            <div class="text-[15px] font-medium leading-[1]">
+                              Payroll
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li
+                        class="group relative normal-case transition-all [&amp;:first-child>a]:pt-3 [&amp;:last-child>a]:pb-3 hover:[>a]:text-primary-700"
+                      >
+                        <a
+                          class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hover:bg-[#f5f5f5]"
+                          data-radix-collection-item=""
+                          href="sentinel.html"
+                        >
+                          <div
+                            class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#DCDCDC]"
+                          >
+                            <img
+                              class="size-6"
+                              src="assets/icons/safety.png"
+                              width="24"
+                              height="24"
+                            />
+                          </div>
+                          <div
+                            class="flex min-h-[48px] flex-col justify-center"
+                          >
+                            <div class="text-[15px] font-medium leading-[1]">
+                              Safety
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li
+                        class="group relative normal-case transition-all [&amp;:first-child>a]:pt-3 [&amp;:last-child>a]:pb-3 hover:[>a]:text-primary-700"
+                      >
+                        <a
+                          class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hover:bg-[#f5f5f5]"
+                          data-radix-collection-item=""
+                          href="disruptor.html"
+                        >
+                          <div
+                            class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#DCDCDC]"
+                          >
+                            <img
+                              class="size-6"
+                              src="assets/icons/billing.png"
+                              width="24"
+                              height="24"
+                            />
+                          </div>
+                          <div
+                            class="flex min-h-[48px] flex-col justify-center"
+                          >
+                            <div class="text-[15px] font-medium leading-[1]">
+                              Billing
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li
+                        class="group relative normal-case transition-all [&amp;:first-child>a]:pt-3 [&amp;:last-child>a]:pb-3 hover:[>a]:text-primary-700"
+                      >
+                        <a
+                          class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hover:bg-[#f5f5f5]"
+                          data-radix-collection-item=""
+                          href="coming-soon.html"
+                        >
+                          <div
+                            class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#DCDCDC]"
+                          >
+                            <img
+                              class="size-6"
+                              src="assets/icons/lending.png"
+                              width="24"
+                              height="24"
+                            />
+                          </div>
+                          <div
+                            class="flex min-h-[48px] flex-col justify-center"
+                          >
+                            <div class="text-[15px] font-medium leading-[1]">
+                              Lending
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li
+                        class="group relative normal-case transition-all [&amp;:first-child>a]:pt-3 [&amp;:last-child>a]:pb-3 hover:[>a]:text-primary-700"
+                      >
+                        <a
+                          class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hover:bg-[#f5f5f5]"
+                          data-radix-collection-item=""
+                          href="disruptor.html"
+                        >
+                          <div
+                            class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#DCDCDC]"
+                          >
+                            <img
+                              class="size-6"
+                              src="assets/icons/accounting.png"
+                              width="24"
+                              height="24"
+                            />
+                          </div>
+                          <div
+                            class="flex min-h-[48px] flex-col justify-center"
+                          >
+                            <div class="text-[15px] font-medium leading-[1]">
+                              Accounting
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!--End First header-->
+              <!--Show Second header-->
+              <div
+                class="w-full dialog2"
+                style="
+                  --radix-navigation-menu-viewport-width: 575px;
+                  --radix-navigation-menu-viewport-height: 0px;
+                  opacity: 0;
+                  visibility: hidden;
+                "
+              >
+                <div
+                  id="radix-:r0:-content-radix-:r3:"
+                  aria-labelledby="radix-:r0:-trigger-radix-:r3:"
+                  data-orientation="horizontal"
+                  dir="ltr"
+                >
+                  <div
+                    class="absolute left-1/2 w-max max-w-[min(1000px,90vw)] -translate-x-1/2 pt-2"
+                  >
+                    <ul
+                      class="w-full overflow-hidden rounded-2xl border px-4 py-4 shadow-sm border-black/10 bg-white grid grid-flow-col grid-rows-3 gap-0 pt-10"
+                      style="opacity: 1; transform: none"
+                    >
+                      <li
+                        class="group relative normal-case transition-all [&amp;:first-child>a]:pt-3 [&amp;:last-child>a]:pb-3 hover:[>a]:text-primary-700"
+                      >
+                        <span
+                          class="absolute -top-5 left-4 text-sm font-normal opacity-80"
+                          >Useful Links</span
+                        ><a
+                          class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hover:bg-[#f5f5f5]"
+                          data-radix-collection-item=""
+                          href="coming-soon.html"
+                        >
+                          <div
+                            class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#DCDCDC]"
+                          >
+                            <img
+                              class="size-6"
+                              src="assets/icons/blog.png"
+                              width="24"
+                              height="24"
+                            />
+                          </div>
+                          <div
+                            class="flex min-h-[48px] flex-col justify-center"
+                          >
+                            <div class="text-[15px] font-medium leading-[1]">
+                              Blog
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li
+                        class="group relative normal-case transition-all [&amp;:first-child>a]:pt-3 [&amp;:last-child>a]:pb-3 hover:[>a]:text-primary-700"
+                      >
+                        <a
+                          class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hover:bg-[#f5f5f5]"
+                          data-radix-collection-item=""
+                          href="coming-soon.html"
+                        >
+                          <div
+                            class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#DCDCDC]"
+                          >
+                            <img
+                              class="size-6"
+                              src="assets/icons/press.png"
+                              width="24"
+                              height="24"
+                            />
+                          </div>
+                          <div
+                            class="flex min-h-[48px] flex-col justify-center"
+                          >
+                            <div class="text-[15px] font-medium leading-[1]">
+                              Press
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li
+                        class="group relative normal-case transition-all [&amp;:first-child>a]:pt-3 [&amp;:last-child>a]:pb-3 hover:[>a]:text-primary-700"
+                      >
+                        <a
+                          class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hover:bg-[#f5f5f5]"
+                          data-radix-collection-item=""
+                          href=""
+                        >
+                          <div
+                            class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#DCDCDC]"
+                          >
+                            <img
+                              class="size-6"
+                              src="assets/icons/about.png"
+                              width="24"
+                              height="24"
+                            />
+                          </div>
+                          <div
+                            class="flex min-h-[48px] flex-col justify-center"
+                          >
+                            <div class="text-[15px] font-medium leading-[1]">
+                              About Us
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li
+                        class="group relative normal-case transition-all [&amp;:first-child>a]:pt-3 [&amp;:last-child>a]:pb-3 hover:[>a]:text-primary-700"
+                      >
+                        <a
+                          class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hover:bg-[#f5f5f5]"
+                          data-radix-collection-item=""
+                          href="https://spotter.na.teamtailor.com/"
+                          target="_blank"
+                        >
+                          <div
+                            class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#DCDCDC]"
+                          >
+                            <img
+                              class="size-6"
+                              src="assets/icons/career.png"
+                              width="24"
+                              height="24"
+                            />
+                          </div>
+                          <div
+                            class="flex min-h-[48px] flex-col justify-center"
+                          >
+                            <div class="text-[15px] font-medium leading-[1]">
+                              Careers
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li
+                        class="group relative normal-case transition-all [&amp;:first-child>a]:pt-3 [&amp;:last-child>a]:pb-3 hover:[>a]:text-primary-700"
+                      >
+                        <a
+                          class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hover:bg-[#f5f5f5]"
+                          data-radix-collection-item=""
+                          href="contact-us.html"
+                        >
+                          <div
+                            class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#DCDCDC]"
+                          >
+                            <img
+                              class="size-6"
+                              src="assets/icons/support.png"
+                              width="24"
+                              height="24"
+                            />
+                          </div>
+                          <div
+                            class="flex min-h-[48px] flex-col justify-center"
+                          >
+                            <div class="text-[15px] font-medium leading-[1]">
+                              Support
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!--End Second header-->
+              <!--third header-->
+              <div
+                class="w-full dialog3"
+                style="
+                  --radix-navigation-menu-viewport-width: 680px;
+                  --radix-navigation-menu-viewport-height: 0px;
+                  opacity: 0;
+                  visibility: hidden;
+                "
+              >
+                <div
+                  id="radix-:r0:-content-radix-:r4:"
+                  aria-labelledby="radix-:r0:-trigger-radix-:r4:"
+                  data-orientation="horizontal"
+                  dir="ltr"
+                >
+                  <div
+                    class="absolute left-1/2 w-max max-w-[min(1000px,90vw)] -translate-x-1/2 pt-2"
+                  >
+                    <ul
+                      class="w-full overflow-hidden rounded-2xl border px-4 py-4 shadow-sm border-black/10 bg-white"
+                      style="opacity: 1; transform: none"
+                    >
+                      <li
+                        class="group relative normal-case transition-all [&amp;:first-child>a]:pt-3 [&amp;:last-child>a]:pb-3 hover:[>a]:text-primary-700"
+                      >
+                        <a
+                          target="_blank"
+                          class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hover:bg-[#f5f5f5]"
+                          data-radix-collection-item=""
+                          href="docs/introduction.html"
+                          ><div
+                            class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#DCDCDC]"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              fill="black"
+                              height="24"
+                              width="24"
+                              class="size-6"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M3 6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6Zm14.25 6a.75.75 0 0 1-.22.53l-2.25 2.25a.75.75 0 1 1-1.06-1.06L15.44 12l-1.72-1.72a.75.75 0 1 1 1.06-1.06l2.25 2.25c.141.14.22.331.22.53Zm-10.28-.53a.75.75 0 0 0 0 1.06l2.25 2.25a.75.75 0 1 0 1.06-1.06L8.56 12l1.72-1.72a.75.75 0 1 0-1.06-1.06l-2.25 2.25Z"
+                                clip-rule="evenodd"
+                              ></path>
+                            </svg>
+                          </div>
+                          <div
+                            class="flex min-h-[48px] flex-col justify-center"
+                          >
+                            <div class="text-[15px] font-medium leading-[1]">
+                              API Documentation
+                            </div>
+                            <span
+                              class="mt-1 text-[15px] normal-case leading-[1.2] transition-all text-black/40"
+                              >Build your own integrations with our public
+                              API</span
+                            >
+                          </div></a
+                        >
+                      </li>
+                      <li
+                        class="group relative normal-case transition-all [&amp;:first-child>a]:pt-3 [&amp;:last-child>a]:pb-3 hover:[>a]:text-primary-700"
+                      >
+                        <a
+                          class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hover:bg-[#f5f5f5]"
+                          data-radix-collection-item=""
+                          href="docs/safety-predictor/overview.html"
+                          data-tabindex=""
+                          tabindex="-1"
+                        >
+                          <div
+                            class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#DCDCDC]"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              fill="black"
+                              height="24"
+                              width="24"
+                              class="size-6"
+                            >
+                              <path
+                                d="M11.644 1.59a.75.75 0 0 1 .712 0l9.75 5.25a.75.75 0 0 1 0 1.32l-9.75 5.25a.75.75 0 0 1-.712 0l-9.75-5.25a.75.75 0 0 1 0-1.32l9.75-5.25Z"
+                              ></path>
+                              <path
+                                d="m3.265 10.602 7.668 4.129a2.25 2.25 0 0 0 2.134 0l7.668-4.13 1.37.739a.75.75 0 0 1 0 1.32l-9.75 5.25a.75.75 0 0 1-.71 0l-9.75-5.25a.75.75 0 0 1 0-1.32l1.37-.738Z"
+                              ></path>
+                              <path
+                                d="m10.933 19.231-7.668-4.13-1.37.739a.75.75 0 0 0 0 1.32l9.75 5.25c.221.12.489.12.71 0l9.75-5.25a.75.75 0 0 0 0-1.32l-1.37-.738-7.668 4.13a2.25 2.25 0 0 1-2.134-.001Z"
+                              ></path>
+                            </svg>
+                          </div>
+                          <div
+                            class="flex min-h-[48px] flex-col justify-center"
+                          >
+                            <div class="text-[15px] font-medium leading-[1]">
+                              CDL Validator
+                            </div>
+                            <span
+                              class="mt-1 text-[15px] normal-case leading-[1.2] transition-all text-black/40"
+                              >Build your pixel-perfect booking experience with
+                              our Spotter API</span
+                            >
+                          </div>
+                        </a>
+                      </li>
+                      <li
+                        class="group relative normal-case transition-all [&amp;:first-child>a]:pt-3 [&amp;:last-child>a]:pb-3 hover:[>a]:text-primary-700"
+                      >
+                        <a
+                          target="_blank"
+                          class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hover:bg-[#f5f5f5]"
+                          data-radix-collection-item=""
+                          href="docs/safety-predictor/overview.html"
+                          data-tabindex=""
+                          tabindex="-1"
+                        >
+                          <div
+                            class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#DCDCDC]"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              fill="black"
+                              height="24"
+                              width="24"
+                              class="size-6"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M8.161 2.58a1.875 1.875 0 0 1 1.678 0l4.993 2.498c.106.052.23.052.336 0l3.869-1.935A1.875 1.875 0 0 1 21.75 4.82v12.485c0 .71-.401 1.36-1.037 1.677l-4.875 2.437a1.875 1.875 0 0 1-1.676 0l-4.994-2.497a.375.375 0 0 0-.336 0l-3.868 1.935A1.875 1.875 0 0 1 2.25 19.18V6.695c0-.71.401-1.36 1.036-1.677l4.875-2.437ZM9 6a.75.75 0 0 1 .75.75V15a.75.75 0 0 1-1.5 0V6.75A.75.75 0 0 1 9 6Zm6.75 3a.75.75 0 0 0-1.5 0v8.25a.75.75 0 0 0 1.5 0V9Z"
+                                clip-rule="evenodd"
+                              ></path>
+                            </svg>
+                          </div>
+                          <div
+                            class="flex min-h-[48px] flex-col justify-center"
+                          >
+                            <div class="text-[15px] font-medium leading-[1]">
+                              Safety Predictor
+                            </div>
+                            <span
+                              class="mt-1 text-[15px] normal-case leading-[1.2] transition-all text-black/40"
+                              >Build your own scheduling app with our starter
+                              kit</span
+                            >
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!--End Nav header-->
+            </div>
+          </nav>
+          <div class="flex items-center justify-center">
+            <a
+              class="mr-4 hidden lg:flex opacity-100 increase"
+              href="https://safetyapp.spotter.ai/login"
+              style="color: white"
+              >login
+            </a>
+            <div>
+              <a
+                class="px-3 py-2 font-medium border border-[transparent] bg-neutral-900 dark:bg-white h ease-in-out group relative hidden overflow-hidden whitespace-nowrap rounded-xl lg:flex items-center justify-center text-white before:pointer-events-none before:absolute increase"
+                style="
+                  background-color: #f6f8fa;
+                  width: 100px;
+                  height: 35px;
+                  color: #0f0f0f;
+                "
+                href="contact-sales.html"
+                ><span>sign up</span></a
+              >
+            </div>
+            <button
+              class="p-2 hover:cursor-pointer lg:hidden harmburger"
+              aria-label="Open menu"
+            >
+              <div class="relative h-4 w-4">
+                <span
+                  class="absolute left-0 top-0 h-[1.5px] w-4 transform transition-all duration-300 bg-black rotate-0"
+                ></span
+                ><span
+                  class="absolute left-0 top-[7px] h-[1.5px] w-4 transition-all duration-300 bg-black opacity-100"
+                ></span
+                ><span
+                  class="absolute left-0 top-[14px] h-[1.5px] w-4 transform transition-all duration-300 bg-black rotate-0"
+                ></span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-primary-50 fixed inset-0 z-40 h-0 w-full opacity-0 lg:!hidden top-[72px] pointer-events-none ham"
+      >
+        <ul
+          id="mobile-links"
+          class="font-cal text-standard border-primary-700 flex flex-col overflow-y-auto border-t-2 pb-[290px] visible"
+        >
+          <a
+            class="border-primary-700 align-center leading-standard flex border-b-2 border-dashed px-4 py-4 md:px-[34px]"
+            href="index.html"
+            >Home</a
+          ><a
+            class="border-primary-700 align-center leading-standard flex border-b-2 border-dashed px-4 py-4 md:px-[34px]"
+            href="disruptor.html"
+            >Disruptor</a
+          ><a
+            class="border-primary-700 align-center leading-standard flex border-b-2 border-dashed px-4 py-4 md:px-[34px]"
+            href="https://spotter.ai/lens"
+            >Lens</a
+          ><a
+            class="border-primary-700 align-center leading-standard flex border-b-2 border-dashed px-4 py-4 md:px-[34px]"
+            href="sentinel.html"
+            >Sentinel</a
+          ><a
+            class="border-primary-700 align-center leading-standard flex border-b-2 border-dashed px-4 py-4 md:px-[34px]"
+            href="scope.html"
+            >Scope</a
+          >
+          <a
+            class="border-primary-700 align-center leading-standard flex border-b-2 border-dashed px-4 py-4 md:px-[34px]"
+            href="docs/introduction.html"
+            >API Docs</a
+          >
+          <a
+            class="border-primary-700 align-center leading-standard flex border-b-2 border-dashed px-4 py-4 md:px-[34px]"
+            href="contact-us.html"
+            >Support</a
+          >
+        </ul>
+        <div
+          class="header_cta__BlqBL text-standard font-matter fixed bottom-0 mx-auto flex w-full flex-col items-center justify-center gap-4 bg-[transparent] px-4 py-6 md:pb-12"
+        >
+          <p class="">
+            Existing customer?
+            <a href="https://safetyapp.spotter.ai/login"
+              ><span class="font-bold">Sign In</span></a
+            >
+          </p>
+          <a
+            href="contact-sales.html"
+            class="px-3 py-2 font-medium relative border border-[transparent] dark:text-black bg-neutral-900 dark:bg-white hover:bg-neutral-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-neutral-900 hover:opacity-90 transition-all duration-150 ease-in-out flex !h-20 w-full max-w-lg items-center justify-center overflow-hidden rounded-xl text-center text-xl bg-gradient-to-b from-[#2c2c30] to-[#1d1d20] text-white before:pointer-events-none before:absolute before:inset-0 before:rounded-xl before:shadow-[0px_2px_0.4px_0px_rgba(255,_255,_255,_0.16)_inset]"
+            >Book Demo</a
+          >
+        </div>
+      </div>
+    </div>
+    <div style="border-bottom: 1px solid #6f7173; margin-top: -20px"></div>
+    <main class="text-primary-700 text-standard font-matter leading-normal">
+      <section class="mx-3 md:mx-0">
+        <div
+          class="mx-auto w-full relative flow-charts gap-8 overflow-clip rounded-xl px-1 py-6 md:px-1 !bg-transparent"
+        >
+          <div class="gap- flex flex-col pt-2.5">
+            <div class="relative w-full">
+              <div class="flex flex-col lg:grid lg:grid-cols-2 lg:items-center">
+                <div class="lg:col-span-1 lg:order-2 lg:pl-10">
+                  <img
+                    src="assets/images/homepage2.png"
+                    style="height: 700px; margin-top: 80px"
+                  />
+                </div>
+                <div
+                  class="flex flex-col pb-3.5 items-center text-center lg:items-start lg:text-left"
+                  style="margin-bottom: 30px"
+                >
+                  <div class="sc-krNlru gkdhVv">
+                    <div direction="vertical" class="sc-aXZVg ixizUJ dots">
+                      <div class="sc-gEvEer cwYMZJ"></div>
+                      <div class="sc-gEvEer bbTuuA"></div>
+                      <div class="sc-gEvEer gEZvHk"></div>
                     </div>
+                    <div class="sc-jaXxmE cvcdEi">
+                      Unleash the power <br />of Spotter
+                    </div>
+                  </div>
+
+                  <p
+                    class="max-w-md text-base lg:max-w-2xl lg:text-lg"
+                    style="padding-top: 20px; color: white; font-size: 20px"
+                  >
+                    Where insight drives action and efficiency fuels results —
+                    all in one platform.
+                  </p>
+                  <div class="margin" style="margin-top: 50px">
+           
+                    <a
+                      id="check"
+                      style="
+                        width: 150px;
+                        height: 50px;
+                        font-size: 16px !important;
+                        color: #0f0f0f;
+                      "
+                      class="Button-module--button--3b10c Button-module--primaryOutlined--c12e0 Button-module--medium--5a71a"
+                      aria-label=""
+                      href="contact-sales.html"
+                      ><span>Contact Sales</span></a
+                    >
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
+      <div class="calendar-grid">
         <section class="mx-3 md:mx-0 pad-top-bottom">
           <div
             class="mx-auto w-full relative max-w-[1200px] gap-8 overflow-clip rounded-xl !bg-transparent px-2 py-5 md:px-2 md:py-5"
@@ -365,8 +1115,8 @@
             >
               <div class="mb-6 lg:mb-0 lg:w-1/4">
                 <h1
-                  class="font-normal md:ml-2"
-                  style="font-size: 28px; color: white"
+                  class="font-normal md:ml-2 max-w-[180px]"
+                  style="font-size: 18px; color: white"
                 >
                   Trusted by 8000+ companies of all sizes
                 </h1>
@@ -375,7 +1125,7 @@
                 class="grid grid-cols-2 gap-6 md:grid-cols-5 lg:max-w-4xl lg:gap-10"
               >
                 <div class="mt-8 flex items-center justify-center lg:mt-0">
-                   <img
+                  <img
                     alt="Customer Logo"
                     loading="lazy"
                     width="239"
@@ -399,7 +1149,7 @@
                   />
                 </div>
                 <div class="mt-8 flex items-center justify-center lg:mt-0">
-                 <img
+                  <img
                     alt="Customer Logo"
                     loading="lazy"
                     width="239"
@@ -439,387 +1189,6 @@
             </div>
           </div>
         </section>
-        <section
-          class="mx-3 md:mx-0"
-          style="
-            background: linear-gradient(
-              to bottom,
-              #1c1c1c 0%,
-              #1c1c1c 40%,
-              #141414 60%,
-              #0f0f0f 100%
-            );
-            padding-top: 80px;
-          "
-        >
-          <div
-            class="mx-auto w-full relative flow-chart gap-8 overflow-clip rounded-xl px-1 py-6 md:px-1 !bg-transparent"
-          >
-            <h1 style="text-align: center; color: white; padding-bottom: 40px">
-              everything your fleet needs. one smart platform.
-            </h1>
-            <div class="row section-master__slot">
-              <div class="col">
-                <div
-                  class="tabs-pill-bar tabs animation animation--effect-2-scroll effect-on"
-                >
-                  <div class="cmp-tabs d-contents" data-cmp-is="tabs">
-                    <div class="row">
-                      <div class="col">
-                        <div class="tab-panel-group">
-                          <div>
-                            <div class="card-grid row">
-                              <div class="card-grid__cards col-lg-24">
-                                <div class="layout layout--cols-5">
-                                  <div class="layout__col">
-                                    <div class="card h-100 rounded-l">
-                                      <div class="card__content">
-                                        <div
-                                          class="block-feature d-flex align-items-start block-feature--2xs"
-                                        >
-                                          <div class="block-feature__badge">
-                                            <div class="badge">
-                                              <div
-                                                class="ocr-icon d-inline-flex"
-                                              >
-                                                <div
-                                                  class="ocr-img media__asset"
-                                                >
-                                                  <img
-                                                    src="assets/images/disruptor.jpg"
-                                                    style="
-                                                      width: 25px;
-                                                      height: 30px;
-                                                    "
-                                                  />
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div
-                                            class="block-feature__body d-flex flex-column align-items-start"
-                                          >
-                                            <div
-                                              style="text-align: center"
-                                              class="padding-20"
-                                            >
-                                              <p
-                                                class="text-md mb-1.5 font-semibold"
-                                                style="font-size: 22px"
-                                              >
-                                                disruptor
-                                              </p>
-                                            </div>
-                                            <div
-                                              class="text-content-subtle max-w-[360px] text-[#898989] text-[17px]"
-                                            >
-                                              a TMS visibility engine that
-                                              reveals your past, guides
-                                              decisions, and powers hiring.
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="block-slim">
-                                          <div
-                                            style="
-                                              display: flex;
-                                              align-items: center;
-                                            "
-                                          >
-                                            <a
-                                              href="disruptor.html"
-                                              style="width: 150px; background-color:#0f0f0f !important;"
-                                              class="Button-module--button--3b10c Button-module--primary--379ca Button-module--large--57ca4 HeroSection-module--button--95276"
-                                              aria-label="" 
-                                              ><span>learn more</span></a
-                                            >
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="layout__col">
-                                    <div class="card h-100 rounded-l">
-                                      <div class="card__content">
-                                        <div
-                                          class="block-feature d-flex align-items-start block-feature--2xs"
-                                        >
-                                          <div class="block-feature__badge">
-                                            <div class="badge">
-                                              <div
-                                                class="ocr-icon d-inline-flex"
-                                              >
-                                                <div
-                                                  class="ocr-img media__asset"
-                                                >
-                                                  <img
-                                                    src="assets/images/lens.jpg"
-                                                    style="
-                                                      width: 25px;
-                                                      height: 25px;
-                                                    "
-                                                  />
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div
-                                            class="block-feature__body d-flex flex-column align-items-start"
-                                          >
-                                            <div
-                                              style="text-align: center"
-                                              class="padding-20"
-                                            >
-                                              <p
-                                                class="text-md mb-1.5 font-semibold"
-                                                style="font-size: 22px"
-                                              >
-                                                lens
-                                              </p>
-                                            </div>
-                                            <div
-                                              class="text-content-subtle max-w-[360px] text-[#898989] text-[17px]"
-                                            >
-                                              explore trends, optimize routes,
-                                              and dispatch smarter in real time.
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="block-slim">
-                                          <div
-                                            style="
-                                              margin-right: auto;
-                                              margin-left: auto;
-                                              display: block;
-                                            "
-                                          >
-                                            <a
-                                              href="https://spotter.ai/lens"
-                                              style="width: 150px;  background-color:#0f0f0f !important;"
-                                              class="Button-module--button--3b10c Button-module--primary--379ca Button-module--large--57ca4 HeroSection-module--button--95276"
-                                              aria-label=""
-                                              ><span>learn more</span></a
-                                            >
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="layout__col">
-                                    <div class="card h-100 rounded-l">
-                                      <div class="card__content">
-                                        <div
-                                          class="block-feature d-flex align-items-start block-feature--2xs"
-                                        >
-                                          <div class="block-feature__badge">
-                                            <div class="badge">
-                                              <div
-                                                class="ocr-icon d-inline-flex"
-                                              >
-                                                <div
-                                                  class="ocr-img media__asset"
-                                                >
-                                                  <img
-                                                    src="assets/images/sentinel.jpg"
-                                                    style="
-                                                      width: 26px;
-                                                      height: 28px;
-                                                    "
-                                                  />
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div
-                                            class="block-feature__body d-flex flex-column align-items-start"
-                                          >
-                                            <div
-                                              style="text-align: center"
-                                              class="padding-20"
-                                            >
-                                              <div class="block-feature__title">
-                                                <p
-                                                  class="text-md mb-1.5 font-semibold"
-                                                  style="font-size: 22px"
-                                                >
-                                                  sentinel
-                                                </p>
-                                              </div>
-                                            </div>
-                                            <div
-                                              class="text-content-subtle max-w-[360px] text-[#898989] text-[17px]"
-                                            >
-                                              our AI safety platform prevents
-                                              incidents with predictive
-                                              analytics and real-time
-                                              monitoring.
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="block-slim">
-                                          <div
-                                            style="
-                                              margin-right: auto;
-                                              margin-left: auto;
-                                              display: block;
-                                            "
-                                          >
-                                            <a
-                                              href="sentinel.html"
-                                              style="width: 150px;  background-color:#0f0f0f !important;"
-                                              class="Button-module--button--3b10c Button-module--primary--379ca Button-module--large--57ca4 HeroSection-module--button--95276"
-                                              aria-label=""
-                                              ><span>learn more</span></a
-                                            >
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="layout__col">
-                                    <div class="card h-100 rounded-l">
-                                      <div class="card__content">
-                                        <div
-                                          class="block-feature d-flex align-items-start block-feature--2xs"
-                                        >
-                                          <div class="block-feature__badge">
-                                            <div class="badge">
-                                              <div
-                                                class="ocr-icon d-inline-flex"
-                                              >
-                                                <div
-                                                  class="ocr-img media__asset"
-                                                >
-                                                  <img
-                                                    src="assets/images/disruptor.jpg"
-                                                    style="
-                                                      width: 25px;
-                                                      height: 30px;
-                                                    "
-                                                  />
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div
-                                            class="block-feature__body d-flex flex-column align-items-start"
-                                          >
-                                            <div
-                                              style="text-align: center"
-                                              class="padding-20"
-                                            >
-                                              <p
-                                                class="text-md mb-1.5 font-semibold"
-                                                style="font-size: 22px"
-                                              >
-                                                scope
-                                              </p>
-                                            </div>
-                                            <div
-                                              class="text-content-subtle max-w-[360px] text-[#898989] text-[17px]"
-                                            >
-                                              a fully autonomous dispatcher
-                                              helping carriers grow with speed,
-                                              accuracy, and efficiency.
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="block-slim">
-                                          <div
-                                            style="
-                                              margin-right: auto;
-                                              margin-left: auto;
-                                              display: block;
-                                            "
-                                          >
-                                            <a
-                                              href="scope.html"
-                                              style="width: 150px;  background-color:#0f0f0f !important;"
-                                              class="Button-module--button--3b10c Button-module--primary--379ca Button-module--large--57ca4 HeroSection-module--button--95276"
-                                              aria-label=""
-                                              ><span>learn more</span></a
-                                            >
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="layout__col">
-                                    <div class="card h-100 rounded-l">
-                                      <div class="card__content">
-                                        <div
-                                          class="block-feature d-flex align-items-start block-feature--2xs"
-                                        >
-                                          <div class="block-feature__badge">
-                                            <div class="badge">
-                                              <div
-                                                class="ocr-icon d-inline-flex"
-                                              >
-                                                <div
-                                                  class="ocr-img media__asset"
-                                                >
-                                                  <img
-                                                    src="assets/images/disruptor.jpg"
-                                                    style="
-                                                      width: 25px;
-                                                      height: 30px;
-                                                    "
-                                                  />
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div
-                                            class="block-feature__body d-flex flex-column align-items-start"
-                                          >
-                                            <div
-                                              style="text-align: center"
-                                              class="padding-20"
-                                            >
-                                              <p
-                                                class="text-md mb-1.5 font-semibold"
-                                                style="font-size: 22px"
-                                              >
-                                                driver app
-                                              </p>
-                                            </div>
-                                            <div
-                                              class="text-content-subtle max-w-[360px] text-[#898989] text-[17px]"
-                                            >
-                                              AI technology that gets you hot
-                                              loads.
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="block-slim">
-                                          <div class="action d-contents">
-                                            <a
-                                              href="https://spotter.ai"
-                                              target="_blank"
-                                              style="width: 150px;  background-color:#0f0f0f !important;"
-                                              class="Button-module--button--3b10c Button-module--primary--379ca Button-module--large--57ca4 HeroSection-module--button--95276"
-                                              aria-label=""
-                                              ><span>learn more</span></a
-                                            >
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
         <section class="mx-3 md:mx-0">
           <div
             class="mx-auto w-full relative max-w-[1200px] gap-8 rounded-xl py-6 md:py-5 !bg-transparent overflow-clip px-0 md:px-0"
@@ -873,7 +1242,7 @@
                       text-wrap: balance;
                       color: white;
                     "
-                    >don’t take our word for it</span
+                    >Don’t take our word for it</span
                   >
                 </h1>
               </div>
@@ -1138,6 +1507,454 @@
           </div>
         </section>
       </div>
+      <section
+        class="mx-3 md:mx-0"
+        style="
+          background: linear-gradient(
+            to bottom,
+            #1c1c1c 0%,
+            #1c1c1c 40%,
+            #141414 60%,
+            #0f0f0f 100%
+          );
+          padding-top: 80px;
+        "
+      >
+        <div
+          class="mx-auto w-full relative flow-chart gap-8 overflow-clip rounded-xl px-1 py-6 md:px-1 !bg-transparent calendar-grid"
+        >
+          <h1 style="text-align: center; color: white; padding-bottom: 40px">
+            Everything your fleet needs. one smart platform.
+          </h1>
+          <div class="row section-master__slot">
+            <div class="col">
+              <div
+                class="tabs-pill-bar tabs animation animation--effect-2-scroll effect-on"
+              >
+                <div class="cmp-tabs d-contents" data-cmp-is="tabs">
+                  <div class="row">
+                    <div class="col">
+                      <div class="tab-panel-group">
+                        <div>
+                          <div class="card-grid row">
+                            <div class="card-grid__cards col-lg-24">
+                              <div class="layout layout--cols-3">
+                                <div class="layout__col">
+                                  <div
+                                    class="card h-100 rounded-l"
+                                    style="background-color: #0f0f0f"
+                                  >
+                                    <div class="card__content">
+                                      <div
+                                        class="block-feature d-flex align-items-start block-feature--2xs"
+                                      >
+                                        <div class="block-feature__badge">
+                                          <div
+                                            class="badge"
+                                            style="border: 2px solid #252526"
+                                          >
+                                            <div class="ocr-icon d-inline-flex">
+                                              <div class="ocr-img media__asset">
+                                                <img
+                                                  src="assets/background/disruptor.png"
+                                                  style="
+                                                    width: 25px;
+                                                    height: 30px;
+                                                  "
+                                                />
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div
+                                          class="block-feature__body d-flex flex-column align-items-start"
+                                        >
+                                          <div
+                                            style="text-align: center"
+                                            class="padding-20"
+                                          >
+                                            <p
+                                              class="text-md mb-1.5 font-semibold"
+                                              style="
+                                                font-size: 22px;
+                                                color: white;
+                                              "
+                                            >
+                                              Disruptor
+                                            </p>
+                                          </div>
+                                          <div
+                                            class="text-content-subtle max-w-[360px] text-[17px]"
+                                            style="color: white"
+                                          >
+                                            A TMS visibility engine that reveals
+                                            your past, guides decisions, and
+                                            powers hiring.
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="block-slim">
+                                        <div
+                                          style="
+                                            display: flex;
+                                            align-items: center;
+                                          "
+                                        >
+                                          <a
+                                            href="disruptor.html"
+                                            style="
+                                              width: 150px;
+                                              background-color: #252526 !important;
+                                              border-color: #6f7173;
+                                            "
+                                            class="Button-module--button--3b10c Button-module--primary--379ca Button-module--large--57ca4 HeroSection-module--button--95276"
+                                            aria-label=""
+                                            ><span>learn more</span></a
+                                          >
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="layout__col">
+                                  <div
+                                    class="card h-100 rounded-l"
+                                    style="background-color: #0f0f0f"
+                                  >
+                                    <div class="card__content">
+                                      <div
+                                        class="block-feature d-flex align-items-start block-feature--2xs"
+                                      >
+                                        <div class="block-feature__badge">
+                                          <div
+                                            class="badge"
+                                            style="border: 2px solid #252526"
+                                          >
+                                            <div class="ocr-icon d-inline-flex">
+                                              <div class="ocr-img media__asset">
+                                                <img
+                                                  src="assets/background/lens.png"
+                                                  style="
+                                                    width: 25px;
+                                                    height: 25px;
+                                                  "
+                                                />
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div
+                                          class="block-feature__body d-flex flex-column align-items-start"
+                                        >
+                                          <div
+                                            style="text-align: center"
+                                            class="padding-20"
+                                          >
+                                            <p
+                                              class="text-md mb-1.5 font-semibold"
+                                              style="
+                                                font-size: 22px;
+                                                color: white;
+                                              "
+                                            >
+                                              Lens
+                                            </p>
+                                          </div>
+                                          <div
+                                            class="text-content-subtle max-w-[360px] text-[17px]"
+                                            style="color: white"
+                                          >
+                                            Explore trends, optimize routes, and
+                                            dispatch smarter in real time.
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="block-slim">
+                                        <div
+                                          style="
+                                            margin-right: auto;
+                                            margin-left: auto;
+                                            display: block;
+                                          "
+                                        >
+                                          <a
+                                            href="https://spotter.ai/lens"
+                                            style="
+                                              width: 150px;
+                                              background-color: #252526 !important;
+                                              border-color: #6f7173;
+                                            "
+                                            class="Button-module--button--3b10c Button-module--primary--379ca Button-module--large--57ca4 HeroSection-module--button--95276"
+                                            aria-label=""
+                                            ><span>learn more</span></a
+                                          >
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="layout__col">
+                                  <div
+                                    class="card h-100 rounded-l"
+                                    style="background-color: #0f0f0f"
+                                  >
+                                    <div class="card__content">
+                                      <div
+                                        class="block-feature d-flex align-items-start block-feature--2xs"
+                                      >
+                                        <div class="block-feature__badge">
+                                          <div
+                                            class="badge"
+                                            style="border: 2px solid #252526"
+                                          >
+                                            <div class="ocr-icon d-inline-flex">
+                                              <div class="ocr-img media__asset">
+                                                <img
+                                                  src="assets/background/sentinel.png"
+                                                  style="
+                                                    width: 26px;
+                                                    height: 28px;
+                                                  "
+                                                />
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div
+                                          class="block-feature__body d-flex flex-column align-items-start"
+                                        >
+                                          <div
+                                            style="text-align: center"
+                                            class="padding-20"
+                                          >
+                                            <div class="block-feature__title">
+                                              <p
+                                                class="text-md mb-1.5 font-semibold"
+                                                style="
+                                                  font-size: 22px;
+                                                  color: white;
+                                                "
+                                              >
+                                                Sentinel
+                                              </p>
+                                            </div>
+                                          </div>
+                                          <div
+                                            class="text-content-subtle max-w-[360px] text-[17px]"
+                                            style="color: white"
+                                          >
+                                            Our AI safety platform prevents
+                                            incidents with predictive analytics
+                                            and real-time monitoring.
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="block-slim">
+                                        <div
+                                          style="
+                                            margin-right: auto;
+                                            margin-left: auto;
+                                            display: block;
+                                          "
+                                        >
+                                          <a
+                                            href="sentinel.html"
+                                            style="
+                                              width: 150px;
+                                              background-color: #252526 !important;
+                                              border-color: #6f7173;
+                                            "
+                                            class="Button-module--button--3b10c Button-module--primary--379ca Button-module--large--57ca4 HeroSection-module--button--95276"
+                                            aria-label=""
+                                            ><span>learn more</span></a
+                                          >
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                       <div class="row">
+                    <div class="col">
+                      <div class="tab-panel-group">
+                        <div>
+                          <div class="card-grid row">
+                            <div class="card-grid__cards col-lg-24">
+                              <div class="layout layout--cols-3">
+                                <div class="layout__col">
+                                  <div
+                                    class="card h-100 rounded-l"
+                                    style="background-color: #0f0f0f"
+                                  >
+                                    <div class="card__content">
+                                      <div
+                                        class="block-feature d-flex align-items-start block-feature--2xs"
+                                      >
+                                        <div class="block-feature__badge">
+                                          <div
+                                            class="badge"
+                                            style="border: 2px solid #252526"
+                                          >
+                                            <div class="ocr-icon d-inline-flex">
+                                              <div class="ocr-img media__asset">
+                                                <img
+                                                  src="assets/background/disruptor.png"
+                                                  style="
+                                                    width: 25px;
+                                                    height: 30px;
+                                                  "
+                                                />
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div
+                                          class="block-feature__body d-flex flex-column align-items-start"
+                                        >
+                                          <div
+                                            style="text-align: center"
+                                            class="padding-20"
+                                          >
+                                            <p
+                                              class="text-md mb-1.5 font-semibold"
+                                              style="
+                                                font-size: 22px;
+                                                color: white;
+                                              "
+                                            >
+                                               Scope
+                                            </p>
+                                          </div>
+                                          <div
+                                            class="text-content-subtle max-w-[360px] text-[17px]"
+                                            style="color: white"
+                                          >
+                                           A fully autonomous dispatcher
+                                              helping carriers grow with speed,
+                                              accuracy, and efficiency.
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="block-slim">
+                                        <div
+                                          style="
+                                            display: flex;
+                                            align-items: center;
+                                          "
+                                        >
+                                          <a
+                                            href="scope.html"
+                                            style="
+                                              width: 150px;
+                                              background-color: #252526 !important;
+                                              border-color: #6f7173;
+                                            "
+                                            class="Button-module--button--3b10c Button-module--primary--379ca Button-module--large--57ca4 HeroSection-module--button--95276"
+                                            aria-label=""
+                                            ><span>learn more</span></a
+                                          >
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="layout__col">
+                                  <div
+                                    class="card h-100 rounded-l"
+                                    style="background-color: #0f0f0f"
+                                  >
+                                    <div class="card__content">
+                                      <div
+                                        class="block-feature d-flex align-items-start block-feature--2xs"
+                                      >
+                                        <div class="block-feature__badge">
+                                          <div
+                                            class="badge"
+                                            style="border: 2px solid #252526"
+                                          >
+                                            <div class="ocr-icon d-inline-flex">
+                                              <div class="ocr-img media__asset">
+                                                <img
+                                                  src="assets/background/lens.png"
+                                                  style="
+                                                    width: 25px;
+                                                    height: 25px;
+                                                  "
+                                                />
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div
+                                          class="block-feature__body d-flex flex-column align-items-start"
+                                        >
+                                          <div
+                                            style="text-align: center"
+                                            class="padding-20"
+                                          >
+                                            <p
+                                              class="text-md mb-1.5 font-semibold"
+                                              style="
+                                                font-size: 22px;
+                                                color: white;
+                                              "
+                                            >
+                                               Driver app
+                                            </p>
+                                          </div>
+                                          <div
+                                            class="text-content-subtle max-w-[360px] text-[17px]"
+                                            style="color: white"
+                                          >
+                                             AI technology that gets you hot
+                                              loads.
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="block-slim">
+                                        <div
+                                          style="
+                                            margin-right: auto;
+                                            margin-left: auto;
+                                            display: block;
+                                          "
+                                        >
+                                          <a
+                                            href="https://spotter.ai"
+                                            style="
+                                              width: 150px;
+                                              background-color: #252526 !important;
+                                              border-color: #6f7173;
+                                            "
+                                            class="Button-module--button--3b10c Button-module--primary--379ca Button-module--large--57ca4 HeroSection-module--button--95276"
+                                            aria-label=""
+                                            ><span>learn more</span></a
+                                          >
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                           
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section class="mx-3 md:mx-0">
         <div
@@ -1177,7 +1994,7 @@
           </div>
         </div>
         <div>
-          <div class="sc-hYmls hwdWup" style="background-color: #0f0f0f">
+          <div class="sc-hYmls hwdWup " style="background-color: #0f0f0f; ">
             <div class="sc-eIcdZJ bTPBA-D">
               <div class="sc-JrDLc fEAUDx">
                 <div class="sc-bbSZdi TZola">
@@ -1284,22 +2101,20 @@
                 <div class="sc-bbSZdi bnqHyr">
                   <div class="sc-bvgPty dTwJMV">
                     <a
-                      href="https://apps.apple.com/us/app/spotter-ai/id1670506993"
+                      href="https://www.facebook.com/spotterai"
                       target="_blank"
                       rel="noreferrer"
-                      ><img
-                        src="https://spotter.ai/static/media/appstore.87ac9ac6b5c47965d095823611deef2a.svg"
-                        alt="appstore"
-                        class="sc-cyRcrZ liMzgt" /></a
+                      ><svg fill="#F6F8FA" width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="#F6F8FA"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 2.03998C6.5 2.03998 2 6.52998 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.84998C10.44 7.33998 11.93 5.95998 14.22 5.95998C15.31 5.95998 16.45 6.14998 16.45 6.14998V8.61998H15.19C13.95 8.61998 13.56 9.38998 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C15.9164 21.5878 18.0622 20.3855 19.6099 18.57C21.1576 16.7546 22.0054 14.4456 22 12.06C22 6.52998 17.5 2.03998 12 2.03998Z"></path> </g></svg></a
                     ><a
-                      href="https://play.google.com/store/apps/details?id=com.spotter.ai"
+                      href="https://www.linkedin.com/company/spotter-labs"
                       target="_blank"
                       rel="noreferrer"
-                      ><img
-                        src="https://spotter.ai/static/media/playstore.87037efe7ec3b3dcd86443be5ab0ef96.svg"
-                        alt="google"
-                        class="sc-cyRcrZ liMzgt"
-                    /></a>
+                      ><svg fill="#F6F8FA" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" width="30" height="30"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title></title> <g id="Linkedln"> <path d="M26.49,30H5.5A3.35,3.35,0,0,1,3,29a3.35,3.35,0,0,1-1-2.48V5.5A3.35,3.35,0,0,1,3,3,3.35,3.35,0,0,1,5.5,2h21A3.35,3.35,0,0,1,29,3,3.35,3.35,0,0,1,30,5.5v21A3.52,3.52,0,0,1,26.49,30ZM9.11,11.39a2.22,2.22,0,0,0,1.6-.58,1.83,1.83,0,0,0,.6-1.38A2.09,2.09,0,0,0,10.68,8a2.14,2.14,0,0,0-1.51-.55A2.3,2.3,0,0,0,7.57,8,1.87,1.87,0,0,0,7,9.43a1.88,1.88,0,0,0,.57,1.38A2.1,2.1,0,0,0,9.11,11.39ZM11,13H7.19V24.54H11Zm13.85,4.94a5.49,5.49,0,0,0-1.24-4,4.22,4.22,0,0,0-3.15-1.27,3.44,3.44,0,0,0-2.34.66A6,6,0,0,0,17,14.64V13H13.19V24.54H17V17.59a.83.83,0,0,1,.1-.43,2.73,2.73,0,0,1,.7-1,1.81,1.81,0,0,1,1.28-.44,1.59,1.59,0,0,1,1.49.75,3.68,3.68,0,0,1,.44,1.9v6.15h3.85ZM17,14.7a.05.05,0,0,1,.06-.06v.06Z"></path> </g> </g></svg></a>
+                      <a
+                      href="https://twitter.com/spotter_ai"
+                      target="_blank"
+                      rel="noreferrer"
+                      ><svg height="30" width="30" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#F6F8FA"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#F6F8FA;} </style> <g> <path class="st0" d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M260.926,217.391 c0.084,0.004,0.164,0.021,0.25,0.025c-0.875-3.752-1.328-7.664-1.328-11.682c0-28.307,22.951-51.258,51.262-51.258 c14.742,0,28.063,6.225,37.414,16.188c9.6-1.89,18.684-5.174,27.129-9.523c1.781-0.864,3.566-1.723,5.32-2.674 c-3.039,9.334-8.744,17.412-16.141,23.532c-2.004,1.576-4.062,3.098-6.326,4.344c0.154-0.018,0.304-0.052,0.457-0.071 c-0.15,0.093-0.275,0.22-0.428,0.312c8.402-1.005,16.459-3.051,24.111-5.942c1.715-0.592,3.428-1.191,5.127-1.852 c-6.842,10.159-15.453,19.095-25.375,26.259c0.098,2.197,0.148,4.406,0.148,6.631c0,67.736-51.558,145.842-145.844,145.842 c-28.947,0-55.891-8.484-78.576-23.028c4.01,0.473,8.092,0.715,12.229,0.715c19.136,0,37.014-5.269,52.383-14.34 c3.871-2.23,7.658-4.639,11.273-7.365c-0.098-0.002-0.187-0.026-0.285-0.028c0.094-0.073,0.196-0.136,0.289-0.209 c-19.422-0.358-36.184-11.539-44.574-27.747c-1.25-2.489-2.32-5.096-3.164-7.831c3.086,0.58,6.246,0.898,9.5,0.898 c3.391,0,6.666-0.436,9.871-1.063c1.197-0.168,2.406-0.308,3.586-0.502c-0.156-0.032-0.293-0.1-0.449-0.133 c0.162-0.042,0.336-0.056,0.496-0.1c-23.449-4.709-41.119-25.428-41.119-50.262c0-0.196,0.002-0.387,0.004-0.58l0.024-0.055 c5.521,3.064,11.693,5.092,18.23,5.94c1.609,0.269,3.221,0.516,4.832,0.657c-0.11-0.074-0.205-0.164-0.314-0.238 c0.152,0.006,0.297,0.036,0.447,0.041c-13.754-9.191-22.803-24.883-22.803-42.666c0-8.142,1.988-15.787,5.367-22.623 c0.539-1.028,1.018-2.078,1.637-3.074c22.711,27.822,55.516,46.971,92.801,52.15c4.16,0.605,8.332,1.144,12.553,1.388 C260.934,217.443,260.932,217.416,260.926,217.391z"></path> </g> </g></svg></a>
                   </div>
                 </div>
               </div>
@@ -1325,6 +2140,6 @@
         </div>
       </section>
     </main>
-    <script src="assets/js/main2.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

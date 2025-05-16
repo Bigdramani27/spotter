@@ -6660,11 +6660,7 @@ html[dir=rtl] .block-feature__title::before {
     --card-background-color: var(--theme-background-card-pressed)
 }
 
-.card:hover {
-    transform: translateY(-10px);
-     border: 3px solid #061830
-    
-}
+
 
 .card:focus {
     --card-box-shadow: var(--root-depth-4);
@@ -6682,7 +6678,7 @@ html[dir=rtl] .block-feature__title::before {
 .card .card__content {
     padding: var(--card-padding);
     justify-content: space-between;
-    height: 380px !important;
+    height: 350px !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -7612,7 +7608,7 @@ html[dir=rtl] .card--style-quote .block-feature__badge .ocr-icon .glyph-append-l
     width: var(--badge-width);
     height: var(--badge-height);
     background: linear-gradient(301deg,rgba(72,73,70,.02) 9.55%,hsla(80,1%,43%,.02) 67.28%),var(--white);
-    border: 1px solid var(--gray-2);
+    
     border-radius: 6px;
     box-shadow: 0 1px 2px 0 rgba(24,25,22,.4);
 }
