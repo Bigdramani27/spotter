@@ -1,164 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Contact Form</title>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Horizontal Carousel</title>
   <style>
-    #customLoader {
-      display: none;
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0, 0, 0, 0.5);
-      z-index: 9999;
-      align-items: center;
-      justify-content: center;
+    body {
+      background-color: #0f0f0f;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      color: white;
     }
 
-    #customLoader.active {
+    .container {
+    
+      margin-left:auto;
       display: flex;
+      gap: 20px;
     }
 
-    .loader-content {
-      background: white;
-      padding: 30px;
+
+
+    .carousel-container {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .carousel-track {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      gap: 20px;
+      padding-bottom: 10px;
+    }
+
+    .carousel-track::-webkit-scrollbar {
+      display: none;
+    }
+
+    .carousel-item {
+      flex: 0 0 auto;
+      width: 300px;
       border-radius: 10px;
-      text-align: center;
+      overflow: hidden;
     }
 
-    .loader-text {
-      font-size: 16px;
-      margin-bottom: 20px;
-    }
-
-    .spinner {
+    .carousel-item img {
+      width: 100%;
+      height: auto;
       display: block;
     }
 
-    .spinner-circle {
-      border: 4px solid #ccc;
-      border-top: 4px solid teal;
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      animation: spin 1s linear infinite;
-      margin: 0 auto;
-    }
-
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-
-    .form-container {
-      max-width: 600px;
-      margin: 40px auto;
-      padding: 20px;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      font-family: sans-serif;
-    }
-
-    .form-grid {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .book-group {
-      margin-bottom: 20px;
-    }
-
-    .book-field {
-      width: 100%;
-      padding: 10px;
-      font-size: 16px;
-      margin-top: 5px;
-    }
-
-    .submit-section {
-      text-align: center;
-    }
-
-    button {
-      padding: 12px 24px;
-      font-size: 16px;
-      background-color: teal;
-      color: white;
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.6);
       border: none;
-      border-radius: 5px;
+      color: white;
+      padding: 10px;
       cursor: pointer;
+      z-index: 10;
+      font-size: 20px;
+      border-radius: 50%;
     }
 
-    button:hover {
-      background-color: #006666;
+    .arrow.left {
+      left: 10px;
+    }
+
+    .arrow.right {
+      right: 10px;
     }
   </style>
 </head>
 <body>
+  <div class="container">
 
-  <form class="form-container" id="contact">
-    <div class="form-grid">       
-      <div class="book-group full-width">
-        <label>Work Email</label>
-        <input type="email" class="book-field" name="email" required>
+    <div class="carousel-container">
+      <button class="arrow left" onclick="scrollCarousel('left')">&#10094;</button>
+      <div class="carousel-track" id="carousel">
+        <div class="carousel-item"><img src="https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/b4ccc6c0-b86b-4e9c-04a9-2ea66fa48e00/f=auto,dpr=2,q=95,fit=scale-down,metadata=none" alt="1" /></div>
+   <div class="carousel-item"><img src="https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/b4ccc6c0-b86b-4e9c-04a9-2ea66fa48e00/f=auto,dpr=2,q=95,fit=scale-down,metadata=none" alt="1" /></div>
+   <div class="carousel-item"><img src="https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/b4ccc6c0-b86b-4e9c-04a9-2ea66fa48e00/f=auto,dpr=2,q=95,fit=scale-down,metadata=none" alt="1" /></div>
+   <div class="carousel-item"><img src="https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/b4ccc6c0-b86b-4e9c-04a9-2ea66fa48e00/f=auto,dpr=2,q=95,fit=scale-down,metadata=none" alt="1" /></div>
+   <div class="carousel-item"><img src="https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/b4ccc6c0-b86b-4e9c-04a9-2ea66fa48e00/f=auto,dpr=2,q=95,fit=scale-down,metadata=none" alt="1" /></div>
+   <div class="carousel-item"><img src="https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/b4ccc6c0-b86b-4e9c-04a9-2ea66fa48e00/f=auto,dpr=2,q=95,fit=scale-down,metadata=none" alt="1" /></div>
       </div>
-      
-      <div class="book-group full-width">
-        <label>Please describe your request</label>
-        <textarea class="book-field" name="message" required></textarea>
-      </div>
-    </div>
-
-    <div class="submit-section">
-      <button type="submit"><span>Submit</span></button>
-    </div>
-  </form>
-
-  <div id="customLoader">
-    <div class="loader-content">
-      <div class="loader-text">Sending Message...</div>
-      <div class="spinner">
-        <div class="spinner-circle"></div>
-      </div>
+      <button class="arrow right" onclick="scrollCarousel('right')">&#10095;</button>
     </div>
   </div>
 
   <script>
-    $(document).ready(function() {
-      $('#contact').submit(function(event) {
-        event.preventDefault();
+    function scrollCarousel(direction) {
+      const carousel = document.getElementById("carousel");
+      const scrollAmount = 320;
 
-        // Show loader
-        $('#customLoader').addClass('active');
-        $('.loader-text').text('Sending Message...');
-        $('.spinner').show();
-
-        $.ajax({
-          type: 'POST',
-          url: 'action/contact.php', // <-- update if path is different
-          dataType: 'json',
-          data: $(this).serialize(),
-          success: function(response) {
-            $('.loader-text').text(response.message);
-            $('.spinner').hide(); // hide spinner on response
-            setTimeout(() => {
-              $('#customLoader').removeClass('active');
-              $('#contact')[0].reset(); // optional: reset form
-            }, 3000);
-          },
-          error: function(xhr, status, error) {
-            $('.loader-text').text('Something went wrong. Please try again.');
-            $('.spinner').hide();
-            setTimeout(() => {
-              $('#customLoader').removeClass('active');
-            }, 3000);
-          }
-        });
-      });
-    });
+      if (direction === "left") {
+        carousel.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+      } else {
+        carousel.scrollBy({ left: scrollAmount, behavior: "smooth" });
+      }
+    }
   </script>
-
 </body>
 </html>

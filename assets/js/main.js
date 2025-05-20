@@ -221,3 +221,78 @@ hamburgerButton.addEventListener('click', () => {
 
 
 
+ const carousel = document.getElementById("carousel");
+  const container = document.querySelector(".carousel-container");
+  const itemWidth = 336;
+  const gap = 20;
+  const scrollAmount = itemWidth + gap;
+  const threshold = 10;
+
+  function getMaxScrollLeft() {
+    return carousel.scrollWidth - carousel.clientWidth;
+  }
+
+  function updatePadding(scrollLeft) {
+    const maxScrollLeft = getMaxScrollLeft();
+    const remainingScroll = maxScrollLeft - scrollLeft;
+
+    if (scrollLeft <= threshold) {
+      container.style.paddingLeft = "16vw";
+      container.style.paddingRight = "0";
+    } else if (remainingScroll <= scrollAmount + threshold) {
+      container.style.paddingLeft = "0";
+      container.style.paddingRight = "16vw";
+    } else {
+      container.style.paddingLeft = "0";
+      container.style.paddingRight = "0";
+    }
+  }
+
+  async function scrollCarousel(direction) {
+    const currentScroll = carousel.scrollLeft;
+    const maxScroll = getMaxScrollLeft();
+
+    let targetScroll;
+    if (direction === "left") {
+      targetScroll = currentScroll - scrollAmount;
+    } else {
+      targetScroll = currentScroll + scrollAmount;
+    }
+
+    // Clamp targetScroll within bounds
+    targetScroll = Math.max(0, Math.min(maxScroll, targetScroll));
+
+    // Decide padding in advance
+    if (targetScroll <= threshold) {
+      container.style.paddingLeft = "16vw";
+      container.style.paddingRight = "0";
+    } else if (maxScroll - targetScroll <= scrollAmount + threshold) {
+      container.style.paddingLeft = "0";
+      container.style.paddingRight = "16vw";
+    } else {
+      container.style.paddingLeft = "0";
+      container.style.paddingRight = "0";
+    }
+
+    // Wait for padding animation to be noticed before scrolling
+    await new Promise((resolve) => setTimeout(resolve, 150));
+
+    carousel.scrollTo({
+      left: targetScroll,
+      behavior: "smooth"
+    });
+  }
+
+  // Also update padding on manual scroll (with debounce)
+  function updatePaddingOnScroll() {
+    const scrollLeft = carousel.scrollLeft;
+    updatePadding(scrollLeft);
+  }
+
+  carousel.addEventListener("scroll", () => {
+    clearTimeout(carousel._scrollTimeout);
+    carousel._scrollTimeout = setTimeout(updatePaddingOnScroll, 50);
+  });
+
+  // Initial state
+  updatePaddingOnScroll();

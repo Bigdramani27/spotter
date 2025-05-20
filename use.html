@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horizontal Carousel</title>
+    <style>
+      body {
+        background-color: #0f0f0f;
+      margin: 0;
+        color: white;
+      }
+
+      .carousel-container {
+        position: relative;
+        overflow: hidden;
+        width: 100vw;
+        padding-left: 20vw;
+        box-sizing: border-box;
+         transition: padding 0.35s ease;
+      }
+
+      .carousel-track {
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        gap: 20px;
+        padding-bottom: 10px;
+      }
+
+      .carousel-track::-webkit-scrollbar {
+        display: none;
+      }
+
+      .carousel-item {
+        position: relative;
+        flex: 0 0 auto;
+        width: 336px;
+        height: 469px;
+        border-radius: 30px;
+        overflow: hidden;
+        background-color: #141516;
+        color: white;
+      }
+
+      .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .carousel-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+        box-sizing: border-box;
+      }
+
+      .carousel-left {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .carousel-right {
+        display: flex;
+        align-items: center;
+      }
+      .IconButton_root__vP_d_ {
+        width: 40px;
+      }
+
+      .Button_shape-circle__yYFxC {
+        --button-corner-radius: 999px;
+      }
+
+      .Button_variant-secondary__Y2SNH {
+        --kbd-bg: hsla(0, 0%, 100%, 0.15);
+        background: #28282c;
+        color: white;
+        border: 0.5px solid #3e3e44;
+      }
+
+      .Button_size-default__6r2_r {
+        --button-height: 40px;
+        --button-icon-size: 18px;
+        --button-font-size: 15px;
+        --button-corner-radius: 10px;
+        --button-padding: 0 16px;
+        --button-gap: 6px;
+        --kbd-offset: -6px;
+        --kbd-gap: 6px;
+      }
+
+      .Button_variant__1FJO9 {
+        height: var(--button-height);
+        gap: var(--button-gap);
+        padding: var(--button-padding);
+        border-radius: 999px;
+      }
+
+      .Button_root__Stmhv {
+        appearance: none;
+        cursor: pointer;
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
+        user-select: none;
+        max-width: 100%;
+        flex-shrink: 0;
+        margin: 0;
+        padding: 0;
+        border: none;
+        color: inherit;
+        font: inherit;
+        text-shadow: none;
+      }
+
+      .paddings {
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="carousel-container">
+      <div class="carousel-track" id="carousel">
+        <div class="carousel-item">
+          <img
+            src="https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/b4ccc6c0-b86b-4e9c-04a9-2ea66fa48e00/f=auto,dpr=2,q=95,fit=scale-down,metadata=none"
+            alt="1"
+          />
+          <div class="carousel-overlay paddings">
+            <div class="carousel-left">
+             <span style="color: #8a8f98; padding-bottom: 8px; font-size: 12px;">Customer Requests</span>
+             <span style="color: white; padding-bottom: 14px; line-height:1.5;">Customer Requests <br> what actually </span>
+            </div>
+            <div class="carousel-right">
+              <button
+                type="button"
+                aria-label="Next slide"
+                class="IconButton_root__vP_d_ Carousel_next__SrjtL Button_root__Stmhv Button_variant-secondary__Y2SNH Button_size-default__6r2_r Button_shape-circle__yYFxC Button_variant__1FJO9"
+              >
+                <svg
+                  style="--icon-color: #9c9da1"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="#9c9da1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.47 11.47a.75.75 0 1 0 1.06 1.06l4-4a.75.75 0 0 0 .007-1.054l-3.903-4a.75.75 0 1 0-1.073 1.048l3.385 3.47L6.47 11.47Z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+       <div class="carousel-item">
+          <img
+            src="https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/b4ccc6c0-b86b-4e9c-04a9-2ea66fa48e00/f=auto,dpr=2,q=95,fit=scale-down,metadata=none"
+            alt="1"
+          />
+          <div class="carousel-overlay paddings">
+            <div class="carousel-left">
+             <span style="color: #8a8f98; padding-bottom: 8px; font-size: 12px;">Customer Requests</span>
+             <span style="color: white; padding-bottom: 14px; line-height:1.5;">Customer Requests <br> what actually </span>
+            </div>
+            <div class="carousel-right">
+              <button
+                type="button"
+                aria-label="Next slide"
+                class="IconButton_root__vP_d_ Carousel_next__SrjtL Button_root__Stmhv Button_variant-secondary__Y2SNH Button_size-default__6r2_r Button_shape-circle__yYFxC Button_variant__1FJO9"
+              >
+                <svg
+                  style="--icon-color: #9c9da1"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="#9c9da1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.47 11.47a.75.75 0 1 0 1.06 1.06l4-4a.75.75 0 0 0 .007-1.054l-3.903-4a.75.75 0 1 0-1.073 1.048l3.385 3.47L6.47 11.47Z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+  <div class="carousel-item">
+          <img
+            src="https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/b4ccc6c0-b86b-4e9c-04a9-2ea66fa48e00/f=auto,dpr=2,q=95,fit=scale-down,metadata=none"
+            alt="1"
+          />
+          <div class="carousel-overlay paddings">
+            <div class="carousel-left">
+             <span style="color: #8a8f98; padding-bottom: 8px; font-size: 12px;">Customer Requests</span>
+             <span style="color: white; padding-bottom: 14px; line-height:1.5;">Customer Requests <br> what actually </span>
+            </div>
+            <div class="carousel-right">
+              <button
+                type="button"
+                aria-label="Next slide"
+                class="IconButton_root__vP_d_ Carousel_next__SrjtL Button_root__Stmhv Button_variant-secondary__Y2SNH Button_size-default__6r2_r Button_shape-circle__yYFxC Button_variant__1FJO9"
+              >
+                <svg
+                  style="--icon-color: #9c9da1"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="#9c9da1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.47 11.47a.75.75 0 1 0 1.06 1.06l4-4a.75.75 0 0 0 .007-1.054l-3.903-4a.75.75 0 1 0-1.073 1.048l3.385 3.47L6.47 11.47Z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+  <div class="carousel-item">
+          <img
+            src="https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/b4ccc6c0-b86b-4e9c-04a9-2ea66fa48e00/f=auto,dpr=2,q=95,fit=scale-down,metadata=none"
+            alt="1"
+          />
+          <div class="carousel-overlay paddings">
+            <div class="carousel-left">
+             <span style="color: #8a8f98; padding-bottom: 8px; font-size: 12px;">Customer Requests</span>
+             <span style="color: white; padding-bottom: 14px; line-height:1.5;">Customer Requests <br> what actually </span>
+            </div>
+            <div class="carousel-right">
+              <button
+                type="button"
+                aria-label="Next slide"
+                class="IconButton_root__vP_d_ Carousel_next__SrjtL Button_root__Stmhv Button_variant-secondary__Y2SNH Button_size-default__6r2_r Button_shape-circle__yYFxC Button_variant__1FJO9"
+              >
+                <svg
+                  style="--icon-color: #9c9da1"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="#9c9da1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.47 11.47a.75.75 0 1 0 1.06 1.06l4-4a.75.75 0 0 0 .007-1.054l-3.903-4a.75.75 0 1 0-1.073 1.048l3.385 3.47L6.47 11.47Z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+  <div class="carousel-item">
+          <img
+            src="https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/b4ccc6c0-b86b-4e9c-04a9-2ea66fa48e00/f=auto,dpr=2,q=95,fit=scale-down,metadata=none"
+            alt="1"
+          />
+          <div class="carousel-overlay paddings">
+            <div class="carousel-left">
+             <span style="color: #8a8f98; padding-bottom: 8px; font-size: 12px;">Customer Requests</span>
+             <span style="color: white; padding-bottom: 14px; line-height:1.5;">Customer Requests <br> what actually </span>
+            </div>
+            <div class="carousel-right">
+              <button
+                type="button"
+                aria-label="Next slide"
+                class="IconButton_root__vP_d_ Carousel_next__SrjtL Button_root__Stmhv Button_variant-secondary__Y2SNH Button_size-default__6r2_r Button_shape-circle__yYFxC Button_variant__1FJO9"
+              >
+                <svg
+                  style="--icon-color: #9c9da1"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="#9c9da1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.47 11.47a.75.75 0 1 0 1.06 1.06l4-4a.75.75 0 0 0 .007-1.054l-3.903-4a.75.75 0 1 0-1.073 1.048l3.385 3.47L6.47 11.47Z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 8px;
+        "
+      >
+        <button
+          onclick="scrollCarousel('left')"
+          aria-label="Previous slide"
+          class="IconButton_root__vP_d_ Carousel_previous__MGLsL Button_root__Stmhv Button_variant-secondary__Y2SNH Button_size-default__6r2_r Button_shape-circle__yYFxC Button_variant__1FJO9"
+        >
+          <svg
+            class=""
+            style="--icon-color: #9c9da1"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="#9c9da1"
+            role="img"
+            focusable="false"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.78 4.78a.75.75 0 0 0-1.06-1.06l-4 4a.75.75 0 0 0-.007 1.054l3.903 4a.75.75 0 0 0 1.073-1.048l-3.385-3.47L9.78 4.78Z"
+            ></path>
+          </svg></button
+        ><button
+          onclick="scrollCarousel('right')"
+          type="button"
+          aria-label="Next slide"
+          class="IconButton_root__vP_d_ Carousel_next__SrjtL Button_root__Stmhv Button_variant-secondary__Y2SNH Button_size-default__6r2_r Button_shape-circle__yYFxC Button_variant__1FJO9"
+        >
+          <svg
+            class=""
+            style="--icon-color: #9c9da1"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="#9c9da1"
+            role="img"
+            focusable="false"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6.47 11.47a.75.75 0 1 0 1.06 1.06l4-4a.75.75 0 0 0 .007-1.054l-3.903-4a.75.75 0 1 0-1.073 1.048l3.385 3.47L6.47 11.47Z"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+<script>
+const carousel = document.getElementById("carousel");
+  const container = document.querySelector(".carousel-container");
+  const itemWidth = 336;
+  const gap = 20;
+  const scrollAmount = itemWidth + gap;
+
+  let rightClicks = 0;
+  let leftClicks = 0;
+  let activePadding = "left"; // initial state
+
+  function applyPadding(left, right) {
+    container.style.paddingLeft = left;
+    container.style.paddingRight = right;
+  }
+
+  async function scrollCarousel(direction) {
+    const currentScroll = carousel.scrollLeft;
+    const maxScroll = carousel.scrollWidth - carousel.clientWidth;
+
+    if (direction === "right") {
+      rightClicks++;
+      leftClicks = 0;
+
+      if (activePadding === "left") {
+        applyPadding("0", "0");
+        activePadding = null;
+      } else if (rightClicks >= 2) {
+        applyPadding("0", "18vw");
+        activePadding = "right";
+      } else {
+        applyPadding("0", "0");
+        activePadding = null;
+      }
+
+      carousel.scrollTo({
+        left: Math.min(currentScroll + scrollAmount, maxScroll),
+        behavior: "smooth",
+      });
+
+    } else if (direction === "left") {
+      leftClicks++;
+      rightClicks = 0;
+
+      if (activePadding === "right") {
+        applyPadding("0", "0");
+        activePadding = null;
+      } else if (leftClicks >= 2) {
+        applyPadding("18vw", "0");
+        activePadding = "left";
+      } else {
+        applyPadding("0", "0");
+        activePadding = null;
+      }
+
+      carousel.scrollTo({
+        left: Math.max(currentScroll - scrollAmount, 0),
+        behavior: "smooth",
+      });
+    }
+  }
+
+  // Initial state
+  applyPadding("20vw", "0");
+</script>
+
+  </body>
+</html>
