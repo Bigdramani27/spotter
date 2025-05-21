@@ -4,23 +4,30 @@
   src: url(../fonts/spotter-bold/Aristotelica-Display-Thin-trial.ttf) format("ttf");
 }
 @font-face {
-  font-family: Matter;
+  font-family: Spotter Sans;
   src: url(../fonts/spotter-bold/Aristotelica-Display-Bold-trial.ttf) format("ttf");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: Matter;
+  font-family: Spotter Sans;
   src: url(../fonts/spotter-bold/Aristotelica-Display-Light-trial.ttf) format("ttf");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: Matter;
+  font-family: Spotter Sans;
   src: url(../fonts/spotter-bold/Aristotelica-Display-DemiBold-trial.ttf) format("ttf");
   font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Spotter Sans;
+  src: url(../fonts/spotter-bold/Aristotelica-Display-Light-trial.ttf) format("ttf");
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
@@ -46,7 +53,7 @@ html {
   -moz-tab-size: 4;
   -o-tab-size: 4;
   tab-size: 4;
-  font-family: 'Matter', 'Spotter Sans', sans-serif;
+  font-family:  'Spotter Sans', sans-serif;
   font-feature-settings: normal;
   font-variation-settings: normal;
 }
@@ -13044,3 +13051,4 @@ qLDmM .left {
   margin: 0px;
   font-style: italic;
 }
+

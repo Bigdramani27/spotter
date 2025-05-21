@@ -7,135 +7,135 @@ window.addEventListener("scroll", function () {
       stickyDiv.classList.add("fixed");
     }
   });
-  // const displayElement1 = document.querySelector(".display");
-  // const dialogElement1 = document.querySelector(".dialog");
+  const displayElement1 = document.querySelector(".display");
+  const dialogElement1 = document.querySelector(".dialog");
 
-  // let isHovered1 = false; 
+  let isHovered1 = false; 
 
-  // // Function to show dialog
-  // function showDialog1() {
-  //   isHovered1 = true;
-  //   dialogElement1.style.opacity = "1";
-  //   dialogElement1.style.visibility = "visible";
-  // }
+  // Function to show dialog
+  function showDialog1() {
+    isHovered1 = true;
+    dialogElement1.style.opacity = "1";
+    dialogElement1.style.visibility = "visible";
+  }
 
-  // // Function to hide dialog
-  // function hideDialog1() {
-  //   isHovered1 = false;
-  //   setTimeout(() => {
-  //     if (!isHovered1) {
-  //       // Only hide if still not hovered
-  //       dialogElement1.style.opacity = "0";
-  //       dialogElement1.style.visibility = "hidden";
-  //     }
-  //   }, 100); 
-  // }
+  // Function to hide dialog
+  function hideDialog1() {
+    isHovered1 = false;
+    setTimeout(() => {
+      if (!isHovered1) {
+        // Only hide if still not hovered
+        dialogElement1.style.opacity = "0";
+        dialogElement1.style.visibility = "hidden";
+      }
+    }, 100); 
+  }
 
-  // // When mouse enters display, show dialog
-  // displayElement1.addEventListener("mouseenter", showDialog1);
+  // When mouse enters display, show dialog
+  displayElement1.addEventListener("mouseenter", showDialog1);
 
-  // // When mouse enters dialog, keep it open
-  // dialogElement1.addEventListener("mouseenter", () => {
-  //   isHovered1 = true; 
-  // });
+  // When mouse enters dialog, keep it open
+  dialogElement1.addEventListener("mouseenter", () => {
+    isHovered1 = true; 
+  });
 
-  // // When mouse leaves both elements, hide dialog
-  // displayElement1.addEventListener("mouseleave", () => {
-  //   isHovered1 = false;
-  //   hideDialog1();
-  // });
+  // When mouse leaves both elements, hide dialog
+  displayElement1.addEventListener("mouseleave", () => {
+    isHovered1 = false;
+    hideDialog1();
+  });
 
-  // dialogElement1.addEventListener("mouseleave", () => {
-  //   isHovered1 = false;
-  //   hideDialog1();
-  // });
+  dialogElement1.addEventListener("mouseleave", () => {
+    isHovered1 = false;
+    hideDialog1();
+  });
 
-  // const displayElement2 = document.querySelector(".display2");
-  // const dialogElement2 = document.querySelector(".dialog2");
+  const displayElement2 = document.querySelector(".display2");
+  const dialogElement2 = document.querySelector(".dialog2");
 
-  // let isHovered2 = false; 
+  let isHovered2 = false; 
 
-  // // Function to show dialog
-  // function showDialog2() {
-  //   isHovered2 = true;
-  //   dialogElement2.style.opacity = "1";
-  //   dialogElement2.style.visibility = "visible";
-  // }
+  // Function to show dialog
+  function showDialog2() {
+    isHovered2 = true;
+    dialogElement2.style.opacity = "1";
+    dialogElement2.style.visibility = "visible";
+  }
 
-  // // Function to hide dialog
-  // function hideDialog2() {
-  //   isHovered2 = false;
-  //   setTimeout(() => {
-  //     if (!isHovered2) {
-  //       // Only hide if still not hovered
-  //       dialogElement2.style.opacity = "0";
-  //       dialogElement2.style.visibility = "hidden";
-  //     }
-  //   }, 100); 
-  // }
+  // Function to hide dialog
+  function hideDialog2() {
+    isHovered2 = false;
+    setTimeout(() => {
+      if (!isHovered2) {
+        // Only hide if still not hovered
+        dialogElement2.style.opacity = "0";
+        dialogElement2.style.visibility = "hidden";
+      }
+    }, 100); 
+  }
 
-  // // When mouse enters display, show dialog
-  // displayElement2.addEventListener("mouseenter", showDialog2);
+  // When mouse enters display, show dialog
+  displayElement2.addEventListener("mouseenter", showDialog2);
 
-  // // When mouse enters dialog, keep it open
-  // dialogElement2.addEventListener("mouseenter", () => {
-  //   isHovered2 = true; 
-  // });
+  // When mouse enters dialog, keep it open
+  dialogElement2.addEventListener("mouseenter", () => {
+    isHovered2 = true; 
+  });
 
-  // // When mouse leaves both elements, hide dialog
-  // displayElement2.addEventListener("mouseleave", () => {
-  //   isHovered2 = false;
-  //   hideDialog2();
-  // });
+  // When mouse leaves both elements, hide dialog
+  displayElement2.addEventListener("mouseleave", () => {
+    isHovered2 = false;
+    hideDialog2();
+  });
 
-  // dialogElement2.addEventListener("mouseleave", () => {
-  //   isHovered2 = false;
-  //   hideDialog2();
-  // });
+  dialogElement2.addEventListener("mouseleave", () => {
+    isHovered2 = false;
+    hideDialog2();
+  });
 
   
-  // const displayElement3 = document.querySelector(".display3");
-  // const dialogElement3 = document.querySelector(".dialog3");
+  const displayElement3 = document.querySelector(".display3");
+  const dialogElement3 = document.querySelector(".dialog3");
 
-  // let isHovered3 = false; 
+  let isHovered3 = false; 
 
-  // // Function to show dialog
-  // function showDialog3() {
-  //   isHovered3 = true;
-  //   dialogElement3.style.opacity = "1";
-  //   dialogElement3.style.visibility = "visible";
-  // }
+  // Function to show dialog
+  function showDialog3() {
+    isHovered3 = true;
+    dialogElement3.style.opacity = "1";
+    dialogElement3.style.visibility = "visible";
+  }
 
-  // // Function to hide dialog
-  // function hideDialog3() {
-  //   isHovered3 = false;
-  //   setTimeout(() => {
-  //     if (!isHovered3) {
-  //       // Only hide if still not hovered
-  //       dialogElement3.style.opacity = "0";
-  //       dialogElement3.style.visibility = "hidden";
-  //     }
-  //   }, 100); 
-  // }
+  // Function to hide dialog
+  function hideDialog3() {
+    isHovered3 = false;
+    setTimeout(() => {
+      if (!isHovered3) {
+        // Only hide if still not hovered
+        dialogElement3.style.opacity = "0";
+        dialogElement3.style.visibility = "hidden";
+      }
+    }, 100); 
+  }
 
-  // // When mouse enters display, show dialog
-  // displayElement3.addEventListener("mouseenter", showDialog3);
+  // When mouse enters display, show dialog
+  displayElement3.addEventListener("mouseenter", showDialog3);
 
-  // // When mouse enters dialog, keep it open
-  // dialogElement3.addEventListener("mouseenter", () => {
-  //   isHovered3 = true; 
-  // });
+  // When mouse enters dialog, keep it open
+  dialogElement3.addEventListener("mouseenter", () => {
+    isHovered3 = true; 
+  });
 
-  // // When mouse leaves both elements, hide dialog
-  // displayElement3.addEventListener("mouseleave", () => {
-  //   isHovered3 = false;
-  //   hideDialog3();
-  // });
+  // When mouse leaves both elements, hide dialog
+  displayElement3.addEventListener("mouseleave", () => {
+    isHovered3 = false;
+    hideDialog3();
+  });
 
-  // dialogElement3.addEventListener("mouseleave", () => {
-  //   isHovered3 = false;
-  //   hideDialog3();
-  // });
+  dialogElement3.addEventListener("mouseleave", () => {
+    isHovered3 = false;
+    hideDialog3();
+  });
 
   document.addEventListener("DOMContentLoaded", function () {
     const slides = document.querySelectorAll(".absolute.grid.h-full");
@@ -220,4 +220,12 @@ hamburgerButton.addEventListener('click', () => {
 });
 
 
+
+
+  function scrollCarousel(direction) {
+    const carousel = document.getElementById('carousel');
+    const itemWidth = 336 + 20; // item width + gap
+    const scrollAmount = direction === 'left' ? -itemWidth : itemWidth;
+    carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  }
 
