@@ -1,0 +1,1921 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotter- Disruptor</title>
+  <link as="font" crossorigin="anonymous" href="assets/fonts/matter/Matter-SemiBold.woff" rel="preload"
+    type="font/woff" />
+  <link as="font" crossorigin="anonymous" href="assets/fonts/matter/Matter-Regular.woff" rel="preload"
+    type="font/woff" />
+  <link as="font" crossorigin="anonymous" href="assets/fonts/spotter-bold/semiBold.woff2" rel="preload"
+    type="font/woff2" />
+  <link rel="preload" href="assets/fonts/matter/wolf1.woff2" as="font" type="font/woff2" />
+  <link rel="preload" href="assets/fonts/matter/wolf2.woff2" as="font" type="font/woff2" />
+  <link rel="preload" href="assets/css/main.css" as="style" />
+  <link rel="stylesheet" href="assets/css/main.css" data-n-g="" />
+  <link rel="preload" href="assets/css/header.css" as="style" />
+  <link rel="stylesheet" href="assets/css/header.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="apple-touch-icon" href="assets/favicon.ico" />
+  <link rel="icon" type="image/png" href="assets/favicon.ico" />
+  <link rel="icon" type="image/png" href="assets/favicon.ico" />
+  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --font-inter: "secondaryFont", "secondaryFont_Fallback";
+      --font-cal: "mainFont", "mainFont_Fallback";
+    }
+
+    .animate1 svg {
+      transform: translateY(0px) rotate(0deg);
+      transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+    }
+
+    .animate1:hover svg {
+      transform: translateY(0) rotate(360deg);
+    }
+
+    .animate1:hover svg {
+      transform: translateY(0) rotate(360deg);
+    }
+
+    .animate2 svg {
+      transform: translateY(0);
+      transition: transform 0.3s ease-out;
+    }
+
+    .animate2:hover svg {
+      animation: dropBounce 0.5s ease-out;
+    }
+
+    @keyframes dropBounce {
+      0% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(5px);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    .animate3 svg {
+      transform: translateY(0px) rotate(0deg);
+      transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+    }
+
+    .animate3:hover svg {
+      transform: translateY(0) rotate(360deg);
+    }
+
+    :root {
+      --white: white;
+      --slate-gray: #32313a;
+      --black: #000;
+      --royal-blue: #434fef;
+      --light-gray: #f2f2f8;
+      --0: 0px;
+      --pale-blue: #ebf1ff;
+      --magenta: #d24bb0;
+      --subheading-longer: -60px;
+      --bright-orange: #008080;
+      --lavender-blue: #d5d7fd;
+      --midnight-blue: #000328;
+      --emerald: #008080;
+      --crimson: #008080;
+      --cyan: #008080;
+      --royal-purple: #008080;
+      --golden-yellow: white;
+      --cool-gray: white;
+      --dusty-steel: #6e6e7c;
+      --lavender-gray: #c9c9d4;
+      --baby-blue: #d0defe;
+      --indigo: #2f3ab3;
+      --white-2: white;
+      --black-2: black;
+      --royal-navy: #13246e;
+      --silver-mist: #c4c4c4;
+      --soft-white: #f9f9f9;
+      --deep-blue: #060f37;
+      --ice-blue: #d0defe;
+      --max-width-500: 500px;
+      --hero-too-big: -60px
+    }
+
+    .blend {
+      display: flex
+    }
+
+    .mx-auto {
+      margin-left: auto;
+      margin-right: auto
+    }
+
+    .overflow-hidden {
+      overflow: hidden
+    }
+
+    .text-center {
+      text-align: center
+    }
+
+    .mb-108 {
+      margin-bottom: 108px
+    }
+
+    .text-2xl {
+      font-size: 32px;
+      line-height: 40px
+    }
+
+    .mb-12 {
+      margin-bottom: 12px;
+      font-weight: 600
+    }
+
+    .px-40 {
+      padding-left: 40px;
+      padding-right: 40px
+    }
+
+    .max-w-1200 {
+      max-width: 1200px
+    }
+
+    .pt-100 {
+      padding-top: 65px
+    }
+
+    .max-w-580 {
+      max-width: 580px
+    }
+
+    .pb-180 {
+      padding-bottom: 80px
+    }
+
+    .py-100 {
+      padding-top: 100px;
+      padding-bottom: 100px
+    }
+
+    .main-feature-card {
+      background-color: var(--white);
+      border-radius: 12px;
+      flex-flow: column;
+      align-items: center;
+      padding: 36px 20px;
+      display: flex;
+      position: relative;
+      box-shadow: 0 4px 20px #00000036
+    }
+
+    @media screen and (min-width: 768px) {
+      .main-feature-card {
+        width: 140px;
+        height: 130px
+      }
+    }
+
+    .main-feature-card__icon {
+      margin-bottom: 12px;
+      display: flex
+    }
+
+    .main-feature-card__heading {
+      text-align: center;
+      max-width: 100px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 15px;
+
+      line-height: 18px
+    }
+
+    .main-feature-cards {
+      justify-content: space-between;
+      display: flex;
+      position: relative
+    }
+
+    .max-w-1040 {
+      max-width: 1040px
+    }
+
+    .main-feature-cards-line {
+      z-index: -1;
+      background-color: #d9d9e2;
+      width: 100%;
+      height: 4px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%)
+    }
+
+    .main-feature-card__arrow {
+      background-color: var(--bright-orange);
+      opacity: 0;
+      border-radius: 100px;
+      justify-content: center;
+      align-items: center;
+      width: 32px;
+      height: 24px;
+      display: flex;
+      position: absolute;
+      bottom: -20px
+    }
+
+    .main-feature-card__node {
+      z-index: -1;
+      opacity: 0;
+      transition: all .2s;
+      display: flex;
+      position: absolute
+    }
+
+    .main-feature-card__node.orange-1 {
+      top: -48%;
+      right: -76%
+    }
+
+    .main-feature-card__node.orange-2 {
+      top: -72%;
+      right: 28px
+    }
+
+    .main-feature-card__node.orange-3 {
+      top: -38%;
+      left: -64px
+    }
+
+    .main-feature-card__node.orange-4 {
+      bottom: -40%;
+      left: -44%
+    }
+
+    .main-feature-card__node.orange-5 {
+      bottom: -80%
+    }
+
+    .main-feature-card__node.orange-6 {
+      bottom: -40%;
+      right: -72%
+    }
+
+    .main-feature-card__node.pink-1 {
+      top: -48%;
+      right: -60%
+    }
+
+    .main-feature-card__node.pink-2 {
+      top: -46%;
+      left: -50%
+    }
+
+    .main-feature-card__node.pink-3 {
+      bottom: -50%;
+      right: -32%
+    }
+
+    .main-feature-card__node.pink-4 {
+      bottom: -42%;
+      left: -50%
+    }
+
+    .main-feature-card__node.purple-1 {
+      top: -36%;
+      right: -46%
+    }
+
+    .main-feature-card__node.purple-2 {
+      top: -60%
+    }
+
+    .main-feature-card__node.purple-3 {
+      top: -30%;
+      left: -56%
+    }
+
+    .main-feature-card__node.purple-4 {
+      bottom: -50%;
+      left: -50%
+    }
+
+    .main-feature-card__node.purple-5 {
+      bottom: -60%;
+      right: -52%
+    }
+
+    .main-feature-card__node.cyan-1 {
+      top: -44%;
+      right: -40%
+    }
+
+    .main-feature-card__node.cyan-2 {
+      top: -36%;
+      left: -24%
+    }
+
+    .main-feature-card__node.cyan-3 {
+      bottom: -36%;
+      right: -46%
+    }
+
+    .main-feature-card__node.cyan-4 {
+      bottom: -60%
+    }
+
+    .main-feature-card__node.cyan-5 {
+      bottom: -30%;
+      left: -60%
+    }
+
+    .main-feature-card__node.emerald-1 {
+      top: -50%;
+      right: -36%
+    }
+
+    .main-feature-card__node.emerald-2 {
+      top: -32%;
+      left: -46%
+    }
+
+    .main-feature-card__node.emerald-3 {
+      bottom: -56%;
+      right: -40%
+    }
+
+    .main-feature-card__node.emerald-4 {
+      bottom: -38%;
+      left: -58%
+    }
+
+    .features-tab {
+      grid-column-gap: 16px;
+      grid-row-gap: 16px;
+      color: var(--royal-blue);
+      text-align: center;
+      cursor: pointer;
+      border: 1px solid #0000;
+      border-radius: 4px;
+      grid-template-rows: auto auto;
+      grid-template-columns: 1fr 1fr;
+      grid-auto-columns: 1fr;
+      padding: 12px 16px;
+      font-weight: 500;
+      transition: all .2s
+    }
+
+    .section-2 {
+      grid-column-gap: 40px;
+      grid-row-gap: 40px;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      display: flex
+    }
+
+
+
+    @media screen and (max-width:991px) {
+
+      .md-px-28 {
+        padding-left: 28px;
+        padding-right: 28px
+      }
+
+      .md-pt-50 {
+        padding-top: 50px
+      }
+
+      .md-pb-100 {
+        padding-bottom: 100px
+      }
+
+      .main-feature-cards {
+        grid-column-gap: 20px;
+        grid-row-gap: 20px
+      }
+
+      .md-mb-64 {
+        margin-bottom: 64px
+      }
+
+
+    }
+
+    @media screen and (max-width:767px) {
+
+      .sm-px-24 {
+        padding-left: 24px;
+        padding-right: 24px
+      }
+
+      .sm-max-w-400 {
+        max-width: 400px
+      }
+
+      .sm-mx-auto {
+        margin-left: auto;
+        margin-right: auto
+      }
+
+      .sm-pb-64 {
+        padding-bottom: 64px
+      }
+
+      .main-feature-card {
+        grid-column-gap: 12px;
+        grid-row-gap: 12px;
+        flex-flow: row;
+        padding: 20px
+      }
+
+      .main-feature-card__icon {
+        margin-bottom: 0
+      }
+
+      .main-feature-card__heading {
+        max-width: none;
+        margin-left: 0;
+        margin-right: 0
+      }
+
+      .main-feature-cards {
+        flex-flow: column;
+        max-width: 420px;
+        margin-left: auto;
+        margin-right: auto
+      }
+
+      .main-feature-cards-line {
+        width: 4px;
+        height: 100%;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%)
+      }
+
+      .features-tab {
+        padding: 10px 12px;
+        font-size: 13px;
+        line-height: 16px
+      }
+    }
+
+    @media screen and (max-width:479px) {
+
+      .xs-mt-6 {
+        margin-top: 6px
+      }
+
+      .xs-h-100 {
+        height: 100px
+      }
+
+      .xs-h-72 {
+        height: 72px
+      }
+
+    }
+
+    @media (max-width: 991px) {
+      .main-feature-cards {
+        margin-top: 0 !important;
+      }
+    }
+
+    @media (max-width: 1199px) {
+      .main-feature-cards {
+        margin-top: -64px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .main-feature-card {
+        & * {
+          transition: all 0.4s;
+        }
+
+        &::before {
+          left: 0;
+        }
+
+        &::after {
+          right: 0;
+        }
+
+        &::before,
+        &::after {
+          top: 50%;
+          content: '';
+          position: absolute;
+          height: 4px;
+          width: 0;
+          background: transparent;
+          transform: translateY(-50%);
+          opacity: 0;
+          z-index: -1;
+          transition: all 0.2s;
+        }
+
+        &:last-child::after,
+        &:first-child::before {
+          display: none;
+        }
+
+        &.is-active,
+        &:hover {
+          & .main-feature-card__arrow {
+            opacity: 100%;
+            bottom: -10px;
+          }
+
+          &::before,
+          &::after {
+            opacity: 100%;
+            width: 50%;
+          }
+
+          &::after {
+            right: -40%;
+          }
+
+          &::before {
+            left: -40%;
+          }
+
+          & .main-feature-card__node {
+            opacity: 100%;
+          }
+        }
+      }
+
+      .main-feature-card[data-color='orange'] {
+        &::after {
+          background-color: #898989
+        }
+      }
+
+      .main-feature-card[data-color='pink'] {
+        & .main-feature-card__arrow {
+          background-color: var(--crimson);
+        }
+
+        &::before {
+          background-color: #898989
+        }
+
+        &::after {
+          background-color: #898989
+        }
+      }
+
+      .main-feature-card[data-color='purple'] {
+        & .main-feature-card__arrow {
+          background-color: var(--royal-purple);
+        }
+
+        &::before {
+          background-color: #898989
+        }
+
+        &::after {
+          background-color: #898989
+        }
+      }
+
+      .main-feature-card[data-color='cyan'] {
+        & .main-feature-card__arrow {
+          background-color: var(--cyan);
+        }
+
+        &::before {
+          background-color: #898989
+        }
+
+        &::after {
+          background-color: #898989
+        }
+      }
+
+      .main-feature-card[data-color='emerald'] {
+        & .main-feature-card__arrow {
+          background-color: var(--emerald);
+        }
+
+        &::before {
+          background-color: #898989
+        }
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="h-24 calendar-grid !border-b-0 ![--grid-gap-size:0px]">
+    <div class="border-b-0 before:hidden after:hidden">
+      <div
+        class="w-full max-w-[1440px] px-4 md:px-[34px] fixed left-1/2 top-0 z-50 mx-auto mb-8 flex -translate-x-1/2 items-center justify-between py-5 lg:mt-2 lg:max-w-[min(1150px,calc(100vw-24px))] lg:rounded-2xl lg:py-0 before:shadow-fade before:absolute before:inset-0 before:z-[-1] before:bg-white before:opacity-0 before:transition-opacity before:duration-300 lg:before:rounded-2xl bg-primary-50/95 border-0 before:block before:border"
+        id="sticky-div">
+        <div class="flex cursor-pointer rtl:relative rtl:top-3">
+          <a href="index.html" class="dLVeol" href="/"><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 944.7 623.7" xml:space="preserve"
+              height="25">
+              <style type="text/css">
+                .st0 {
+                  fill: #008080 important;
+                }
+
+                .st1 {
+                  fill: #f84960 !important;
+                }
+
+                .st2 {
+                  fill: #bcddde !important;
+                }
+              </style>
+              <g id="dots_copy">
+                <circle class="st0" cx="150" cy="472.7" r="147.4"></circle>
+                <circle class="st1" cx="150" cy="150.8" r="147.4"></circle>
+                <circle class="st2" cx="472.3" cy="472.7" r="147.4"></circle>
+                <circle class="st2" cx="794.7" cy="472.7" r="147.4"></circle>
+              </g>
+            </svg><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px" y="0px" viewBox="0 0 2146.4 576" xml:space="preserve" color="white" class="logo" height="25">
+              <style type="text/css">
+                .st0 {
+                  fill: #008080 !important;
+                }
+              </style>
+              <g id="white_logo">
+                <path class="st0"
+                  d="M616.3,266c-5.5-41.1-24.3-75.5-55.4-102.9c-27.3-24-59.3-37.1-95.3-40.9c-18.1-1.9-36-0.5-53.7,3.7 c-45.7,10.7-81.1,35.9-106.2,75.5c-17.1,27.1-25,57.1-25.1,89c-0.1,83.3,0,166.7,0,250c0,1,0,2,0,3c0.3,3.5,0.9,7,2.5,10.2 c4.1,7.8,10.6,12.3,19.3,12.6c8.6,0.3,15.8-3,20.5-10.6c2.8-4.4,3.6-9.4,3.6-14.5c0-43.7,0-87.5,0-131.2v-4.4 c1.5,0.1,1.9,1,2.5,1.6c4.4,4.4,8.9,8.6,13.8,12.4c41.6,32.5,88.3,44.6,140.3,34.5c37-7.2,68.2-25.3,92.9-53.7 C609.5,361.7,623.2,316.7,616.3,266z M447.9,412.3c-68.3-0.3-122.7-56.5-122.7-122.9c0-66.3,53.3-123.8,123.6-123.4 c69.6,0,123.4,55.4,123.4,123.6C572.1,356.9,517.4,412.6,447.9,412.3z">
+                </path>
+                <path class="st0"
+                  d="M1906,279c-0.3-5.5-0.4-11.1-1.1-16.6c-3.5-28.8-12.6-55.5-29.8-79c-29.3-40.2-69.1-60.6-118.8-62 c-13.3-0.4-26.4,1.5-39.4,4.4c-27.3,6.1-51.3,18.7-71.8,37.6c-30.4,28.1-47,63.4-52.2,104.2c-2.7,21.4-1.2,42.5,3.7,63.4 c8.1,34.3,24.8,63.4,51.2,86.8c26.5,23.6,58,36,93.2,39.2c19.5,1.7,38.8,0,57.9-4.5c28.7-6.7,53.2-20.4,72.6-43 c6.4-7.5,8.4-15.9,5.3-25.3c-3-9.1-12.8-14.4-21.8-13c-6.9,1.1-12.5,4.5-17.2,9.5c-9.3,9.7-20.1,17-32.5,22.4 c-14.7,6.4-30.2,8.6-46.1,9c-10.9,0.3-21.7-0.5-32.3-3.3c-50.1-13-80.2-53.9-87.7-97.9c-0.8-4.9-0.8-4.3,3.7-4.3 c40.1,0,80.2,0,120.4,0c39.5,0,79,0,118.5,0c1.2,0,2.5,0,3.8,0c8.6-0.5,15.7-5.7,18.3-13.6C1905.4,288.6,1906.3,283.9,1906,279z  M1640.7,263.3c-0.3-2,0.4-3.9,0.8-5.6c6.8-26.8,20.1-49.7,42-66.9c18.5-14.6,39.6-22.7,63.2-24.3c16.7-1.1,33,0.6,48.5,7.2 c32,13.7,52.6,37.6,63.4,70.4c2,6.1,3.3,12.4,3.9,19.2H1640.7z">
+                </path>
+                <path class="st0"
+                  d="M981.2,253.1c-10-46.2-35.5-82-75.7-106.7c-38-23.3-79.4-30.1-123.3-21.5c-36.9,7.2-67.9,24.9-93.1,52.7 c-37,40.7-49.9,98-38.7,147.5c7.9,34.9,24.9,64.4,51.3,88.5c32.4,29.4,71,43.2,112.5,44.2c15.7-0.2,29.1-1.9,42.4-5.1 c42.9-10.5,76.7-34.1,100.8-70.8C983.3,342.4,991.2,299.2,981.2,253.1z M816.1,412.2c-70.3,0.3-123.7-56.8-123.7-122.9 c0.1-66.9,53.8-123.5,124.1-123.4c70,0.2,122.8,55.8,122.8,123.6C939.3,356.4,885.7,412.7,816.1,412.2z">
+                </path>
+                <path class="st0"
+                  d="M1026.5,174c0-44.9,0-89.7,0-134.6c0-9.1,3.2-16.5,11.1-21.5c12.9-8.1,30.5-0.9,33.9,13.4 c0.7,3.1,1.1,6.2,1.1,9.4c0,26.4,0,52.7,0,79c0,0.8,0,1.5,0,2.3c0,3.4-0.3,3.3,3.3,3.3c30,0,60.1,0,90.1,0c18.6,0,37.1-0.1,55.6,0 c5.7,0,11.3,1,16.1,4.7c7.2,5.5,9.5,13,8.1,21.7c-1,6.3-4.2,11.2-9.6,14.7c-3.4,2.2-7.2,3-11.1,3.4c-1.9,0.2-3.8,0.2-5.7,0.2 c-47.4,0-94.9,0-142.3,0c-5,0-4.5-0.6-4.5,4.4c0,40.5,0,80.9,0,121.4c0,13.9,0.8,27.8,4.1,41.3c4.1,17.1,10.9,33,22.8,46.3 c15.2,17.1,34.2,26.8,57,28.5c17,1.2,33.8,0.2,50.1-5.4c13.9-4.8,26.1-12.6,37.5-21.6c2.1-1.6,4.1-3.4,6.3-4.8 c9.1-5.8,21-4.2,27.9,3.7c3.9,4.4,5,9.8,4.4,15.6c-0.6,6.2-3.4,11.5-8,15.9c-20.7,20.1-44.9,33.5-73.4,38.9 c-18.1,3.4-36.2,4.9-54.6,2.4c-43.3-6-76.2-27.6-98-65.5c-9.2-16-14.5-33.4-18.1-51.5c-2.7-13.6-4-27.4-4-41.3 C1026.5,256.7,1026.5,215.3,1026.5,174L1026.5,174z">
+                </path>
+                <path class="st0"
+                  d="M1316.3,175.3c0-45.1,0-90.3,0-135.4c0-5.9,1.1-11.5,4.9-16.3c5.3-6.8,12.4-10,20.9-8.8 c10,1.4,16.8,7,19.3,17.1c0.7,2.7,0.9,5.5,0.9,8.3c0,27,0,54,0,80.9c0,4.3-0.6,4.1,4,4.1c48.2,0,96.4,0,144.6,0 c6.1,0,12.1,1.1,17.1,5c6.7,5.4,8.9,12.5,7.7,20.9c-0.9,6.5-4,11.5-9.5,15.1c-3.4,2.2-7.2,3-11.1,3.4c-2,0.2-4,0.2-6.1,0.2 c-47.1,0-94.1,0-141.2,0c-0.6,0-1.2,0-1.9,0c-3.6,0-3.6,0-3.6,3.4c0,0.4,0,0.8,0,1.1c0,40.3,0,80.7,0,121c0,13.1,0.8,26.2,3.6,39.1 c4,18.1,11,34.8,23.4,48.8c15.1,17,34,26.7,56.7,28.3c17.7,1.2,35.3,0.2,52.2-6.1c13.1-4.9,24.8-12.4,35.7-21c2-1.6,3.9-3.3,6-4.6 c9.1-5.8,20.9-4.4,27.9,3.4c3.9,4.3,5,9.6,4.5,15.1c-0.5,6.4-3.3,11.8-7.9,16.3c-20,19.2-43.1,32.6-70.4,38.4 c-19,4-38.2,5.7-57.5,3.1c-43.3-5.9-76.2-27.5-98.1-65.4c-9.2-15.9-14.5-33.2-18-51.1c-3-14.9-4.1-30-4.1-45.1 C1316.3,255,1316.3,215.1,1316.3,175.3z">
+                </path>
+                <path class="st0"
+                  d="M120.9,121.3c15,0,29.7,2,44,6.3c22.5,6.6,40.9,19.3,55.6,37.4c1.4,1.8,2.9,3.5,4.2,5.3 c5.3,7.2,6.8,15.1,3.7,23.6c-3.5,9.7-13.1,15-22.8,13.1c-7.4-1.5-13.2-5-17.8-11.1c-11.9-15.6-27.8-24.5-47-27.9 c-16.3-2.9-32.6-2.7-48.9,0.8c-6.8,1.5-13.3,4-19.4,7.4c-7.1,4-12.9,9.3-16.4,16.8c-5.8,12.5-4.8,31.1,8.6,43 c5.5,4.8,11.6,8.5,18.1,11.6c12.1,5.8,24.8,9.8,37.6,13.6c19,5.6,37.9,11.4,56.2,19c14.8,6.2,29,13.7,41.1,24.4 c21.7,19.2,29.2,43.5,24,71.7c-5.1,27.6-21.6,47.1-44.8,61.8c-13.7,8.6-28.9,13.7-44.7,16.8c-24.7,4.8-49.2,3.1-73.5-2.7 c-19.4-4.6-37.1-12.7-52.6-25.4c-9.1-7.4-16.4-16.5-22.5-26.3c-4.1-6.6-4.7-13.8-1.6-21c3.8-8.9,12.8-12.8,22.1-11.5 c6,0.8,11.4,3.2,16.1,7c1,0.8,1.9,1.7,2.6,2.7c10.9,16.5,26.8,26,45.5,31c14.7,3.9,29.8,4.7,45,3.9c14.7-0.8,28.2-5.1,40.6-13 c9.3-6,16.7-13.8,20.7-24.4c5.3-13.9,3-29.5-8.4-40.4c-5.5-5.3-11.9-9.4-18.6-12.8c-14.2-7.3-29.3-12.2-44.5-16.9 c-12.2-3.7-24.6-6.6-36.7-10.6c-13.8-4.6-27.2-10.1-39.4-18.1c-8.3-5.4-15.9-11.5-22.4-19.1c-13-15.4-18.6-33.4-17.8-53.2 c0.9-21.5,9.4-39.8,25.8-54c11.2-9.8,24-16.6,38.2-21C87.2,124,103.8,121.3,120.9,121.3z">
+                </path>
+                <path class="st0"
+                  d="M1941.9,355.9c0-22.1-0.3-44.1,0.1-66.2c0.5-25.1,5-49.7,14.8-72.9c17-40.1,46.7-66.5,87.7-80.4 c19.1-6.5,38.8-10,58.9-10.8c6-0.3,12.1-0.9,18.1,0c6.4,1.1,12.1,3.4,16.1,8.8c9.7,13.1,2.7,32.9-13.1,35.9 c-2.8,0.5-5.5,0.8-8.3,0.9c-17.1,0.4-34,1.9-50.3,7.4c-16.5,5.5-31.4,13.6-44,25.8c-14.3,13.9-23.2,30.9-28.6,49.9 c-4.1,14.4-5.5,29.2-5.5,44.1c-0.1,43,0,86,0,129c0,6-1.3,11.7-5,16.7c-8.8,11.7-27.1,11.1-35.9-0.1c-3.8-4.8-5.1-10.3-5.1-16.2 c0-24,0-47.9,0-71.9C1941.9,355.9,1941.9,355.9,1941.9,355.9z">
+                </path>
+              </g>
+            </svg></a>
+        </div>
+        <nav aria-label="Main" data-orientation="horizontal" dir="ltr" class="hidden lg:block">
+          <div class="font-matter rounded-4xl relative z-20 text-sm leading-[22px] text-black">
+            <div style="position: relative">
+              <ul data-orientation="horizontal" id="nav-items" class="flex" dir="ltr">
+                <li
+                  class="relative -mx-2 flex flex-col justify-center [&amp;:first-child]:ml-0 [&amp;:nth-child(5)]:mr-0">
+                  <button
+                    class="group flex items-start px-7 pt-0.5 antialiased mix-blend-difference header_blend-layer__eFsy_ cursor-pointer transition-opacity hover:opacity-80 display"
+                    id="radix-:r0:-trigger-radix-:r1:">
+                    Solutions
+                    <div
+                      class="flex h-6 origin-center items-center justify-center transition-transform duration-200 group-hover:-scale-y-100">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-chevron-down stoke-2 ml-0.5 mt-px h-[18px] w-[18px]">
+                        <path d="m6 9 6 6 6-6"></path>
+                      </svg>
+                    </div>
+                  </button>
+                  <div></div>
+                </li>
+                <li
+                  class="relative -mx-2 flex flex-col justify-center [&amp;:first-child]:ml-0 [&amp;:nth-child(5)]:mr-0">
+                  <a class="flex items-start px-7 py-5 mix-blend-difference header_blend-layer__eFsy_ transition-opacity hover:opacity-80"
+                    href="coming-soon.html">Enterprise</a>
+                  <div></div>
+                </li>
+                <li
+                  class="relative -mx-2 flex flex-col justify-center [&amp;:first-child]:ml-0 [&amp;:nth-child(5)]:mr-0">
+                  <button
+                    class="group flex items-start px-7 pt-0.5 antialiased mix-blend-difference header_blend-layer__eFsy_ cursor-pointer transition-opacity hover:opacity-80 display3"
+                    id="radix-:r0:-trigger-radix-:r3:">
+                    Resources
+                    <div
+                      class="flex h-6 origin-center items-center justify-center transition-transform duration-200 group-hover:-scale-y-100">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-chevron-down stoke-2 ml-0.5 mt-px h-[18px] w-[18px]">
+                        <path d="m6 9 6 6 6-6"></path>
+                      </svg>
+                    </div>
+                  </button>
+                  <div></div>
+                </li>
+                <li
+                  class="relative -mx-2 flex flex-col justify-center [&amp;:first-child]:ml-0 [&amp;:nth-child(5)]:mr-0">
+                  <button
+                    class="group flex items-start px-7 pt-0.5 antialiased mix-blend-difference header_blend-layer__eFsy_ cursor-pointer transition-opacity hover:opacity-80 display2"
+                    id="radix-:r0:-trigger-radix-:r3:">
+                    Useful Links
+                    <div
+                      class="flex h-6 origin-center items-center justify-center transition-transform duration-200 group-hover:-scale-y-100">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-chevron-down stoke-2 ml-0.5 mt-px h-[18px] w-[18px]">
+                        <path d="m6 9 6 6 6-6"></path>
+                      </svg>
+                    </div>
+                  </button>
+                  <div></div>
+                </li>
+
+                <li id="nav-pointer" class="rounded-4xl absolute -z-10 opacity-0"></li>
+              </ul>
+            </div>
+            <!--Show Nav headers-->
+            <!--first header-->
+            <div class="w-full dialog" style="
+                    --radix-navigation-menu-viewport-width: 575px;
+                    --radix-navigation-menu-viewport-height: 0px;
+                  ">
+              <div id="radix-:r0:-content-radix-:r1:" aria-labelledby="radix-:r0:-trigger-radix-:r1:"
+                data-orientation="horizontal" dir="ltr">
+                <div class="absolute left-1/2 w-max max-w-[min(1000px,90vw)] -translate-x-1/2 pt-2">
+                  <ul
+                    class="w-full overflow-hidden rounded-2xl border px-4 py-4 shadow-sm border-black/10 bg-white grid grid-flow-col grid-rows-4 gap-0 pt-10"
+                    style="opacity: 1; transform: none">
+                    <li
+                      class="group relative normal-case transition-all [&amp;:first-child>a]:pt-3 [&amp;:last-child>a]:pb-3 hover:[>a]:text-primary-700">
+                      <span class="absolute -top-5 left-4 text-sm font-normal opacity-80">By team
+                        size</span><a
+                        class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hover:bg-[#f5f5f5]"
+                        data-radix-collection-item="" href="disruptor.html">
+                        <div
+                          class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#DCDCDC]">
+                          <img class="size-6" src="assets/icons/ship.png" width="24" height="24" />
+                        </div>
+                        <div class="flex min-h-[48px] flex-col justify-center">
+                          <div class="text-[15px] font-medium leading-[1]">
+                            For Carriers
+                          </div>
+                          <span
+                            class="mt-1 text-[15px] normal-case leading-[1.2] transition-all text-black/40">Streamlining
+                            logistics, empowering every
+                            carrier</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="group relative normal-case transition-all [&amp;:first-child>a]:pt-3 [&amp;:last-child>a]:pb-3 hover:[>a]:text-primary-700">
+                      <a class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hover:bg-[#f5f5f5]"
+                        data-radix-collection-item="" href="scope.html">
+                        <div
+                          class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#DCDCDC]">
+                          <img class="size-6" src="assets/icons/owner.png" width="24" height="24" />
+                        </div>
+                        <div class="flex min-h-[48px] flex-col justify-center">
+                          <div class="text-[15px] font-medium leading-[1]">
+                            For Owner Operators
+                          </div>
+                          <span class="mt-1 text-[15px] normal-case leading-[1.2] transition-all text-black/40">Drive
+                            your business, fuel your success.</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="group relative normal-case transition-all [&amp;:first-child>a]:pt-3 [&amp;:last-child>a]:pb-3 hover:[>a]:text-primary-700">
+                      <a class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hover:bg-[#f5f5f5]"
+                        data-radix-collection-item="" href="https://spotter.ai/lens" target="_blank">
+                        <div
+                          class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#DCDCDC]">
+                          <img class="size-6" src="assets/icons/broker.png" width="24" height="24" />
+                        </div>
+                        <div class="flex min-h-[48px] flex-col justify-center">
+                          <div class="text-[15px] font-medium leading-[1]">
+                            For Brokers
+                          </div>
+                          <span
+                            class="mt-1 text-[15px] normal-case leading-[1.2] transition-all text-black/40">Connecting
+                            opportunities, driving seamless
+                            transactions</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="group relative normal-case transition-all [&amp;:first-child>a]:pt-3 [&amp;:last-child>a]:pb-3 hover:[>a]:text-primary-700">
+                      <a class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hover:bg-[#f5f5f5]"
+                        data-radix-collection-item="" href="coming-soon.html">
+                        <div
+                          class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#DCDCDC]">
+                          <img class="size-6" src="assets/icons/dealership.png" width="24" height="24" />
+                        </div>
+                        <div class="flex min-h-[48px] flex-col justify-center">
+                          <div class="text-[15px] font-medium leading-[1]">
+                            For Dealerships
+                          </div>
+                          <span class="mt-1 text-[15px] normal-case leading-[1.2] transition-all text-black/40">Driving
+                            sales, delivering customer
+                            satisfaction.</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="group relative normal-case transition-all [&amp;:first-child>a]:pt-3 [&amp;:last-child>a]:pb-3 hover:[>a]:text-primary-700">
+                      <span class="absolute -top-5 left-4 text-sm font-normal opacity-80">By use
+                        case</span><a
+                        class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hover:bg-[#f5f5f5]"
+                        data-radix-collection-item="" href="scope.html">
+                        <div
+                          class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#DCDCDC]">
+                          <img class="size-6" src="assets/icons/owner.png" width="24" height="24" />
+                        </div>
+                        <div class="flex min-h-[48px] flex-col justify-center">
+                          <div class="text-[15px] font-medium leading-[1]">
+                            Dispatch
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="group relative normal-case transition-all [&amp;:first-child>a]:pt-3 [&amp;:last-child>a]:pb-3 hover:[>a]:text-primary-700">
+                      <a class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hover:bg-[#f5f5f5]"
+                        data-radix-collection-item="" href="https://spotter.ai/lens" target="_blank">
+                        <div
+                          class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#DCDCDC]">
+                          <img class="size-6" src="assets/icons/invoice.png" width="24" height="24" />
+                        </div>
+                        <div class="flex min-h-[48px] flex-col justify-center">
+                          <div class="text-[15px] font-medium leading-[1]">
+                            Quoting
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="group relative normal-case transition-all [&amp;:first-child>a]:pt-3 [&amp;:last-child>a]:pb-3 hover:[>a]:text-primary-700">
+                      <a class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hover:bg-[#f5f5f5]"
+                        data-radix-collection-item="" href="scope.html">
+                        <div
+                          class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#DCDCDC]">
+                          <img class="size-6" src="assets/icons/drivers.png" width="24" height="24" />
+                        </div>
+                        <div class="flex min-h-[48px] flex-col justify-center">
+                          <div class="text-[15px] font-medium leading-[1]">
+                            Drivers
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="group relative normal-case transition-all [&amp;:first-child>a]:pt-3 [&amp;:last-child>a]:pb-3 hover:[>a]:text-primary-700">
+                      <a class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hover:bg-[#f5f5f5]"
+                        data-radix-collection-item="" href="disruptor.html">
+                        <div
+                          class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#DCDCDC]">
+                          <img class="size-6" src="assets/icons/payroll.png" width="24" height="24" />
+                        </div>
+                        <div class="flex min-h-[48px] flex-col justify-center">
+                          <div class="text-[15px] font-medium leading-[1]">
+                            Payroll
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="group relative normal-case transition-all [&amp;:first-child>a]:pt-3 [&amp;:last-child>a]:pb-3 hover:[>a]:text-primary-700">
+                      <a class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hover:bg-[#f5f5f5]"
+                        data-radix-collection-item="" href="sentinel.html">
+                        <div
+                          class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#DCDCDC]">
+                          <img class="size-6" src="assets/icons/safety.png" width="24" height="24" />
+                        </div>
+                        <div class="flex min-h-[48px] flex-col justify-center">
+                          <div class="text-[15px] font-medium leading-[1]">
+                            Safety
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="group relative normal-case transition-all [&amp;:first-child>a]:pt-3 [&amp;:last-child>a]:pb-3 hover:[>a]:text-primary-700">
+                      <a class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hover:bg-[#f5f5f5]"
+                        data-radix-collection-item="" href="disruptor.html">
+                        <div
+                          class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#DCDCDC]">
+                          <img class="size-6" src="assets/icons/billing.png" width="24" height="24" />
+                        </div>
+                        <div class="flex min-h-[48px] flex-col justify-center">
+                          <div class="text-[15px] font-medium leading-[1]">
+                            Billing
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="group relative normal-case transition-all [&amp;:first-child>a]:pt-3 [&amp;:last-child>a]:pb-3 hover:[>a]:text-primary-700">
+                      <a class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hover:bg-[#f5f5f5]"
+                        data-radix-collection-item="" href="coming-soon.html">
+                        <div
+                          class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#DCDCDC]">
+                          <img class="size-6" src="assets/icons/lending.png" width="24" height="24" />
+                        </div>
+                        <div class="flex min-h-[48px] flex-col justify-center">
+                          <div class="text-[15px] font-medium leading-[1]">
+                            Lending
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="group relative normal-case transition-all [&amp;:first-child>a]:pt-3 [&amp;:last-child>a]:pb-3 hover:[>a]:text-primary-700">
+                      <a class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hover:bg-[#f5f5f5]"
+                        data-radix-collection-item="" href="disruptor.html">
+                        <div
+                          class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#DCDCDC]">
+                          <img class="size-6" src="assets/icons/accounting.png" width="24" height="24" />
+                        </div>
+                        <div class="flex min-h-[48px] flex-col justify-center">
+                          <div class="text-[15px] font-medium leading-[1]">
+                            Accounting
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!--End First header-->
+            <!--Show Second header-->
+            <div class="w-full dialog2" style="
+                    --radix-navigation-menu-viewport-width: 575px;
+                    --radix-navigation-menu-viewport-height: 0px;
+                  ">
+              <div id="radix-:r0:-content-radix-:r3:" aria-labelledby="radix-:r0:-trigger-radix-:r3:"
+                data-orientation="horizontal" dir="ltr">
+                <div class="absolute left-1/2 w-max max-w-[min(1000px,90vw)] -translate-x-1/2 pt-2">
+                  <ul
+                    class="w-full overflow-hidden rounded-2xl border px-4 py-4 shadow-sm border-black/10 bg-white grid grid-flow-col grid-rows-3 gap-0 pt-10"
+                    style="opacity: 1; transform: none">
+                    <li
+                      class="group relative normal-case transition-all [&amp;:first-child>a]:pt-3 [&amp;:last-child>a]:pb-3 hover:[>a]:text-primary-700">
+                      <span class="absolute -top-5 left-4 text-sm font-normal opacity-80">Useful
+                        Links</span><a
+                        class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hover:bg-[#f5f5f5]"
+                        data-radix-collection-item="" href="coming-soon.html">
+                        <div
+                          class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#DCDCDC]">
+                          <img class="size-6" src="assets/icons/blog.png" width="24" height="24" />
+                        </div>
+                        <div class="flex min-h-[48px] flex-col justify-center">
+                          <div class="text-[15px] font-medium leading-[1]">
+                            Blog
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="group relative normal-case transition-all [&amp;:first-child>a]:pt-3 [&amp;:last-child>a]:pb-3 hover:[>a]:text-primary-700">
+                      <a class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hover:bg-[#f5f5f5]"
+                        data-radix-collection-item="" href="coming-soon.html">
+                        <div
+                          class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#DCDCDC]">
+                          <img class="size-6" src="assets/icons/press.png" width="24" height="24" />
+                        </div>
+                        <div class="flex min-h-[48px] flex-col justify-center">
+                          <div class="text-[15px] font-medium leading-[1]">
+                            Press
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="group relative normal-case transition-all [&amp;:first-child>a]:pt-3 [&amp;:last-child>a]:pb-3 hover:[>a]:text-primary-700">
+                      <a class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hover:bg-[#f5f5f5]"
+                        data-radix-collection-item="" href="">
+                        <div
+                          class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#DCDCDC]">
+                          <img class="size-6" src="assets/icons/about.png" width="24" height="24" />
+                        </div>
+                        <div class="flex min-h-[48px] flex-col justify-center">
+                          <div class="text-[15px] font-medium leading-[1]">
+                            About Us
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="group relative normal-case transition-all [&amp;:first-child>a]:pt-3 [&amp;:last-child>a]:pb-3 hover:[>a]:text-primary-700">
+                      <a class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hover:bg-[#f5f5f5]"
+                        data-radix-collection-item="" href="https://spotter.na.teamtailor.com/" target="_blank">
+                        <div
+                          class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#DCDCDC]">
+                          <img class="size-6" src="assets/icons/career.png" width="24" height="24" />
+                        </div>
+                        <div class="flex min-h-[48px] flex-col justify-center">
+                          <div class="text-[15px] font-medium leading-[1]">
+                            Careers
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="group relative normal-case transition-all [&amp;:first-child>a]:pt-3 [&amp;:last-child>a]:pb-3 hover:[>a]:text-primary-700">
+                      <a class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hover:bg-[#f5f5f5]"
+                        data-radix-collection-item="" href="contact-us.html">
+                        <div
+                          class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#DCDCDC]">
+                          <img class="size-6" src="assets/icons/support.png" width="24" height="24" />
+                        </div>
+                        <div class="flex min-h-[48px] flex-col justify-center">
+                          <div class="text-[15px] font-medium leading-[1]">
+                            Support
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!--End Second header-->
+            <!--third header-->
+            <div class="w-full dialog3"
+              style="--radix-navigation-menu-viewport-width: 680px; --radix-navigation-menu-viewport-height: 0px;">
+              <div id="radix-:r0:-content-radix-:r4:" aria-labelledby="radix-:r0:-trigger-radix-:r4:"
+                data-orientation="horizontal" dir="ltr">
+                <div class="absolute left-1/2 w-max max-w-[min(1000px,90vw)] -translate-x-1/2 pt-2">
+                  <ul class="w-full overflow-hidden rounded-2xl border px-4 py-4 shadow-sm border-black/10 bg-white"
+                    style="opacity: 1; transform: none;">
+                    <li
+                      class="group relative normal-case transition-all [&amp;:first-child>a]:pt-3 [&amp;:last-child>a]:pb-3 hover:[>a]:text-primary-700">
+                      <a target="_blank"
+                        class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hover:bg-[#f5f5f5]"
+                        data-radix-collection-item="" href="docs/introduction.html">
+                        <div
+                          class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#DCDCDC]">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" height="24"
+                            width="24" class="size-6">
+                            <path fill-rule="evenodd"
+                              d="M3 6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6Zm14.25 6a.75.75 0 0 1-.22.53l-2.25 2.25a.75.75 0 1 1-1.06-1.06L15.44 12l-1.72-1.72a.75.75 0 1 1 1.06-1.06l2.25 2.25c.141.14.22.331.22.53Zm-10.28-.53a.75.75 0 0 0 0 1.06l2.25 2.25a.75.75 0 1 0 1.06-1.06L8.56 12l1.72-1.72a.75.75 0 1 0-1.06-1.06l-2.25 2.25Z"
+                              clip-rule="evenodd"></path>
+                          </svg></div>
+                        <div class="flex min-h-[48px] flex-col justify-center">
+                          <div class="text-[15px] font-medium leading-[1]">API Documentation</div><span
+                            class="mt-1 text-[15px] normal-case leading-[1.2] transition-all text-black/40">Build your
+                            own integrations with our public API</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="group relative normal-case transition-all [&amp;:first-child>a]:pt-3 [&amp;:last-child>a]:pb-3 hover:[>a]:text-primary-700">
+                      <a class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hover:bg-[#f5f5f5]"
+                        data-radix-collection-item="" href="docs/safety-predictor/overview.html" data-tabindex=""
+                        tabindex="-1">
+                        <div
+                          class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#DCDCDC]">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" height="24"
+                            width="24" class="size-6">
+                            <path
+                              d="M11.644 1.59a.75.75 0 0 1 .712 0l9.75 5.25a.75.75 0 0 1 0 1.32l-9.75 5.25a.75.75 0 0 1-.712 0l-9.75-5.25a.75.75 0 0 1 0-1.32l9.75-5.25Z">
+                            </path>
+                            <path
+                              d="m3.265 10.602 7.668 4.129a2.25 2.25 0 0 0 2.134 0l7.668-4.13 1.37.739a.75.75 0 0 1 0 1.32l-9.75 5.25a.75.75 0 0 1-.71 0l-9.75-5.25a.75.75 0 0 1 0-1.32l1.37-.738Z">
+                            </path>
+                            <path
+                              d="m10.933 19.231-7.668-4.13-1.37.739a.75.75 0 0 0 0 1.32l9.75 5.25c.221.12.489.12.71 0l9.75-5.25a.75.75 0 0 0 0-1.32l-1.37-.738-7.668 4.13a2.25 2.25 0 0 1-2.134-.001Z">
+                            </path>
+                          </svg>
+                        </div>
+                        <div class="flex min-h-[48px] flex-col justify-center">
+                          <div class="text-[15px] font-medium leading-[1]">CDL Validator</div><span
+                            class="mt-1 text-[15px] normal-case leading-[1.2] transition-all text-black/40">Build your
+                            pixel-perfect booking experience with our Spotter API</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li
+                      class="group relative normal-case transition-all [&amp;:first-child>a]:pt-3 [&amp;:last-child>a]:pb-3 hover:[>a]:text-primary-700">
+                      <a target="_blank"
+                        class="group/link m-0.5 flex items-start gap-4 rounded-2xl px-4 py-3 text-primary-700 hover:bg-[#f5f5f5]"
+                        data-radix-collection-item="" href="docs/safety-predictor/overview.html" data-tabindex=""
+                        tabindex="-1">
+                        <div
+                          class="shadow-fade relative grid h-12 w-12 shrink-0 place-items-center rounded-lg before:absolute before:inset-0 before:bg-[radial-gradient(var(--dot-color)_1.5px,transparent_1px)] before:bg-repeat before:transition-transform before:duration-300 before:[background-position:-6px_-6px] before:[background-size:30px_30px] group-hover/link:before:scale-90 group-focus-visible/link:before:scale-90 bg-neutral-100 text-gray-700 [--dot-color:#DCDCDC]">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" height="24"
+                            width="24" class="size-6">
+                            <path fill-rule="evenodd"
+                              d="M8.161 2.58a1.875 1.875 0 0 1 1.678 0l4.993 2.498c.106.052.23.052.336 0l3.869-1.935A1.875 1.875 0 0 1 21.75 4.82v12.485c0 .71-.401 1.36-1.037 1.677l-4.875 2.437a1.875 1.875 0 0 1-1.676 0l-4.994-2.497a.375.375 0 0 0-.336 0l-3.868 1.935A1.875 1.875 0 0 1 2.25 19.18V6.695c0-.71.401-1.36 1.036-1.677l4.875-2.437ZM9 6a.75.75 0 0 1 .75.75V15a.75.75 0 0 1-1.5 0V6.75A.75.75 0 0 1 9 6Zm6.75 3a.75.75 0 0 0-1.5 0v8.25a.75.75 0 0 0 1.5 0V9Z"
+                              clip-rule="evenodd"></path>
+                          </svg>
+                        </div>
+                        <div class="flex min-h-[48px] flex-col justify-center">
+                          <div class="text-[15px] font-medium leading-[1]">Safety Predictor</div><span
+                            class="mt-1 text-[15px] normal-case leading-[1.2] transition-all text-black/40">Build your
+                            own scheduling app with our starter kit</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!--End Nav header-->
+          </div>
+        </nav>
+        <div class="flex items-center justify-center">
+          <a class="mr-4 hidden text-sm font-medium lg:flex opacity-100" href="https://safetyapp.spotter.ai/login">Sign
+            in</a>
+          <div>
+            <a class="px-3 py-2 text-sm font-medium border border-[transparent] dark:text-black bg-neutral-900 dark:bg-white hover:bg-neutral-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-neutral-900 hover:opacity-90 transition-all duration-150 ease-in-out group relative hidden overflow-hidden whitespace-nowrap rounded-xl lg:flex items-center justify-center bg-gradient-to-b from-[#2c2c30] to-[#1d1d20] text-white before:shadow-[0px_2px_0.4px_0px_rgba(255,_255,_255,_0.16)_inset] before:pointer-events-none before:absolute before:inset-0 before:rounded-xl"
+              href="contact-sales.html"><span>Book Demo</span></a>
+          </div>
+          <button class="p-2 hover:cursor-pointer lg:hidden harmburger" aria-label="Open menu">
+            <div class="relative h-4 w-4">
+              <span
+                class="absolute left-0 top-0 h-[1.5px] w-4 transform transition-all duration-300 bg-black rotate-0"></span><span
+                class="absolute left-0 top-[7px] h-[1.5px] w-4 transition-all duration-300 bg-black opacity-100"></span><span
+                class="absolute left-0 top-[14px] h-[1.5px] w-4 transform transition-all duration-300 bg-black rotate-0"></span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="bg-primary-50 fixed inset-0 z-40 h-0 w-full opacity-0 lg:!hidden top-[72px] pointer-events-none ham">
+      <ul id="mobile-links"
+        class="font-cal text-standard border-primary-700 flex flex-col overflow-y-auto border-t-2 pb-[290px] visible">
+        <a class="border-primary-700 align-center leading-standard flex border-b-2 border-dashed px-4 py-4 md:px-[34px]"
+          href="index.html">Home</a><a
+          class="border-primary-700 align-center leading-standard flex border-b-2 border-dashed px-4 py-4 md:px-[34px]"
+          href="disruptor.html">Disruptor</a><a
+          class="border-primary-700 align-center leading-standard flex border-b-2 border-dashed px-4 py-4 md:px-[34px]"
+          href="https://spotter.ai/lens">Lens</a><a
+          class="border-primary-700 align-center leading-standard flex border-b-2 border-dashed px-4 py-4 md:px-[34px]"
+          href="sentinel.html">Sentinel</a><a
+          class="border-primary-700 align-center leading-standard flex border-b-2 border-dashed px-4 py-4 md:px-[34px]"
+          href="scope.html">Scope</a>
+        <a class="border-primary-700 align-center leading-standard flex border-b-2 border-dashed px-4 py-4 md:px-[34px]"
+          href="docs/introduction.html">API Docs</a>
+        <a class="border-primary-700 align-center leading-standard flex border-b-2 border-dashed px-4 py-4 md:px-[34px]"
+          href="contact-us.html">Support</a>
+      </ul>
+      <div
+        class="header_cta__BlqBL text-standard font-matter fixed bottom-0 mx-auto flex w-full flex-col items-center justify-center gap-4 bg-[transparent] px-4 py-6 md:pb-12">
+        <p class="">
+          Existing customer?
+          <a href="https://safetyapp.spotter.ai/login"><span class="font-bold">Sign In</span></a>
+        </p>
+        <a href="contact-sales.html"
+          class="px-3 py-2 font-medium relative border border-[transparent] dark:text-black bg-neutral-900 dark:bg-white hover:bg-neutral-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-neutral-900 hover:opacity-90 transition-all duration-150 ease-in-out flex !h-20 w-full max-w-lg items-center justify-center overflow-hidden rounded-xl text-center text-xl bg-gradient-to-b from-[#2c2c30] to-[#1d1d20] text-white before:pointer-events-none before:absolute before:inset-0 before:rounded-xl before:shadow-[0px_2px_0.4px_0px_rgba(255,_255,_255,_0.16)_inset]">Book
+          Demo</a>
+      </div>
+    </div>
+  </div>
+  <main class="text-primary-700 text-standard font-matter leading-normal">
+    <div class="calendar-grid">
+
+
+      <div class="md:py-10">
+        <div class="flex flex-col pb-3.5 items-center text-center">
+          <div>
+            <span class="my-3 flex items-center justify-center mb-4"><span
+                class="shadow-fade inline-flex items-center justify-start gap-1 rounded-full px-3.5 py-1 bg-white"><span
+                  class="flex h-4 w-auto items-center justify-center py-[1.33px] transition-transform duration-300 [&amp;_svg]:h-full [&amp;_svg]:w-auto [&amp;_svg]:shrink-0"><svg
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
+                    class="h-4 w-4">
+                    <path fill-rule="evenodd"
+                      d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z"
+                      clip-rule="evenodd"></path>
+                  </svg></span>
+                <p class="text-xs text-[#242424]">How it works</p>
+              </span></span>
+          </div>
+          <h1 class="font-cal !leading-xs md:!leading-h1 text-[32px] lg:text-5xl pb-3">
+            <span style="
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: inherit;
+    text-wrap: balance;
+  ">Transportation Management System (TMS)</span>
+          </h1>
+          <p class="max-w-md text-base text-[#898989] lg:max-w-2xl lg:text-lg">
+            Disruptor simplifies operations, cuts costs, and boosts productivity—everything carriers need in one place.
+          </p>
+        </div>
+        <section class="section pt-100 pb-180 md-pt-50 md-pb-100 overflow-hidden sm-pb-64">
+          <div class="px-40 md-px-28 sm-px-24">
+            <div class="max-w-1200 mx-auto">
+              <div class="max-w-1040 mx-auto">
+                <div class="main-feature-cards">
+                  <div class="main-feature-cards-line"></div>
+                  <a data-color="orange" class="main-feature-card w-inline-block">
+                    <div class="main-feature-card__icon w-embed">
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#008080" viewBox="0 0 256 256"><path d="M128,24h0A104,104,0,1,0,232,128,104.12,104.12,0,0,0,128,24Zm88,104a87.61,87.61,0,0,1-3.33,24H174.16a157.44,157.44,0,0,0,0-48h38.51A87.61,87.61,0,0,1,216,128ZM102,168H154a115.11,115.11,0,0,1-26,45A115.27,115.27,0,0,1,102,168Zm-3.9-16a140.84,140.84,0,0,1,0-48h59.88a140.84,140.84,0,0,1,0,48ZM40,128a87.61,87.61,0,0,1,3.33-24H81.84a157.44,157.44,0,0,0,0,48H43.33A87.61,87.61,0,0,1,40,128ZM154,88H102a115.11,115.11,0,0,1,26-45A115.27,115.27,0,0,1,154,88Zm52.33,0H170.71a135.28,135.28,0,0,0-22.3-45.6A88.29,88.29,0,0,1,206.37,88ZM107.59,42.4A135.28,135.28,0,0,0,85.29,88H49.63A88.29,88.29,0,0,1,107.59,42.4ZM49.63,168H85.29a135.28,135.28,0,0,0,22.3,45.6A88.29,88.29,0,0,1,49.63,168Zm98.78,45.6a135.28,135.28,0,0,0,22.3-45.6h35.66A88.29,88.29,0,0,1,148.41,213.6Z"></path></svg>
+                    </div>
+                    <div class="main-feature-card__heading max-w-md text-base text-[#898989] lg:max-w-2xl lg:text-lg">
+                      Multi-MC</div>
+                    <div class="main-feature-card__arrow">
+                      <div class="blend w-embed"><svg width="12" height="10" viewBox="0 0 12 10" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M11.7616 5.54576L7.37206 9.76576C6.60357 10.3722 5.62811 9.42251 6.33453 8.67909L9.38064 5.75242H0.777254C-0.259084 5.75242 -0.259085 4.25909 0.777254 4.25909H9.38064L6.33453 1.33242C5.61864 0.590319 6.63198 -0.397366 7.37206 0.252423L11.7616 4.47242C12.0518 4.76334 12.1059 5.19636 11.7616 5.54576Z"
+                            fill="white"></path>
+                        </svg></div>
+                    </div>
+                    <div class="main-feature-card__node orange-1 w-embed">
+                      <svg width="195" height="83" viewBox="0 0 195 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="28.5" y="0.5" width="165" height="38" rx="11.5" stroke="#C9C9D4"></rect>
+                        <text x="111" y="20.5" font-size="13" fill="#008080" text-anchor="middle"
+                          alignment-baseline="middle">
+                          Equipment Management
+                        </text>
+                        <path
+                          d="M52.9999 42.5V42.5C52.9999 52.0734 45.2391 59.8342 35.6657 59.8342H33.298C22.417 59.8342 13.5962 68.655 13.5962 79.536V80.6684"
+                          stroke="#D9D9E2" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"></path>
+                      </svg>
+                    </div>
+                    <div class="main-feature-card__node orange-3 w-embed"> <svg width="140" height="82"
+                        viewBox="0 0 140 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M45 42.5V56.2427C45 69.4975 55.7452 80.2427 69 80.2427L92.3055 80.2427"
+                          stroke="#D9D9E2" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" />
+                        <rect x="0.5" y="0.5" width="134" height="38" rx="11.5" stroke="#C9C9D4" />
+
+                        <text x="67.25" y="22" font-size="13" fill="#008080" text-anchor="middle"
+                          dominant-baseline="middle">
+                          Multi-Fleet Visibility
+                        </text>
+                      </svg></div>
+                    <div class="main-feature-card__node orange-4 w-embed">
+                      <svg width="154" height="100" viewBox="0 0 148 100" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M42 57.4998V25.4683C42 12.2134 52.7452 1.46826 66 1.46826H74.7753" stroke="#D9D9E2"
+                          stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"></path>
+                        <rect x="0.5" y="61.5" width="145" height="38" rx="11.5" stroke="#C9C9D4"></rect>
+                        <text x="72.75" y="82.5" font-size="13" fill="#008080" text-anchor="middle"
+                          dominant-baseline="middle">
+                          Split Access Controls
+                        </text>
+                      </svg>
+                    </div>
+                    <div class="main-feature-card__node orange-6 w-embed">
+                      <svg width="140" height="81" viewBox="0 0 140 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.5" y="42.5" width="116" height="38" rx="11.5" stroke="#C9C9D4"></rect>
+                        <text x="58.5" y="62.5" font-size="13" fill="#008080" text-anchor="middle"
+                          dominant-baseline="middle">
+                          API Integrations
+                        </text>
+                        <path d="M64.9998 38.4997V25.2632C64.9998 12.0083 54.2547 1.26318 40.9998 1.26318H8.59131"
+                          stroke="#D9D9E2" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"></path>
+                      </svg>
+                    </div>
+                  </a>
+                  <a data-color="pink" class="main-feature-card w-inline-block">
+                    <div class="main-feature-card__icon w-embed">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#008080" viewBox="0 0 256 256"><path d="M80,120h96a8,8,0,0,0,8-8V64a8,8,0,0,0-8-8H80a8,8,0,0,0-8,8v48A8,8,0,0,0,80,120Zm8-48h80v32H88ZM200,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V40A16,16,0,0,0,200,24Zm0,192H56V40H200ZM100,148a12,12,0,1,1-12-12A12,12,0,0,1,100,148Zm40,0a12,12,0,1,1-12-12A12,12,0,0,1,140,148Zm40,0a12,12,0,1,1-12-12A12,12,0,0,1,180,148Zm-80,40a12,12,0,1,1-12-12A12,12,0,0,1,100,188Zm40,0a12,12,0,1,1-12-12A12,12,0,0,1,140,188Zm40,0a12,12,0,1,1-12-12A12,12,0,0,1,180,188Z"></path></svg>
+                    </div>
+                    <div class="main-feature-card__heading max-w-md text-base text-[#898989] lg:max-w-2xl lg:text-lg">
+                      Dispatch & Billing</div>
+                    <div class="main-feature-card__arrow">
+                      <div class="blend w-embed"><svg width="12" height="10" viewBox="0 0 12 10" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M11.7616 5.54576L7.37206 9.76576C6.60357 10.3722 5.62811 9.42251 6.33453 8.67909L9.38064 5.75242H0.777254C-0.259084 5.75242 -0.259085 4.25909 0.777254 4.25909H9.38064L6.33453 1.33242C5.61864 0.590319 6.63198 -0.397366 7.37206 0.252423L11.7616 4.47242C12.0518 4.76334 12.1059 5.19636 11.7616 5.54576Z"
+                            fill="white"></path>
+                        </svg></div>
+                    </div>
+                    <div class="main-feature-card__node pink-1 w-embed">
+                      <svg width="152" height="68" viewBox="0 0 152 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="25.5" y="0.5" width="124" height="38" rx="11.5" stroke="#C9C9D4"></rect>
+                        <text x="87.5" y="21.5" font-size="13" fill="#008080" text-anchor="middle"
+                          dominant-baseline="middle">
+                          In-Transit Tracking
+                        </text>
+                        <path d="M21.5 19.5V19.5C10.5642 19.5 1.69904 28.3652 1.69904 39.301V66.2925" stroke="#D9D9E2"
+                          stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"></path>
+                      </svg>
+                    </div>
+                    <div class="main-feature-card__node pink-2 w-embed">
+                      <svg width="142" height="107"
+                      viewBox="0 0 142 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="0.5" y="0.5" width="132" height="38" rx="11.5" stroke="#C9C9D4"></rect>
+                      <text x="66.5" y="21.5" font-size="13" fill="#008080" 
+                      text-anchor="middle" dominant-baseline="middle">
+                      Document Uploads
+                      </text>
+                      <path d="M56 42.5V81.7054C56 94.9603 66.7452 105.705 80 105.705L98.9234 105.705"
+                        stroke="#D9D9E2" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"></path>
+                      </svg></div>
+                      <div class="main-feature-card__node orange-6 w-embed">
+                        <svg width="140" height="81" viewBox="0 0 140 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="0.5" y="42.5" width="116" height="38" rx="11.5" stroke="#C9C9D4"></rect>
+                          <text x="58.5" y="62.5" font-size="13" fill="#008080" text-anchor="middle"
+                            dominant-baseline="middle">
+                           Loads History
+                          </text>
+                          <path d="M64.9998 38.4997V25.2632C64.9998 12.0083 54.2547 1.26318 40.9998 1.26318H8.59131"
+                            stroke="#D9D9E2" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"></path>
+                        </svg>
+                      </div>
+                    <div class="main-feature-card__node pink-4 w-embed">
+                      <svg width="174" height="100" viewBox="0 0 178 100" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M42 57.4998V25.4683C42 12.2134 52.7452 1.46826 66 1.46826H74.7753" stroke="#D9D9E2"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"></path>
+                      <rect x="0.5" y="61.5" width="155" height="38" rx="11.5" stroke="#C9C9D4"></rect>
+                      <text x="77.75" y="82.5" font-size="13" fill="#008080" text-anchor="middle"
+                        dominant-baseline="middle">
+                        Delivery Confirmations
+                      </text>
+                    </svg>
+                      </div>
+                  </a>
+                  <a data-color="purple" class="main-feature-card w-inline-block">
+                    <div class="main-feature-card__icon w-embed">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#008080" viewBox="0 0 256 256"><path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z"></path></svg>
+                    </div>
+                    <div class="main-feature-card__heading max-w-md text-base text-[#898989] lg:max-w-2xl lg:text-lg">
+                      Equipment Tracking</div>
+                    <div class="main-feature-card__arrow">
+                      <div class="blend w-embed"><svg width="12" height="10" viewBox="0 0 12 10" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M11.7616 5.54576L7.37206 9.76576C6.60357 10.3722 5.62811 9.42251 6.33453 8.67909L9.38064 5.75242H0.777254C-0.259084 5.75242 -0.259085 4.25909 0.777254 4.25909H9.38064L6.33453 1.33242C5.61864 0.590319 6.63198 -0.397366 7.37206 0.252423L11.7616 4.47242C12.0518 4.76334 12.1059 5.19636 11.7616 5.54576Z"
+                            fill="white"></path>
+                        </svg></div>
+                    </div>
+                    <div class="main-feature-card__node orange-1 w-embed">
+                      <svg width="195" height="83" viewBox="0 0 195 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="28.5" y="0.5" width="165" height="38" rx="11.5" stroke="#C9C9D4"></rect>
+                        <text x="111.5" y="20.5" font-size="13" fill="#008080" text-anchor="middle"
+                          alignment-baseline="middle">
+                         Document Management
+                        </text>
+                        <path
+                          d="M52.9999 42.5V42.5C52.9999 52.0734 45.2391 59.8342 35.6657 59.8342H33.298C22.417 59.8342 13.5962 68.655 13.5962 79.536V80.6684"
+                          stroke="#D9D9E2" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"></path>
+                      </svg>
+                    </div>
+                    <div class="main-feature-card__node orange-3 w-embed"> <svg width="140" height="82"
+                        viewBox="0 0 140 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M45 42.5V56.2427C45 69.4975 55.7452 80.2427 69 80.2427L92.3055 80.2427"
+                          stroke="#D9D9E2" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" />
+                        <rect x="0.5" y="0.5" width="134" height="38" rx="11.5" stroke="#C9C9D4" />
+
+                        <text x="67.25" y="22" font-size="13" fill="#008080" text-anchor="middle"
+                          dominant-baseline="middle">
+                          Driver Assignment
+                        </text>
+                      </svg></div>
+                    <div class="main-feature-card__node orange-4 w-embed">
+                      <svg width="154" height="100" viewBox="0 0 148 100" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M42 57.4998V25.4683C42 12.2134 52.7452 1.46826 66 1.46826H74.7753" stroke="#D9D9E2"
+                          stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"></path>
+                        <rect x="0.5" y="61.5" width="145" height="38" rx="11.5" stroke="#C9C9D4"></rect>
+                        <text x="72.75" y="82.5" font-size="13" fill="#008080" text-anchor="middle"
+                          dominant-baseline="middle">
+                          Downtown Statistics
+                        </text>
+                      </svg>
+                    </div>
+                    <div class="main-feature-card__node orange-6 w-embed">
+                      <svg width="140" height="81" viewBox="0 0 140 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.5" y="42.5" width="116" height="38" rx="11.5" stroke="#C9C9D4"></rect>
+                        <text x="58.5" y="62.5" font-size="13" fill="#008080" text-anchor="middle"
+                          dominant-baseline="middle">
+                          Finance Tracking
+                        </text>
+                        <path d="M64.9998 38.4997V25.2632C64.9998 12.0083 54.2547 1.26318 40.9998 1.26318H8.59131"
+                          stroke="#D9D9E2" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"></path>
+                      </svg>
+                    </div>
+                  </a>
+                  <a data-color="cyan" class="main-feature-card w-inline-block">
+                    <div class="main-feature-card__icon w-embed">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#008080" viewBox="0 0 256 256"><path d="M224,48H32A16,16,0,0,0,16,64V192a16,16,0,0,0,16,16H224a16,16,0,0,0,16-16V64A16,16,0,0,0,224,48Zm0,16V88H32V64Zm0,128H32V104H224v88Zm-16-24a8,8,0,0,1-8,8H168a8,8,0,0,1,0-16h32A8,8,0,0,1,208,168Zm-64,0a8,8,0,0,1-8,8H120a8,8,0,0,1,0-16h16A8,8,0,0,1,144,168Z"></path></svg>
+                    </div>
+                    <div class="main-feature-card__heading max-w-md text-base text-[#898989] lg:max-w-2xl lg:text-lg">
+                      Payroll Automation</div>
+                    <div class="main-feature-card__arrow">
+                      <div class="blend w-embed"><svg width="12" height="10" viewBox="0 0 12 10" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M11.7616 5.54576L7.37206 9.76576C6.60357 10.3722 5.62811 9.42251 6.33453 8.67909L9.38064 5.75242H0.777254C-0.259084 5.75242 -0.259085 4.25909 0.777254 4.25909H9.38064L6.33453 1.33242C5.61864 0.590319 6.63198 -0.397366 7.37206 0.252423L11.7616 4.47242C12.0518 4.76334 12.1059 5.19636 11.7616 5.54576Z"
+                            fill="white"></path>
+                        </svg></div>
+                    </div>
+                    <div class="main-feature-card__node pink-1 w-embed">
+                      <svg width="152" height="68" viewBox="0 0 152 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="25.5" y="0.5" width="124" height="38" rx="11.5" stroke="#C9C9D4"></rect>
+                        <text x="87.5" y="21.5" font-size="13" fill="#008080" text-anchor="middle"
+                          dominant-baseline="middle">
+                          Payroll Calculator
+                        </text>
+                        <path d="M21.5 19.5V19.5C10.5642 19.5 1.69904 28.3652 1.69904 39.301V66.2925" stroke="#D9D9E2"
+                          stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"></path>
+                      </svg>
+                    </div>
+                    <div class="main-feature-card__node pink-2 w-embed">
+                      <svg width="152" height="107"
+                      viewBox="0 0 152 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="0.5" y="0.5" width="140" height="38" rx="11.5" stroke="#C9C9D4"></rect>
+                      <text x="70" y="21.5" font-size="13" fill="#008080" 
+                      text-anchor="middle" dominant-baseline="middle">
+                      Invoice Management
+                      </text>
+                      <path d="M56 42.5V81.7054C56 94.9603 66.7452 105.705 80 105.705L98.9234 105.705"
+                        stroke="#D9D9E2" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"></path>
+                      </svg></div>
+                      <div class="main-feature-card__node orange-6 w-embed">
+                        <svg width="140" height="81" viewBox="0 0 140 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="0.5" y="42.5" width="126" height="38" rx="11.5" stroke="#C9C9D4"></rect>
+                          <text x="62.5" y="62.5" font-size="13" fill="#008080" text-anchor="middle"
+                            dominant-baseline="middle">
+                            Expense Tracking
+                          </text>
+                          <path d="M64.9998 38.4997V25.2632C64.9998 12.0083 54.2547 1.26318 40.9998 1.26318H8.59131"
+                            stroke="#D9D9E2" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"></path>
+                        </svg>
+                      </div>
+                    <div class="main-feature-card__node pink-4 w-embed">
+                      <svg width="174" height="100" viewBox="0 0 178 100" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M42 57.4998V25.4683C42 12.2134 52.7452 1.46826 66 1.46826H74.7753" stroke="#D9D9E2"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"></path>
+                      <rect x="0.5" y="61.5" width="145" height="38" rx="11.5" stroke="#C9C9D4"></rect>
+                      <text x="72.75" y="82.5" font-size="13" fill="#008080" text-anchor="middle"
+                        dominant-baseline="middle">
+                        Fuel Cost Calculator
+                      </text>
+                    </svg>
+                      </div>
+             
+                  </a>
+                  <a data-color="emerald" class="main-feature-card w-inline-block">
+                    <div class="main-feature-card__icon w-embed">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#008080" viewBox="0 0 256 256"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Zm88-29.84q.06-2.16,0-4.32l14.92-18.64a8,8,0,0,0,1.48-7.06,107.21,107.21,0,0,0-10.88-26.25,8,8,0,0,0-6-3.93l-23.72-2.64q-1.48-1.56-3-3L186,40.54a8,8,0,0,0-3.94-6,107.71,107.71,0,0,0-26.25-10.87,8,8,0,0,0-7.06,1.49L130.16,40Q128,40,125.84,40L107.2,25.11a8,8,0,0,0-7.06-1.48A107.6,107.6,0,0,0,73.89,34.51a8,8,0,0,0-3.93,6L67.32,64.27q-1.56,1.49-3,3L40.54,70a8,8,0,0,0-6,3.94,107.71,107.71,0,0,0-10.87,26.25,8,8,0,0,0,1.49,7.06L40,125.84Q40,128,40,130.16L25.11,148.8a8,8,0,0,0-1.48,7.06,107.21,107.21,0,0,0,10.88,26.25,8,8,0,0,0,6,3.93l23.72,2.64q1.49,1.56,3,3L70,215.46a8,8,0,0,0,3.94,6,107.71,107.71,0,0,0,26.25,10.87,8,8,0,0,0,7.06-1.49L125.84,216q2.16.06,4.32,0l18.64,14.92a8,8,0,0,0,7.06,1.48,107.21,107.21,0,0,0,26.25-10.88,8,8,0,0,0,3.93-6l2.64-23.72q1.56-1.48,3-3L215.46,186a8,8,0,0,0,6-3.94,107.71,107.71,0,0,0,10.87-26.25,8,8,0,0,0-1.49-7.06Zm-16.1-6.5a73.93,73.93,0,0,1,0,8.68,8,8,0,0,0,1.74,5.48l14.19,17.73a91.57,91.57,0,0,1-6.23,15L187,173.11a8,8,0,0,0-5.1,2.64,74.11,74.11,0,0,1-6.14,6.14,8,8,0,0,0-2.64,5.1l-2.51,22.58a91.32,91.32,0,0,1-15,6.23l-17.74-14.19a8,8,0,0,0-5-1.75h-.48a73.93,73.93,0,0,1-8.68,0,8,8,0,0,0-5.48,1.74L100.45,215.8a91.57,91.57,0,0,1-15-6.23L82.89,187a8,8,0,0,0-2.64-5.1,74.11,74.11,0,0,1-6.14-6.14,8,8,0,0,0-5.1-2.64L46.43,170.6a91.32,91.32,0,0,1-6.23-15l14.19-17.74a8,8,0,0,0,1.74-5.48,73.93,73.93,0,0,1,0-8.68,8,8,0,0,0-1.74-5.48L40.2,100.45a91.57,91.57,0,0,1,6.23-15L69,82.89a8,8,0,0,0,5.1-2.64,74.11,74.11,0,0,1,6.14-6.14A8,8,0,0,0,82.89,69L85.4,46.43a91.32,91.32,0,0,1,15-6.23l17.74,14.19a8,8,0,0,0,5.48,1.74,73.93,73.93,0,0,1,8.68,0,8,8,0,0,0,5.48-1.74L155.55,40.2a91.57,91.57,0,0,1,15,6.23L173.11,69a8,8,0,0,0,2.64,5.1,74.11,74.11,0,0,1,6.14,6.14,8,8,0,0,0,5.1,2.64l22.58,2.51a91.32,91.32,0,0,1,6.23,15l-14.19,17.74A8,8,0,0,0,199.87,123.66Z"></path></svg>
+                   </div>
+                    <div class="main-feature-card__heading max-w-md text-base text-[#898989] lg:max-w-2xl lg:text-lg">
+                      Maintenance Reconciliation</div>
+                    <div class="main-feature-card__arrow">
+                      <div class="blend w-embed"><svg width="12" height="10" viewBox="0 0 12 10" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M11.7616 5.54576L7.37206 9.76576C6.60357 10.3722 5.62811 9.42251 6.33453 8.67909L9.38064 5.75242H0.777254C-0.259084 5.75242 -0.259085 4.25909 0.777254 4.25909H9.38064L6.33453 1.33242C5.61864 0.590319 6.63198 -0.397366 7.37206 0.252423L11.7616 4.47242C12.0518 4.76334 12.1059 5.19636 11.7616 5.54576Z"
+                            fill="white"></path>
+                        </svg></div>
+                    </div>
+                    <div class="main-feature-card__node emerald-1 w-embed"><svg width="126" height="82"
+                        viewBox="0 0 126 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M52.9999 42.5V42.5C52.9999 52.0734 45.2391 59.8342 35.6657 59.8342H33.298C22.417 59.8342 13.5962 68.655 13.5962 79.536V80.6684"
+                          stroke="#D9D9E2" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"></path>
+                        <rect x="0.5" y="0.5" width="120" height="38" rx="11.5" stroke="#C9C9D4"></rect>
+                        <text x="60.5" y="20.5" font-size="13" fill="#008080" text-anchor="middle"
+                        dominant-baseline="middle">
+                        Expense Tracking
+                      </text>
+                      </svg></div>
+                    <div class="main-feature-card__node emerald-2 w-embed"><svg width="120" height="67"
+                        viewBox="0 0 120 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M43.5 42.5V42.5C43.5 55.2512 53.8369 65.5881 66.5881 65.5881H86.8487" stroke="#D9D9E2"
+                          stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"></path>
+                        <rect x="0.5" y="0.5" width="100" height="38" rx="11.5" stroke="#C9C9D4"></rect>
+                        <text x="49.5" y="22.5" font-size="13" fill="#008080" text-anchor="middle"
+                        dominant-baseline="middle">
+                        Cost Centers
+                      </text>
+                      </svg></div>
+                    <div class="main-feature-card__node emerald-3 w-embed"><svg width="140" height="92" viewBox="0 0 140 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M70.0001 49.4999V36.6789C70.0001 31.3474 65.678 27.0253 60.3465 27.0253V27.0253C55.0149 27.0253 50.6929 22.7032 50.6929 17.3717L50.6929 1.05066"
+                        stroke="#D9D9E2" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel">
+                      </path>
+                      <rect x="0.5" y="53.5" width="139" height="38" rx="11.5" stroke="#C9C9D4"></rect>
+                      <text x="70" y="74" font-size="13" fill="#008080" text-anchor="middle" dominant-baseline="middle">
+                        Maintenance History
+                      </text>
+                    </svg>
+                    </div>
+                    <div class="main-feature-card__node emerald-4 w-embed"><svg width="124" height="75"
+                        viewBox="0 0 124 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M62 32.5V25.8298C62 12.575 72.7452 1.82983 86 1.82983H101.194" stroke="#D9D9E2"
+                          stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"></path>
+                        <rect x="0.5" y="36.5" width="123" height="38" rx="11.5" stroke="#C9C9D4"></rect>
+                        <text x="62.5" y="57.5" font-size="13" fill="#008080" text-anchor="middle"
+                        dominant-baseline="middle">
+                        Insurance Claims
+                      </text>
+                      </svg></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="mx-3 md:mx-0">
+        <div
+          class="mx-auto w-full relative max-w-[1200px] gap-8 overflow-clip rounded-xl px-1 py-6 md:px-1 md:py-20 !bg-transparent">
+          <div class="flex-col pb-3.5 items-center text-center hidden lg:flex">
+            <div>
+              <span class="my-3 flex items-center justify-center mb-4"><span
+                class="shadow-fade inline-flex items-center justify-start gap-1 rounded-full px-3.5 py-1 bg-white"><span
+                  class="flex h-4 w-auto items-center justify-center py-[1.33px] transition-transform duration-300 [&amp;_svg]:h-full [&amp;_svg]:w-auto [&amp;_svg]:shrink-0"><img
+                    alt="Benefits" loading="lazy" width="100" height="100" decoding="async" data-nimg="1"
+                    class="h-5 w-5" style="color: transparent"
+                    src="https://www.datocms-assets.com/77432/1729632030-luggage.svg" /></span>
+                <p class="text-xs text-[#242424]">Key Benefits</p>
+              </span></span>
+            </div>
+            <h1 class="font-cal !leading-xs md:!leading-h1 text-[32px] lg:text-5xl pb-3">
+              <span style="
+                  display: inline-block;
+                  vertical-align: top;
+                  text-decoration: inherit;
+                  text-wrap: balance;
+                ">Power Your Operations</span>
+            </h1>
+            <p class="max-w-md text-base text-[#898989] lg:max-w-2xl lg:text-lg">
+              Centralize and manage all your trucking operations effortlessly with our all-in-one transportation management system
+            </p>
+          </div>
+          <img src="assets/images/allThree.png">
+        </div>
+      </section>
+
+       
+    <section class="mx-3 md:mx-0">
+      <div
+        class="mx-auto w-full relative max-w-[1200px] gap-8 overflow-clip rounded-xl py-6 md:py-20 !bg-transparent px-1 md:px-1">
+        <div class="flex flex-col pb-3.5 items-center text-center">
+          <div>
+            <span class="my-3 flex items-center justify-center mb-4"><span
+                class="shadow-fade inline-flex items-center justify-start gap-1 rounded-full px-3.5 py-1 bg-white"><span
+                  class="flex h-4 w-auto items-center justify-center py-[1.33px] transition-transform duration-300 [&amp;_svg]:h-full [&amp;_svg]:w-auto [&amp;_svg]:shrink-0"></span>
+                <p class="text-xs text-[#242424]">Steps</p>
+              </span></span>
+          </div>
+          <h1 class="font-cal !leading-xs md:!leading-h1 text-[32px] lg:text-5xl pb-3">
+            <span data-br=":R4jkul6:" data-brr="1" style="
+                  display: inline-block;
+                  vertical-align: top;
+                  text-decoration: inherit;
+                  text-wrap: balance;
+                ">Header Section</span>
+          </h1>
+          <p class="max-w-md text-base text-[#898989] lg:max-w-2xl lg:text-lg">
+            Long words in here
+          </p>
+        </div>
+        <div class="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+          <div
+          class="shadow-fade grid grid-cols-1 grid-rows-[auto_1fr] overflow-hidden rounded-2xl bg-white cards-hover">
+          <div class="px-[20px] py-[20px]">
+            <video
+            autoplay
+            loop
+            muted
+            src="assets/video/spotter.ai.mp4"
+            alt="intro"
+          ></video>
+          <p class="text-md mb-1.5 font-semibold" style="padding-top: 20px;">Automated MVR & PSP Reports</p>
+          <p class="text-content-subtle max-w-[300px] text-[#898989] text-[16px]">
+             Just wait 2 minutes and let our automation process MVR and PSP and everything.
+          </p>
+          </div>
+        </div>
+          <div
+          class="shadow-fade grid grid-cols-1 grid-rows-[auto_1fr] overflow-hidden rounded-2xl bg-white cards-hover">
+          <div class="px-[20px] py-[20px]">
+            <video
+            autoplay
+            loop
+            muted
+            src="assets/video/spotter.ai.mp4"
+            alt="intro"
+          ></video>
+          <p class="text-md mb-1.5 font-semibold" style="padding-top: 20px;">Automated MVR & PSP Reports</p>
+          <p class="text-content-subtle max-w-[300px] text-[#898989] text-[16px]">
+             Just wait 2 minutes and let our automation process MVR and PSP and everything.
+          </p>
+          </div>
+        </div>
+        <div
+        class="shadow-fade grid grid-cols-1 grid-rows-[auto_1fr] overflow-hidden rounded-2xl bg-white cards-hover">
+        <div class="px-[20px] py-[20px]">
+          <video
+          autoplay
+          loop
+          muted
+          src="assets/video/spotter.ai.mp4"
+          alt="intro"
+        ></video>
+        <p class="text-md mb-1.5 font-semibold" style="padding-top: 20px;">Automated MVR & PSP Reports</p>
+        <p class="text-content-subtle max-w-[300px] text-[#898989] text-[16px]">
+           Just wait 2 minutes and let our automation process MVR and PSP and everything.
+        </p>
+        </div>
+      </div>
+        </div>
+      </div>
+    </section>
+      <section class="mx-3 md:mx-0">
+        <div
+          class="mx-auto w-full relative max-w-[1200px] gap-8 overflow-clip rounded-xl py-6 md:py-20 !bg-transparent px-1 md:px-1">
+          <div class="flex flex-col pb-3.5 items-center text-center">
+            <div>
+              <span class="my-3 flex items-center justify-center mb-4"><span
+                  class="shadow-fade inline-flex items-center justify-start gap-1 rounded-full px-3.5 py-1 bg-white"><span
+                    class="flex h-4 w-auto items-center justify-center py-[1.33px] transition-transform duration-300 [&amp;_svg]:h-full [&amp;_svg]:w-auto [&amp;_svg]:shrink-0"><svg
+                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
+                      class="h-4 w-4">
+                      <path fill-rule="evenodd"
+                        d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z"
+                        clip-rule="evenodd"></path>
+                    </svg></span>
+                  <p class="text-xs text-[#242424]">How it works</p>
+                </span></span>
+            </div>
+            <h1 class="font-cal !leading-xs md:!leading-h1 text-[32px] lg:text-5xl pb-3">
+              <span data-br=":R4jkul6:" data-brr="1" style="
+                  display: inline-block;
+                  vertical-align: top;
+                  text-decoration: inherit;
+                  text-wrap: balance;
+                ">Whats included in the Disruptor?</span>
+            </h1>
+            <p class="max-w-md text-base text-[#898989] lg:max-w-2xl lg:text-lg">
+              Streamline driver compliance and safety with real-time monitoring,
+              risk assessments, and proactive screening to ensure a safer and
+              more efficient fleet.
+            </p>
+          </div>
+          <div class="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+            <div
+              class="shadow-fade grid grid-cols-1 grid-rows-[auto_1fr] overflow-hidden rounded-2xl bg-white animate1">
+              <div class="px-[20px] py-[20px] ">
+                <svg fill="none" style="width: 50px; height:50px;" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 65 64">
+                  <path
+                    d="M13 6.875v10m32-10v10M9 57.125v-2c0-5.523 4.477-10 10-10s10 4.476 10 9.999v2.001m0 0h24a4 4 0 0 0 4-4v-32a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v32a4 4 0 0 0 4 4h24Zm6-19.25h12m-12 6.75h12m-12-13.75h12m-22.344 1.248c-.252 3.39-2.822 6.156-5.643 6.156-2.822 0-5.397-2.765-5.644-6.156-.256-3.527 2.245-6.157 5.644-6.157 3.398 0 5.9 2.694 5.643 6.157Z"
+                    stroke="#000" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+              <div class="px-[20px] " style="margin-bottom:25px;">
+
+                <p class="text-md mb-1.5 font-semibold">Anonymous user identification</p>
+                <p class="text-content-subtle max-w-[300px] text-[#898989] text-[16px]">
+                  Every visitor to your website is assigned a permanent visitor ID that can be used to identify visitors
+                  conceal their identity via proxies or other techniques.
+                </p>
+
+              </div>
+            </div>
+            <div
+              class="shadow-fade grid grid-cols-1 grid-rows-[auto_1fr] overflow-hidden rounded-2xl bg-white animate2">
+              <div class="px-[20px] py-[20px]">
+                <svg fill="none" style="width:50px; height:50px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 64">
+                  <path
+                    d="M1.333 23.781v1.357a22.08 22.08 0 0 0 3.89 12.515L18.996 57.67c.11.16.344.16.454 0l13.773-20.017a22.079 22.079 0 0 0 3.89-12.515v-1.356A17.782 17.782 0 0 0 19.33 6h-.216A17.781 17.781 0 0 0 1.334 23.781Z"
+                    stroke="#000" stroke-width="1.4"></path>
+                  <circle cx="19.223" cy="22.549" stroke="#000" stroke-width="1.4" r="7.141"></circle>
+                </svg>
+              </div>
+              <div class="px-[20px] " style="margin-bottom:25px;">
+
+                <p class="text-md mb-1.5 font-semibold">Geolocation</p>
+                <p class="text-content-subtle max-w-[300px] text-[#898989] text-[16px]">
+                  Every identification API request will provide the geolocation of the current visitor, including
+                  geoposition, city, country, time zone, and ISP information.
+                </p>
+
+              </div>
+            </div>
+            <div
+              class="shadow-fade grid grid-cols-1 grid-rows-[auto_1fr] overflow-hidden rounded-2xl bg-white animate3">
+              <div class="px-[20px] py-[20px]">
+                <svg fill="none" style="width:50px; height:50px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 64">
+                  <rect x="1.928" y="8.738" width="57.738" height="46.524" rx="1.333" stroke="#000"
+                    stroke-width="1.333"></rect>
+                  <path stroke="#000" stroke-width="1.333" d="M1.667 16.455h57.505"></path>
+                  <path
+                    d="M15.684 44.03H45.65m-3.943 0-1.506-18.072a.789.789 0 0 0-.915-.712l-8.49 1.414a.789.789 0 0 1-.258 0l-8.49-1.415a.789.789 0 0 0-.915.713L19.627 44.03h22.08Z"
+                    stroke="#000" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+              <div class="px-[20px] " style="margin-bottom:25px;">
+
+                <p class="text-md mb-1.5 font-semibold">Incognito mode detection</p>
+                <p class="text-content-subtle max-w-[300px] text-[#898989] text-[16px]">
+                  spotter tracks whether visitors are using incognito mode, and accurately identifies users across
+                  incognito browsing sessions.
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="mx-3 md:mx-0">
+      <div
+        class="mx-auto relative max-w-[1200px] gap-8 overflow-clip rounded-xl px-1 md:py-20 !bg-transparent text-black mt-12 flex h-full w-full flex-col py-14 md:px-0">
+        <div class="flex w-full flex-col gap-6 md:flex-row md:justify-between">
+          <div class="mb-12 flex flex-col text-sm md:pl-2 lg:mb-0">
+            <div class="flex pb-2 lg:pb-7">
+              <div class="flex">
+                <a href="index.html" class="dLVeol" href="/"><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 944.7 623.7"
+                    xml:space="preserve" height="25">
+                    <style type="text/css">
+                      .st0 {
+                        fill: #008080 important;
+                      }
+
+                      .st1 {
+                        fill: #f84960 !important;
+                      }
+
+                      .st2 {
+                        fill: #bcddde !important;
+                      }
+                    </style>
+                    <g id="dots_copy">
+                      <circle class="st0" cx="150" cy="472.7" r="147.4"></circle>
+                      <circle class="st1" cx="150" cy="150.8" r="147.4"></circle>
+                      <circle class="st2" cx="472.3" cy="472.7" r="147.4"></circle>
+                      <circle class="st2" cx="794.7" cy="472.7" r="147.4"></circle>
+                    </g>
+                  </svg><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px" y="0px" viewBox="0 0 2146.4 576" xml:space="preserve" color="white" class="logo"
+                    height="25">
+                    <style type="text/css">
+                      .st0 {
+                        fill: #008080 !important;
+                      }
+                    </style>
+                    <g id="white_logo">
+                      <path class="st0"
+                        d="M616.3,266c-5.5-41.1-24.3-75.5-55.4-102.9c-27.3-24-59.3-37.1-95.3-40.9c-18.1-1.9-36-0.5-53.7,3.7 c-45.7,10.7-81.1,35.9-106.2,75.5c-17.1,27.1-25,57.1-25.1,89c-0.1,83.3,0,166.7,0,250c0,1,0,2,0,3c0.3,3.5,0.9,7,2.5,10.2 c4.1,7.8,10.6,12.3,19.3,12.6c8.6,0.3,15.8-3,20.5-10.6c2.8-4.4,3.6-9.4,3.6-14.5c0-43.7,0-87.5,0-131.2v-4.4 c1.5,0.1,1.9,1,2.5,1.6c4.4,4.4,8.9,8.6,13.8,12.4c41.6,32.5,88.3,44.6,140.3,34.5c37-7.2,68.2-25.3,92.9-53.7 C609.5,361.7,623.2,316.7,616.3,266z M447.9,412.3c-68.3-0.3-122.7-56.5-122.7-122.9c0-66.3,53.3-123.8,123.6-123.4 c69.6,0,123.4,55.4,123.4,123.6C572.1,356.9,517.4,412.6,447.9,412.3z">
+                      </path>
+                      <path class="st0"
+                        d="M1906,279c-0.3-5.5-0.4-11.1-1.1-16.6c-3.5-28.8-12.6-55.5-29.8-79c-29.3-40.2-69.1-60.6-118.8-62 c-13.3-0.4-26.4,1.5-39.4,4.4c-27.3,6.1-51.3,18.7-71.8,37.6c-30.4,28.1-47,63.4-52.2,104.2c-2.7,21.4-1.2,42.5,3.7,63.4 c8.1,34.3,24.8,63.4,51.2,86.8c26.5,23.6,58,36,93.2,39.2c19.5,1.7,38.8,0,57.9-4.5c28.7-6.7,53.2-20.4,72.6-43 c6.4-7.5,8.4-15.9,5.3-25.3c-3-9.1-12.8-14.4-21.8-13c-6.9,1.1-12.5,4.5-17.2,9.5c-9.3,9.7-20.1,17-32.5,22.4 c-14.7,6.4-30.2,8.6-46.1,9c-10.9,0.3-21.7-0.5-32.3-3.3c-50.1-13-80.2-53.9-87.7-97.9c-0.8-4.9-0.8-4.3,3.7-4.3 c40.1,0,80.2,0,120.4,0c39.5,0,79,0,118.5,0c1.2,0,2.5,0,3.8,0c8.6-0.5,15.7-5.7,18.3-13.6C1905.4,288.6,1906.3,283.9,1906,279z  M1640.7,263.3c-0.3-2,0.4-3.9,0.8-5.6c6.8-26.8,20.1-49.7,42-66.9c18.5-14.6,39.6-22.7,63.2-24.3c16.7-1.1,33,0.6,48.5,7.2 c32,13.7,52.6,37.6,63.4,70.4c2,6.1,3.3,12.4,3.9,19.2H1640.7z">
+                      </path>
+                      <path class="st0"
+                        d="M981.2,253.1c-10-46.2-35.5-82-75.7-106.7c-38-23.3-79.4-30.1-123.3-21.5c-36.9,7.2-67.9,24.9-93.1,52.7 c-37,40.7-49.9,98-38.7,147.5c7.9,34.9,24.9,64.4,51.3,88.5c32.4,29.4,71,43.2,112.5,44.2c15.7-0.2,29.1-1.9,42.4-5.1 c42.9-10.5,76.7-34.1,100.8-70.8C983.3,342.4,991.2,299.2,981.2,253.1z M816.1,412.2c-70.3,0.3-123.7-56.8-123.7-122.9 c0.1-66.9,53.8-123.5,124.1-123.4c70,0.2,122.8,55.8,122.8,123.6C939.3,356.4,885.7,412.7,816.1,412.2z">
+                      </path>
+                      <path class="st0"
+                        d="M1026.5,174c0-44.9,0-89.7,0-134.6c0-9.1,3.2-16.5,11.1-21.5c12.9-8.1,30.5-0.9,33.9,13.4 c0.7,3.1,1.1,6.2,1.1,9.4c0,26.4,0,52.7,0,79c0,0.8,0,1.5,0,2.3c0,3.4-0.3,3.3,3.3,3.3c30,0,60.1,0,90.1,0c18.6,0,37.1-0.1,55.6,0 c5.7,0,11.3,1,16.1,4.7c7.2,5.5,9.5,13,8.1,21.7c-1,6.3-4.2,11.2-9.6,14.7c-3.4,2.2-7.2,3-11.1,3.4c-1.9,0.2-3.8,0.2-5.7,0.2 c-47.4,0-94.9,0-142.3,0c-5,0-4.5-0.6-4.5,4.4c0,40.5,0,80.9,0,121.4c0,13.9,0.8,27.8,4.1,41.3c4.1,17.1,10.9,33,22.8,46.3 c15.2,17.1,34.2,26.8,57,28.5c17,1.2,33.8,0.2,50.1-5.4c13.9-4.8,26.1-12.6,37.5-21.6c2.1-1.6,4.1-3.4,6.3-4.8 c9.1-5.8,21-4.2,27.9,3.7c3.9,4.4,5,9.8,4.4,15.6c-0.6,6.2-3.4,11.5-8,15.9c-20.7,20.1-44.9,33.5-73.4,38.9 c-18.1,3.4-36.2,4.9-54.6,2.4c-43.3-6-76.2-27.6-98-65.5c-9.2-16-14.5-33.4-18.1-51.5c-2.7-13.6-4-27.4-4-41.3 C1026.5,256.7,1026.5,215.3,1026.5,174L1026.5,174z">
+                      </path>
+                      <path class="st0"
+                        d="M1316.3,175.3c0-45.1,0-90.3,0-135.4c0-5.9,1.1-11.5,4.9-16.3c5.3-6.8,12.4-10,20.9-8.8 c10,1.4,16.8,7,19.3,17.1c0.7,2.7,0.9,5.5,0.9,8.3c0,27,0,54,0,80.9c0,4.3-0.6,4.1,4,4.1c48.2,0,96.4,0,144.6,0 c6.1,0,12.1,1.1,17.1,5c6.7,5.4,8.9,12.5,7.7,20.9c-0.9,6.5-4,11.5-9.5,15.1c-3.4,2.2-7.2,3-11.1,3.4c-2,0.2-4,0.2-6.1,0.2 c-47.1,0-94.1,0-141.2,0c-0.6,0-1.2,0-1.9,0c-3.6,0-3.6,0-3.6,3.4c0,0.4,0,0.8,0,1.1c0,40.3,0,80.7,0,121c0,13.1,0.8,26.2,3.6,39.1 c4,18.1,11,34.8,23.4,48.8c15.1,17,34,26.7,56.7,28.3c17.7,1.2,35.3,0.2,52.2-6.1c13.1-4.9,24.8-12.4,35.7-21c2-1.6,3.9-3.3,6-4.6 c9.1-5.8,20.9-4.4,27.9,3.4c3.9,4.3,5,9.6,4.5,15.1c-0.5,6.4-3.3,11.8-7.9,16.3c-20,19.2-43.1,32.6-70.4,38.4 c-19,4-38.2,5.7-57.5,3.1c-43.3-5.9-76.2-27.5-98.1-65.4c-9.2-15.9-14.5-33.2-18-51.1c-3-14.9-4.1-30-4.1-45.1 C1316.3,255,1316.3,215.1,1316.3,175.3z">
+                      </path>
+                      <path class="st0"
+                        d="M120.9,121.3c15,0,29.7,2,44,6.3c22.5,6.6,40.9,19.3,55.6,37.4c1.4,1.8,2.9,3.5,4.2,5.3 c5.3,7.2,6.8,15.1,3.7,23.6c-3.5,9.7-13.1,15-22.8,13.1c-7.4-1.5-13.2-5-17.8-11.1c-11.9-15.6-27.8-24.5-47-27.9 c-16.3-2.9-32.6-2.7-48.9,0.8c-6.8,1.5-13.3,4-19.4,7.4c-7.1,4-12.9,9.3-16.4,16.8c-5.8,12.5-4.8,31.1,8.6,43 c5.5,4.8,11.6,8.5,18.1,11.6c12.1,5.8,24.8,9.8,37.6,13.6c19,5.6,37.9,11.4,56.2,19c14.8,6.2,29,13.7,41.1,24.4 c21.7,19.2,29.2,43.5,24,71.7c-5.1,27.6-21.6,47.1-44.8,61.8c-13.7,8.6-28.9,13.7-44.7,16.8c-24.7,4.8-49.2,3.1-73.5-2.7 c-19.4-4.6-37.1-12.7-52.6-25.4c-9.1-7.4-16.4-16.5-22.5-26.3c-4.1-6.6-4.7-13.8-1.6-21c3.8-8.9,12.8-12.8,22.1-11.5 c6,0.8,11.4,3.2,16.1,7c1,0.8,1.9,1.7,2.6,2.7c10.9,16.5,26.8,26,45.5,31c14.7,3.9,29.8,4.7,45,3.9c14.7-0.8,28.2-5.1,40.6-13 c9.3-6,16.7-13.8,20.7-24.4c5.3-13.9,3-29.5-8.4-40.4c-5.5-5.3-11.9-9.4-18.6-12.8c-14.2-7.3-29.3-12.2-44.5-16.9 c-12.2-3.7-24.6-6.6-36.7-10.6c-13.8-4.6-27.2-10.1-39.4-18.1c-8.3-5.4-15.9-11.5-22.4-19.1c-13-15.4-18.6-33.4-17.8-53.2 c0.9-21.5,9.4-39.8,25.8-54c11.2-9.8,24-16.6,38.2-21C87.2,124,103.8,121.3,120.9,121.3z">
+                      </path>
+                      <path class="st0"
+                        d="M1941.9,355.9c0-22.1-0.3-44.1,0.1-66.2c0.5-25.1,5-49.7,14.8-72.9c17-40.1,46.7-66.5,87.7-80.4 c19.1-6.5,38.8-10,58.9-10.8c6-0.3,12.1-0.9,18.1,0c6.4,1.1,12.1,3.4,16.1,8.8c9.7,13.1,2.7,32.9-13.1,35.9 c-2.8,0.5-5.5,0.8-8.3,0.9c-17.1,0.4-34,1.9-50.3,7.4c-16.5,5.5-31.4,13.6-44,25.8c-14.3,13.9-23.2,30.9-28.6,49.9 c-4.1,14.4-5.5,29.2-5.5,44.1c-0.1,43,0,86,0,129c0,6-1.3,11.7-5,16.7c-8.8,11.7-27.1,11.1-35.9-0.1c-3.8-4.8-5.1-10.3-5.1-16.2 c0-24,0-47.9,0-71.9C1941.9,355.9,1941.9,355.9,1941.9,355.9z">
+                      </path>
+                    </g>
+                  </svg></a>
+              </div>
+            </div>
+            <p class="max-w-[250px] lg:block">
+              2025 © Copyright - All Rights Reserved.
+            </p>
+
+            <div class="mt-6 flex gap-4">
+              <a class="[&amp;>svg]:transition-fill hover:invert [&amp;>svg]:duration-150" aria-label="Twitter"
+                target="_blank" rel="noopener" href="https://twitter.com/spotter_ai"><svg class="fill-primary-300 mt-1"
+                  width="22" height="22" viewBox="0 0 26 26" aria-label="X formerly known as Twitter"
+                  fill="currentColor">
+                  <path
+                    d="M16.99 0H20.298L13.071 8.26L21.573 19.5H14.916L9.702 12.683L3.736 19.5H0.426L8.156 10.665L0 0H6.826L11.539 6.231L16.99 0ZM15.829 17.52H17.662L5.83 1.876H3.863L15.829 17.52Z">
+                  </path>
+                </svg></a><a class="[&>svg]:transition-fill hover:invert [&>svg]:duration-150" aria-label="Facebook"
+                target="_blank" rel="noopener" href="https://www.facebook.com/spotterai">
+                <svg class="fill-primary-300 mt-[1px]" width="22" height="22" viewBox="0 0 24 24" aria-label="Facebook"
+                  fill="currentColor">
+                  <path
+                    d="M22.675 0H1.325C.595 0 0 .594 0 1.325v21.35C0 23.405.595 24 1.325 24h11.495v-9.294h-3.11v-3.622h3.11V8.412c0-3.103 1.847-4.812 4.655-4.812 1.348 0 2.749.266 2.749.266v3.046h-1.547c-1.528 0-2.003.95-2.003 1.922v2.307h3.364l-.537 3.622h-2.827V24h5.551c.73 0 1.325-.595 1.325-1.325V1.325C24 .595 23.405 0 22.675 0z">
+                  </path>
+                </svg>
+              </a>
+              <a class="[&>svg]:transition-fill hover:invert [&>svg]:duration-150" aria-label="LinkedIn" target="_blank"
+                rel="noopener" href="https://www.linkedin.com">
+                <svg class="fill-primary-300 mt-[1px]" width="22" height="22" viewBox="0 0 24 24" aria-label="LinkedIn"
+                  fill="currentColor">
+                  <path
+                    d="M22.225 0H1.775C.795 0 0 .795 0 1.775v20.45C0 23.205.795 24 1.775 24h20.45c.98 0 1.775-.795 1.775-1.775V1.775C24 .795 23.205 0 22.225 0zM7.063 20.452H3.64V9.042h3.423v11.41zM5.351 7.292c-1.094 0-1.974-.88-1.974-1.974 0-1.095.88-1.975 1.974-1.975 1.095 0 1.975.88 1.975 1.975 0 1.094-.88 1.974-1.975 1.974zM20.451 20.452h-3.423v-5.684c0-1.352-.485-2.268-1.698-2.268-1.155 0-1.841.777-1.841 1.966v5.986h-3.423V9.042h3.423v1.562h.048c.475-.892 1.61-1.825 3.07-1.825 2.315 0 4.07 1.497 4.07 4.71v6.853z">
+                  </path>
+                </svg>
+              </a>
+            </div>
+            <p class="mt-2 max-w-[350px] pr-4 text-base transition-opacity ease-in-out">
+            <h1 class="text-[17px] font-semibold" style="padding-top:10px;">Headquarters</h1>
+            251 Little Falls<br>
+            Dr. Wilmington, DE 19808
+            </p>
+            <p class="mt-4 lg:block">
+              Need Help?
+
+              <a href="contact-us.html" class="text-[#0561A2] underline">Contact Us</a>
+            </p>
+          </div>
+          <div class="w-full md:flex md:w-auto md:justify-end">
+            <nav class="grid grid-cols-2 gap-x-8 gap-y-10 md:grid-cols-3 lg:grid-cols-4">
+              <ul>
+                <li class="text-[17px] font-semibold">Solutions</li>
+                <li class="pt-4 text-[17px]">
+                  <a class="flex items-start text-[16px] hover:opacity-50" href="">For Carriers</a>
+                </li>
+                <li class="pt-4 text-[17px]">
+                  <a class="flex items-start text-[16px] hover:opacity-50" href="scope.html">For Owner Operators</a>
+                </li>
+                <li class="pt-4 text-[17px]">
+                  <a class="flex items-start text-[16px] hover:opacity-50" href="https://spotter.ai/lens"
+                    target="_blank">For Brokers</a>
+                </li>
+                <li class="pt-4 text-[17px]">
+                  <a class="flex items-start text-[16px] hover:opacity-50" href="coming-soon.html">For Dealerships</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="text-[17px] font-semibold">Use Cases</li>
+                <li class="pt-4 text-[17px]">
+                  <a class="flex items-start text-[16px] hover:opacity-50" href="scope.html">Dispatch</a>
+                </li>
+                <li class="pt-4 text-[17px]">
+                  <a class="flex items-start text-[16px] hover:opacity-50" href="https://spotter.ai/lens"
+                    target="_blank">Quoting</a>
+                </li>
+                <li class="pt-4 text-[17px]">
+                  <a class="flex items-start text-[16px] hover:opacity-50" href="scope.html">Drivers</a>
+                </li>
+                <li class="pt-4 text-[17px]">
+                  <a class="flex items-start text-[16px] hover:opacity-50" href="disruptor.html">Payroll
+                  </a>
+                </li>
+              </ul>
+              <ul>
+                <li class="text-[17px] font-semibold">Use Cases</li>
+                <li class="pt-4 text-[17px]">
+                  <a class="flex items-start text-[16px] hover:opacity-50" href="sentinel.html">Safety</a>
+                </li>
+                <li class="pt-4 text-[17px]">
+                  <a class="flex items-start text-[16px] hover:opacity-50" href="disruptor.html">Billing</a>
+                </li>
+                <li class="pt-4 text-[17px]">
+                  <a class="flex items-start text-[16px] hover:opacity-50" href="coming-soon.html">Lending</a>
+                </li>
+                <li class="pt-4 text-[17px]">
+                  <a class="flex items-start text-[16px] hover:opacity-50" href="disruptor.html">Accounting</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="text-[17px] font-semibold">Resources</li>
+                <li class="pt-4 text-[17px]">
+                  <a class="flex items-start text-[16px] hover:opacity-50" href="coming-soon.html">Blog</a>
+                </li>
+                <li class="pt-4 text-[17px]">
+                  <a class="flex items-start text-[16px] hover:opacity-50" href="coming-soon.html">Press</a>
+                </li>
+                <li class="pt-4 text-[17px]">
+                  <a class="flex items-start text-[16px] hover:opacity-50" href="">About Us</a>
+                </li>
+                <li class="pt-4 text-[17px]">
+                  <a class="flex items-start text-[16px] hover:opacity-50" href="https://spotter.na.teamtailor.com/"
+                    target="_blank">Careers</a>
+                </li>
+                <li class="pt-4 text-[17px]">
+                  <a class="flex items-start text-[16px] hover:opacity-50" href="contact-us.html">Support</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
